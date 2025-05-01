@@ -2,13 +2,14 @@
 <asset version="2.19.0.3">
 	<guid>60586bbbe11bedde064e7ba5e6cbf8c084a7151f</guid>
 	<type>world</type>
-	<hash>ec53573c</hash>
+	<hash>03c56997</hash>
 	<runtimes>
 		<runtime id="60586bbbe11bedde064e7ba5e6cbf8c084a7151f" name="Unigine_ShinyWorld.world" link="0"/>
 	</runtimes>
 	<parameters>
 		<parameter type="string" name="physics_settings_path"/>
 		<parameter type="string" name="render_settings_path">guid://92a0ee7917704584f2b913132a497d56e78094bd</parameter>
+		<parameter type="string" name="script_name"/>
 		<parameter type="string" name="sound_settings_path"/>
 		<parameter type="string" name="viewports_settings">&lt;scene_cameras&gt;
 &lt;1&gt;
