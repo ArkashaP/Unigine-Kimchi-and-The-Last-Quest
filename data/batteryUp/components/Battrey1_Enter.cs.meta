@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>4cf2f2b30bc7bdb35a22f7cce928dee90fe3058b</guid>
+	<type>component</type>
+	<hash>8bae3047</hash>
+	<runtimes>
+		<runtime id="4cf2f2b30bc7bdb35a22f7cce928dee90fe3058b" name="Battrey1_Enter.cs" link="0"/>
+		<runtime id="ad8d73d92a2e0ac5ed58938abff80ad15e142031" name="Battrey1_Enter.prop" link="1" type="4"/>
+	</runtimes>
+</asset>
