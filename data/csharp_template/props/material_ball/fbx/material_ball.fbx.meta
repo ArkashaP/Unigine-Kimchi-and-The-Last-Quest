@@ -2,17 +2,17 @@
 <asset version="2.19.0.3">
 	<guid>874169d680d2973d7457ef789107ec77d9ac5f6a</guid>
 	<type>fbx</type>
-	<hash>12f1af82</hash>
+	<hash>30da72f4</hash>
 	<runtimes>
 		<runtime id="874169d680d2973d7457ef789107ec77d9ac5f6a" name="material_ball.fbx" link="0"/>
 		<runtime id="498e07c151953e2cea14a39b52ce043ef0a3de85" name="material_ball.node" link="1" type="3">
 			<parameters>
-				<parameter type="string" name="id">81f70956</parameter>
+				<parameter type="string" name="id">fa5c5767</parameter>
 			</parameters>
 		</runtime>
 		<runtime id="b16fed1dff6c8bd81cc21d57e77a1aca4208cba1" name="material_ball.mesh" link="2" type="1">
 			<parameters>
-				<parameter type="string" name="id">5d5828f2</parameter>
+				<parameter type="string" name="id">3607a6c1</parameter>
 			</parameters>
 		</runtime>
 	</runtimes>
