@@ -982,49 +982,72 @@
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
 			<controlled>1</controlled>
-			<transform>0.499997973442 0.866026341915 -4.30345498899e-05 0.0 -0.66922223568 0.386405229568 0.634690642357 0.0 0.549675643444 -0.317315280437 0.772766232491 0.0 3.85280536318 -1.72953429684 7.21796053294 1.0</transform>
+			<transform>0.944377720356 0.328862726688 -6.35981559754e-05 0.0 -0.174268126488 0.500600457191 0.847956359386 0.0 0.278893023729 -0.800779998302 0.53006619215 0.0 1.80461817389 -6.68958213316 6.03532023885 1.0</transform>
 		</node>
 		<node type="ObjectDummy" id="876128899" name="Player">
 			<body type="BodyDummy" id="1330981006" frozen="0">
-				<shape type="ShapeCapsule" id="1583992163" name="PlayerCapsule" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.772657692 1">
-					<radius>0.5</radius>
-					<height>0.600000024</height>
+				<shape type="ShapeCapsule" id="1798412617" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.888418257 1">
+					<radius>1.10000002</radius>
+					<height>0.200000003</height>
 				</shape>
 			</body>
 			<properties>
 				<property parent="4c363e1c44d7021c7201e6dabb71eeeba6bcace7" guid="66f5822a78506181a7350fb8a11dcdc401a09dbd">
+					<parameter name="capsuleRadius">1.10000002</parameter>
+					<parameter name="capsuleHeight">0.200000003</parameter>
 					<parameter name="cameraMode">2</parameter>
 					<parameter name="camera">1689266793</parameter>
+					<parameter name="useCrouch">1</parameter>
 					<parameter name="debugCamera">
 						<parameter name="enabled">0</parameter>
 						<parameter name="useFixedAngles">0</parameter>
 					</parameter>
 					<parameter name="debugVisualizer">
 						<parameter name="enabled">1</parameter>
+						<parameter name="shapes">1</parameter>
 						<parameter name="playerShape">1</parameter>
 						<parameter name="playerDirection">1</parameter>
 						<parameter name="camera">1</parameter>
 					</parameter>
 					<parameter name="cameraTargetPos">1154606211</parameter>
+					<parameter name="cameraLookPos">477650664</parameter>
 				</property>
 			</properties>
 			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -0.932341098785 0.908888101578 0.0324856981938 1.0</transform>
 			<node type="NodeDummy" id="780660916" name="MainBody">
-				<transform>1.0000000596 0 0 0.0 0 1.0000000596 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
-				<node type="ObjectMeshStatic" id="1709240395" immovable="1" name="Capsule">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0.967294618413 1.0</transform>
+				<node type="ObjectMeshStatic" id="1709240395" enabled="0" immovable="1" name="Capsule">
 					<mesh_name>guid://1f8dde80187e585bb08d7231adde67bba4718e67</mesh_name>
 					<surface name="capsule" intersection="1" material="4fdb946e72932663a3ad49379d23078d73ccefbd"/>
 					<transform>0.999999701977 0 0 0.0 0 0.999999701977 0 0.0 0 0 0.700000029802 0.0 1.7763568394e-15 0 0.818015245241 1.0</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="773314784" immovable="1" name="Box">
+				<node type="ObjectMeshStatic" id="773314784" enabled="0" immovable="1" name="Box">
 					<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
 					<surface name="box" intersection="1" material="4b197e9e541b7c66a16fe327dc8a59ada98c7c2d"/>
 					<transform>0.6 0 0 0.0 0 0.699999970198 0 0.0 0 0 0.399999791384 0.0 -2.22044604925e-16 0.184382549582 1.37470938679 1.0</transform>
 				</node>
+				<node type="ObjectMeshStatic" id="2121575634" immovable="1" name="Кот">
+					<mesh_name>guid://1bbc0d593672d5168a55fe16112a9847ad175ad6</mesh_name>
+					<surface name="Material.003" intersection="1" material="2b024b233bfee88e52d368e8469f2e713a662a28"/>
+					<surface name="Material.002" intersection="1" material="23e882c9c9a718329a714e46a4031ab386dd4d06"/>
+					<surface name="Outline" intersection="1" material="5224770d1bd50740f29b205a24b9c7235ca85d9a"/>
+					<transform>1.10180680569e-06 0 0.369704954011 0.0 -0.369704856837 7.27192259833e-07 1.07977025051e-06 0.0 -6.94138433102e-07 -0.369705065454 2.20361395609e-08 0.0 1.9120568906e-08 4.24169388502e-09 0.0384281584438 1.0</transform>
+				</node>
 			</node>
 			<node type="NodeDummy" id="1154606211" name="CameraPos">
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 -7.49914333102 5.59983393257 1.0</transform>
+				<transform>0.99999988079 0 0 0.0 0 0.866023643735 -0.499999046326 0.0 0 0.499999135732 0.866023651721 0.0 1.22124532709e-15 -4.84768057427 4.20566310871 1.0</transform>
 			</node>
+			<node type="NodeDummy" id="477650664" name="CameraLook">
+				<transform>0.999700844252 -0.0244369219317 -4.60333858581e-05 0.0 0.0065358768558 0.265563221641 0.964070794825 0.0 -0.0235467059668 -0.963782783005 0.265643493274 0.0 0.13913648361 0.956255828404 1.19912424769 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="1010491932" immovable="1" name="Box_1">
+			<mesh_name>guid://90cd655bdfbfce522bcb5680f6c9fc4054b71ec0</mesh_name>
+			<surface name="box" intersection="1" material="dec3d6b704c5058c08ca8e8c756e24939ed1ef4c"/>
+			<properties>
+				<property parent="750093d9f5a80d13f7f1ca7044d183741f44bee9" guid="3979703155c280d12260f4ceb30d63adc380e28e"/>
+			</properties>
+			<transform>0.499205082655 0 0 0.0 -3.02162739274e-11 1.69543302059 0 0.0 -4.60249893752e-12 -1.3643874297e-07 0.399616748095 0.0 -4.01267698987 1.12170499717 1.75014984608 1.0</transform>
 		</node>
 	</editor>
 	<console>

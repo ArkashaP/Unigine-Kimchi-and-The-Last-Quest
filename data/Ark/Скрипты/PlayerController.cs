@@ -1417,6 +1417,7 @@ public class PlayerController : Component
 	}
 	private Vec3 deltaCameraPos;
 	public Node cameraTargetPos;
+	public Node cameraLookPos;
 	private void UpdateCamera()
 	{
 		if (!camera || cameraMode == CameraMode.NONE)
@@ -1430,9 +1431,22 @@ public class PlayerController : Component
 		camera.WorldPosition = MathLib.Lerp(
 			camera.WorldPosition,
 			cameraTargetPos.WorldPosition,
-			3*Game.IFps
+			1.5f*Game.IFps
 		);
-		camera.WorldLookAt(node.WorldPosition);
+		vec3 d;
+		dvec3 target_dir = cameraLookPos.WorldPosition - camera.WorldPosition;
+		target_dir.Normalize();
+
+		camera.SetDirection(
+			(vec3)(
+				MathLib.Lerp(
+					camera.GetDirection(),
+					target_dir,
+					5*Game.IFps
+				)
+			),
+			vec3.UP
+		);
 		// camera.WorldPosition = targetCameraPos;
 	}
 
