@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>f4694316964720aa7396f1b016997d784c761e25</guid>
+	<type>component</type>
+	<hash>e5ea5502</hash>
+	<runtimes>
+		<runtime id="f4694316964720aa7396f1b016997d784c761e25" name="TestComp.cs" link="0"/>
+		<runtime id="5e2d14447d167f30234f1bcedad34d72377a0a3b" name="TestComp.prop" link="1" type="4"/>
+	</runtimes>
+</asset>
