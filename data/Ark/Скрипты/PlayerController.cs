@@ -625,6 +625,10 @@ public class PlayerController : Component
 
 	private void Init() 
 	{
+		// Custom Ark code
+		deltaCameraPos = camera.WorldPosition - node.WorldPosition;
+
+
 		// check object type
 		Object obj = node as Object;
 		if (!obj)
@@ -632,13 +636,6 @@ public class PlayerController : Component
 			Log.Error("FirstPersonController: can't cast node to Object\n");
 			return;
 		}
-
-		// fix player transformation
-		// player can only have vertical position, Y axis is used for forward direction
-		Vec3 axisY = new Vec3(obj.WorldTransform.AxisY);
-		axisY.z = 0;
-		axisY = (axisY.Length2 > MathLib.EPSILON ? axisY.Normalized : Vec3.FORWARD);
-		obj.WorldTransform = MathLib.SetTo(node.WorldPosition, node.WorldPosition + axisY, vec3.UP, MathLib.AXIS.Y);
 
 		// set dummy body
 		if (useObjectBody)
@@ -687,32 +684,6 @@ public class PlayerController : Component
 		// set camera
 		if (cameraMode == CameraMode.USE_EXTERNAL && !camera)
 			Log.Warning("FirstPersonController: camera is null, it was created automatically\n");
-
-		if (!camera || cameraMode == CameraMode.CREATE_AUTOMATICALLY)
-		{
-			camera = new PlayerDummy();
-			camera.Parent = obj;
-			camera.Fov = fov;
-			camera.ZNear = nearClipping;
-			camera.ZFar = farClipping;
-			camera.WorldPosition = obj.WorldTransform * new Vec3(cameraPositionOffset);
-			camera.SetWorldDirection(new vec3(axisY), vec3.UP);
-			camera.MainPlayer = true;
-		}
-
-		if (camera && cameraMode != CameraMode.NONE)
-		{
-			cameraVerticalAngle = MathLib.Angle(vec3.DOWN, camera.GetWorldDirection());
-			cameraVerticalAngle = MathLib.Clamp(cameraVerticalAngle, minVerticalAngle + 90.0f, maxVerticalAngle + 90.0f);
-
-			cameraHorizontalAngle = node.GetWorldRotation().GetAngle(vec3.UP);
-			cameraPositionOffset = new vec3(node.IWorldTransform * camera.WorldPosition);
-
-			vec3 cameraDirection = vec3.FORWARD * MathLib.RotateZ(-cameraHorizontalAngle);
-			cameraDirection = cameraDirection * MathLib.Rotate(MathLib.Cross(cameraDirection, vec3.UP), 90.0f - cameraVerticalAngle);
-			cameraDirection.Normalize();
-			camera.SetWorldDirection(cameraDirection, vec3.UP);
-		}
 
 		// create cylinder shape for interacting with objects
 		if (useObjectsInteraction)
@@ -769,7 +740,6 @@ public class PlayerController : Component
 		{
 			float adaptiveTimeStep = MathLib.Min(updateTime, playerIFps);
 			updateTime -= adaptiveTimeStep;
-			 
 			UpdateVelocity(adaptiveTimeStep, adaptiveTimeStep / ifps);
 			worldTransform = MathLib.Translate((HorizontalVelocity + Vec3.UP * VerticalVelocity) * adaptiveTimeStep) * worldTransform;
 			UpdateCollisions(adaptiveTimeStep);
@@ -865,7 +835,7 @@ public class PlayerController : Component
 		isAvailableSideMove = false;
 		isAvailableStair = false;
 
-		vec3 horizontalDirection = worldTransform.GetRotate() * new vec3(horizontalMoveDirection);
+		vec3 horizontalDirection = new vec3(horizontalMoveDirection);
 
 		if (horizontalMoveDirection.Length2 > 0)
 			horizontalMoveDirection.Normalize();
@@ -963,7 +933,7 @@ public class PlayerController : Component
 			horizontalVelocityDecomposition.z = MathLib.Dot(slopeNormal, HorizontalVelocity);
 		}
 
-		// player rotation
+		// // player rotation
 		if (Input.MouseGrab)
 		{
 			worldTransform *= new Mat4(MathLib.Rotate(new quat(vec3.UP, -Input.MouseDeltaPosition.x * mouseSensitivity * 0.1f * updatePart)));
@@ -1445,48 +1415,25 @@ public class PlayerController : Component
 			}
 		}
 	}
-
+	private Vec3 deltaCameraPos;
+	public Node cameraTargetPos;
 	private void UpdateCamera()
 	{
 		if (!camera || cameraMode == CameraMode.NONE)
 			return;
-
-		if (Input.MouseGrab)
-		{
-			float delta = -Input.MouseDeltaPosition.y * mouseSensitivity * 0.1f;
-			if (gamePad)
-			{
-				vec2 rotateValue = (cameraStick == GamepadStickSide.LEFT ? gamePad.AxesLeft : gamePad.AxesRight);
-				if (rotateValue.Length > sticksDeadZone && MathLib.Abs(rotateValue.y * cameraStickSensitivity) > MathLib.Abs(delta))
-					delta = rotateValue.y * cameraStickSensitivity;
-			}
-
-			cameraVerticalAngle += delta;
-			cameraVerticalAngle = MathLib.Clamp(cameraVerticalAngle, minVerticalAngle + 90.0f, maxVerticalAngle + 90.0f);
-		}
-
-		// update camera transformation taking into account all additional offsets of position and rotation
-
-		vec3 cameraDirection = vec3.FORWARD * MathLib.RotateZ(-cameraHorizontalAngle);
-		cameraDirection = cameraDirection * MathLib.Rotate(MathLib.Cross(cameraDirection, vec3.UP), 90.0f - cameraVerticalAngle);
-		cameraDirection = AdditionalCameraRotation * cameraDirection;
-		cameraDirection.Normalize();
-		camera.SetWorldDirection(cameraDirection, vec3.UP);
-
-		Vec3 p0 = worldTransform * (new Vec3(cameraPositionOffset) + cameraCrouchOffset + AdditionalCameraOffset);
-		Vec3 p1 = p0 - cameraDirection*5;
-
-
-		WorldIntersection intersection = new WorldIntersection();
 		
-		Object obj = World.GetIntersection(p0,p1,1,intersection);
-		Vec3 target_point = obj != null ? intersection.Point :  p1;
+		// Vec3 targetCameraPos = MathLib.Lerp(
+		// 	camera.WorldPosition,
+		// 	node.WorldPosition + deltaCameraPos,
+		// 	Game.IFps
+		// );
 		camera.WorldPosition = MathLib.Lerp(
 			camera.WorldPosition,
-			target_point+cameraDirection*2,
-			5f*Game.IFps
+			cameraTargetPos.WorldPosition,
+			3*Game.IFps
 		);
-		
+		camera.WorldLookAt(node.WorldPosition);
+		// camera.WorldPosition = targetCameraPos;
 	}
 
 	private void SwapInterpolationDirection(Scalar startHeight, Scalar endHeight)
