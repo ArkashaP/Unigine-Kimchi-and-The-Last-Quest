@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <nodes version="2.19.0.3">
-	<node type="NodeDummy" id="1059933216" name="Забор2">
+	<node type="NodeDummy" id="1409707603" name="TestCube">
 		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
-		<node type="ObjectMeshStatic" id="1831899391" immovable="1" name="Цилиндр">
-			<mesh_name>guid://d36d755a0074f923aad6ff14e1ff41d670db0a99</mesh_name>
+		<node type="ObjectMeshStatic" id="1456643990" immovable="1" name="Цилиндр">
+			<mesh_name>guid://6e1e7b6699e129a60614b59496b9f4b540411089</mesh_name>
 			<surface name="Материал.004" intersection="1" material="38b96ea77cc8c339f113f4557a8588edd6fc2048"/>
 			<surface name="Материал.006" intersection="1" material="eb8ffe3185e3df2ce875af8f91d6f314571b58ba"/>
-			<transform>0.114952646196 -6.49212531513e-25 -2.84714343258e-23 0.0 -7.23533126919e-25 0.114952646196 3.25675237977e-16 0.0 -2.84714343751e-23 3.25675233014e-16 0.114952653646 0.0 2.78818986407e-07 -3.18931731975 0.0463755142035 1.0</transform>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 2.78818978069e-07 -3.18931722438 0.0463755146505 1.0</transform>
 		</node>
 	</node>
 </nodes>

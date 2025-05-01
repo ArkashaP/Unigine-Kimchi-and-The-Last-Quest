@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.19.0.3" guid="95f95a919f844d6b7b7d10abbd9d0d268c242fca" base_material="35a276124c303849f0e072ef632908545149b6fb">
+	<state name="background">1</state>
+	<state name="clouds">0</state>
+</material>
