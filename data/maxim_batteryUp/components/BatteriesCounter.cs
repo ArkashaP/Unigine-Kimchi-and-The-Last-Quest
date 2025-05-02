@@ -21,6 +21,6 @@ public class BatteriesCounter : Component
 	
 	void Update()
 	{
-		label.Text = ("bat1: " + battery1_count.ToString() + "\nbat2: " + battery2_count.ToString());
+		label.Text = ("bat1: " + battery1_count.ToString() + "\nbat2: " + battery2_count.ToString()); //коммент
 	}
 }
