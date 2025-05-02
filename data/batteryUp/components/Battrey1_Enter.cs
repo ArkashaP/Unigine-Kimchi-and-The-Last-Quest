@@ -6,6 +6,7 @@ using Unigine;
 public class Battrey1_Enter : Component
 {
 	[ShowInEditor][ParameterSlider(Title = "battery1")] private WorldTrigger bat1;   
+	[ShowInEditor][ParameterSlider(Title = "battery2")] private WorldTrigger bat2;   
 	[ShowInEditor][ParameterSlider(Title = "Batteries Counter")] private Node batcountnode;
 	private BatteriesCounter batteriesCounter;
 	public int countBat; 
@@ -13,11 +14,19 @@ public class Battrey1_Enter : Component
 	{
 		batteriesCounter = batcountnode.GetComponent<BatteriesCounter>();
 		countBat = 0;
-		bat1.EventEnter.Connect(trigger1_enter);
+		if(bat1 != null)
+			bat1.EventEnter.Connect(trigger1_enter);
+		if(bat2 != null)
+			bat2.EventEnter.Connect(trigger2_enter);
 	}
 	void trigger1_enter(Node _node)
 	{
 		batteriesCounter.battery1_count +=1;
+		node.Enabled = false;
+	}
+	void trigger2_enter(Node _node)
+	{
+		batteriesCounter.battery2_count +=1;
 		node.Enabled = false;
 	}
 }

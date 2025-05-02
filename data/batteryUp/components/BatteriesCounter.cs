@@ -8,6 +8,7 @@ public class BatteriesCounter : Component
 	private Gui gui;
     private WidgetLabel label;
 	public int battery1_count = 0;
+	public int battery2_count = 0;
 	void Init()
 	{
 
@@ -24,6 +25,6 @@ public class BatteriesCounter : Component
 	{
 		// write here code to be called before updating each render frame
 		//battery1_count += battrey1_Enter.countBat;
-		label.Text = ("bat1: " + battery1_count.ToString());
+		label.Text = ("bat1: " + battery1_count.ToString() + "\nbat2: " + battery2_count.ToString());
 	}
 }

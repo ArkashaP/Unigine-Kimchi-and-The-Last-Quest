@@ -45,14 +45,17 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup>
+		<Compile Include="data/batteryUp/components/Battrey1_Enter.cs"/>
+		<Compile Include="data/csharp_template/FP_controller/components/FirstPersonController.cs"/>
+		<Compile Include="data/batteryUp/components/BatteriesCounter.cs"/>
+		<Compile Include="data/batteryUp/components/BatteryWood.cs"/>
 	</ItemGroup>
-  <ItemGroup>
-    <Compile Include="data\csharp_template\FP_controller\components\FirstPersonController.cs" />
-    <Compile Include="source\AppEditorLogic.cs" />
-    <Compile Include="source\AppSystemLogic.cs" />
-    <Compile Include="source\AppWorldLogic.cs" />
-    <Compile Include="source\main.cs" />
-  </ItemGroup>
+	<ItemGroup>
+		<Compile Include="source\AppEditorLogic.cs"/>
+		<Compile Include="source\AppSystemLogic.cs"/>
+		<Compile Include="source\AppWorldLogic.cs"/>
+		<Compile Include="source\main.cs"/>
+	</ItemGroup>
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Exec Command="&quot;$(DOTNET_HOST_PATH)&quot; &quot;$(OutputPath)cspropgen_double_x64d.dll&quot; -p &quot;$(OutputPath)$(AssemblyName).dll&quot; -data_path ../data/" Condition="&apos;$(Configuration)&apos;==&apos;Debug&apos; And $(SkipPostBuild)==&apos;false&apos;"/>
 		<Exec Command="&quot;$(DOTNET_HOST_PATH)&quot; &quot;$(OutputPath)cspropgen_double_x64.dll&quot; -p &quot;$(OutputPath)$(AssemblyName).dll&quot; -data_path ../data/" Condition="&apos;$(Configuration)&apos;==&apos;Release&apos; And $(SkipPostBuild)==&apos;false&apos;"/>
