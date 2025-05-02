@@ -2,7 +2,7 @@
 <asset version="2.19.0.3">
 	<guid>5cc6cd428e59b38ae152b7c908f1f40da4372187</guid>
 	<type>component</type>
-	<hash>14c10393</hash>
+	<hash>082d19ea</hash>
 	<runtimes>
 		<runtime id="5cc6cd428e59b38ae152b7c908f1f40da4372187" name="Shine.cs" link="0"/>
 		<runtime id="42f51590e8ff3483dc12647fe6630cfba2fcbdcd" name="Shine.prop" link="1" type="4"/>

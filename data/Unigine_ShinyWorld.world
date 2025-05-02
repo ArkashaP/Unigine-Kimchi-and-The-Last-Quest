@@ -847,29 +847,9 @@
 				<surface name="grid_for_world_creation" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="001dc611e2ca7385e50593ebc1c181e2e370240c"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
 			</node>
-			<node type="ObjectMeshStatic" id="1792114304" immovable="1" name="template_buildings">
-				<mesh_name>guid://9802276da9e561e8d1bf5c2721ad2b5a2d4a02f1</mesh_name>
-				<surface name="wall_0_mat" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="b50d447466b5a543f70c09c68846566d9f15c4e8">
-					<lightmap_enabled>1</lightmap_enabled>
-					<lightmap_texture_path replace="9943a802dd3dfcea6ee7360bf7567420f6cc20bb">guid://aabd101dcf4952d811423857ffbd79ca9c4e9ea1</lightmap_texture_path>
-				</surface>
-				<surface name="floor_red_mat" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="03975a558b6967b07049574fafa8dc62f5633059">
-					<lightmap_enabled>1</lightmap_enabled>
-					<lightmap_texture_path replace="e242763e694328c3d9cf0fa9d6176d3f4c1a1ede">guid://89f1a2df6c6012b2d824d2696e6478b4a934cc83</lightmap_texture_path>
-				</surface>
-				<surface name="floor_orange_mat" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="fbc9263de6d73278a1305377d3c39a6a013e06c1">
-					<lightmap_enabled>1</lightmap_enabled>
-					<lightmap_texture_path replace="42ef21048ef5cf85efd50c359f3b1fdb85bcf8a5">guid://14c97f31ff20eedca3c2bc8b8e04e86e1a0894f5</lightmap_texture_path>
-				</surface>
-				<surface name="floor_green_mat" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="21104c81e1573bec49c9065bb30f87fecc360f45">
-					<lightmap_enabled>1</lightmap_enabled>
-					<lightmap_texture_path replace="a7c1f1a08948b113c4255303ff6202af9a3651c0">guid://d664880676523fad3be01d286b565e67517dc89a</lightmap_texture_path>
-				</surface>
-				<surface name="floor_gray_mat" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6">
-					<lightmap_enabled>1</lightmap_enabled>
-					<lightmap_texture_path replace="2ae49dd6adbf3878cd7d5a6ff6e78ce9b1839a1f">guid://fd5a278ce270bd7b28aa949ec7bd736521e50d80</lightmap_texture_path>
-				</surface>
-				<transform>1 -1.4210856e-14 0 0.0 1.4210856e-14 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="NodeReference" id="108412743" name="template_buildings">
+				<reference>guid://939c0a9b4616ea275cd561b2414c3c6f51d05d6a</reference>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
 			</node>
 		</node>
 		<node type="NodeDummy" id="1201620405" name="dynamic_content">
@@ -2542,15 +2522,28 @@
 				<transform>1 2.5243552e-29 0 0.0 -2.5243552e-29 1 -1.4210854e-14 0.0 -3.5873241e-43 1.4210855e-14 1 0.0 4.0681005 -1.2260934 5.4835181 1.0</transform>
 			</node>
 		</node>
-		<node type="NodeReference" id="1777446179" name="first_person_controller">
-			<reference>guid://59e4bb833f8dab069c5b06ad189c382836a5bd67</reference>
-			<transform>-0.70710671 0.70710677 0 0.0 -0.70710677 -0.70710671 0 0.0 0 0 0.99999988 0.0 6.0763869 11.499999 3.2710779 1.0</transform>
+		<node type="ObjectDummy" id="347416968" trigger_interaction_enabled="1" name="first_person_controller">
+			<body type="BodyDummy" id="1524147422" frozen="0">
+				<shape type="ShapeCapsule" id="682388558" transform="0.99999994 0 0 0 0 1 0 0 0 0 0.999999762 0 0 0 0.875 1">
+					<radius>0.300000012</radius>
+					<height>1.14999998</height>
+				</shape>
+			</body>
+			<properties>
+				<property parent="7abd3d1dd6399bd8498bed57e699aacada031ba1" guid="6cb5efcf7fcbb6ae78385dfca0cfb166a40a6277">
+					<parameter name="useObjectBody">1</parameter>
+					<parameter name="nearClipping">0.100000001</parameter>
+					<parameter name="farClipping">100000</parameter>
+				</property>
+			</properties>
+			<transform>-0.707106667574 0.707106727574 0 0.0 -0.707106727574 -0.707106667574 0 0.0 0 0 0.99999982 0.0 6.0763869 11.499999 3.2710779 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="260953448" immovable="1" name="box">
 			<mesh_name>guid://5038c65733c231789f1e1b206940ab8e08cdcc34</mesh_name>
 			<surface name="box" intersection="1" material="e8c0dffb417bf8053c05f154bed9d69310cc0b28"/>
 			<properties>
 				<property parent="42f51590e8ff3483dc12647fe6630cfba2fcbdcd" guid="671fa5e5d2365a36c2905de67de3572b8e1ca9da">
+					<parameter name="Cat">347416968</parameter>
 					<parameter name="Battery">2005119717</parameter>
 				</property>
 			</properties>
