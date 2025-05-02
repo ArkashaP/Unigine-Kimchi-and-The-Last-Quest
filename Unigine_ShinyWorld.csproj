@@ -45,10 +45,10 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup>
-		<Compile Include="data/batteryUp/components/Battrey1_Enter.cs"/>
 		<Compile Include="data/csharp_template/FP_controller/components/FirstPersonController.cs"/>
-		<Compile Include="data/batteryUp/components/BatteriesCounter.cs"/>
-		<Compile Include="data/batteryUp/components/BatteryWood.cs"/>
+		<Compile Include="data/maxim_batteryUp/components/BatteriesCounter.cs"/>
+		<Compile Include="data/maxim_batteryUp/components/BatteryWood.cs"/>
+		<Compile Include="data/maxim_batteryUp/components/Battrey1_Enter.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>
