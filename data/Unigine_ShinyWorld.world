@@ -952,7 +952,11 @@
 				<shadow_screen_space_softness>0</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.200000003</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="f638bd1e2094e74428492df8f04936e9d02bd48d"/>
+
 				<baked_depth_texture replace="34adda433dbedc2ef80f8d9c0ca4206fdc2d4f1b"/>
+
 				<lens_flare_enabled>1</lens_flare_enabled>
 				<lens_flare_texture>core/textures/lens_flares_default.texture</lens_flare_texture>
 				<lens_flare_intensity>1</lens_flare_intensity>
@@ -1087,7 +1091,7 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-				<baked_depth_texture replace="cddbcb2deaaa53ba83b8bc2e36a9fb92a48f1605"/>
+				<baked_depth_texture replace="63e74380654b0a4948eddbea9ccf997f9e7a2647"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -7.0023394 -1.0746461 2.2459061 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="954623620" name="LightEnvironmentProbe_2">
@@ -1182,7 +1186,7 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-				<baked_depth_texture replace="c13032276dda48e48abac91062d09b7899c77e7f"/>
+				<baked_depth_texture replace="9b4dccb24f3b1477648ab72c68076c018c3cf211"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -7.0023355 -1.074648 5.284534 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="953711150" name="LightEnvironmentProbe_3">
@@ -1372,7 +1376,7 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-				<baked_depth_texture replace="fe9b404b9ada7ca3ffe1d3c443be1be909239223"/>
+				<baked_depth_texture replace="8b2bad86b33b89d9c9e16ba0860f95e01af4c5d5"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 8.5118113 -11.755322 3.2342248 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1217902211" name="LightEnvironmentProbe_6">
@@ -1467,7 +1471,7 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-				<baked_depth_texture replace="0b591075459c027713db9e96f503aaf834f8364d"/>
+				<baked_depth_texture replace="d3925a28d77974a1570081d2c8c901ad73974ecf"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 20.990999 -5.046349 5.5560813 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1394392038" name="LightEnvironmentProbe_1">
@@ -1562,6 +1566,7 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+				<baked_depth_texture replace="2c2cf39a413dc46462397f54249d094fcccd93d9"/>
 				<baked_depth_texture replace="5b3de8af1e6bf5952d9321b8ce5d8d7f3e87ae07"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -4.9537063 10.621111 4.6295342 1.0</transform>
 			</node>
@@ -1657,7 +1662,7 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-				<baked_depth_texture replace="bb0be77923f3828afb3575aa256e475f03f48fd1"/>
+				<baked_depth_texture replace="7342a65c9cf795403a0714a6bb23977832a0bf73"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -19.42786 -0.16203524 3.6919963 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="754751731" name="LightEnvironmentProbe_9">
@@ -1752,7 +1757,7 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-				<baked_depth_texture replace="3f8d4f53059e1d81acdc66ec6003af16042a362b"/>
+				<baked_depth_texture replace="6c2d72ee366aa35c4cda664895841bcaae63e01d"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6.6283121 6.3219557 3.7450013 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1480929287" name="LightEnvironmentProbe_10">
@@ -1847,7 +1852,7 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-				<baked_depth_texture replace="294926bd04496d1034b595fe31364962e90d5f95"/>
+				<baked_depth_texture replace="7dae4dd0c67e7c6178d82cba4a033116ed218857"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0.22644809 -7.7475748 4.0288157 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1305946951" name="LightEnvironmentProbe_11">
@@ -1942,7 +1947,7 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-				<baked_depth_texture replace="9408d83703d1f6effb3e9760f952f7d23b15ce8f"/>
+				<baked_depth_texture replace="a61e3f82307c69ab4d9ad47c1d83e1d1837a6ea1"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -14.2983 -14.019426 3.4088275 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="627743344" name="LightEnvironmentProbe_12">
@@ -2037,7 +2042,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="cec4848427f0289bf5819e0e500bf1cbbd1d0d7b"/>
+
 				<baked_depth_texture replace="e496d2418a6f8e646b9e1392adf8722f2738e999"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0500032 -20.104139 3.4603462 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="822136334" name="LightEnvironmentProbe_13">
@@ -2132,7 +2141,6 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-				<baked_depth_texture replace="dd5e275bbf156737cb61e714d710b4b8784d5b33"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 8.334466 -18.069857 3.4603465 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="899680478" name="LightEnvironmentProbe_7">
@@ -2227,7 +2235,6 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-				<baked_depth_texture replace="a2d32e059bb15a7cf22a426683f763f2074fb1dd"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 16.249331 17.171385 5.2283964 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="139918342" name="LightEnvironmentProbe_5">
@@ -2322,7 +2329,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="e337506adf3b39e7359956a4568177d6f4caa269"/>
+
 				<baked_depth_texture replace="d2cd20bfea50267df909ca08966a183f82300017"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.2395735 3.4593794 3.995712 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="922116638" name="LightEnvironmentProbe_14">
@@ -2417,7 +2428,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="b499afacc636119af6731c76d80e8006a96b1c83"/>
+
 				<baked_depth_texture replace="b638be0925de7143aea2b67a1fcffae88f107c61"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.2395735 2.3168588 5.2702565 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1901841593" name="LightEnvironmentProbe_15">
@@ -2512,7 +2527,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="395ffcbec64a0af1f9a51298e42259089eed0fad"/>
+
 				<baked_depth_texture replace="92cbe8634b49279dd448f43c1221a2aa921d213b"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.2395735 2.4172194 2.75 1.0</transform>
 			</node>
 			<node type="LightVoxelProbe" id="977121940" name="LightVoxelProbe">
@@ -2565,7 +2584,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="32ff4c20a2bdd8e04471118a5c5c24695c49ae67"/>
+
 				<baked_depth_texture replace="caa2464dea5edfc9b1b143ce874678aec6644d25"/>
+
 				<transform>1 2.5243552e-29 0 0.0 -2.5243552e-29 1 -1.4210854e-14 0.0 -3.5873241e-43 1.4210855e-14 1 0.0 4.0681005 -1.2260934 5.4835181 1.0</transform>
 			</node>
 		</node>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>4fdb946e72932663a3ad49379d23078d73ccefbd</guid>
+	<type>material</type>
+	<hash>e3e7bc0b</hash>
+	<runtimes>
+		<runtime id="4fdb946e72932663a3ad49379d23078d73ccefbd" name="capsule_mesh_base_0" link="0" type="5"/>
+	</runtimes>
+</asset>

@@ -2,7 +2,6 @@
 <asset version="2.19.0.3">
 	<guid>60586bbbe11bedde064e7ba5e6cbf8c084a7151f</guid>
 	<type>world</type>
-	<hash>0b261e1</hash>
 	<runtimes>
 		<runtime id="60586bbbe11bedde064e7ba5e6cbf8c084a7151f" name="Unigine_ShinyWorld.world" link="0"/>
 	</runtimes>
