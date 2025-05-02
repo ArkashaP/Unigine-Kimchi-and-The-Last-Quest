@@ -53,6 +53,7 @@
 		<Compile Include="data/Ark/Скрипты/PlayerController.cs"/>
 		<Compile Include="data/csharp_template/FP_controller/components/FirstPersonController.cs"/>
 		<Compile Include="data/maxim_batteryUp/components/Respawn.cs"/>
+		<Compile Include="data/maxim_batteryUp/components/Battery2_Enter.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>

@@ -2,7 +2,7 @@
 <asset version="2.19.0.3">
 	<guid>d3d5102d28fbbacb87d6095ffcc9679c1e066a61</guid>
 	<type>component</type>
-	<hash>9dd24e74</hash>
+	<hash>5a65b91</hash>
 	<runtimes>
 		<runtime id="d3d5102d28fbbacb87d6095ffcc9679c1e066a61" name="Respawn.cs" link="0"/>
 		<runtime id="10b8d7435358b8dc22903da573f88e661cad3e17" name="Respawn.prop" link="1" type="4"/>

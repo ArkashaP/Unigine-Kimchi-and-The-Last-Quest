@@ -855,6 +855,11 @@
 			<size>224.516769 235.112228 1</size>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -38.5002461167 -2.82489518776 -20.5262693938 1.0</transform>
 		</node>
+		<node type="ObjectMeshStatic" id="1740861250" immovable="1" name="box_2">
+			<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
+			<surface name="box" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 6 0 1.0</transform>
+		</node>
 	</editor>
 	<console>
 		<bake_lighting_bounces>4</bake_lighting_bounces>

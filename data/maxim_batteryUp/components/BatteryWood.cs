@@ -11,23 +11,18 @@ public class BatteryWood : Component
 	[ShowInEditor]private ObjectGui wood3;
 	[ShowInEditor]private ObjectGui wood4;
 	[ShowInEditor]private ObjectGui wood5;
-	[ShowInEditor]private Node battrey1;
-	[ShowInEditor]private Node battrey2;
-	[ShowInEditor]private Node battrey3;
-	[ShowInEditor]private Node battrey4;
-	[ShowInEditor]private Node battrey5;
+	[ShowInEditor]private ObjectMeshStatic battrey1;
+	[ShowInEditor]private ObjectMeshStatic battrey2;
+	[ShowInEditor]private ObjectMeshStatic battrey3;
+	[ShowInEditor]private ObjectMeshStatic battrey4;
+	[ShowInEditor]private ObjectMeshStatic battrey5;
     [ShowInEditor][ParameterFile] private string texturePath;
     [ShowInEditor][ParameterFile] private string texturePath2;
 	private WidgetSprite sprite1, sprite2, sprite3, sprite4, sprite5;
 	private Image[] images;
-	//public bool screen1, screen2, screen3, screen4, screen5 = false;
-	//[ShowInEditor][ParameterSlider(Title = "Batteries Counter")] private Node batcountnode;
-	//private BatteriesCounter batteriesCounter;
+
 	void Init()
 	{
-		// write here code to be called on component initialization
-		//batteriesCounter = batcountnode.GetComponent<BatteriesCounter>();
-
 		realGui1 = wood1.GetGui();
 		realGui2 = wood2.GetGui();
 		realGui3 = wood3.GetGui();
@@ -85,16 +80,15 @@ public class BatteryWood : Component
 	
 	void Update()
 	{
-		//Log.MessageLine(batteriesCounter.battery2_count);
-		if (battrey1.Enabled == false)
+		if (battrey1.GetViewportMask(0)==0)
 			sprite1.SetImage(images[1]);
-		if (battrey2.Enabled == false)
+		if (battrey2.GetViewportMask(0)==0)
 			sprite2.SetImage(images[1]);
-		if (battrey3.Enabled == false)
+		if (battrey3.GetViewportMask(0)==0)
 			sprite3.SetImage(images[1]);
-		if (battrey4.Enabled == false)
+		if (battrey4.GetViewportMask(0)==0)
 			sprite4.SetImage(images[1]);
-		if (battrey5.Enabled == false)
+		if (battrey5.GetViewportMask(0)==0)
 			sprite5.SetImage(images[1]);
 	}
 }

@@ -5,13 +5,33 @@ using Unigine;
 [Component(PropertyGuid = "10b8d7435358b8dc22903da573f88e661cad3e17")]
 public class Respawn : Component
 {
-	[ShowInEditor][ParameterSlider(Title = "respawn")] private WorldTrigger resp;   
+	[ShowInEditor][ParameterSlider(Title = "respawn")] public WorldTrigger resp; 
+	public float timer; // Текущее время
+	public bool isTimerRunning = false;  
 	void Init()
 	{
 		resp.EventEnter.Connect(respawn_enter);
 	}
 	void respawn_enter(Node _node)
 	{
-		node.WorldPosition = new vec3(0f,0f,1f);
+		node.WorldPosition = new vec3(0f,6f,1f);
+		isTimerRunning = true;
 	}	
+	void StartTimer(){
+		timer += Game.IFps;
+	}
+
+	void StopTimer()
+	{
+		timer = 0.0f;
+	}
+	void Update(){
+		if (isTimerRunning)
+			StartTimer();
+		if(timer >= 15.0f)
+		{
+			StopTimer();
+			isTimerRunning = false;
+		}
+	}
 }

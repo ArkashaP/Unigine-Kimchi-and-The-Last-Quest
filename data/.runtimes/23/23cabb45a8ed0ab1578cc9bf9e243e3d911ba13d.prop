@@ -5,11 +5,11 @@
 	<parameter name="wood3" type="node" filter="ObjectGui"/>
 	<parameter name="wood4" type="node" filter="ObjectGui"/>
 	<parameter name="wood5" type="node" filter="ObjectGui"/>
-	<parameter name="battrey1" type="node"/>
-	<parameter name="battrey2" type="node"/>
-	<parameter name="battrey3" type="node"/>
-	<parameter name="battrey4" type="node"/>
-	<parameter name="battrey5" type="node"/>
+	<parameter name="battrey1" type="node" filter="ObjectMeshStatic"/>
+	<parameter name="battrey2" type="node" filter="ObjectMeshStatic"/>
+	<parameter name="battrey3" type="node" filter="ObjectMeshStatic"/>
+	<parameter name="battrey4" type="node" filter="ObjectMeshStatic"/>
+	<parameter name="battrey5" type="node" filter="ObjectMeshStatic"/>
 	<parameter name="texturePath" type="file"/>
 	<parameter name="texturePath2" type="file"/>
 </property>
