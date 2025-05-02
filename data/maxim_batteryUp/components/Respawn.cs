@@ -5,18 +5,13 @@ using Unigine;
 [Component(PropertyGuid = "10b8d7435358b8dc22903da573f88e661cad3e17")]
 public class Respawn : Component
 {
+	[ShowInEditor][ParameterSlider(Title = "respawn")] private WorldTrigger resp;   
 	void Init()
 	{
-		// write here code to be called on component initialization
-		
+		resp.EventEnter.Connect(respawn_enter);
 	}
-	
-	void Update()
+	void respawn_enter(Node _node)
 	{
-		// write here code to be called before updating each render frame
-		if(Input.IsKeyPressed(Input.KEY.G))
-		{
-			node.WorldPosition = new vec3(0f,0f,1f);
-		}
-	}
+		node.WorldPosition = new vec3(0f,0f,1f);
+	}	
 }

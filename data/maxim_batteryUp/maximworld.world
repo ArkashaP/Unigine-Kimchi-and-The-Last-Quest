@@ -731,7 +731,7 @@
 		<enabled>1</enabled>
 	</game>
 	<editor>
-		<node id="784603924" type="ObjectMeshDynamic" name="ground">
+		<node id="784603924" type="ObjectMeshDynamic" enabled="0" name="ground">
 			<fps_visible_camera>-1</fps_visible_camera>
 			<fps_visible_shadow>30</fps_visible_shadow>
 			<fps_invisible>0</fps_invisible>
@@ -835,7 +835,9 @@
 					<parameter name="nearClipping">0.100000001</parameter>
 					<parameter name="farClipping">100000</parameter>
 				</property>
-				<property parent="10b8d7435358b8dc22903da573f88e661cad3e17" guid="c87b510492eb55be3dcbbc2a98fa7eb23059ab5e"/>
+				<property parent="10b8d7435358b8dc22903da573f88e661cad3e17" guid="c87b510492eb55be3dcbbc2a98fa7eb23059ab5e">
+					<parameter name="resp">2050452712</parameter>
+				</property>
 			</properties>
 			<transform>-0.707105696201 0.707106113434 0 0.0 -0.707106232643 -0.707105815411 0 0.0 0 0 0.999999821186 0.0 0 0 1 1.0</transform>
 			<node type="ObjectMeshStatic" id="38283089" immovable="1" trigger_interaction_enabled="1" name="box">
@@ -843,6 +845,15 @@
 				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
 				<transform>-0.7071068348 -0.7071068948 0 0.0 0.7071068948 -0.7071068348 0 0.0 0 0 1.00000018 0.0 53.6338177965 27.7354273164 12.209300894 1.0</transform>
 			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="1114736187" immovable="1" name="box_1">
+			<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
+			<surface name="box" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.198259949684 0.0397500395775 0 1.0</transform>
+		</node>
+		<node type="WorldTrigger" id="2050452712" name="RespawnTrigger">
+			<size>224.516769 235.112228 1</size>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -38.5002461167 -2.82489518776 -20.5262693938 1.0</transform>
 		</node>
 	</editor>
 	<console>

@@ -952,11 +952,8 @@
 				<shadow_screen_space_softness>0</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.200000003</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-
 				<baked_depth_texture replace="f638bd1e2094e74428492df8f04936e9d02bd48d"/>
-
 				<baked_depth_texture replace="34adda433dbedc2ef80f8d9c0ca4206fdc2d4f1b"/>
-
 				<lens_flare_enabled>1</lens_flare_enabled>
 				<lens_flare_texture>core/textures/lens_flares_default.texture</lens_flare_texture>
 				<lens_flare_intensity>1</lens_flare_intensity>
@@ -2042,11 +2039,8 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-
 				<baked_depth_texture replace="cec4848427f0289bf5819e0e500bf1cbbd1d0d7b"/>
-
 				<baked_depth_texture replace="e496d2418a6f8e646b9e1392adf8722f2738e999"/>
-
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0500032 -20.104139 3.4603462 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="822136334" name="LightEnvironmentProbe_13">
@@ -2329,11 +2323,8 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-
 				<baked_depth_texture replace="e337506adf3b39e7359956a4568177d6f4caa269"/>
-
 				<baked_depth_texture replace="d2cd20bfea50267df909ca08966a183f82300017"/>
-
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.2395735 3.4593794 3.995712 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="922116638" name="LightEnvironmentProbe_14">
@@ -2428,11 +2419,8 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-
 				<baked_depth_texture replace="b499afacc636119af6731c76d80e8006a96b1c83"/>
-
 				<baked_depth_texture replace="b638be0925de7143aea2b67a1fcffae88f107c61"/>
-
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.2395735 2.3168588 5.2702565 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1901841593" name="LightEnvironmentProbe_15">
@@ -2527,11 +2515,8 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-
 				<baked_depth_texture replace="395ffcbec64a0af1f9a51298e42259089eed0fad"/>
-
 				<baked_depth_texture replace="92cbe8634b49279dd448f43c1221a2aa921d213b"/>
-
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.2395735 2.4172194 2.75 1.0</transform>
 			</node>
 			<node type="LightVoxelProbe" id="977121940" name="LightVoxelProbe">
@@ -2584,11 +2569,8 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-
 				<baked_depth_texture replace="32ff4c20a2bdd8e04471118a5c5c24695c49ae67"/>
-
 				<baked_depth_texture replace="caa2464dea5edfc9b1b143ce874678aec6644d25"/>
-
 				<transform>1 2.5243552e-29 0 0.0 -2.5243552e-29 1 -1.4210854e-14 0.0 -3.5873241e-43 1.4210855e-14 1 0.0 4.0681005 -1.2260934 5.4835181 1.0</transform>
 			</node>
 		</node>
