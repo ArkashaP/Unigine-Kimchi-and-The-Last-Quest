@@ -7,13 +7,21 @@ public class Battrey1_Enter : Component
 {
 	[ShowInEditor][ParameterSlider(Title = "battery1")] private WorldTrigger bat1;   
 	[ShowInEditor][ParameterSlider(Title = "battery2")] private WorldTrigger bat2;   
+	[ShowInEditor][ParameterSlider(Title = "island")] private WorldTrigger island;   
 	[ShowInEditor][ParameterSlider(Title = "Batteries Counter")] private Node batcountnode;
 	private BatteriesCounter batteriesCounter;
 	public int countBat; 
+	private bool hasProcessedIsland; 
 	void Init()
 	{
+		hasProcessedIsland = false;
 		batteriesCounter = batcountnode.GetComponent<BatteriesCounter>();
 		countBat = 0;
+		if(island!=null)
+		{
+			island.EventEnter.Connect(triggerIsland_enter);
+			island.EventLeave.Connect(triggerIsland_leave);
+		}
 		if(bat1 != null)
 			bat1.EventEnter.Connect(trigger1_enter);
 		if(bat2 != null)
@@ -28,5 +36,28 @@ public class Battrey1_Enter : Component
 	{
 		batteriesCounter.battery2_count +=1;
 		node.Enabled = false;
+	}
+
+	void triggerIsland_enter(Node _node)
+	{
+		if(!hasProcessedIsland)
+		{
+			if(batteriesCounter.battery1_count >=2)
+			{
+				batteriesCounter.battery1_count -=2;
+			}
+			hasProcessedIsland = true;
+		}
+
+	}
+
+	void triggerIsland_leave (Node _node) // это на случай, если у нас весь остров будет в триггере
+	{
+		hasProcessedIsland = false;
+	}
+
+	void Update()
+	{
+		Log.MessageLine(hasProcessedIsland);
 	}
 }

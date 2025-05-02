@@ -953,7 +953,6 @@
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.200000003</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
 				<baked_depth_texture replace="f638bd1e2094e74428492df8f04936e9d02bd48d"/>
-				<baked_depth_texture replace="34adda433dbedc2ef80f8d9c0ca4206fdc2d4f1b"/>
 				<lens_flare_enabled>1</lens_flare_enabled>
 				<lens_flare_texture>core/textures/lens_flares_default.texture</lens_flare_texture>
 				<lens_flare_intensity>1</lens_flare_intensity>
@@ -1564,7 +1563,6 @@
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
 				<baked_depth_texture replace="2c2cf39a413dc46462397f54249d094fcccd93d9"/>
-				<baked_depth_texture replace="5b3de8af1e6bf5952d9321b8ce5d8d7f3e87ae07"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -4.9537063 10.621111 4.6295342 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1127940245" name="LightEnvironmentProbe_8">
@@ -2040,7 +2038,6 @@
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
 				<baked_depth_texture replace="cec4848427f0289bf5819e0e500bf1cbbd1d0d7b"/>
-				<baked_depth_texture replace="e496d2418a6f8e646b9e1392adf8722f2738e999"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0500032 -20.104139 3.4603462 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="822136334" name="LightEnvironmentProbe_13">
@@ -2135,6 +2132,7 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+				<baked_depth_texture replace="e41b1ce1c36a108b2fb722acd40826c6c958bc7c"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 8.334466 -18.069857 3.4603465 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="899680478" name="LightEnvironmentProbe_7">
@@ -2229,6 +2227,7 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+				<baked_depth_texture replace="769ac2fbfe95eb2e6ae4a7be637d5a9d75c1270e"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 16.249331 17.171385 5.2283964 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="139918342" name="LightEnvironmentProbe_5">
@@ -2324,7 +2323,6 @@
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
 				<baked_depth_texture replace="e337506adf3b39e7359956a4568177d6f4caa269"/>
-				<baked_depth_texture replace="d2cd20bfea50267df909ca08966a183f82300017"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.2395735 3.4593794 3.995712 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="922116638" name="LightEnvironmentProbe_14">
@@ -2420,7 +2418,6 @@
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
 				<baked_depth_texture replace="b499afacc636119af6731c76d80e8006a96b1c83"/>
-				<baked_depth_texture replace="b638be0925de7143aea2b67a1fcffae88f107c61"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.2395735 2.3168588 5.2702565 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1901841593" name="LightEnvironmentProbe_15">
@@ -2516,7 +2513,6 @@
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
 				<baked_depth_texture replace="395ffcbec64a0af1f9a51298e42259089eed0fad"/>
-				<baked_depth_texture replace="92cbe8634b49279dd448f43c1221a2aa921d213b"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.2395735 2.4172194 2.75 1.0</transform>
 			</node>
 			<node type="LightVoxelProbe" id="977121940" name="LightVoxelProbe">
@@ -2570,7 +2566,6 @@
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
 				<baked_depth_texture replace="32ff4c20a2bdd8e04471118a5c5c24695c49ae67"/>
-				<baked_depth_texture replace="caa2464dea5edfc9b1b143ce874678aec6644d25"/>
 				<transform>1 2.5243552e-29 0 0.0 -2.5243552e-29 1 -1.4210854e-14 0.0 -3.5873241e-43 1.4210855e-14 1 0.0 4.0681005 -1.2260934 5.4835181 1.0</transform>
 			</node>
 		</node>
@@ -2605,6 +2600,7 @@
 			<properties>
 				<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="52c955dbad1cfc91721af69b8721b65282a0b985">
 					<parameter name="bat1">482752400</parameter>
+					<parameter name="island">1040420673</parameter>
 					<parameter name="batcountnode">1368583642</parameter>
 				</property>
 			</properties>
@@ -2815,6 +2811,66 @@
 		</node>
 		<node type="NodeDummy" id="227443908" name="batteries1">
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.880160278916 10.3671029546 0.99999994 1.0</transform>
+		</node>
+		<node type="WorldTrigger" id="1040420673" name="IslandTrigger">
+			<size>1.92163038 2.20082903 3.44810486</size>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0.360135034195 1.80074344874 1.85175912932 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1442898366" name="battery1">
+			<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
+			<surface name="box" intersection="1" material="c32fbb70a77e1053769b9bb0b8880bebf2852352"/>
+			<properties>
+				<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="92e9c82b7793adc4e97f7d2e38e55d1e6d79d27e">
+					<parameter name="bat1">2147098117</parameter>
+					<parameter name="batcountnode">1368583642</parameter>
+				</property>
+			</properties>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5.52581706271 18.1689346856 2.01001852494 1.0</transform>
+			<node type="WorldTrigger" id="2147098117" name="bat1Trig">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="1385527200" name="battery1">
+			<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
+			<surface name="box" intersection="1" material="c32fbb70a77e1053769b9bb0b8880bebf2852352"/>
+			<properties>
+				<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="4e13361ff7b4b7bbe3acca40a3449e0b73db663f">
+					<parameter name="bat1">709871231</parameter>
+					<parameter name="batcountnode">1368583642</parameter>
+				</property>
+			</properties>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 3.97327542307 16.2882032158 1.87821304913 1.0</transform>
+			<node type="WorldTrigger" id="709871231" name="bat1Trig">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="234463698" name="battery1">
+			<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
+			<surface name="box" intersection="1" material="c32fbb70a77e1053769b9bb0b8880bebf2852352"/>
+			<properties>
+				<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="6c5cce8f0a648665ecac6dc29fe747b985773e92">
+					<parameter name="bat1">907532041</parameter>
+					<parameter name="batcountnode">1368583642</parameter>
+				</property>
+			</properties>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0.758345558442 15.2289438647 0.99999994 1.0</transform>
+			<node type="WorldTrigger" id="907532041" name="bat1Trig">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshStatic" id="2066969812" name="battery1">
+			<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
+			<surface name="box" intersection="1" material="c32fbb70a77e1053769b9bb0b8880bebf2852352"/>
+			<properties>
+				<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="96141269390ad782bb6bc1722000a68ea2ad4cc9">
+					<parameter name="bat1">1733057059</parameter>
+					<parameter name="batcountnode">1368583642</parameter>
+				</property>
+			</properties>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -2.76023848185 14.9868164607 0.99999994 1.0</transform>
+			<node type="WorldTrigger" id="1733057059" name="bat1Trig">
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			</node>
 		</node>
 	</editor>
 	<console>
