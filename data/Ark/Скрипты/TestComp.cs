@@ -7,13 +7,16 @@ public class TestComp : Component
 {
 	void Init()
 	{
-		// write here code to be called on component initialization
 		
+		// Рандомный вектор от 0.5 до 2.0
+		vec3 randVec3 = MathLib.RandVec3(
+			new vec3(0.5f,0.5f,0.5f), // От
+			new vec3(2f,2f,2f) // До
+		);
 	}
 	
 	void Update()
 	{
-		// write here code to be called before updating each render frame
 		
 	}
 }

@@ -28,6 +28,25 @@ public class PlayerController : Component
 	#region Editor parameters
 
 	[ShowInEditor]
+	[Parameter(Group = "Custom Camera", Tooltip = "Сamera L position")]
+	public Node cameraTargetPos_L;
+	[ShowInEditor]
+	[Parameter(Group = "Custom Camera", Tooltip = "Сamera L position")]
+	public Node cameraTargetPos_R;
+	[ShowInEditor]
+	[Parameter(Group = "Custom Camera", Tooltip = "Сamera Look position")]
+	public Node cameraLookPos;
+
+	[ShowInEditor]
+	[Parameter(Group = "Vew Body", Tooltip = "Node that shows player's body")]
+	public Node viewBody;
+
+	[ShowInEditor]
+	[Parameter(Group = "Vew Body", Tooltip = "Mesh Skinned that shows player's body")]
+	public Node viewBodyMesh;
+
+
+	[ShowInEditor]
 	[Parameter(Group = "Input", Tooltip = "Move forward key")]
 	private Input.KEY forwardKey = Input.KEY.W;
 
@@ -625,10 +644,7 @@ public class PlayerController : Component
 
 	private void Init() 
 	{
-		// Custom Ark code
-		deltaCameraPos = camera.WorldPosition - node.WorldPosition;
-
-
+		Console.Onscreen = true;
 		// check object type
 		Object obj = node as Object;
 		if (!obj)
@@ -718,6 +734,9 @@ public class PlayerController : Component
 	{
 		if (!IsInitialized)
 			return;
+
+		// View Body pos set
+		viewBody.WorldPosition = node.WorldPosition;
 
 		worldTransform = node.WorldTransform;
 
@@ -1019,6 +1038,28 @@ public class PlayerController : Component
 		// clamp horizontal velocity if it greater than current max speed
 		if (HorizontalVelocity.Length > maxSpeed)
 			HorizontalVelocity = HorizontalVelocity.Normalized * maxSpeed;
+
+
+		// Rotation of View Body
+		if(HorizontalVelocity.Length > 0.2f){
+			float angleHoriz = MathLib.Angle(new vec2(1f,0f),HorizontalVelocity!=0?new vec2(HorizontalVelocity.x,HorizontalVelocity.y):new vec2(1f,0f))
+			* MathLib.Sign(HorizontalVelocity.y)-90f;
+
+			Console.OnscreenMessageLine("{0}", MathLib.RotateZ(angleHoriz));
+			viewBody.SetWorldRotation(
+				MathLib.Slerp(
+					viewBody.GetWorldRotation(),
+					MathLib.RotateZ(angleHoriz).GetRotate(),
+					5*Game.IFps
+				)
+			);
+		}
+		
+		
+		
+
+
+
 
 		// check frozen state for horizontal velocity
 		// IsGround needed in case of slipping from the edges
@@ -1415,21 +1456,25 @@ public class PlayerController : Component
 			}
 		}
 	}
-	private Vec3 deltaCameraPos;
-	public Node cameraTargetPos_L, cameraTargetPos_R;
-	public Node cameraLookPos;
+	
 	private void UpdateCamera()
 	{
 		if (!camera || cameraMode == CameraMode.NONE)
 			return;
-		// double distCamL = MathLib.Distance(camera.WorldPosition, cameraTargetPos_L.WorldPosition);
-		// double distCamR = MathLib.Distance(camera.WorldPosition, cameraTargetPos_R.WorldPosition);
-		// Vec3 targetPos = distCamL-distCamR > 0 ? cameraTargetPos_L.WorldPosition : cameraTargetPos_R.WorldPosition;
-		// camera.WorldPosition = MathLib.Lerp(
-		// 	camera.WorldPosition,
-		// 	targetPos,
-		// 	1.5f*Game.IFps
-		// );
+		double distCamL = MathLib.Distance(camera.WorldPosition, cameraTargetPos_L.WorldPosition);
+		double distCamR = MathLib.Distance(camera.WorldPosition, cameraTargetPos_R.WorldPosition);
+		Vec3 targetWorldPos = 0;
+		if (distCamL > distCamR){
+			targetWorldPos = cameraTargetPos_R.WorldPosition;
+		}else{
+			targetWorldPos = cameraTargetPos_L.WorldPosition;
+		}
+
+		camera.WorldPosition = MathLib.Lerp(
+			camera.WorldPosition,
+			targetWorldPos,
+			1.5f*Game.IFps
+		);
 		dvec3 target_dir = cameraLookPos.WorldPosition - camera.WorldPosition;
 		target_dir.Normalize();
 

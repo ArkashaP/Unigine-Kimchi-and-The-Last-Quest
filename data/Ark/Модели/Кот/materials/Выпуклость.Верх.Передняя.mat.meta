@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>f38d133e3554346723170500c6e887191581264a</guid>
+	<type>material</type>
+	<hash>cdfe18ba</hash>
+	<runtimes>
+		<runtime id="f38d133e3554346723170500c6e887191581264a" name="Выпуклость.Верх.Передняя" link="0" type="5"/>
+	</runtimes>
+</asset>

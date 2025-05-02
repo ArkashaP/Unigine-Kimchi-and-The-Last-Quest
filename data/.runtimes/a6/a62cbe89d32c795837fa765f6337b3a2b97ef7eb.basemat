@@ -1,7 +1,7 @@
 //ver=6
 BaseMaterial<
 				parent=Unigine::mesh
-				guid=62d96250cda7fc012a7b315191aa9442ffacd21c
+				guid=a62cbe89d32c795837fa765f6337b3a2b97ef7eb
 				manual=false
 				
 			>

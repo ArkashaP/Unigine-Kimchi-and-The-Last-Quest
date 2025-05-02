@@ -824,14 +824,6 @@
 			</lens_flare_billboards>
 			<transform>-0.226400837302 -0.448297739029 -0.864675581455 0.0 0.626252949238 -0.746877610683 0.22325052321 0.0 -0.745928585529 -0.490986943245 0.449865460396 0.0 0 0 0 1.0</transform>
 		</node>
-		<node type="ObjectSky" id="1901065405" enabled="0" name="ObjectSky">
-			<surface name="sphere" material="95f95a919f844d6b7b7d10abbd9d0d268c242fca"/>
-			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -1.02040470411 -1.13192946158 1.78529728678 1.0</transform>
-		</node>
-		<node type="ObjectSky" id="2051861509" enabled="0" name="Звезды">
-			<surface name="sphere" material="35a276124c303849f0e072ef632908545149b6fb"/>
-			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -1.02040470411 -1.13192946158 1.78529728678 1.0</transform>
-		</node>
 		<node type="NodeDummy" id="1351903" name="Набор заборов">
 			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -6.79470059019 0 0 1.0</transform>
 			<node type="ObjectMeshStatic" id="1377993600" immovable="1" name="Забор_4">
@@ -984,6 +976,39 @@
 			<controlled>1</controlled>
 			<transform>0.944377720356 0.328862726688 -6.35981559754e-05 0.0 -0.174268126488 0.500600457191 0.847956359386 0.0 0.278893023729 -0.800779998302 0.53006619215 0.0 1.80461817389 -6.68958213316 6.03532023885 1.0</transform>
 		</node>
+		<node type="NodeDummy" id="780660916" name="PlayerViewBody">
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+			<node type="ObjectMeshStatic" id="1709240395" enabled="0" immovable="1" name="Capsule">
+				<mesh_name>guid://1f8dde80187e585bb08d7231adde67bba4718e67</mesh_name>
+				<surface name="capsule" intersection="1" material="4fdb946e72932663a3ad49379d23078d73ccefbd"/>
+				<transform>0.999999701977 0 0 0.0 0 0.999999701977 0 0.0 0 0 0.700000029802 0.0 1.7763568394e-15 0 0.818015245241 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="773314784" enabled="0" immovable="1" name="Box">
+				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
+				<surface name="box" intersection="1" material="4b197e9e541b7c66a16fe327dc8a59ada98c7c2d"/>
+				<transform>0.6 0 0 0.0 0 0.699999970198 0 0.0 0 0 0.399999791384 0.0 -2.22044604925e-16 0.184382549582 1.37470938679 1.0</transform>
+			</node>
+			<node type="ObjectMeshSkinned" id="1987206418" name="Cat_Model">
+				<mesh_name>guid://0aeb3dc589cc371b734f183b1979685ea6999507</mesh_name>
+				<fps_visible_camera>-1</fps_visible_camera>
+				<fps_visible_shadow>30</fps_visible_shadow>
+				<fps_invisible>0</fps_invisible>
+				<anim_name>guid://17ab08ae2d02c5e7060f1ff019cbc66d714b4eba</anim_name>
+				<loop>1</loop>
+				<speed>30</speed>
+				<surface name="Материал" intersection="1" material="20d7722c2fa06ac47f4a029ee1deb4744ef2eb58"/>
+				<surface name="Ноги.Задние" intersection="1" material="6bac9a54836444abf975230664c8afb93341b600"/>
+				<surface name="Ноги.Передние" intersection="1" material="4d62e4d28f7dc259760e4eb4f3d7dc3c15a6c91e"/>
+				<surface name="Уши.ВнутренняяСторона" intersection="1" material="d01defba7098d299b07a2fdcdf4306f37b674c86"/>
+				<surface name="Выпуклость.Верх.Задняя" intersection="1" material="83c3d6a06fd076617a086a324251802ee985080c"/>
+				<surface name="Хвост.Шарик" intersection="1" material="618931483f5c27925742c11af1d30c5f046b6934"/>
+				<surface name="Нос" intersection="1" material="cde04f7c187c1010fa25186e7c90ac6ca551d5a8"/>
+				<surface name="Живот" intersection="1" material="b209a7a67de7a106fb55cba8df15d7eb8b194f32"/>
+				<surface name="Выпуклость.Верх.Передняя" intersection="1" material="f38d133e3554346723170500c6e887191581264a"/>
+				<surface name="Outline" intersection="1" material="5338deea7269d9a282d27a8c84905e2ad9c512b6"/>
+				<transform>-0.3424243927 1.03409320218e-07 -4.46997457421e-21 0.0 -1.03409391272e-07 -0.342424631119 9.12260413424e-15 0.0 -1.71503560966e-21 9.12264479182e-15 0.342426329851 0.0 0 0 0 1.0</transform>
+			</node>
+		</node>
 		<node type="ObjectDummy" id="876128899" name="Player">
 			<body type="BodyDummy" id="1330981006" frozen="0">
 				<shape type="ShapeCapsule" id="1798412617" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.888418257 1">
@@ -993,6 +1018,10 @@
 			</body>
 			<properties>
 				<property parent="4c363e1c44d7021c7201e6dabb71eeeba6bcace7" guid="66f5822a78506181a7350fb8a11dcdc401a09dbd">
+					<parameter name="cameraTargetPos_L">1093043866</parameter>
+					<parameter name="cameraTargetPos_R">1154606211</parameter>
+					<parameter name="cameraLookPos">477650664</parameter>
+					<parameter name="viewBody">780660916</parameter>
 					<parameter name="capsuleRadius">1.10000002</parameter>
 					<parameter name="capsuleHeight">0.200000003</parameter>
 					<parameter name="cameraMode">2</parameter>
@@ -1009,35 +1038,9 @@
 						<parameter name="playerDirection">1</parameter>
 						<parameter name="camera">1</parameter>
 					</parameter>
-					<parameter name="cameraLookPos">477650664</parameter>
 				</property>
-				<property/>
 			</properties>
-			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -0.932341098785 0.908888101578 0.0324856981938 1.0</transform>
-			<node type="NodeDummy" id="780660916" name="MainBody">
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0.967294618413 1.0</transform>
-				<node type="ObjectMeshStatic" id="1709240395" enabled="0" immovable="1" name="Capsule">
-					<mesh_name>guid://1f8dde80187e585bb08d7231adde67bba4718e67</mesh_name>
-					<surface name="capsule" intersection="1" material="4fdb946e72932663a3ad49379d23078d73ccefbd"/>
-					<transform>0.999999701977 0 0 0.0 0 0.999999701977 0 0.0 0 0 0.700000029802 0.0 1.7763568394e-15 0 0.818015245241 1.0</transform>
-				</node>
-				<node type="ObjectMeshStatic" id="773314784" enabled="0" immovable="1" name="Box">
-					<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-					<surface name="box" intersection="1" material="4b197e9e541b7c66a16fe327dc8a59ada98c7c2d"/>
-					<transform>0.6 0 0 0.0 0 0.699999970198 0 0.0 0 0 0.399999791384 0.0 -2.22044604925e-16 0.184382549582 1.37470938679 1.0</transform>
-				</node>
-				<node type="ObjectMeshSkinned" id="2067767877" name="Кот">
-					<mesh_name>guid://37958eecb16c214ac24ad21d0bc37ae39f095978</mesh_name>
-					<fps_visible_camera>-1</fps_visible_camera>
-					<fps_visible_shadow>30</fps_visible_shadow>
-					<fps_invisible>0</fps_invisible>
-					<anim_name>guid://23abdb682c2f51d12df4b4cbfb6cf714c6464e77</anim_name>
-					<speed>24</speed>
-					<surface name="Материал" intersection="1" material="5b9a964c67d0a9d2c24e511f2691bc77e4d8a28b"/>
-					<surface name="Outline" intersection="1" material="486c045e607a6d1bba25356997ecfb0e40256af5"/>
-					<transform>-0.342425744823 1.03409723344e-07 -4.46998978482e-21 0.0 -1.03409758871e-07 -0.342425864032 9.12262161865e-15 0.0 -1.71503864139e-21 9.12263317382e-15 0.342426409866 0.0 0 -2.64233079861e-14 -0.99220707027 1.0</transform>
-				</node>
-			</node>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
 			<node type="NodeDummy" id="1093043866" name="CameraPos_L">
 				<transform>0.999999880791 0 0 0.0 0 0.866023600101 -0.499999046326 0.0 0 0.499999046326 0.866023600101 0.0 -1.94214 -4.84768057427 4.20566310871 1.0</transform>
 			</node>
@@ -1045,16 +1048,8 @@
 				<transform>0.99999988079 0 0 0.0 0 0.86602358413 -0.499999016523 0.0 0 0.499999076128 0.866023592116 0.0 1.9421399601 -4.84768057427 4.20566310871 1.0</transform>
 			</node>
 			<node type="NodeDummy" id="477650664" name="CameraLook">
-				<transform>0.999700844252 -0.0244369219317 -4.60333858581e-05 0.0 0.0065358768558 0.265563221641 0.964070794825 0.0 -0.0235467059668 -0.963782783005 0.265643493274 0.0 0.13913648361 0.956255828404 1.19912424769 1.0</transform>
+				<transform>0.999700665438 -0.0244369219317 -4.60119581616e-05 0.0 0.00653587359618 0.265563817687 0.964070258383 0.0 -0.0235466966536 -0.963782127354 0.265644059518 0.0 0.134137581608 0.751257367899 1.4631074554 1.0</transform>
 			</node>
-		</node>
-		<node type="ObjectMeshStatic" id="1010491932" immovable="1" name="Box_1">
-			<mesh_name>guid://90cd655bdfbfce522bcb5680f6c9fc4054b71ec0</mesh_name>
-			<surface name="box" intersection="1" material="dec3d6b704c5058c08ca8e8c756e24939ed1ef4c"/>
-			<properties>
-				<property parent="750093d9f5a80d13f7f1ca7044d183741f44bee9" guid="3979703155c280d12260f4ceb30d63adc380e28e"/>
-			</properties>
-			<transform>0.499205082655 0 0 0.0 -3.02162739274e-11 1.69543302059 0 0.0 -4.60249893752e-12 -1.3643874297e-07 0.399616748095 0.0 -4.01267698987 1.12170499717 1.75014984608 1.0</transform>
 		</node>
 		<node type="LightProj" id="141588572" name="LightProj">
 			<penumbra>1</penumbra>
@@ -1139,15 +1134,23 @@
 			</lens_flare_billboards>
 			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -0.333366394043 14.8685493469 16.4831467328 1.0</transform>
 		</node>
-		<node type="ObjectMeshStatic" id="1773928055" immovable="1" name="Box_2">
-			<mesh_name>guid://ca120836a23aee60922f17e1360a831f35167bed</mesh_name>
-			<surface name="box" intersection="1" material="62d96250cda7fc012a7b315191aa9442ffacd21c"/>
-			<properties>
-				<property/>
-			</properties>
-			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 8.78409829605 26.9817591918 1.36926424063 1.0</transform>
-			<node type="WorldTrigger" id="758765138" name="WorldTrigger">
-				<transform>1 0 0 0.0 0 6.68168002065e-05 0.999999701977 0.0 0 -0.999999701977 6.68167889479e-05 0.0 0.0544541973964 -0.364172954943 0.178593378661 1.0</transform>
+		<node type="NodeDummy" id="1547575613" name="Trash">
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -3.98423314095 0.0868196487427 1.46565846216 1.0</transform>
+			<node type="ObjectMeshStatic" id="1010491932" enabled="0" immovable="1" name="Box_1">
+				<mesh_name>guid://90cd655bdfbfce522bcb5680f6c9fc4054b71ec0</mesh_name>
+				<surface name="box" intersection="1" material="dec3d6b704c5058c08ca8e8c756e24939ed1ef4c"/>
+				<properties>
+					<property parent="750093d9f5a80d13f7f1ca7044d183741f44bee9" guid="3979703155c280d12260f4ceb30d63adc380e28e"/>
+				</properties>
+				<transform>0.499205142165 0 0 0.0 -3.02162775295e-11 1.6954332227 0 0.0 -4.60249948618e-12 -1.36438759235e-07 0.399616771914 0.0 -0.0284438523153 1.0348854718 0.284491400875 1.0</transform>
+			</node>
+			<node type="ObjectSky" id="1901065405" enabled="0" name="ObjectSky">
+				<surface name="sphere" material="95f95a919f844d6b7b7d10abbd9d0d268c242fca"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2.96382879015 -1.21874925561 0.31963884367 1.0</transform>
+			</node>
+			<node type="ObjectSky" id="2051861509" enabled="0" name="Звезды">
+				<surface name="sphere" material="18d3e2ab0e1f4fbd8a8733310d90001612b4bb5d"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2.96382879015 -1.21874925561 0.31963884367 1.0</transform>
 			</node>
 		</node>
 	</editor>
