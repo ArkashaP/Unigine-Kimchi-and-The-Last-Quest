@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <asset version="2.19.0.3">
-	<guid>9b98785902dfe72849cfacf0a54fff5a497e4369</guid>
+	<guid>863c242ef903e9d79d613487e63fef17af48969a</guid>
 	<type>fbx</type>
-	<hash>ffb95bc2</hash>
+	<hash>7fd51e26</hash>
 	<runtimes>
-		<runtime id="9b98785902dfe72849cfacf0a54fff5a497e4369" name="cat (2).fbx" link="0"/>
-		<runtime id="e6c25c437095b8c7028bd27248147ae62f488693" name="cat (2).node" link="1" type="3">
+		<runtime id="863c242ef903e9d79d613487e63fef17af48969a" name="cyber_cat.fbx" link="0"/>
+		<runtime id="73021cc69c0fe36ba0b54e3121a4f9e717c9293d" name="cyber_cat.node" link="1" type="3">
 			<parameters>
-				<parameter type="string" name="id">71003634</parameter>
+				<parameter type="string" name="id">0bb98723</parameter>
 			</parameters>
 		</runtime>
-		<runtime id="1bbc0d593672d5168a55fe16112a9847ad175ad6" name="plane.001.mesh" link="2" type="1">
+		<runtime id="37958eecb16c214ac24ad21d0bc37ae39f095978" name="plane.mesh" link="2" type="1">
 			<parameters>
-				<parameter type="string" name="id">fc6b5e54</parameter>
+				<parameter type="string" name="id">7021eaf4</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="23abdb682c2f51d12df4b4cbfb6cf714c6464e77" name="plane_WiggleAction.anim" link="2" type="2">
+			<parameters>
+				<parameter type="string" name="id">e4a216b1</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="ef42fdfe6db3959f11fdb297437b7746fae3596a" name="plane_scene.anim" link="2" type="2">
+			<parameters>
+				<parameter type="string" name="id">426fcc4</parameter>
 			</parameters>
 		</runtime>
 	</runtimes>
@@ -22,7 +32,7 @@
 		<parameter type="string" name="base_material_mode">inherit_mesh_base</parameter>
 		<parameter type="float" name="bound_size">10000</parameter>
 		<parameter type="bool" name="create_transform_bones_for_joints">0</parameter>
-		<parameter type="float" name="fps">30</parameter>
+		<parameter type="float" name="fps">24</parameter>
 		<parameter type="string" name="front_axis">default</parameter>
 		<parameter type="bool" name="import_animations">1</parameter>
 		<parameter type="bool" name="import_bones_without_skin">1</parameter>
@@ -36,11 +46,11 @@
 		<parameter type="bool" name="import_textures">1</parameter>
 		<parameter type="bool" name="invert_gchannel_for_normal_maps">0</parameter>
 		<parameter type="bool" name="joints_reorientation">0</parameter>
-		<parameter type="string" name="lightmaps">{&quot;guid://1bbc0d593672d5168a55fe16112a9847ad175ad6&quot;:{&quot;Material.003&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;Material.002&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;Outline&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}}}</parameter>
+		<parameter type="string" name="lightmaps">{&quot;guid://37958eecb16c214ac24ad21d0bc37ae39f095978&quot;:{&quot;Материал&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;Outline&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}}}</parameter>
 		<parameter type="float" name="linear_deflection">0.200000003</parameter>
 		<parameter type="string" name="lods">_lod_0,-1e+09,3,0,0,100,0,0,60;_lod_1,3,9,0,0,60,0,1,60;_lod_2,9,1e+09,0,0,30,0,1,60</parameter>
 		<parameter type="string" name="lods_mode">off</parameter>
-		<parameter type="string" name="material_guids">material.002,23e882c9c9a718329a714e46a4031ab386dd4d06,material.003,2b024b233bfee88e52d368e8469f2e713a662a28,outline,5224770d1bd50740f29b205a24b9c7235ca85d9a</parameter>
+		<parameter type="string" name="material_guids">outline,486c045e607a6d1bba25356997ecfb0e40256af5,Материал,5b9a964c67d0a9d2c24e511f2691bc77e4d8a28b</parameter>
 		<parameter type="bool" name="merge_similar_materials">0</parameter>
 		<parameter type="bool" name="merge_static_meshes">0</parameter>
 		<parameter type="bool" name="merge_surfaces_by_materials">0</parameter>
@@ -54,7 +64,7 @@
 		<parameter type="string" name="resolution">256</parameter>
 		<parameter type="float" name="scale">1</parameter>
 		<parameter type="bool" name="skip_empty_nodes">0</parameter>
-		<parameter type="int" name="smooth_animation_size">0</parameter>
+		<parameter type="int" name="smooth_animation_size">4</parameter>
 		<parameter type="bool" name="unwrap_uv_ch_0">0</parameter>
 		<parameter type="bool" name="unwrap_uv_ch_1">0</parameter>
 		<parameter type="string" name="up_axis">default</parameter>

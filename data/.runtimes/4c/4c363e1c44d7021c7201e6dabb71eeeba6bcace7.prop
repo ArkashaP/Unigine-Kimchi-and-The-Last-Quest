@@ -133,6 +133,7 @@ After exceeding this value a single iteration shall be used to avoid performance
 		<parameter name="averageSpeed">1 1 0 1</parameter>
 		<parameter name="autoStepping">0.660000026 0.330000013 0 1</parameter>
 	</parameter>
-	<parameter name="cameraTargetPos" type="node"/>
+	<parameter name="cameraTargetPos_L" type="node"/>
+	<parameter name="cameraTargetPos_R" type="node"/>
 	<parameter name="cameraLookPos" type="node"/>
 </property>

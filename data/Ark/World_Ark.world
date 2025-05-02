@@ -1003,15 +1003,15 @@
 						<parameter name="useFixedAngles">0</parameter>
 					</parameter>
 					<parameter name="debugVisualizer">
-						<parameter name="enabled">1</parameter>
+						<parameter name="enabled">0</parameter>
 						<parameter name="shapes">1</parameter>
 						<parameter name="playerShape">1</parameter>
 						<parameter name="playerDirection">1</parameter>
 						<parameter name="camera">1</parameter>
 					</parameter>
-					<parameter name="cameraTargetPos">1154606211</parameter>
 					<parameter name="cameraLookPos">477650664</parameter>
 				</property>
+				<property/>
 			</properties>
 			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -0.932341098785 0.908888101578 0.0324856981938 1.0</transform>
 			<node type="NodeDummy" id="780660916" name="MainBody">
@@ -1026,16 +1026,23 @@
 					<surface name="box" intersection="1" material="4b197e9e541b7c66a16fe327dc8a59ada98c7c2d"/>
 					<transform>0.6 0 0 0.0 0 0.699999970198 0 0.0 0 0 0.399999791384 0.0 -2.22044604925e-16 0.184382549582 1.37470938679 1.0</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="2121575634" immovable="1" name="Кот">
-					<mesh_name>guid://1bbc0d593672d5168a55fe16112a9847ad175ad6</mesh_name>
-					<surface name="Material.003" intersection="1" material="2b024b233bfee88e52d368e8469f2e713a662a28"/>
-					<surface name="Material.002" intersection="1" material="23e882c9c9a718329a714e46a4031ab386dd4d06"/>
-					<surface name="Outline" intersection="1" material="5224770d1bd50740f29b205a24b9c7235ca85d9a"/>
-					<transform>1.10180680569e-06 0 0.369704954011 0.0 -0.369704856837 7.27192259833e-07 1.07977025051e-06 0.0 -6.94138433102e-07 -0.369705065454 2.20361395609e-08 0.0 1.9120568906e-08 4.24169388502e-09 0.0384281584438 1.0</transform>
+				<node type="ObjectMeshSkinned" id="2067767877" name="Кот">
+					<mesh_name>guid://37958eecb16c214ac24ad21d0bc37ae39f095978</mesh_name>
+					<fps_visible_camera>-1</fps_visible_camera>
+					<fps_visible_shadow>30</fps_visible_shadow>
+					<fps_invisible>0</fps_invisible>
+					<anim_name>guid://23abdb682c2f51d12df4b4cbfb6cf714c6464e77</anim_name>
+					<speed>24</speed>
+					<surface name="Материал" intersection="1" material="5b9a964c67d0a9d2c24e511f2691bc77e4d8a28b"/>
+					<surface name="Outline" intersection="1" material="486c045e607a6d1bba25356997ecfb0e40256af5"/>
+					<transform>-0.342425744823 1.03409723344e-07 -4.46998978482e-21 0.0 -1.03409758871e-07 -0.342425864032 9.12262161865e-15 0.0 -1.71503864139e-21 9.12263317382e-15 0.342426409866 0.0 0 -2.64233079861e-14 -0.99220707027 1.0</transform>
 				</node>
 			</node>
-			<node type="NodeDummy" id="1154606211" name="CameraPos">
-				<transform>0.99999988079 0 0 0.0 0 0.866023643735 -0.499999046326 0.0 0 0.499999135732 0.866023651721 0.0 1.22124532709e-15 -4.84768057427 4.20566310871 1.0</transform>
+			<node type="NodeDummy" id="1093043866" name="CameraPos_L">
+				<transform>0.999999880791 0 0 0.0 0 0.866023600101 -0.499999046326 0.0 0 0.499999046326 0.866023600101 0.0 -1.94214 -4.84768057427 4.20566310871 1.0</transform>
+			</node>
+			<node type="NodeDummy" id="1154606211" name="CameraPos_R">
+				<transform>0.99999988079 0 0 0.0 0 0.86602358413 -0.499999016523 0.0 0 0.499999076128 0.866023592116 0.0 1.9421399601 -4.84768057427 4.20566310871 1.0</transform>
 			</node>
 			<node type="NodeDummy" id="477650664" name="CameraLook">
 				<transform>0.999700844252 -0.0244369219317 -4.60333858581e-05 0.0 0.0065358768558 0.265563221641 0.964070794825 0.0 -0.0235467059668 -0.963782783005 0.265643493274 0.0 0.13913648361 0.956255828404 1.19912424769 1.0</transform>
@@ -1048,6 +1055,100 @@
 				<property parent="750093d9f5a80d13f7f1ca7044d183741f44bee9" guid="3979703155c280d12260f4ceb30d63adc380e28e"/>
 			</properties>
 			<transform>0.499205082655 0 0 0.0 -3.02162739274e-11 1.69543302059 0 0.0 -4.60249893752e-12 -1.3643874297e-07 0.399616748095 0.0 -4.01267698987 1.12170499717 1.75014984608 1.0</transform>
+		</node>
+		<node type="LightProj" id="141588572" name="LightProj">
+			<penumbra>1</penumbra>
+			<attenuation_distance>29.8780003</attenuation_distance>
+			<near_attenuation_distance>0</near_attenuation_distance>
+			<near_attenuation_gradient_length>0</near_attenuation_gradient_length>
+			<shadow_near_clipping_distance>0.100000001</shadow_near_clipping_distance>
+			<shape>2 1 0.200000003</shape>
+			<shape_type>0</shape_type>
+			<fov>60</fov>
+			<texture replace="785a90dc93b346efb540bb32a8aef6595854b95d"/>
+			<ies_relative_to_fov>0</ies_relative_to_fov>
+			<color_mode>1</color_mode>
+			<color_temperature>26024</color_temperature>
+			<intensity>9.47830009</intensity>
+			<shadow_bias>1</shadow_bias>
+			<fade_distance>10</fade_distance>
+			<shadow_distance>30</shadow_distance>
+			<shadow_fade_distance>10</shadow_fade_distance>
+			<mode>1</mode>
+			<shadow_filter_mode>-1</shadow_filter_mode>
+			<shadow_filter>1</shadow_filter>
+			<shadow_penumbra_mode>-1</shadow_penumbra_mode>
+			<shadow_penumbra>0</shadow_penumbra>
+			<shadow_screen_space>0</shadow_screen_space>
+			<shadow_screen_space_num_rays>3</shadow_screen_space_num_rays>
+			<shadow_screen_space_num_steps>6</shadow_screen_space_num_steps>
+			<shadow_screen_space_noise_ray>0.150000006</shadow_screen_space_noise_ray>
+			<shadow_screen_space_noise_step>1</shadow_screen_space_noise_step>
+			<shadow_screen_space_step_size_near_distance>0</shadow_screen_space_step_size_near_distance>
+			<shadow_screen_space_step_size_far_distance>500</shadow_screen_space_step_size_far_distance>
+			<shadow_screen_space_step_size_near>2</shadow_screen_space_step_size_near>
+			<shadow_screen_space_step_size_far>30</shadow_screen_space_step_size_far>
+			<shadow_screen_space_threshold_near_distance>0</shadow_screen_space_threshold_near_distance>
+			<shadow_screen_space_threshold_far_distance>200</shadow_screen_space_threshold_far_distance>
+			<shadow_screen_space_threshold_near>3</shadow_screen_space_threshold_near>
+			<shadow_screen_space_threshold_far>0.5</shadow_screen_space_threshold_far>
+			<shadow_color_texture_mode>0</shadow_color_texture_mode>
+			<shadow_screen_space_softness>0</shadow_screen_space_softness>
+			<shadow_screen_space_translucent_depth_perspective_compensation>0.200000003</shadow_screen_space_translucent_depth_perspective_compensation>
+			<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+			<baked_depth_texture replace="5e27c74f280169bb48d7e5e16254941cb620ac76">guid://14df77f3f49a6eab94f63ba57a43411ef8df7c0a</baked_depth_texture>
+			<lens_flare_enabled>0</lens_flare_enabled>
+			<lens_flare_texture>core/textures/lens_flares_default.texture</lens_flare_texture>
+			<lens_flare_intensity>1</lens_flare_intensity>
+			<lens_flare_occlusion_fade>1</lens_flare_occlusion_fade>
+			<lens_flare_occlusion_fade_border>0.200000003</lens_flare_occlusion_fade_border>
+			<lens_flare_position_offset>0 0 0</lens_flare_position_offset>
+			<lens_flare_use_light_color>1</lens_flare_use_light_color>
+			<lens_flare_billboards num="31">
+				<billboard name="flare_0" offset="0" size="10" rotate="0" uv_lower_left="0 0" uv_upper_right="0.5 0.5" color="1 1 1 1" offset_scale="1" intensity="0.200000003"/>
+				<billboard name="flare_1" offset="0" size="0.289999992" rotate="1" uv_lower_left="0.5 0.75" uv_upper_right="0.75 1" color="1 1 1 1" offset_scale="1" intensity="0.00749999983"/>
+				<billboard name="flare_2" offset="0.0529999994" size="0.860000014" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.941176534 0.788235366 1 1" offset_scale="1" intensity="0.125"/>
+				<billboard name="flare_3" offset="0.0900000036" size="0.49000001" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.772549093 0.796078503 1 1" offset_scale="1" intensity="0.189999998"/>
+				<billboard name="flare_4" offset="0.122000001" size="0.409999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.792156935 1 0.82745105 1" offset_scale="1" intensity="0.0500000007"/>
+				<billboard name="flare_5" offset="0.203999996" size="0.330000013" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.80392164 0.894117713 1 1" offset_scale="1" intensity="0.075000003"/>
+				<billboard name="flare_6" offset="0.432999998" size="0.649999976" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.929411829 1 0.768627524 1" offset_scale="1" intensity="0.0500000007"/>
+				<billboard name="flare_7" offset="0.477999985" size="1.5" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.807843208 1 0.886274576 1" offset_scale="1" intensity="0.0874999985"/>
+				<billboard name="flare_8" offset="0.52700001" size="0.810000002" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="1 0.90196085 0.788235366 1" offset_scale="1" intensity="0.0500000007"/>
+				<billboard name="flare_9" offset="0.600000024" size="0.409999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.768627524 1 0.894117713 1" offset_scale="1" intensity="0.0500000007"/>
+				<billboard name="flare_10" offset="0.615999997" size="0.569999993" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.796078503 1 0.921568692 1" offset_scale="1" intensity="0.100000001"/>
+				<billboard name="flare_11" offset="0.652999997" size="0.779999971" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.831372619 0.933333397 1 1" offset_scale="1" intensity="0.0874999985"/>
+				<billboard name="flare_12" offset="0.717999995" size="1.71000004" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.878431439 1 0.796078503 1" offset_scale="1" intensity="0.0375000015"/>
+				<billboard name="flare_13" offset="0.754999995" size="1.13999999" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.760784388 1 0.843137324 1" offset_scale="1" intensity="0.0125000002"/>
+				<billboard name="flare_14" offset="0.967000008" size="0.540000021" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="1 0.878431439 0.772549093 1" offset_scale="1" intensity="0.0250000004"/>
+				<billboard name="flare_15" offset="0.338999987" size="0.289999992" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.674509823 1 0.698039234 1" offset_scale="1" intensity="0.075000003"/>
+				<billboard name="flare_16" offset="0.00499999989" size="2" rotate="1" uv_lower_left="0 0.75" uv_upper_right="0.25 1" color="1 1 1 1" offset_scale="0" intensity="0.0199999996"/>
+				<billboard name="flare_17" offset="-0.75" size="1" rotate="1" uv_lower_left="0.5 0.5" uv_upper_right="0.75 0.75" color="1 1 1 1" offset_scale="12.2399998" intensity="0.0724999979"/>
+				<billboard name="flare_18" offset="0.75" size="1" rotate="1" uv_lower_left="0.5 0.5" uv_upper_right="0.75 0.75" color="1 1 1 1" offset_scale="12.2399998" intensity="0.0724999979"/>
+				<billboard name="flare_19" offset="0" size="10" rotate="0" uv_lower_left="0.5 0" uv_upper_right="1 0.5" color="1 1 1 1" offset_scale="1" intensity="0.0350000001"/>
+				<billboard name="flare_20" offset="0.245199993" size="0.610000014" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0724999979"/>
+				<billboard name="flare_21" offset="-0.1184" size="0.800000012" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0675000027"/>
+				<billboard name="flare_22" offset="-0.170000002" size="0.435000002" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0599999987"/>
+				<billboard name="flare_23" offset="-0.223599985" size="0.660000026" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0500000007"/>
+				<billboard name="flare_24" offset="-0.340499997" size="1.39499998" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.654901981 1 0.847058892 1" offset_scale="1" intensity="0.0524999984"/>
+				<billboard name="flare_25" offset="-0.474399984" size="0.944999993" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="1 0.917647123 0.811764777 1" offset_scale="1" intensity="0.0874999985"/>
+				<billboard name="flare_26" offset="-0.899999976" size="2.2650001" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.94901967 1 0.80392164 1" offset_scale="1" intensity="0.075000003"/>
+				<billboard name="flare_27" offset="0.845000029" size="3.19000006" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0450000018"/>
+				<billboard name="flare_28" offset="1" size="7.78999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0500000007"/>
+				<billboard name="flare_29" offset="0.936999977" size="0.449999988" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0450000018"/>
+				<billboard name="flare_30" offset="1" size="1.03999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0375000015"/>
+			</lens_flare_billboards>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -0.333366394043 14.8685493469 16.4831467328 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1773928055" immovable="1" name="Box_2">
+			<mesh_name>guid://ca120836a23aee60922f17e1360a831f35167bed</mesh_name>
+			<surface name="box" intersection="1" material="62d96250cda7fc012a7b315191aa9442ffacd21c"/>
+			<properties>
+				<property/>
+			</properties>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 8.78409829605 26.9817591918 1.36926424063 1.0</transform>
+			<node type="WorldTrigger" id="758765138" name="WorldTrigger">
+				<transform>1 0 0 0.0 0 6.68168002065e-05 0.999999701977 0.0 0 -0.999999701977 6.68167889479e-05 0.0 0.0544541973964 -0.364172954943 0.178593378661 1.0</transform>
+			</node>
 		</node>
 	</editor>
 	<console>

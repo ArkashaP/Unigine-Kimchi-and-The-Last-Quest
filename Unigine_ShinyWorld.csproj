@@ -45,9 +45,9 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup>
-		<Compile Include="data/Ark/Скрипты/TestComp.cs"/>
-		<Compile Include="data/Ark/Скрипты/PlayerController.cs"/>
 		<Compile Include="data/Ark/Скрипты/Item_Test.cs"/>
+		<Compile Include="data/Ark/Скрипты/PlayerController.cs"/>
+		<Compile Include="data/Ark/Скрипты/TestComp.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="data\csharp_template\FP_controller\components\FirstPersonController.cs"/>

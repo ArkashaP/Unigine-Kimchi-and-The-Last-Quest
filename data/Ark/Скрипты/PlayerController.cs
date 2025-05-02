@@ -1416,24 +1416,20 @@ public class PlayerController : Component
 		}
 	}
 	private Vec3 deltaCameraPos;
-	public Node cameraTargetPos;
+	public Node cameraTargetPos_L, cameraTargetPos_R;
 	public Node cameraLookPos;
 	private void UpdateCamera()
 	{
 		if (!camera || cameraMode == CameraMode.NONE)
 			return;
-		
-		// Vec3 targetCameraPos = MathLib.Lerp(
+		// double distCamL = MathLib.Distance(camera.WorldPosition, cameraTargetPos_L.WorldPosition);
+		// double distCamR = MathLib.Distance(camera.WorldPosition, cameraTargetPos_R.WorldPosition);
+		// Vec3 targetPos = distCamL-distCamR > 0 ? cameraTargetPos_L.WorldPosition : cameraTargetPos_R.WorldPosition;
+		// camera.WorldPosition = MathLib.Lerp(
 		// 	camera.WorldPosition,
-		// 	node.WorldPosition + deltaCameraPos,
-		// 	Game.IFps
+		// 	targetPos,
+		// 	1.5f*Game.IFps
 		// );
-		camera.WorldPosition = MathLib.Lerp(
-			camera.WorldPosition,
-			cameraTargetPos.WorldPosition,
-			1.5f*Game.IFps
-		);
-		vec3 d;
 		dvec3 target_dir = cameraLookPos.WorldPosition - camera.WorldPosition;
 		target_dir.Normalize();
 
