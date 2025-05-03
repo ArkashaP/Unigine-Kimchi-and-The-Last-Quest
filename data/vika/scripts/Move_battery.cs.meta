@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>61d637dfcd10b08cbe0c2345755bfc004ca600f0</guid>
+	<type>component</type>
+	<hash>6ca6779f</hash>
+	<runtimes>
+		<runtime id="61d637dfcd10b08cbe0c2345755bfc004ca600f0" name="Move_battery.cs" link="0"/>
+		<runtime id="bb896825bb437ed9266bea9b3e067ea8a024228e" name="Move_battery.prop" link="1" type="4"/>
+	</runtimes>
+</asset>
