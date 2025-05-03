@@ -228,7 +228,7 @@ public class PlayerController : Component
 	[ShowInEditor]
 	[ParameterSlider(Min = 0.0f, Group = "Movement", Tooltip = "Ultra Jumping power of the player")]
 	[ParameterCondition(nameof(useJump), 1)]
-	private float ultraJumpPower = 20.0f;
+	private float ultraJumpPower = 10.0f;
 
 	[ShowInEditor]
 	[ParameterSlider(Min = 0.0f, Group = "Movement", Tooltip = "Jumping crouch power of the player")]
@@ -851,7 +851,7 @@ public class PlayerController : Component
 
 		if (useJump && IsGround && (Input.IsKeyDown(ultrajumpKey) || gamePad && gamePad.IsButtonDown(jumpButton)))
 		{
-			verticalMoveDirection = (IsCrouch ? crouchUltraJumpPower : ultraJumpPower) / ifps;		
+			verticalMoveDirection = (IsCrouch ? crouchUltraJumpPower : ultraJumpPower) / ifps;
 			// if (Input.IsKeyPressed(forwardKey))
 			// {
 			// 	float ultraJumpForwardBoost = 20.0f; // Импульс для длинного прыжка
