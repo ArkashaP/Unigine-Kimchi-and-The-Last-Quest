@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <world version="2.19.0.3">
+	<data>
+		<unigine_editor>
+			<body>
+				<node_extensions/>
+			</body>
+		</unigine_editor>
+	</data>
 	<sound>
 		<enabled>1</enabled>
 		<sound_manager_load_samples>0</sound_manager_load_samples>
@@ -254,6 +261,7 @@
 		<render_denoise_color_clamping_blur_intensity>0</render_denoise_color_clamping_blur_intensity>
 		<render_denoise_color_clamping_blur_intensity_ao>0</render_denoise_color_clamping_blur_intensity_ao>
 		<render_denoise_color_clamping_blur_radius>12</render_denoise_color_clamping_blur_radius>
+		<render_denoise_color_clamping_blur_resolution>2</render_denoise_color_clamping_blur_resolution>
 		<render_denoise_denoise_mask_bias>0.00100000005</render_denoise_denoise_mask_bias>
 		<render_denoise_denoise_mask_denoise_threshold>0.100000001</render_denoise_denoise_mask_denoise_threshold>
 		<render_denoise_denoise_mask_frame_count>8</render_denoise_denoise_mask_frame_count>
@@ -266,10 +274,12 @@
 		<render_denoise_num_blur_iterations>3</render_denoise_num_blur_iterations>
 		<render_denoise_preset>sharpest_low</render_denoise_preset>
 		<render_denoise_radius>1</render_denoise_radius>
+		<render_denoise_wrong_velocity_fix_by_depth_enabled>1</render_denoise_wrong_velocity_fix_by_depth_enabled>
+		<render_denoise_wrong_velocity_fix_by_depth_threshold>0.0299999993</render_denoise_wrong_velocity_fix_by_depth_threshold>
 		<render_depth_pre_pass>0</render_depth_pre_pass>
+		<render_direct_lighting_interleaved>0</render_direct_lighting_interleaved>
 		<render_direct_lighting_interleaved_catmull_resampling>0</render_direct_lighting_interleaved_catmull_resampling>
 		<render_direct_lighting_interleaved_color_clamping>1</render_direct_lighting_interleaved_color_clamping>
-		<render_direct_lighting_interleaved>0</render_direct_lighting_interleaved>
 		<render_direct_lighting_interleaved_samples>0</render_direct_lighting_interleaved_samples>
 		<render_dirt_scale>0.5</render_dirt_scale>
 		<render_distance_offset>0</render_distance_offset>
@@ -296,10 +306,14 @@
 		<render_environment_haze_colorization_threshold>0.5</render_environment_haze_colorization_threshold>
 		<render_environment_haze_gradient>2</render_environment_haze_gradient>
 		<render_environment_haze_screen_space_global_illumination>1</render_environment_haze_screen_space_global_illumination>
+		<render_environment_haze_screen_space_global_illumination_distance_max>100000</render_environment_haze_screen_space_global_illumination_distance_max>
+		<render_environment_haze_screen_space_global_illumination_distance_min>98000</render_environment_haze_screen_space_global_illumination_distance_min>
 		<render_environment_haze_temporal_filter>1</render_environment_haze_temporal_filter>
 		<render_environment_hemisphere>0</render_environment_hemisphere>
 		<render_exposure>0.400000006</render_exposure>
 		<render_exposure_adaptation>1</render_exposure_adaptation>
+		<render_exposure_max_luminance>10</render_exposure_max_luminance>
+		<render_exposure_min_luminance>-3.5</render_exposure_min_luminance>
 		<render_exposure_mode>1</render_exposure_mode>
 		<render_f_stop>11</render_f_stop>
 		<render_fade_color>0 0 0 0</render_fade_color>
@@ -331,6 +345,11 @@
 		<render_indirect_diffuse_temporal_filtering_frame_count_min>1</render_indirect_diffuse_temporal_filtering_frame_count_min>
 		<render_indirect_diffuse_temporal_filtering_frames_clamping_velocity_threshold>10</render_indirect_diffuse_temporal_filtering_frames_clamping_velocity_threshold>
 		<render_indirect_lighting_interleaved>0</render_indirect_lighting_interleaved>
+		<render_indirect_lighting_interleaved_catmull_resampling>0</render_indirect_lighting_interleaved_catmull_resampling>
+		<render_indirect_lighting_interleaved_color_clamping>2</render_indirect_lighting_interleaved_color_clamping>
+		<render_indirect_lighting_interleaved_color_clamping_intensity>0</render_indirect_lighting_interleaved_color_clamping_intensity>
+		<render_indirect_lighting_interleaved_color_clamping_velocity_threshold>100</render_indirect_lighting_interleaved_color_clamping_velocity_threshold>
+		<render_indirect_lighting_interleaved_samples>1</render_indirect_lighting_interleaved_samples>
 		<render_indirect_specular_denoise_enabled>1</render_indirect_specular_denoise_enabled>
 		<render_indirect_specular_denoise_mask_enabled>1</render_indirect_specular_denoise_mask_enabled>
 		<render_indirect_specular_denoise_threshold>1</render_indirect_specular_denoise_threshold>
@@ -408,12 +427,21 @@
 		<render_lights_tile_grid_size>8</render_lights_tile_grid_size>
 		<render_linear_depth_precision>0</render_linear_depth_precision>
 		<render_local_tonemapper>1</render_local_tonemapper>
+		<render_local_tonemapper_blur_resolution>1</render_local_tonemapper_blur_resolution>
+		<render_local_tonemapper_blur_upscale>1</render_local_tonemapper_blur_upscale>
+		<render_local_tonemapper_blur_upscale_kernel_size>0</render_local_tonemapper_blur_upscale_kernel_size>
+		<render_local_tonemapper_color_difference_enabled>1</render_local_tonemapper_color_difference_enabled>
+		<render_local_tonemapper_color_difference_threshold>0.150000006</render_local_tonemapper_color_difference_threshold>
+		<render_local_tonemapper_debug>0</render_local_tonemapper_debug>
+		<render_local_tonemapper_depth_difference_enabled>0</render_local_tonemapper_depth_difference_enabled>
 		<render_local_tonemapper_depth_threshold>0.899999976</render_local_tonemapper_depth_threshold>
 		<render_local_tonemapper_effect_on_dark_areas>0.0500000007</render_local_tonemapper_effect_on_dark_areas>
+		<render_local_tonemapper_effect_on_dark_areas_gamma>5</render_local_tonemapper_effect_on_dark_areas_gamma>
 		<render_local_tonemapper_luma_blurred_intensity>1</render_local_tonemapper_luma_blurred_intensity>
 		<render_local_tonemapper_num_blur_iterations>5</render_local_tonemapper_num_blur_iterations>
 		<render_local_tonemapper_target_middle_gray>0.600000024</render_local_tonemapper_target_middle_gray>
 		<render_local_tonemapper_tonemapping_intensity>0.400000006</render_local_tonemapper_tonemapping_intensity>
+		<render_materials_quality>2</render_materials_quality>
 		<render_max_fps>150</render_max_fps>
 		<render_metering_mask_enabled>0</render_metering_mask_enabled>
 		<render_motion_blur>0</render_motion_blur>
@@ -427,6 +455,7 @@
 		<render_motion_blur_velocity_blur_radius>0.200000003</render_motion_blur_velocity_blur_radius>
 		<render_motion_blur_velocity_blur_samples>8</render_motion_blur_velocity_blur_samples>
 		<render_motion_blur_velocity_scale>0.75</render_motion_blur_velocity_scale>
+		<render_multithreaded>1</render_multithreaded>
 		<render_noise>0</render_noise>
 		<render_noise_intensity>0.0299999993</render_noise_intensity>
 		<render_object_distance>1e+09</render_object_distance>
@@ -471,6 +500,7 @@
 		<render_sharpen>1</render_sharpen>
 		<render_sharpen_intensity>0.5</render_sharpen_intensity>
 		<render_show_texture_resolution_blend>0.5</render_show_texture_resolution_blend>
+		<render_show_texture_resolution_streaming_accounting_mode>0</render_show_texture_resolution_streaming_accounting_mode>
 		<render_show_texture_resolution_uv_mode>0</render_show_texture_resolution_uv_mode>
 		<render_show_visualizer_distance>500</render_show_visualizer_distance>
 		<render_show_voxel_probe_visualizer_grid_size>15</render_show_voxel_probe_visualizer_grid_size>
@@ -563,6 +593,7 @@
 		<render_sssss_quality>2</render_sssss_quality>
 		<render_sssss_radius>0.0199999996</render_sssss_radius>
 		<render_sssss_resolution>1</render_sssss_resolution>
+		<render_sssss_taa>1</render_sssss_taa>
 		<render_sssss_taa_antialiasing_in_motion>0</render_sssss_taa_antialiasing_in_motion>
 		<render_sssss_taa_catmull_resampling>1</render_sssss_taa_catmull_resampling>
 		<render_sssss_taa_fix_flicker>1</render_sssss_taa_fix_flicker>
@@ -580,14 +611,23 @@
 		<render_stereo_hidden_area_exposure_transform>0.600000024 0.600000024 0 0</render_stereo_hidden_area_exposure_transform>
 		<render_stereo_hidden_area_transform>1 1 0 0</render_stereo_hidden_area_transform>
 		<render_stereo_planar_reflections_per_eye>0</render_stereo_planar_reflections_per_eye>
+		<render_streaming_animations_life_time>-1</render_streaming_animations_life_time>
 		<render_streaming_budget_loading>1</render_streaming_budget_loading>
+		<render_streaming_free_space_ram>1024</render_streaming_free_space_ram>
+		<render_streaming_free_space_vram>512</render_streaming_free_space_vram>
 		<render_streaming_meshes_mode_ram>1</render_streaming_meshes_mode_ram>
 		<render_streaming_meshes_mode_vram>0</render_streaming_meshes_mode_vram>
 		<render_streaming_meshes_prefetch_collision>0</render_streaming_meshes_prefetch_collision>
 		<render_streaming_meshes_prefetch_intersection>0</render_streaming_meshes_prefetch_intersection>
 		<render_streaming_meshes_prefetch_radius>0</render_streaming_meshes_prefetch_radius>
 		<render_streaming_particles_memory_limit>3</render_streaming_particles_memory_limit>
+		<render_streaming_textures_mipmaps>0</render_streaming_textures_mipmaps>
+		<render_streaming_textures_mipmaps_density>2</render_streaming_textures_mipmaps_density>
 		<render_streaming_textures_mode>0</render_streaming_textures_mode>
+		<render_streaming_usage_limit_ram>80</render_streaming_usage_limit_ram>
+		<render_streaming_usage_limit_vram>80</render_streaming_usage_limit_vram>
+		<render_streaming_vram_budget>1</render_streaming_vram_budget>
+		<render_streaming_vram_overcommit>0</render_streaming_vram_overcommit>
 		<render_supersampling>1</render_supersampling>
 		<render_taa>1</render_taa>
 		<render_taa_antialiasing_in_motion>0</render_taa_antialiasing_in_motion>
@@ -600,6 +640,8 @@
 		<render_taa_frames_by_color>1</render_taa_frames_by_color>
 		<render_taa_frames_by_velocity>1</render_taa_frames_by_velocity>
 		<render_taa_frames_velocity_threshold>1</render_taa_frames_velocity_threshold>
+		<render_taa_information_lost_depth_threshold>0.100000001</render_taa_information_lost_depth_threshold>
+		<render_taa_information_lost_frame_count>1</render_taa_information_lost_frame_count>
 		<render_taa_max_frames_by_velocity>60</render_taa_max_frames_by_velocity>
 		<render_taa_min_frames_by_velocity>4</render_taa_min_frames_by_velocity>
 		<render_taa_pixel_offset>1</render_taa_pixel_offset>
@@ -628,6 +670,19 @@
 		<render_transparent_enabled>1</render_transparent_enabled>
 		<render_transparent_light>1</render_transparent_light>
 		<render_transparent_multiple_env_probes>1</render_transparent_multiple_env_probes>
+		<render_upscale_dlss_mode>3</render_upscale_dlss_mode>
+		<render_upscale_dlss_preset>0</render_upscale_dlss_preset>
+		<render_upscale_fsr_auto_reactive_enabled>0</render_upscale_fsr_auto_reactive_enabled>
+		<render_upscale_fsr_auto_reactive_max>0.899999976</render_upscale_fsr_auto_reactive_max>
+		<render_upscale_fsr_auto_reactive_scale>5</render_upscale_fsr_auto_reactive_scale>
+		<render_upscale_fsr_auto_tc_scale>1</render_upscale_fsr_auto_tc_scale>
+		<render_upscale_fsr_auto_tc_threshold>0.0500000007</render_upscale_fsr_auto_tc_threshold>
+		<render_upscale_fsr_enable_sharpness>0</render_upscale_fsr_enable_sharpness>
+		<render_upscale_fsr_mode>3</render_upscale_fsr_mode>
+		<render_upscale_fsr_pre_exposure>1</render_upscale_fsr_pre_exposure>
+		<render_upscale_fsr_sharpness>0.5</render_upscale_fsr_sharpness>
+		<render_upscale_mode>0</render_upscale_mode>
+		<render_upscale_post>0</render_upscale_post>
 		<render_viewport_mode>0</render_viewport_mode>
 		<render_vignette_mask>0</render_vignette_mask>
 		<render_vignette_mask_intensity>1</render_vignette_mask_intensity>
@@ -667,54 +722,6 @@
 		<composite_deferred_material_guid>guid://</composite_deferred_material_guid>
 		<debug_materials/>
 		<scriptable_materials/>
-		<render_exposure_min_luminance>-3.5</render_exposure_min_luminance>
-		<render_exposure_max_luminance>10</render_exposure_max_luminance>
-		<render_denoise_color_clamping_blur_resolution>2</render_denoise_color_clamping_blur_resolution>
-		<render_denoise_wrong_velocity_fix_by_depth_enabled>1</render_denoise_wrong_velocity_fix_by_depth_enabled>
-		<render_denoise_wrong_velocity_fix_by_depth_threshold>0.0299999993</render_denoise_wrong_velocity_fix_by_depth_threshold>
-		<render_indirect_lighting_interleaved_catmull_resampling>0</render_indirect_lighting_interleaved_catmull_resampling>
-		<render_indirect_lighting_interleaved_color_clamping>2</render_indirect_lighting_interleaved_color_clamping>
-		<render_indirect_lighting_interleaved_samples>1</render_indirect_lighting_interleaved_samples>
-		<render_materials_quality>2</render_materials_quality>
-		<render_multithreaded>1</render_multithreaded>
-		<render_multithreaded_editor>0</render_multithreaded_editor>
-		<render_streaming_free_space_ram>1024</render_streaming_free_space_ram>
-		<render_streaming_free_space_vram>512</render_streaming_free_space_vram>
-		<render_streaming_textures_mipmaps>0</render_streaming_textures_mipmaps>
-		<render_streaming_textures_mipmaps_density>2</render_streaming_textures_mipmaps_density>
-		<render_streaming_vram_budget>1</render_streaming_vram_budget>
-		<render_streaming_vram_overcommit>0</render_streaming_vram_overcommit>
-		<render_streaming_usage_limit_vram>80</render_streaming_usage_limit_vram>
-		<render_taa_information_lost_depth_threshold>0.100000001</render_taa_information_lost_depth_threshold>
-		<render_taa_information_lost_frame_count>1</render_taa_information_lost_frame_count>
-		<render_environment_haze_screen_space_global_illumination_distance_max>100000</render_environment_haze_screen_space_global_illumination_distance_max>
-		<render_environment_haze_screen_space_global_illumination_distance_min>98000</render_environment_haze_screen_space_global_illumination_distance_min>
-		<render_local_tonemapper_blur_resolution>1</render_local_tonemapper_blur_resolution>
-		<render_local_tonemapper_blur_upscale>1</render_local_tonemapper_blur_upscale>
-		<render_local_tonemapper_blur_upscale_kernel_size>0</render_local_tonemapper_blur_upscale_kernel_size>
-		<render_local_tonemapper_color_difference_enabled>1</render_local_tonemapper_color_difference_enabled>
-		<render_local_tonemapper_color_difference_threshold>0.150000000</render_local_tonemapper_color_difference_threshold>
-		<render_local_tonemapper_debug>0</render_local_tonemapper_debug>
-		<render_local_tonemapper_depth_difference_enabled>0</render_local_tonemapper_depth_difference_enabled>
-		<render_show_texture_resolution_streaming_accounting_mode>0</render_show_texture_resolution_streaming_accounting_mode>
-		<render_upscale_dlss_mode>3</render_upscale_dlss_mode>
-		<render_upscale_dlss_preset>0</render_upscale_dlss_preset>
-		<render_upscale_fsr_auto_reactive_max>0.899999976</render_upscale_fsr_auto_reactive_max>
-		<render_upscale_fsr_auto_reactive_scale>5</render_upscale_fsr_auto_reactive_scale>
-		<render_upscale_fsr_auto_tc_scale>1</render_upscale_fsr_auto_tc_scale>
-		<render_upscale_fsr_auto_tc_threshold>0.0500000007</render_upscale_fsr_auto_tc_threshold>
-		<render_upscale_fsr_enable_sharpness>0</render_upscale_fsr_enable_sharpness>
-		<render_upscale_fsr_mode>3</render_upscale_fsr_mode>
-		<render_upscale_fsr_pre_exposure>1</render_upscale_fsr_pre_exposure>
-		<render_upscale_fsr_sharpness>0.5</render_upscale_fsr_sharpness>
-		<render_upscale_mode>0</render_upscale_mode>
-		<render_upscale_post>0</render_upscale_post>
-		<render_indirect_lighting_interleaved_color_clamping_intensity>0</render_indirect_lighting_interleaved_color_clamping_intensity>
-		<render_indirect_lighting_interleaved_color_clamping_velocity_threshold>100</render_indirect_lighting_interleaved_color_clamping_velocity_threshold>
-		<render_local_tonemapper_effect_on_dark_areas_gamma>5</render_local_tonemapper_effect_on_dark_areas_gamma>
-		<render_streaming_animations_life_time>-1</render_streaming_animations_life_time>
-		<render_streaming_usage_limit_ram>80</render_streaming_usage_limit_ram>
-		<render_sssss_taa>1</render_sssss_taa>
 	</render>
 	<physics>
 		<frozen_linear_velocity>0.0199999996</frozen_linear_velocity>
@@ -739,7 +746,7 @@
 		</node>
 		<node type="LightWorld" id="824505625" name="sun">
 			<scattering>1</scattering>
-			<disable_angle>100</disable_angle>
+			<disable_angle>53.8577995</disable_angle>
 			<shadow_height>10</shadow_height>
 			<shadow_width>10</shadow_width>
 			<shadow_zfar>100</shadow_zfar>
@@ -748,6 +755,7 @@
 			<is_shadow_partial_update>0</is_shadow_partial_update>
 			<shadow_cascade_borders>0.0075000003 0.0500000007 0.200000003</shadow_cascade_borders>
 			<color_mode>1</color_mode>
+			<intensity>0.275579989</intensity>
 			<shadow_resolution>5</shadow_resolution>
 			<shadow_bias>1</shadow_bias>
 			<mode>1</mode>
@@ -772,6 +780,7 @@
 			<shadow_screen_space_softness>0</shadow_screen_space_softness>
 			<shadow_screen_space_translucent_depth_perspective_compensation>0.200000003</shadow_screen_space_translucent_depth_perspective_compensation>
 			<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+			<baked_depth_texture replace="a8ef7942aea38c3e1037764a6c119d67ca49b710"/>
 			<lens_flare_enabled>1</lens_flare_enabled>
 			<lens_flare_texture>core/textures/lens_flares_default.texture</lens_flare_texture>
 			<lens_flare_intensity>1</lens_flare_intensity>
@@ -812,7 +821,7 @@
 				<billboard name="flare_29" offset="0.936999977" size="0.449999988" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.180000007"/>
 				<billboard name="flare_30" offset="1" size="1.03999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.150000006"/>
 			</lens_flare_billboards>
-			<transform>-0.43301237 0.43559623 -0.78914917 0.0 -0.75000048 -0.6597392 0.047366858 0.0 -0.49999967 0.61237252 0.6123724 0.0 0 0 0 1.0</transform>
+			<transform>-0.432975918055 0.43556034565 -0.789083778858 0.0 -0.74992454052 -0.659671902657 0.0473617315292 0.0 -0.499983489513 0.612352728844 0.612352728844 0.0 1.65937843653e-15 128.463160281 160.80617213 1.0</transform>
 		</node>
 		<node type="PlayerSpectator" id="620479819" name="main_player">
 			<collision>1</collision>
@@ -833,6 +842,815 @@
 			<controlled>1</controlled>
 			<transform>1 -3.5762787e-07 0 0.0 0 0 1 0.0 -3.5762787e-07 -1 0 0.0 0 0 1.5 1.0</transform>
 		</node>
+		<node type="ObjectMeshSkinned" id="125032981" name="cat">
+			<mesh_name>guid://bf6f784e36b494a366ab80d699811620d2807abc</mesh_name>
+			<fps_visible_camera>-1</fps_visible_camera>
+			<fps_visible_shadow>30</fps_visible_shadow>
+			<fps_invisible>0</fps_invisible>
+			<anim_name>guid://9d0558ed6daf1baf181459052d94d98e1a3816eb</anim_name>
+			<speed>30</speed>
+			<surface name="Материал" intersection="1" material="11e9e6e18caf38fd59262279d27783673d66db3f"/>
+			<surface name="Outline" intersection="1" material="684c0cfb5eb13417285292533c30f96265c989c9"/>
+			<transform>0.342429935932 -2.0244918167e-29 6.05327530995e-22 0.0 2.02449377273e-29 0.342429995537 -9.1226727439e-15 0.0 -6.05326420278e-22 9.12265410918e-15 0.342429310083 0.0 1.71693719227 160.367409948 96.2597689098 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1258069424" name="island_big_1">
+			<transform>0.299999922514 7.94088591777e-23 -1.14640403697e-15 0.0 2.08126071926e-23 0.299999982119 2.62267310092e-08 0.0 1.14640414285e-15 -2.62267292328e-08 0.299999952316 0.0 -1.42116591144 128.996140071 92.7564489786 1.0</transform>
+			<node type="ObjectMeshStatic" id="407311695" immovable="1" name="Icosphere">
+				<mesh_name>guid://f14725f6504bb6cb7ec1af7e629d584dfb3f9f24</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="почва_1" intersection="1" material="4055bd33dd7b4c8b6dce578b46226622dcdd2441"/>
+				<surface name="земля_темная_1.2" intersection="1" material="10a46417f05058b930b393ef705d22c3bbaa8305"/>
+				<surface name="земля_темная_1" intersection="1" material="9215879d8c2cbfd5585609b553293a2c538c741b"/>
+				<surface name="асфальт_1" intersection="1" material="15eb188f9aa4c5ba0fcdf56719568bbc12d6abbd"/>
+				<surface name="бардюр_1" intersection="1" material="4a26da59bbb605cd918e62f1a39c4819691774f7"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -0.00266838000647 -0.00835974443907 3.77136993445 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1597997666" immovable="1" name="Icosphere.001">
+				<mesh_name>guid://e1d8e47597670adaccec378d7dde7bf6e2966033</mesh_name>
+				<surface name="асфальт_1" intersection="1" material="15eb188f9aa4c5ba0fcdf56719568bbc12d6abbd"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 58.0973411965 -105.18709405 -79.7703582561 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="472751705" immovable="1" name="Icosphere.002">
+				<mesh_name>guid://5d8d38183531434df7f6bce007dbdd830d6127f6</mesh_name>
+				<surface name="почва_1" intersection="1" material="4055bd33dd7b4c8b6dce578b46226622dcdd2441"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 12.9054042679 -111.112825624 -74.7186688492 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1317565412" immovable="1" name="Icosphere.003">
+				<mesh_name>guid://63d9dcaf274189a33e0645870cc0cd92874ffedd</mesh_name>
+				<surface name="бардюр_1" intersection="1" material="4a26da59bbb605cd918e62f1a39c4819691774f7"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -69.8250088711 -125.428385084 -85.4696295271 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1758309875" immovable="1" name="Icosphere.004">
+				<mesh_name>guid://8692b30a518305feff09251248927db4de9ff298</mesh_name>
+				<surface name="земля_темная_1.2" intersection="1" material="10a46417f05058b930b393ef705d22c3bbaa8305"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -63.6776236721 -88.1472795369 -86.1870917891 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="2129304246" immovable="1" name="Icosphere.005">
+				<mesh_name>guid://40e0fb79dcd4923392d4f01105b7af4af60ed517</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -28.9255279739 -104.497273353 -49.1371185402 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1136874141" immovable="1" name="Icosphere.006">
+				<mesh_name>guid://2fd3234cf0e35ea44521c494a78711707355ef8a</mesh_name>
+				<surface name="бардюр_1" intersection="1" material="4a26da59bbb605cd918e62f1a39c4819691774f7"/>
+				<transform>1 8.74226995351e-08 -8.74226914587e-08 0.0 8.74225458526e-08 1.27951457003e-06 0.999998956919 0.0 8.74227095461e-08 -0.99999910593 1.27951419936e-06 0.0 -55.9513743108 99.0621833581 -66.3135678035 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="295285592" immovable="1" name="Icosphere.007">
+				<mesh_name>guid://390083536a697f6e394369abfc80bacfb9b71961</mesh_name>
+				<surface name="асфальт_1" intersection="1" material="15eb188f9aa4c5ba0fcdf56719568bbc12d6abbd"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -120.908290988 -42.2033521761 -68.2417202622 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1649024727" immovable="1" name="Icosphere.008">
+				<mesh_name>guid://be33e95e1b9b05fe50f3cbe6986175e61950e34c</mesh_name>
+				<surface name="почва_1" intersection="1" material="4055bd33dd7b4c8b6dce578b46226622dcdd2441"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 116.977826937 -63.905151759 -68.3780947408 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1165700682" immovable="1" name="Icosphere.009">
+				<mesh_name>guid://19477abd60b264e0e30328d50446a4a6f286c63b</mesh_name>
+				<surface name="земля_темная_1.2" intersection="1" material="10a46417f05058b930b393ef705d22c3bbaa8305"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 97.8317681953 41.8113696246 -49.1475543179 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1566296353" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://703059c04e8479da6adcdf882fb669919c05865e</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 119.345398009 -0.687314782774 -59.474281281 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="812929036" immovable="1" name="Icosphere.011">
+				<mesh_name>guid://cd474c3758bb3dc4e92d880f92feb2157b6e3a25</mesh_name>
+				<surface name="земля_темная_1.2" intersection="1" material="10a46417f05058b930b393ef705d22c3bbaa8305"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 59.8539090875 80.9942718683 -84.3951680301 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1533529083" immovable="1" name="Icosphere.012">
+				<mesh_name>guid://2fa2dcf2048c1a8e1bc237fafea4cf9819cfa540</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -11.4732654795 96.2530243461 -80.5392116658 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="662524190" immovable="1" name="Icosphere.013">
+				<mesh_name>guid://fed266413858be7b937e65d9bf82420b6b11d79f</mesh_name>
+				<surface name="асфальт_1" intersection="1" material="15eb188f9aa4c5ba0fcdf56719568bbc12d6abbd"/>
+				<transform>1 8.74226551262e-08 -8.74226559316e-08 0.0 8.74224037441e-08 1.81595496643e-06 0.999998360872 0.0 8.74226829008e-08 -0.999998658895 1.81595470205e-06 0.0 -109.519680416 72.1471808987 -37.3434107289 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="403441125" immovable="1" name="Icosphere.014">
+				<mesh_name>guid://4c730f747528efa6f2f2c1bcb4f38ed2d6c74072</mesh_name>
+				<surface name="бардюр_1" intersection="1" material="4a26da59bbb605cd918e62f1a39c4819691774f7"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -91.7754369925 6.76181524491 -96.1008761501 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1840291143" name="start_island">
+			<transform>3.89999890327 1.03231958693e-21 -1.49033210902e-14 0.0 2.70568713444e-22 3.89999938011 3.40948332678e-07 0.0 1.49033244784e-14 -3.40948361099e-07 3.89999985695 0.0 -28.2533283234 193.984853555 81.8945250798 1.0</transform>
+			<node type="ObjectMeshStatic" id="151009786" immovable="1" name="Icosphere">
+				<mesh_name>guid://5abac4bad855d4c233bf54c2f7e173fa2bd36ec8</mesh_name>
+				<surface name="земля_дефолт_темнее_1" intersection="1" material="a6da73ea42726098667811f2a1364b5ea3bbbc78"/>
+				<surface name="земля_светлее" intersection="1" material="ab990f2ccc3c5a51904abc74c997d728d83ab46a"/>
+				<surface name="земля_темная" intersection="1" material="c7ddf83e847c80c3bedfc6c6f8b9f6071c175b2c"/>
+				<transform>1.82051318574 1.56910881907e-07 -2.57785095653e-07 0.0 4.17538979369e-07 3.42141541626e-06 2.94871683422 0.0 1.6575120004e-07 -1.92307649515 2.23135776141e-06 0.0 5.86926353647 0.0174189185186 3.02904208043 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshSkinned" id="1873981101" name="cat">
+			<mesh_name>guid://bf6f784e36b494a366ab80d699811620d2807abc</mesh_name>
+			<fps_visible_camera>-1</fps_visible_camera>
+			<fps_visible_shadow>30</fps_visible_shadow>
+			<fps_invisible>0</fps_invisible>
+			<anim_name>guid://9d0558ed6daf1baf181459052d94d98e1a3816eb</anim_name>
+			<speed>30</speed>
+			<surface name="Материал" intersection="1" material="11e9e6e18caf38fd59262279d27783673d66db3f"/>
+			<surface name="Outline" intersection="1" material="684c0cfb5eb13417285292533c30f96265c989c9"/>
+			<transform>0.342429935932 -2.02449136531e-29 6.05327329046e-22 0.0 2.02449332134e-29 0.342429995537 -9.12267020281e-15 0.0 -6.05326167843e-22 9.12265072105e-15 0.342429280281 0.0 -5.22416237748 194.269137326 93.8675757037 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1345569939" name="Stairs">
+			<transform>0.999999880791 2.6469731639e-22 -3.82136415407e-15 0.0 6.93766752322e-23 0.999999880791 8.74226770975e-08 0.0 3.82136415407e-15 -8.74226770975e-08 0.999999940395 0.0 -6.87597969277 179.950576782 91.795656516 1.0</transform>
+			<node type="ObjectMeshStatic" id="566067414" immovable="1" name="Icosphere">
+				<mesh_name>guid://ff5d415fb3b2159473ef6c3752bb0211eb31560d</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>1 8.74227225089e-08 -8.74227571839e-08 0.0 8.74226694869e-08 8.02677992812e-07 0.999999284744 0.0 8.74227230462e-08 -0.999999284744 8.02677944969e-07 0.0 -9.7699626167e-15 2.71947757301 2.21043623288 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="155828797" immovable="1" name="Icosphere.002">
+				<mesh_name>guid://6f2fcffa812081395e852802e952eba13d7e8008</mesh_name>
+				<surface name="асфальт_дефолт" intersection="1" material="15eb188f9aa4c5ba0fcdf56719568bbc12d6abbd"/>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<transform>0.707106734169 -0.707106853379 -5.73921019423e-08 0.0 2.56299138685e-06 2.5163037744e-06 0.999996662139 0.0 -0.707104528797 -0.707104349983 3.59338054625e-06 0.0 0.869218693586 -4.2909445668 2.46402260524 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="277290616" immovable="1" name="Icosphere.005">
+				<mesh_name>guid://84d28fa925a5d05b7f7e16410603704443a6a3c7</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>1 8.74220617042e-08 -8.74222029605e-08 0.0 8.74208860244e-08 8.19359556959e-06 0.999992489814 0.0 8.74221261902e-08 -0.999992489813 8.19359508121e-06 0.0 4.16951188514 -6.71187988855 2.62814040867 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1663520631" immovable="1" name="Icosphere.007">
+				<mesh_name>guid://2d70a9bc7dfab3348f0ca104f9a508420f958e7a</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>1 8.74224169755e-08 -8.74224942831e-08 0.0 8.74218381518e-08 4.14052367526e-06 0.999996185302 0.0 8.74224459345e-08 -0.999996185302 4.14052342846e-06 0.0 2.25807495111 -11.4089651044 3.40128871064 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="834037354" immovable="1" name="Icosphere.008">
+				<mesh_name>guid://47d4d303e54a73e472d59b5b15eac93887b5cb91</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>1 8.74225448732e-08 -8.74225866537e-08 0.0 8.74221507906e-08 2.82922962355e-06 0.999997377395 0.0 8.74225525159e-08 -0.999997377395 2.82922922754e-06 0.0 6.08964464047 -12.5026754003 3.80875091553 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1876583105" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>1 8.74226017167e-08 -8.74226577079e-08 0.0 8.74223213209e-08 2.29279053722e-06 0.999997973442 0.0 8.74226235702e-08 -0.999997973442 2.29279017318e-06 0.0 -2.88319554234 4.46718800709 2.67863730699 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="314039596" immovable="1" name="Icosphere.012">
+				<mesh_name>guid://45adf1edc4a0b6a185f6520573df8a8fc233a7eb</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>1 8.74225732949e-08 -8.74226079699e-08 0.0 8.74222431612e-08 2.4716035521e-06 0.999997615814 0.0 8.74225809377e-08 -0.999997615814 2.47160317741e-06 0.0 9.21253670275 -13.7729851254 5.17048316274 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="187741851" immovable="1" name="Icosphere.015">
+				<mesh_name>guid://ef4d6730976a51c6acf0a2f89793940213e91c4e</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>1 8.74226017167e-08 -8.74226790242e-08 0.0 8.7422356848e-08 2.17358170383e-06 0.999998152256 0.0 8.74226235702e-08 -0.999998152256 2.1735813469e-06 0.0 4.47072265098 -9.78457405096 4.4149312258 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="197983038" immovable="1" name="Icosphere.016">
+				<mesh_name>guid://38e536e7706351abbd2374bf1540b24de42a7755</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>1 8.74226514546e-08 -8.74226932351e-08 0.0 8.74224989566e-08 1.4583279641e-06 0.999998569488 0.0 8.74226519919e-08 -0.999998569488 1.45832776349e-06 0.0 1.25210238208 -0.748386562664 2.17674014783 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="55429233" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-0.41410969664 -1.54548091239 7.07314390861e-07 0.0 3.52859133798e-06 -4.32327854966e-07 1.59999821186 0.0 -1.54548055476 0.414109398617 3.30165479021e-06 0.0 2.23413864443 -7.42869229842 2.6065530409 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1768560587" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.336464534576 -1.25570359894 -1.61424126329e-07 0.0 3.06069627705e-06 7.33537247818e-07 1.29999895692 0.0 -1.25570324131 -0.336464415367 3.16759807808e-06 0.0 -0.690229215922 -1.13628013031 1.90776700072 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1599979024" name="Medium_Island_1">
+			<transform>0.0776454135776 -0.289776563644 -1.30028827332e-13 0.0 0.289776444435 0.0776453837752 2.62266546258e-08 0.0 -2.53330689759e-08 -6.7881034127e-09 0.299999922514 0.0 69.8616511393 137.658227786 89.5607433533 1.0</transform>
+			<node type="ObjectMeshStatic" id="2105276975" immovable="1" name="Icosphere">
+				<mesh_name>guid://3e1d66fc8aece36c272f664484341d36338631ba</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>1.00000012856 4.7978216237e-07 1.49011485321e-07 0.0 -1.99995754908e-07 -1.98379586699e-07 1.00000009934 0.0 4.52348259017e-07 -1.0000003269 -1.5099556426e-07 0.0 -1.5916157281e-12 1.33019307214e-06 24.0818364464 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1879073218" immovable="1" name="Icosphere.001">
+				<mesh_name>guid://140c3f430a25863b39559f9babfc54522d3995d1</mesh_name>
+				<surface name="surface_0" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>3.92166562281 1.19571346038e-06 7.01247573109e-07 0.0 4.40690333812e-07 -2.68148836848e-06 11.5931251197 0.0 2.0455417703e-06 -3.92166667329 -1.52715000896e-06 0.0 -20.458653701 -0.363152092867 28.8804033382 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="525940281" enabled="0" immovable="1" name="Icosphere.003">
+				<mesh_name>guid://6ed9748e724dacdb46efe51661320b631b75d4fc</mesh_name>
+				<surface name="surface_0" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>6.11298179626 5.34413982489e-07 -8.27540749291e-07 0.0 5.34413982489e-07 -1.36974511717e-06 9.46596240997 0.0 4.82629020159e-07 -5.520632267 -1.07188102507e-06 0.0 -17.4116550583 -4.20623008819 25.6392194679 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="723675716" immovable="1" name="Icosphere.004">
+				<mesh_name>guid://5006b82d3fc9da8453197045e54ca23060e32c2b</mesh_name>
+				<surface name="surface_0" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>-2.94989415911 -4.14145562591 -3.4717290992e-07 0.0 -7.72498034417e-07 -4.32916806108e-09 3.86303043365 0.0 -2.91972195179 2.07967234466 -6.04990902663e-07 0.0 14.8797924468 -13.5783953894 24.2632528518 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="2116203041" name="Medium_Island_2">
+			<transform>0.965925455093 0.258818119764 2.66453356503e-15 0.0 -0.258818089962 0.965925335884 8.74224426184e-08 0.0 2.26265370884e-08 -8.44436414127e-08 0.999999701977 0.0 46.5184521852 44.2583772044 64.7355655876 1.0</transform>
+			<node type="ObjectMeshStatic" id="1901915678" immovable="1" name="Icosphere">
+				<mesh_name>guid://64363910c217e560a77e40d867c908a45463272e</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>4.41140599852 -4.28203170619 0.80233921362 0.0 0.415355962468 1.55003382762 5.98872445048 0.0 -4.33670388455 -4.20733038485 1.3897404146 0.0 -10.3089598834 12.3966519099 28.4009468606 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1568267476" name="Stairs 2">
+			<transform>0.965925633907 0.258818775415 2.94193177979e-05 0.0 -0.258818775415 0.965925633907 2.94062792818e-05 0.0 -2.08059809665e-05 -3.60185622412e-05 0.999999821186 0.0 -10.1875961488 60.6791924187 94.327116573 1.0</transform>
+			<node type="ObjectMeshStatic" id="1888477829" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-1.36412703945 0.0722212627156 0.833022284376 0.0 0.833933111475 0.00158644804555 1.36548074472 0.0 0.06080978548 1.59836613854 -0.0389951834514 0.0 -22.9989131876 -11.7861004868 9.42997465698 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1727754784" immovable="1" name="Icosphere.016">
+				<mesh_name>guid://38e536e7706351abbd2374bf1540b24de42a7755</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-0.737536800782 -0.675123518529 -0.015686991015 0.0 0.00291724632437 -0.0264141924016 0.999644076612 0.0 -0.675297782916 0.737229052522 0.0214514201295 0.0 -11.9782939625 -10.8277589399 7.18235293799 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1271693055" immovable="1" name="Icosphere.015">
+				<mesh_name>guid://ef4d6730976a51c6acf0a2f89793940213e91c4e</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.215904783028 -0.976287466417 -0.0157067790502 0.0 0.024373948684 -0.0106920470776 0.999643281585 0.0 -0.976107320721 -0.216210370394 0.0214876833815 0.0 -19.9280124639 -13.8419539524 9.91606648519 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="2001862738" immovable="1" name="Icosphere.012">
+				<mesh_name>guid://45adf1edc4a0b6a185f6520573df8a8fc233a7eb</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.215904663785 -0.976286035939 -0.015707922753 0.0 0.0243739095159 -0.0106930734478 0.999641493477 0.0 -0.97610559219 -0.216210087276 0.0214875585252 0.0 -25.9260428859 -16.1778383512 11.1361445595 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="2143003529" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.215905081062 -0.976287347197 -0.0157064177093 0.0 0.0243748334002 -0.0106917323309 0.999641910643 0.0 -0.976106784258 -0.216211011124 0.0214883837392 0.0 -13.4608065 -8.28361768046 4.3197576501 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1954535252" immovable="1" name="Icosphere.008">
+				<mesh_name>guid://47d4d303e54a73e472d59b5b15eac93887b5cb91</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.368054440853 -0.892162951585 0.261879984252 0.0 0.527662670232 0.43231765716 0.731209946459 0.0 -0.765573737662 -0.130941058877 0.629877252998 0.0 -22.2703751765 -15.8643427287 9.78438811012 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="502028963" immovable="1" name="Icosphere.007">
+				<mesh_name>guid://2d70a9bc7dfab3348f0ca104f9a508420f958e7a</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-0.06534568304 -1.10934146091 0.674603959653 0.0 -0.538762016625 0.637728038011 0.996513362427 0.0 -1.18129771088 -0.229486743706 -0.491802619908 0.0 -15.5255100827 -8.56991535141 7.33010343504 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1199013798" immovable="1" name="Icosphere.005">
+				<mesh_name>guid://84d28fa925a5d05b7f7e16410603704443a6a3c7</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.198590170987 -0.957474064751 -0.209294594624 0.0 -0.187176126057 -0.246667460256 0.950843690011 0.0 -0.962034609552 -0.149653191698 -0.228202001958 0.0 -16.6486846289 -15.2064633973 8.25614277067 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1905431245" immovable="1" name="Icosphere.002">
+				<mesh_name>guid://6f2fcffa812081395e852802e952eba13d7e8008</mesh_name>
+				<surface name="асфальт_дефолт" intersection="1" material="15eb188f9aa4c5ba0fcdf56719568bbc12d6abbd"/>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<transform>-0.537545863767 -0.84322325431 0.00408635114395 0.0 0.0243748147492 -0.0106942571712 0.999641076253 0.0 -0.842878264973 0.537453475516 0.0263021933945 0.0 -15.3411037163 -12.0137986291 8.25172193356 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="441426467" immovable="1" name="Icosphere">
+				<mesh_name>guid://ff5d415fb3b2159473ef6c3752bb0211eb31560d</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.999999879854 -2.15732600468e-07 -2.94044120214e-05 0.0 2.94267159985e-05 3.00097458841e-05 0.999998269717 0.0 -1.91250411118e-07 -0.999998528368 3.00134682954e-05 0.0 2.08058224538 2.35358932271 2.60204104811 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="578756902" immovable="1" name="Icosphere.002">
+				<mesh_name>guid://6f2fcffa812081395e852802e952eba13d7e8008</mesh_name>
+				<surface name="асфальт_дефолт" intersection="1" material="15eb188f9aa4c5ba0fcdf56719568bbc12d6abbd"/>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<transform>-0.258818571425 -0.965925105785 3.58993265026e-05 0.0 2.93574940585e-05 2.91758708966e-05 0.999995766348 0.0 -0.965922438837 0.258817704094 2.06271039712e-05 0.0 -2.11306296706 -2.37940576584 3.65573387615 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1624163917" immovable="1" name="Icosphere.005">
+				<mesh_name>guid://84d28fa925a5d05b7f7e16410603704443a6a3c7</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.482956931232 -0.853859215532 -0.194103178458 0.0 -0.129380526633 -0.288818207718 0.948592678981 0.0 -0.866025327554 -0.433016313636 -0.24995951663 0.0 -2.35029421963 -6.10396373104 3.66256446323 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1735832392" immovable="1" name="Icosphere.007">
+				<mesh_name>guid://2d70a9bc7dfab3348f0ca104f9a508420f958e7a</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.499998905726 -0.866025191131 4.04102408272e-05 0.0 -6.86305444133e-06 4.27686491698e-05 0.999995230572 0.0 -0.866021583987 -0.499996723738 1.54748123343e-05 0.0 -2.79814923839 0.735690693147 2.75021018133 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1257029127" immovable="1" name="Icosphere.008">
+				<mesh_name>guid://47d4d303e54a73e472d59b5b15eac93887b5cb91</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>1.04104906635 -1.2566259696 0.476567852797 0.0 0.601076828966 0.974515561526 1.25659096063 0.0 -1.20204991604 -0.601010050984 1.04108514341 0.0 -7.46127745425 -8.3131847534 5.19914461518 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1826251706" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.499999131881 -0.866025498566 4.02016378343e-05 0.0 -8.55006210427e-06 4.15392244649e-05 0.999996720774 0.0 -0.866022694482 -0.499997413576 1.34035780477e-05 0.0 1.77108491873 -1.61155007834 2.67533594627 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="74194897" immovable="1" name="Icosphere.012">
+				<mesh_name>guid://45adf1edc4a0b6a185f6520573df8a8fc233a7eb</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.499999315356 -0.866025549684 4.01940150154e-05 0.0 -9.08572172864e-06 4.12160596401e-05 0.999997972497 0.0 -0.866023643574 -0.499998211862 1.27705084588e-05 0.0 -11.0419918617 -8.42956802601 6.7989957846 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="637720316" immovable="1" name="Icosphere.015">
+				<mesh_name>guid://ef4d6730976a51c6acf0a2f89793940213e91c4e</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.499999315356 -0.866025549684 4.01940150154e-05 0.0 -9.08572172864e-06 4.12160596401e-05 0.999997972497 0.0 -0.866023643574 -0.499998211862 1.27705084588e-05 0.0 -5.93095964932 -5.78528847095 5.22733441719 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1255687723" immovable="1" name="Icosphere.016">
+				<mesh_name>guid://38e536e7706351abbd2374bf1540b24de42a7755</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.499998917035 -0.866025379264 4.0916889236e-05 0.0 -9.05638506769e-06 4.19526172471e-05 0.999997793661 0.0 -0.866023716497 -0.499998003641 1.31055749044e-05 0.0 5.28559168007 3.10488758244 2.65563170841 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="261268878" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-1.49282879498 -0.400011458575 -0.414053407173 0.0 -0.399953143015 -0.107134545096 1.54549203033 0.0 -0.41411044201 1.54547959993 -3.31937020955e-05 0.0 -9.79129810061 -4.85386889075 4.66048767608 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1691162686" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-0.939919230838 -0.157821880201 0.884105098883 0.0 0.131924641804 1.24162143926 0.361895298003 0.0 -0.888339192216 0.351375823389 -0.881696240458 0.0 -18.093503054 -10.2488370297 7.78814040347 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="532017045" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-0.649991250576 -1.08746185046 0.291438933261 0.0 3.73686671319e-05 0.33650197667 1.25569195606 0.0 -1.12583811222 0.627846850947 -0.168217935714 0.0 -5.12535708573 -2.08914307201 3.32838295913 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="99197727" name="island_big_2">
+			<transform>0.353550374508 -0.35355168581 -7.63828358744e-14 0.0 0.353551656008 0.353550344706 4.37108873541e-08 0.0 -3.09084633443e-08 -3.09084455807e-08 0.499999731779 0.0 -73.2768094142 12.6256605104 78.2652252523 1.0</transform>
+			<node type="ObjectMeshStatic" id="240227826" immovable="1" name="Icosphere">
+				<mesh_name>guid://0d50709ba1413bbedabc51f3c4643b48ec3a9069</mesh_name>
+				<surface name="основа_земля_2" intersection="1" material="7425eb836200bdec888fe3db99e5f7879803a011"/>
+				<surface name="темный_земля_2" intersection="1" material="a0f784f13c5ae02208af068992edad725a170ccf"/>
+				<surface name="асфальт_2" intersection="1" material="167114292fbcea2fbf8e4ac1b474df8c86fa2447"/>
+				<surface name="вверх_земля_2" intersection="1" material="4376d7672e5002b0b951453fc604ab7b4b7f53d5"/>
+				<surface name="бардюр_2" intersection="1" material="988bbe6d22ac31692f00ce85c178e09079f2f06b"/>
+				<transform>0.999999465698 -4.48602415717e-07 4.76836774648e-07 0.0 -3.58125961801e-07 1.01685322278e-06 0.999999284744 0.0 -3.19554375183e-07 -0.999999540204 1.21990941634e-06 0.0 0.820955453697 20.3370611914 8.58325321049 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="485751977" immovable="1" name="Icosphere.001">
+				<mesh_name>guid://ad987606dc7d4777c49f398ee434cce0ab331eb4</mesh_name>
+				<surface name="вверх_земля_2" intersection="1" material="4376d7672e5002b0b951453fc604ab7b4b7f53d5"/>
+				<transform>0.999999716878 -4.90384848282e-07 8.9406535532e-07 0.0 -9.25441569954e-07 -2.04184759644e-07 0.999999880791 0.0 -5.06355313901e-07 -0.99999998296 -2.70204017805e-07 0.0 78.5922830926 -60.5468151102 9.21560303511 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="402595316" immovable="1" name="Icosphere.002">
+				<mesh_name>guid://2c981945b2e98c25973f3a5d58e12e7b4bd73a83</mesh_name>
+				<surface name="вверх_земля_2" intersection="1" material="4376d7672e5002b0b951453fc604ab7b4b7f53d5"/>
+				<transform>0.999999532217 -4.52597341156e-07 4.17230439129e-07 0.0 -4.0126207534e-07 -3.69166817583e-07 0.999999761581 0.0 -4.46750640926e-07 -0.999999879721 -3.29808380284e-07 0.0 99.9820968858 -7.21869336137 6.07998590407 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="119976131" immovable="1" name="Icosphere.003">
+				<mesh_name>guid://7f99e6a871aaaaba73d635708221402f8e781e06</mesh_name>
+				<surface name="основа_земля_2" intersection="1" material="7425eb836200bdec888fe3db99e5f7879803a011"/>
+				<transform>0.999999548188 -1.8651482427e-07 1.49010939017e-07 0.0 9.41844019342e-08 -3.45495693216e-07 0.999999761581 0.0 9.33996147645e-08 -0.999999778621 8.74221703125e-08 0.0 85.7333717506 55.3841529853 -13.7689849215 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1188994886" immovable="1" name="Icosphere.004">
+				<mesh_name>guid://f2c17dffd2bdd667deaa64d74f33a4294314ddad</mesh_name>
+				<surface name="вверх_земля_2" intersection="1" material="4376d7672e5002b0b951453fc604ab7b4b7f53d5"/>
+				<transform>0.999999524232 -5.85638551399e-07 1.10268067179e-06 0.0 -9.4034284427e-07 -2.29994583495e-07 0.999999642372 0.0 -4.38765430322e-07 -0.99999974668 -3.17865678071e-08 0.0 -6.59389683594 119.672797642 3.65606743131 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="386461165" immovable="1" name="Icosphere.005">
+				<mesh_name>guid://2884e41af51af139aa5730228f1d0aeb9ab62328</mesh_name>
+				<surface name="темный_земля_2" intersection="1" material="a0f784f13c5ae02208af068992edad725a170ccf"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 53.9656339882 80.4542811089 -14.8132988811 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="852784744" immovable="1" name="Icosphere.006">
+				<mesh_name>guid://4565dd49ea3d95507f0e7fe1cab827471898ac67</mesh_name>
+				<surface name="темный_земля_2" intersection="1" material="a0f784f13c5ae02208af068992edad725a170ccf"/>
+				<transform>0.999999524232 -5.85638551399e-07 1.10268067179e-06 0.0 -9.4034284427e-07 -2.29994583495e-07 0.999999642372 0.0 -4.38765430322e-07 -0.99999974668 -3.17865678071e-08 0.0 -112.463998814 9.01332766384 -6.25429941929 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="143550119" immovable="1" name="Icosphere.007">
+				<mesh_name>guid://b8599adc1dd60b0c2a93a624ee2908b926efbe9a</mesh_name>
+				<surface name="асфальт_2" intersection="1" material="167114292fbcea2fbf8e4ac1b474df8c86fa2447"/>
+				<transform>0.999999532217 -4.52597341156e-07 4.17230439129e-07 0.0 -4.0126207534e-07 -3.69166817583e-07 0.999999761581 0.0 -4.46750640926e-07 -0.999999879721 -3.29808380284e-07 0.0 31.5555050539 -73.0641399449 -22.7258095389 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1860154330" immovable="1" name="Icosphere.008">
+				<mesh_name>guid://15bb99a37eac61a14506ddfb26388afc5996fd31</mesh_name>
+				<surface name="асфальт_2" intersection="1" material="167114292fbcea2fbf8e4ac1b474df8c86fa2447"/>
+				<transform>0.999999940395 8.74227670361e-08 -8.74227713948e-08 0.0 8.74227708575e-08 1.47027378953e-07 0.999999821186 0.0 8.74227675734e-08 -0.999999880791 1.47027380611e-07 0.0 -89.3500366622 87.7404474564 -8.23098947674 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="264106353" immovable="1" name="Icosphere.009">
+				<mesh_name>guid://38d30b6ed46e881aaa7867f6c4f3a3ebabc454dc</mesh_name>
+				<surface name="основа_земля_2" intersection="1" material="7425eb836200bdec888fe3db99e5f7879803a011"/>
+				<transform>0.999999524232 -5.85638551399e-07 1.10268067179e-06 0.0 -9.4034284427e-07 -2.29994583495e-07 0.999999642372 0.0 -4.38765430322e-07 -0.99999974668 -3.17865678071e-08 0.0 -76.9966314684 -41.7923696426 -9.76518529845 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshSkinned" id="24482398" name="cat">
+			<mesh_name>guid://bf6f784e36b494a366ab80d699811620d2807abc</mesh_name>
+			<fps_visible_camera>-1</fps_visible_camera>
+			<fps_visible_shadow>30</fps_visible_shadow>
+			<fps_invisible>0</fps_invisible>
+			<anim_name>guid://9d0558ed6daf1baf181459052d94d98e1a3816eb</anim_name>
+			<speed>30</speed>
+			<surface name="Материал" intersection="1" material="11e9e6e18caf38fd59262279d27783673d66db3f"/>
+			<surface name="Outline" intersection="1" material="684c0cfb5eb13417285292533c30f96265c989c9"/>
+			<transform>-0.0887392982841 -0.330643028021 0.00764032779261 0.0 0.330576777458 -0.0884323716164 0.012513095513 0.0 -0.010109285824 0.0106185991317 0.342115491629 0.0 -85.6940401279 58.7884928131 103.493439629 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="868984615" name="проходной остров 2">
+			<transform>-0.549986362457 0.952624380589 -1.52410121199e-13 0.0 -0.952624976635 -0.549986720085 9.61641575259e-08 0.0 8.32815771901e-08 4.80818371784e-08 1.09999966621 0.0 -105.149513618 -27.314047155 105.569520333 1.0</transform>
+			<node type="ObjectMeshStatic" id="1429142106" immovable="1" name="Icosphere">
+				<mesh_name>guid://a22b835dca47459ffb2a6d753e38bb430316a1db</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.965925825823 0.258819380576 -1.71637170767e-07 0.0 7.45049292416e-08 2.16472106403e-07 0.999999783256 0.0 0.258819363352 -0.965925541744 8.44433553927e-08 0.0 2.5899101683 2.26819862204 -0.117347815433 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="979076593" immovable="1" name="Icosphere.003">
+				<mesh_name>guid://9b42c9e0c6d4a9cd2059c3a8696d538e37756d7e</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -8.69896602631 -7.58658323622e-07 0.0418533831835 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1056687772" immovable="1" name="Icosphere.004">
+				<mesh_name>guid://f00745d790700c4363ab1daf396e82d78853b6c5</mesh_name>
+				<surface name="камень_1" intersection="1" material="677e024f8a8968fb36f887272ba930654f88677d"/>
+				<transform>0.999999494436 -3.33807164432e-07 1.78812538868e-07 0.0 7.92864412496e-08 -3.71306072272e-07 0.999999783256 0.0 -5.22444433826e-08 -0.999999656993 8.74219579283e-08 0.0 7.47453345292 4.75022941102 0.77792179745 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="630600011" immovable="1" name="Icosphere.005">
+				<mesh_name>guid://9b108a12420d28f83e77791a7b79c7265cbeb960</mesh_name>
+				<surface name="камень_1" intersection="1" material="677e024f8a8968fb36f887272ba930654f88677d"/>
+				<transform>0.999999494436 -3.33807164432e-07 1.78812538868e-07 0.0 7.92864412496e-08 -3.71306072272e-07 0.999999783256 0.0 -5.22444433826e-08 -0.999999656993 8.74219579283e-08 0.0 -2.99921491539 3.92213533946 -0.0502582580507 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1609076641" name="medium_island_3">
+			<transform>0.579555630684 0.155291244388 2.13162850374e-15 0.0 -0.155291244388 0.579555630684 5.24534762292e-08 0.0 1.35759430364e-08 -5.06661663735e-08 0.599999964237 0.0 11.0084746435 -44.0430285543 155.243581716 1.0</transform>
+			<node type="ObjectMeshStatic" id="1261528204" immovable="1" name="Icosphere.004">
+				<mesh_name>guid://e6bd391b1faaa0d7a7f44a73dea73eed86e714e9</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="земля_дефолт_темнее" intersection="1" material="9408567d2765100030966c95cefbab0021f1d3fb"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.333333198467 4.0422561399e-08 -2.98023217767e-08 0.0 4.04109021425e-08 1.44657472273e-06 0.333332389593 0.0 5.24787235334e-08 -0.333332481779 1.44723142702e-06 0.0 -175.13763781 242.77790961 -109.948180223 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshSkinned" id="269148333" name="cat">
+			<mesh_name>guid://bf6f784e36b494a366ab80d699811620d2807abc</mesh_name>
+			<fps_visible_camera>-1</fps_visible_camera>
+			<fps_visible_shadow>30</fps_visible_shadow>
+			<fps_invisible>0</fps_invisible>
+			<anim_name>guid://9d0558ed6daf1baf181459052d94d98e1a3816eb</anim_name>
+			<speed>30</speed>
+			<surface name="Материал" intersection="1" material="11e9e6e18caf38fd59262279d27783673d66db3f"/>
+			<surface name="Outline" intersection="1" material="684c0cfb5eb13417285292533c30f96265c989c9"/>
+			<transform>0.242134511471 -0.242134124041 0.000473065098049 0.0 0.242134362459 0.242134794593 2.03204654099e-05 0.0 -0.000348875735654 0.000320137711242 0.342428773642 0.0 -41.9885442637 27.8890609715 104.345192059 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1448171675" name="Medium_Island_2">
+			<transform>0.999999880791 2.64697291146e-22 -3.82136330703e-15 0.0 6.93765805689e-23 0.999999880791 8.74226699921e-08 0.0 3.82136330703e-15 -8.74226699921e-08 0.999999940395 0.0 -11.8577289799 75.1492426821 96.4853350647 1.0</transform>
+			<node type="ObjectMeshStatic" id="788608318" immovable="1" name="Icosphere">
+				<mesh_name>guid://04992d52233340d38457e45a283285548eb6e2a0</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-0.258818865874 -0.965925987473 2.63257727888e-07 0.0 3.57627736933e-07 -9.13911984906e-08 0.999999821186 0.0 -0.965925749055 0.25881856785 9.65826084781e-08 0.0 6.45106184935 -0.130472491294 -0.117347340354 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1976473376" immovable="1" name="Icosphere.004">
+				<mesh_name>guid://da9316d4cca710ddf249851c901560022a7d44d2</mesh_name>
+				<surface name="камень_1" intersection="1" material="677e024f8a8968fb36f887272ba930654f88677d"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 5.89308321546 4.0827723273 0.7779218558 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1245929471" immovable="1" name="Icosphere.005">
+				<mesh_name>guid://d0a8d33b29b5205094f9b0935376779406b91e09</mesh_name>
+				<surface name="камень_1" intersection="1" material="677e024f8a8968fb36f887272ba930654f88677d"/>
+				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 4.52919672709 5.59289161004 -0.0502584041105 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="45623326" name="Stairs 2">
+			<transform>0.965878784657 0.258659154177 0.0131406467408 0.0 -0.258895277977 0.965663671494 0.021589551121 0.0 -0.00710511207581 -0.024254957214 0.999680280685 0.0 -119.502962696 -38.0413237822 104.649345373 1.0</transform>
+			<node type="ObjectMeshStatic" id="716370149" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-1.36412901575 0.0722228217837 0.833025094741 0.0 0.833935246797 0.00158630976576 1.36548123376 0.0 0.0608109573326 1.59836828835 -0.0389962198742 0.0 -20.007876617 -19.631721369 10.1824296081 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="970812672" immovable="1" name="Icosphere.016">
+				<mesh_name>guid://38e536e7706351abbd2374bf1540b24de42a7755</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-0.737536800782 -0.675123518529 -0.015686991015 0.0 0.00291724632437 -0.0264141924016 0.999644076612 0.0 -0.675297782916 0.737229052522 0.0214514201295 0.0 -11.9782939625 -10.8277589399 7.18235293799 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="186350687" immovable="1" name="Icosphere.015">
+				<mesh_name>guid://ef4d6730976a51c6acf0a2f89793940213e91c4e</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.215904783895 -0.976287381833 -0.0157058050755 0.0 0.024374123709 -0.0106912607227 0.999643504193 0.0 -0.976107495667 -0.216210689555 0.0214878508063 0.0 -20.1335415441 -14.6791184657 10.3483870575 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1705582130" immovable="1" name="Icosphere.012">
+				<mesh_name>guid://45adf1edc4a0b6a185f6520573df8a8fc233a7eb</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.215905244971 -0.976285266838 -0.0157076082591 0.0 0.0243754362062 -0.0106928674718 0.9996419118 0.0 -0.976105051031 -0.216211261647 0.0214886867204 0.0 -24.9201019446 -16.4288822742 11.8193136967 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="988768233" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.215905081062 -0.976287347197 -0.0157064177093 0.0 0.0243748334002 -0.0106917323309 0.999641910643 0.0 -0.976106784258 -0.216211011124 0.0214883837392 0.0 -13.4608065 -8.28361768046 4.3197576501 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1136594996" immovable="1" name="Icosphere.008">
+				<mesh_name>guid://47d4d303e54a73e472d59b5b15eac93887b5cb91</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.368054282486 -0.892162889789 0.261880416228 0.0 0.527662407662 0.432317897606 0.731209930887 0.0 -0.765573943858 -0.130940504439 0.629876973807 0.0 -23.4730605475 -13.393538466 10.6729341927 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1655406083" immovable="1" name="Icosphere.007">
+				<mesh_name>guid://2d70a9bc7dfab3348f0ca104f9a508420f958e7a</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-0.06534568304 -1.10934146091 0.674603959653 0.0 -0.538762016625 0.637728038011 0.996513362427 0.0 -1.18129771088 -0.229486743706 -0.491802619908 0.0 -15.5255100827 -8.56991535141 7.33010343504 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1638173574" immovable="1" name="Icosphere.005">
+				<mesh_name>guid://84d28fa925a5d05b7f7e16410603704443a6a3c7</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.198590170987 -0.957474064751 -0.209294594624 0.0 -0.187176126057 -0.246667460256 0.950843690011 0.0 -0.962034609552 -0.149653191698 -0.228202001958 0.0 -16.6486846289 -15.2064633973 8.25614277067 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1635216685" immovable="1" name="Icosphere.002">
+				<mesh_name>guid://6f2fcffa812081395e852802e952eba13d7e8008</mesh_name>
+				<surface name="асфальт_дефолт" intersection="1" material="15eb188f9aa4c5ba0fcdf56719568bbc12d6abbd"/>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<transform>-0.537545683829 -0.843222967375 0.0040870382317 0.0 0.0243750376354 -0.0106934781747 0.999640916625 0.0 -0.842878063059 0.537453416764 0.0263021269032 0.0 -15.3363848983 -12.0060458013 8.61070791739 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1852075176" immovable="1" name="Icosphere">
+				<mesh_name>guid://ff5d415fb3b2159473ef6c3752bb0211eb31560d</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.999999879854 -2.15732600468e-07 -2.94044120214e-05 0.0 2.94267159985e-05 3.00097458841e-05 0.999998269717 0.0 -1.91250411118e-07 -0.999998528368 3.00134682954e-05 0.0 2.08058224538 2.35358932271 2.60204104811 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="2000381927" immovable="1" name="Icosphere.002">
+				<mesh_name>guid://6f2fcffa812081395e852802e952eba13d7e8008</mesh_name>
+				<surface name="асфальт_дефолт" intersection="1" material="15eb188f9aa4c5ba0fcdf56719568bbc12d6abbd"/>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<transform>-0.248217743562 -0.933479482626 0.258847215572 0.0 0.0667862608904 0.250082253517 0.965913849906 0.0 -0.966395314486 0.257044763484 0.000268755565536 0.0 -1.74095660452 -1.96263392965 3.67933463218 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="459818010" immovable="1" name="Icosphere.005">
+				<mesh_name>guid://84d28fa925a5d05b7f7e16410603704443a6a3c7</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.482956931232 -0.853859215532 -0.194103178458 0.0 -0.129380526633 -0.288818207718 0.948592678981 0.0 -0.866025327554 -0.433016313636 -0.24995951663 0.0 -2.35029421963 -6.10396373104 3.66256446323 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1382466737" immovable="1" name="Icosphere.007">
+				<mesh_name>guid://2d70a9bc7dfab3348f0ca104f9a508420f958e7a</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.499998905726 -0.866025191131 4.04102408272e-05 0.0 -6.86305444133e-06 4.27686491698e-05 0.999995230572 0.0 -0.866021583987 -0.499996723738 1.54748123343e-05 0.0 -2.79814923839 0.735690693147 2.75021018133 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="323909212" immovable="1" name="Icosphere.008">
+				<mesh_name>guid://47d4d303e54a73e472d59b5b15eac93887b5cb91</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>1.0410489045 -1.25662610406 0.47656776417 0.0 0.6010768989 0.974515369298 1.25659079229 0.0 -1.20204989995 -0.601009961924 1.04108487536 0.0 -7.45932796935 -8.31807491238 5.64234735923 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="160407051" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.499998535612 -0.866025702283 4.01067684141e-05 0.0 -8.56477082367e-06 4.13662488956e-05 0.999997728626 0.0 -0.866023205322 -0.499997048653 1.32721388497e-05 0.0 1.9382900454 5.94727985812 1.07476719673 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1623546862" immovable="1" name="Icosphere.012">
+				<mesh_name>guid://45adf1edc4a0b6a185f6520573df8a8fc233a7eb</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.499999134716 -0.866025547001 4.03908634159e-05 0.0 -9.02671467114e-06 4.14868478654e-05 0.999997910964 0.0 -0.866023759848 -0.499997957504 1.29506299175e-05 0.0 -11.0307861652 -8.41115751808 7.65147367096 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1129542261" immovable="1" name="Icosphere.015">
+				<mesh_name>guid://ef4d6730976a51c6acf0a2f89793940213e91c4e</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.499999315356 -0.866025549684 4.01940150154e-05 0.0 -9.08572172864e-06 4.12160596401e-05 0.999997972497 0.0 -0.866023643574 -0.499998211862 1.27705084588e-05 0.0 -5.93095964932 -5.78528847095 5.22733441719 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="347300176" immovable="1" name="Icosphere.016">
+				<mesh_name>guid://38e536e7706351abbd2374bf1540b24de42a7755</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.499998988422 -0.866025425073 4.12276799691e-05 0.0 -9.15970335875e-06 4.22522797405e-05 0.999998015429 0.0 -0.866023772328 -0.499998010236 1.31755217044e-05 0.0 1.53716952915 -1.26092667825 3.23478517865 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1126220911" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-1.49282879498 -0.400011458575 -0.414053407173 0.0 -0.399953143015 -0.107134545096 1.54549203033 0.0 -0.41411044201 1.54547959993 -3.31937020955e-05 0.0 -9.79129810061 -4.85386889075 4.66048767608 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1647585026" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-0.939919230838 -0.157821880201 0.884105098883 0.0 0.131924641804 1.24162143926 0.361895298003 0.0 -0.888339192216 0.351375823389 -0.881696240458 0.0 -18.093503054 -10.2488370297 7.78814040347 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1339144825" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-0.649991250576 -1.08746185046 0.291438933261 0.0 3.73686671319e-05 0.33650197667 1.25569195606 0.0 -1.12583811222 0.627846850947 -0.168217935714 0.0 -5.12535708573 -2.08914307201 3.32838295913 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="46721784" name="island_big_3">
+			<transform>0.999999880791 2.64697493094e-22 -3.8213675422e-15 0.0 6.93769466004e-23 0.999999880791 8.74227197301e-08 0.0 3.8213675422e-15 -8.74227197301e-08 0.999999940395 0.0 -295.186609648 -166.218245379 3.38813178902e-21 1.0</transform>
+			<node type="ObjectMeshStatic" id="1618588151" immovable="1" name="ы">
+				<mesh_name>guid://f8f5f2cf379cf818306aa7a793344a278d4893fd</mesh_name>
+				<surface name="земля_3" intersection="1" material="9baafd5be1e829802b8ba6b36e45bc8d7d2ab729"/>
+				<surface name="земля_тень_3" intersection="1" material="4d5ff405ffdf5d0d57791d1d85ba94ea024dcf43"/>
+				<surface name="почва_3" intersection="1" material="00493841e6b56998ed83f7d954cb102019b8999f"/>
+				<surface name="асфальт_3" intersection="1" material="baa72cbd52d5505b14459ad50034ad0fde54683b"/>
+				<surface name="бардюр_3" intersection="1" material="c6aa4e375795457e53b14a0fc273acc47c662c25"/>
+				<transform>0.259807885862 0.149999397993 -2.50041741274e-07 0.0 -6.52670586812e-07 1.62884601944e-06 0.299999850988 0.0 0.149999397993 -0.25980785606 1.73485586147e-06 0.0 114.450297565 82.8638373632 102.866607122 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="843551255" name="Medium_Island_4">
+			<transform>0.519615590572 0.299998939037 1.06581376483e-14 0.0 -0.299999028444 0.519615709782 5.24533447788e-08 0.0 2.6226590677e-08 -4.54259847515e-08 0.600000023842 0.0 -232.286796356 1.61159362595 101.244539584 1.0</transform>
+			<node type="ObjectMeshStatic" id="310741130" immovable="1" name="Icosphere">
+				<mesh_name>guid://40e08fdc15adccdd7172bb2452c2da09c9c64b9a</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>1.00000007451 1.29047899137e-07 -1.63912813428e-07 0.0 1.13611951968e-07 -1.33028703694e-07 1.00000009934 0.0 3.63614719445e-08 -1.0000001357 -1.43545572662e-07 0.0 -5.68434188608e-14 7.75107935169e-07 17.7324028015 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="924311137" enabled="0" immovable="1" name="Icosphere.001">
+				<mesh_name>guid://6f5d4aa3df8b2af9d14aeefb9d70a8a7dfaa2631</mesh_name>
+				<surface name="surface_0" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>3.92166471481 3.42842967417e-07 -1.01350291295e-06 0.0 3.42842967417e-07 -1.55342916694e-06 11.5931215286 0.0 3.42842831611e-07 -3.92166471481 -9.74250320986e-07 0.0 19.5473210736 2.81323957367 26.3404654227 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1119413324" enabled="0" immovable="1" name="Icosphere.003">
+				<mesh_name>guid://8a39086ebbabaf81a7b384f69c2825921e1369dc</mesh_name>
+				<surface name="surface_0" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>6.11298179626 5.34413982489e-07 -8.27540749291e-07 0.0 5.34413982489e-07 -1.36974511717e-06 9.46596240997 0.0 4.82629020159e-07 -5.520632267 -1.07188102507e-06 0.0 -17.4116550583 -4.20623008819 25.6392194679 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="372560699" enabled="0" immovable="1" name="Icosphere.004">
+				<mesh_name>guid://ec19f28d0efbf58b1ea28ea5fb904ddfd614fb8b</mesh_name>
+				<surface name="surface_0" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>-2.94989415911 -4.14145562591 -3.4717290992e-07 0.0 -7.72498034417e-07 -4.32916806108e-09 3.86303043365 0.0 -2.91972195179 2.07967234466 -6.04990902663e-07 0.0 14.8797924468 -13.5783953894 24.2632528518 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="845262577" name="finish_island">
+			<transform>0.399999916553 1.05878865971e-22 -1.52854432755e-15 0.0 2.77505079031e-23 0.399999827147 3.49690338908e-08 0.0 1.52854432755e-15 -3.49690409962e-08 0.399999916553 0.0 -174.074336939 -247.599550263 89.0830592911 1.0</transform>
+			<node type="ObjectMeshStatic" id="1285675932" immovable="1" name="Icosphere.004">
+				<mesh_name>guid://2260723ec9dc18cf769c80c6ce4aee8ca0d4052c</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="земля_дефолт_темнее" intersection="1" material="9408567d2765100030966c95cefbab0021f1d3fb"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>1.45906046669 1.27584795637e-07 -1.2753507249e-07 0.0 1.27510947287e-07 0.000272245885709 1.45905569829 0.0 1.27608172892e-07 -1.45905632244 0.000272245897645 0.0 -324.915115504 270.129875704 0.679141407084 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshSkinned" id="292812950" name="cat">
+			<mesh_name>guid://bf6f784e36b494a366ab80d699811620d2807abc</mesh_name>
+			<fps_visible_camera>-1</fps_visible_camera>
+			<fps_visible_shadow>30</fps_visible_shadow>
+			<fps_invisible>0</fps_invisible>
+			<anim_name>guid://9d0558ed6daf1baf181459052d94d98e1a3816eb</anim_name>
+			<speed>30</speed>
+			<surface name="Материал" intersection="1" material="11e9e6e18caf38fd59262279d27783673d66db3f"/>
+			<surface name="Outline" intersection="1" material="684c0cfb5eb13417285292533c30f96265c989c9"/>
+			<transform>0.241507977247 -0.242074906826 -0.0182028673589 0.0 0.241641014814 0.242180734873 -0.0147029543296 0.0 0.0232678372413 -0.00247548613697 0.341628670692 0.0 -144.136518514 -62.8904291533 116.120969474 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="607726699" name="Medium_Island_5">
+			<transform>0.999999940395 2.64697619312e-22 -3.82136923626e-15 0.0 6.93770601964e-23 0.999999940395 8.74227481518e-08 0.0 3.82136923626e-15 -8.74227481518e-08 0.999999940395 0.0 -271.666595459 -229.664718628 1.52587890625e-05 1.0</transform>
+			<node type="ObjectMeshStatic" id="830199502" immovable="1" name="Icosphere.004">
+				<mesh_name>guid://2260723ec9dc18cf769c80c6ce4aee8ca0d4052c</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="земля_дефолт_темнее" intersection="1" material="9408567d2765100030966c95cefbab0021f1d3fb"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.276381866716 0.276381687902 -4.74592899372e-08 0.0 -9.55182203362e-07 1.11748650217e-06 0.390860849074 0.0 0.276380167984 -0.276380227588 1.4977042931e-06 0.0 139.545774732 33.0440934167 94.1879090241 1.0</transform>
+			</node>
+		</node>
+		<node type="NodeDummy" id="447119580" name="Stairs 2">
+			<transform>0.96557199955 0.260133415461 2.69319698418e-05 0.0 -0.254600137472 0.945012152195 0.205254897475 0.0 0.0533682629466 -0.198195397854 0.978708207607 0.0 -221.23670469 -110.353264235 115.20117829 1.0</transform>
+			<node type="ObjectMeshStatic" id="62334603" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-1.09799407884 0.0581333757299 0.670508183011 0.0 0.671240020444 0.00127607823752 1.09908108973 0.0 0.0489481485726 1.28653457192 -0.0313878804953 0.0 -18.9352610343 4.42323569387 3.87921665093 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="699026030" immovable="1" name="Icosphere.016">
+				<mesh_name>guid://38e536e7706351abbd2374bf1540b24de42a7755</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-0.737536020454 -0.675123036631 -0.0156858674754 0.0 0.00291788358647 -0.0264131439904 0.999643491823 0.0 -0.675297516626 0.73722857825 0.0214510401401 0.0 -16.54585527 9.24797273812 2.28974903898 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="2021297909" immovable="1" name="Icosphere.015">
+				<mesh_name>guid://ef4d6730976a51c6acf0a2f89793940213e91c4e</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.215905073295 -0.976288363465 -0.0157054110181 0.0 0.0243741433599 -0.010690985545 0.999645159905 0.0 -0.976107872085 -0.216210989458 0.0214878601384 0.0 -23.1102239257 5.47361300783 4.09809168591 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="629855184" immovable="1" name="Icosphere.012">
+				<mesh_name>guid://45adf1edc4a0b6a185f6520573df8a8fc233a7eb</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.215905038304 -0.976285917691 -0.015707629183 0.0 0.0243755437396 -0.0106929589962 0.999643076784 0.0 -0.976105918556 -0.216211116087 0.0214887678076 0.0 -28.4612889489 5.63892039562 2.31422059238 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="607163631" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.215904878668 -0.976287378356 -0.0157066833836 0.0 0.0243749556395 -0.0106919395388 0.999641827677 0.0 -0.976106811675 -0.216210565128 0.0214885685456 0.0 -15.4775198051 2.6763566788 1.75230441754 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="2039790978" immovable="1" name="Icosphere.008">
+				<mesh_name>guid://47d4d303e54a73e472d59b5b15eac93887b5cb91</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.368054541561 -0.892162448278 0.261880949797 0.0 0.527662276352 0.432318627363 0.731209768541 0.0 -0.765573912606 -0.13094038643 0.62987683417 0.0 -30.6940765855 10.0285210314 1.63857645403 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="774921977" immovable="1" name="Icosphere.007">
+				<mesh_name>guid://2d70a9bc7dfab3348f0ca104f9a508420f958e7a</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-0.0653459829654 -1.10934145937 0.674604161326 0.0 -0.538761185876 0.637728172255 0.996513522005 0.0 -1.18129830846 -0.229486451851 -0.491802062407 0.0 -24.873651124 9.64210121952 2.57128488849 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="554433540" immovable="1" name="Icosphere.005">
+				<mesh_name>guid://84d28fa925a5d05b7f7e16410603704443a6a3c7</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.198590803661 -0.957473833883 -0.209294095092 0.0 -0.187175829734 -0.246667159814 0.950843116619 0.0 -0.962033893579 -0.149653946142 -0.228201726554 0.0 -12.2805259344 6.62570345378 3.67737580317 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1289246611" immovable="1" name="Icosphere.002">
+				<mesh_name>guid://6f2fcffa812081395e852802e952eba13d7e8008</mesh_name>
+				<surface name="асфальт_дефолт" intersection="1" material="15eb188f9aa4c5ba0fcdf56719568bbc12d6abbd"/>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<transform>-0.537546124423 -0.843223730192 0.00408825984315 0.0 0.0243755244274 -0.0106926728288 0.999641859644 0.0 -0.842878240324 0.537453099464 0.026301662099 0.0 -16.2233134448 6.18954341248 3.67046891016 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="516083005" immovable="1" name="Icosphere.002">
+				<mesh_name>guid://6f2fcffa812081395e852802e952eba13d7e8008</mesh_name>
+				<surface name="асфальт_дефолт" intersection="1" material="15eb188f9aa4c5ba0fcdf56719568bbc12d6abbd"/>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<transform>-0.248217263132 -0.933479708735 0.258847229397 0.0 0.0667891415624 0.250081769946 0.965914175805 0.0 -0.966395155036 0.25704518153 0.0002717924477 0.0 0.757810227152 2.41122287622 1.31624632242 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1963896184" immovable="1" name="Icosphere.005">
+				<mesh_name>guid://84d28fa925a5d05b7f7e16410603704443a6a3c7</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.482956037063 -0.853859519246 -0.194103463122 0.0 -0.129380464881 -0.288818515683 0.948593210087 0.0 -0.866026328213 -0.433015827262 -0.249959357431 0.0 2.94700387433 6.17314031823 1.36815104304 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="2013500023" immovable="1" name="Icosphere.007">
+				<mesh_name>guid://2d70a9bc7dfab3348f0ca104f9a508420f958e7a</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.499998717118 -0.866025211944 4.03305955335e-05 0.0 -6.73869039251e-06 4.25298911059e-05 0.999995831112 0.0 -0.866022069258 -0.499997012754 1.53940035216e-05 0.0 -8.79282804205 8.61169839658 3.10714991863 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="244829546" immovable="1" name="Icosphere.008">
+				<mesh_name>guid://47d4d303e54a73e472d59b5b15eac93887b5cb91</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>1.04104960429 -1.25662536872 0.476567215617 0.0 0.601076714524 0.974515423723 1.2565901795 0.0 -1.20204829313 -0.601010443281 1.04108429946 0.0 -7.00575024103 2.26383296792 2.95930736308 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="89562561" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.499998059608 -0.86602549973 4.08020521854e-05 0.0 -8.62727465997e-06 4.22057632719e-05 0.999995716436 0.0 -0.866021546587 -0.499995619499 1.37010646072e-05 0.0 -0.825947863683 6.1625149896 2.03662628576 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1820908588" immovable="1" name="Icosphere.012">
+				<mesh_name>guid://45adf1edc4a0b6a185f6520573df8a8fc233a7eb</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.499999199636 -0.866025524266 4.12791518682e-05 0.0 -8.76392969046e-06 4.25470634903e-05 0.999998141818 0.0 -0.866024110462 -0.49999832366 1.36820768707e-05 0.0 -9.36417301181 5.42341893464 3.43548968597 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1197975963" immovable="1" name="Icosphere.015">
+				<mesh_name>guid://ef4d6730976a51c6acf0a2f89793940213e91c4e</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.499999157568 -0.866025611807 4.05057947845e-05 0.0 -9.0637958688e-06 4.1424316409e-05 0.999998559993 0.0 -0.866024006415 -0.499998333485 1.28695791844e-05 0.0 -3.9500505595 4.26259356954 3.12003590695 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="979980862" immovable="1" name="Icosphere.016">
+				<mesh_name>guid://38e536e7706351abbd2374bf1540b24de42a7755</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>0.499998969435 -0.866025393218 4.1601857536e-05 0.0 -9.08406310804e-06 4.26559448015e-05 0.999998240795 0.0 -0.866023875789 -0.499998189755 1.34256078881e-05 0.0 -2.08619119377 1.4698352092 2.8570902063 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="849007749" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-1.49282941289 -0.400011926021 -0.414053289909 0.0 -0.399953218072 -0.107134800714 1.54549234333 0.0 -0.414111021136 1.54547974581 -3.33024279608e-05 0.0 -13.3976052174 8.32668684873 2.43543650945 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1073069088" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-0.9399195589 -0.157822170765 0.884104927853 0.0 0.131924524144 1.241620734 0.361895460034 0.0 -0.888339585715 0.351376143215 -0.88169661379 0.0 -19.8728038988 7.83055937837 2.746371951 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1140736255" immovable="1" name="Icosphere.010">
+				<mesh_name>guid://8efcf54e7f7a26d4e13e1dd6ce466b2c70ef0fbc</mesh_name>
+				<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+				<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+				<transform>-0.649990405335 -1.0874617245 0.291437815638 0.0 3.69944006036e-05 0.336501414137 1.25569165861 0.0 -1.12583764031 0.627846431396 -0.168217317881 0.0 -6.86387808327 7.7527539212 2.29513364014 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectMeshSkinned" id="709670281" name="cat">
+			<mesh_name>guid://bf6f784e36b494a366ab80d699811620d2807abc</mesh_name>
+			<fps_visible_camera>-1</fps_visible_camera>
+			<fps_visible_shadow>30</fps_visible_shadow>
+			<fps_invisible>0</fps_invisible>
+			<anim_name>guid://9d0558ed6daf1baf181459052d94d98e1a3816eb</anim_name>
+			<speed>30</speed>
+			<surface name="Материал" intersection="1" material="11e9e6e18caf38fd59262279d27783673d66db3f"/>
+			<surface name="Outline" intersection="1" material="684c0cfb5eb13417285292533c30f96265c989c9"/>
+			<transform>0.243402719498 -0.240853667259 -0.00149695202708 0.0 0.234866932034 0.237815216184 -0.0744275227189 0.0 0.0533895082772 0.0518771596253 0.334239393473 0.0 -215.460818443 -104.674337271 115.410976135 1.0</transform>
+		</node>
 	</editor>
 	<console>
 		<bake_lighting_bounces>4</bake_lighting_bounces>
@@ -840,6 +1658,7 @@
 		<bake_lightmap_quality>3</bake_lightmap_quality>
 		<bake_lightmap_viewport_mask>-1</bake_lightmap_viewport_mask>
 		<bake_lightmap_zfar>1000</bake_lightmap_zfar>
+		<world_async_load_node_references>0</world_async_load_node_references>
 		<world_moving_immovable_node_mode>1</world_moving_immovable_node_mode>
 	</console>
 </world>

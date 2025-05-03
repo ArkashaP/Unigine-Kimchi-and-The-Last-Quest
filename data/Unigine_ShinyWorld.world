@@ -812,7 +812,7 @@
 					<billboard name="flare_29" offset="0.936999977" size="0.449999988" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.180000007"/>
 					<billboard name="flare_30" offset="1" size="1.03999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.150000006"/>
 				</lens_flare_billboards>
-				<transform>-0.43301213 0.43559659 -0.78914928 0.0 -0.75000143 -0.65973973 0.047366548 0.0 -0.49999931 0.61237192 0.6123718 0.0 5.5310855 -2.9544408 4.204565 1.0</transform>
+				<transform>-0.433001514427 0.435586091189 -0.789130437038 0.0 -0.74997799128 -0.6597189107 0.0473651094842 0.0 -0.499993711907 0.612365282561 0.612365282561 0.0 5.5310855 -2.9544408 8.30351819816 1.0</transform>
 			</node>
 			<node type="LightVoxelProbe" id="977121940" name="LightVoxelProbe">
 				<box_size>52.8566971 44.5205879 10.7909889</box_size>
@@ -865,7 +865,7 @@
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
 				<baked_depth_texture replace="7a7bf4a609b3cd9398611e2b417aafd6cf7ec9f1"/>
-				<transform>1 2.5243552e-29 0 0.0 -2.5243552e-29 1 -1.4210854e-14 0.0 -3.5873241e-43 1.4210855e-14 1 0.0 4.0681005 -1.2260934 5.4835181 1.0</transform>
+				<transform>0.999999940791 2.52435474724e-29 0 0.0 -2.52435474724e-29 0.999999940791 -1.42108496386e-14 0.0 -3.58732428391e-43 1.42108504857e-14 1.0000000004 0.0 4.0681005 -1.2260934 5.4835181 1.0</transform>
 			</node>
 		</node>
 		<node type="NodeReference" id="1777446179" name="first_person_controller">
