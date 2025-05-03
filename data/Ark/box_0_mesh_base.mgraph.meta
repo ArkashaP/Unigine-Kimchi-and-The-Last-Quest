@@ -2,7 +2,7 @@
 <asset version="2.19.0.3">
 	<guid>8779019973394b1d8701b930103ff6384c555ca9</guid>
 	<type>material_graph</type>
-	<hash>37f3afe5</hash>
+	<hash>b3f8921c</hash>
 	<runtimes>
 		<runtime id="8779019973394b1d8701b930103ff6384c555ca9" name="box_0_mesh_base.mgraph" link="0"/>
 		<runtime id="c161b673c7e7058e314169e28d9a56d0ccef10c3" name="box_0_mesh_base" link="1" type="5"/>

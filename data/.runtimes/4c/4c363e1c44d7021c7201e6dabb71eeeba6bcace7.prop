@@ -92,7 +92,7 @@ In case of incorrect settings of the specified custom body or shape, a default b
 	<parameter name="groundDamping" type="float" tooltip="Horizontal ground damping of the player&apos;s speed" group="Movement" min="0">25</parameter>
 	<parameter name="airDamping" type="float" tooltip="Horizontal air damping of the player&apos;s speed" group="Movement" min="0">0.0500000007</parameter>
 	<parameter name="jumpPower" type="float" tooltip="Jumping power of the player" group="Movement" min="0" useJump="1">6</parameter>
-	<parameter name="ultraJumpPower" type="float" tooltip="Ultra Jumping power of the player" group="Movement" min="0" useJump="1">20</parameter>
+	<parameter name="ultraJumpPower" type="float" tooltip="Ultra Jumping power of the player" group="Movement" min="0" useJump="1">10</parameter>
 	<parameter name="crouchJumpPower" type="float" tooltip="Jumping crouch power of the player" group="Movement" min="0" useJump="1" useCrouch="1">3</parameter>
 	<parameter name="crouchUltraJumpPower" type="float" tooltip="Ultra Jumping crouch power of the player" group="Movement" min="0" useJump="1" useCrouch="1">6</parameter>
 	<parameter name="crouchHeight" type="float" tooltip="Crouching height of the player" group="Movement" min="0" useCrouch="1">1</parameter>

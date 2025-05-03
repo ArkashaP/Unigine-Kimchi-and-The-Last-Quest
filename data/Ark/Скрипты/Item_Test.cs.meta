@@ -2,7 +2,7 @@
 <asset version="2.19.0.3">
 	<guid>815b12b3ba7682b51a295d224ca2abd05245ed03</guid>
 	<type>component</type>
-	<hash>5b4d686e</hash>
+	<hash>3d6825be</hash>
 	<runtimes>
 		<runtime id="815b12b3ba7682b51a295d224ca2abd05245ed03" name="Item_Test.cs" link="0"/>
 		<runtime id="750093d9f5a80d13f7f1ca7044d183741f44bee9" name="Item_Test.prop" link="1" type="4"/>
