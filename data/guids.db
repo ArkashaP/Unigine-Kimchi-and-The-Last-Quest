@@ -501,7 +501,7 @@
 	"d165e6b36b9d7582261544184a93c9543ee463b1": "shader_d3d12_dxc.cache",
 	"a866c7a765c332095c09d49c7cff22fce11a6705": "unigine.cache",
 	"f7e461876c64f0fdbdf2e3c6cabcb3822a09895c": "editor.cache",
-	"6ff86d812982719a810321f9a3ef1f74fdadde40": "d3d12_nvidia_geforce_gtx_1660_dxc.gpu_cache",
+	"0b7c9366166b753c9cfde090f4c99981eb59ce6d": "d3d12_nvidia_geforce_rtx_4060_dxc.gpu_cache",
 	"71d8622f751cc10ba2f9cace438bd209ae293524": "core/locale/unigine.locale",
 	"694c3df50de2811bf23df33c74b20735559bc1a2": "core/import/xatlas/README",
 	"d7c2274d6378a0480073c707d34bd8ba59cd10d1": "bake_lighting/env/ep_10.texture",
