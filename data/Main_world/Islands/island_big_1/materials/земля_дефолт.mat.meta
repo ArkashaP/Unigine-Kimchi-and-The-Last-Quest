@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>1e6f75557ab4b20d49391c6d57f5df176bcdd213</guid>
+	<type>material</type>
+	<hash>bcc36054</hash>
+	<runtimes>
+		<runtime id="1e6f75557ab4b20d49391c6d57f5df176bcdd213" name="земля_дефолт" link="0" type="5"/>
+	</runtimes>
+</asset>

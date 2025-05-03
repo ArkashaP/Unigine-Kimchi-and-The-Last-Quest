@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="843551255" name="Medium_Island_2">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="310741130" immovable="1" name="Icosphere">
+			<mesh_name>guid://40e08fdc15adccdd7172bb2452c2da09c9c64b9a</mesh_name>
+			<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+			<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -6.77620939362e-14 7.75107974527e-07 17.7324028015 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="924311137" immovable="1" name="Icosphere.001">
+			<mesh_name>guid://6f5d4aa3df8b2af9d14aeefb9d70a8a7dfaa2631</mesh_name>
+			<surface name="surface_0" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<transform>3.92166471481 3.42842967417e-07 -1.01350291295e-06 0.0 3.42842967417e-07 -1.55342916694e-06 11.5931215286 0.0 3.42842831611e-07 -3.92166471481 -9.74250320986e-07 0.0 19.5473210736 2.81323957367 26.3404654227 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1119413324" immovable="1" name="Icosphere.003">
+			<mesh_name>guid://8a39086ebbabaf81a7b384f69c2825921e1369dc</mesh_name>
+			<surface name="surface_0" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<transform>6.11298179626 5.34413982489e-07 -8.27540749291e-07 0.0 5.34413982489e-07 -1.36974511717e-06 9.46596240997 0.0 4.82629020159e-07 -5.520632267 -1.07188102507e-06 0.0 -17.4116550583 -4.20623008819 25.6392194679 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="372560699" immovable="1" name="Icosphere.004">
+			<mesh_name>guid://ec19f28d0efbf58b1ea28ea5fb904ddfd614fb8b</mesh_name>
+			<surface name="surface_0" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<transform>-2.94989415911 -4.14145562591 -3.4717290992e-07 0.0 -7.72498034417e-07 -4.32916806108e-09 3.86303043365 0.0 -2.91972195179 2.07967234466 -6.04990902663e-07 0.0 14.8797924468 -13.5783953894 24.2632528518 1.0</transform>
+		</node>
+	</node>
+</nodes>

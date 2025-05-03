@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>6490b8da8a848342af3e3ce24d26eba394a9f1e8</guid>
+	<type>fbx</type>
+	<hash>11768bde</hash>
+	<runtimes>
+		<runtime id="6490b8da8a848342af3e3ce24d26eba394a9f1e8" name="Medium_Island_4.fbx" link="0"/>
+		<runtime id="3898cd63d232f274d55779bb93e26c878f51d2f1" name="Medium_Island_4.node" link="1" type="3">
+			<parameters>
+				<parameter type="string" name="id">4482882</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="3b02ac2e91a0b822a6c6c0b684a5e630b72baf9c" name="cube.002.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">088738f4</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="13dfb34d6668df8b89109765f432148b17db064b" name="cube.003.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">088738f4</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="64363910c217e560a77e40d867c908a45463272e" name="icosphere.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">58b0d52a</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="e87c1747808c4d1b718e791f05d95377da9244b5" name="icosphere.002.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">32c5ad5f</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="4e942cc2b228a3280516d9ca58aa2c3a52e98e90" name="icosphere.004.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">32c5ad5f</parameter>
+			</parameters>
+		</runtime>
+	</runtimes>
+	<parameters>
+		<parameter type="float" name="angular_deflection">0.699999988</parameter>
+		<parameter type="bool" name="asset_name_as_prefix">0</parameter>
+		<parameter type="string" name="base_material_mode">inherit_mesh_base</parameter>
+		<parameter type="float" name="bound_size">10000</parameter>
+		<parameter type="bool" name="create_transform_bones_for_joints">0</parameter>
+		<parameter type="float" name="fps">30</parameter>
+		<parameter type="string" name="front_axis">default</parameter>
+		<parameter type="bool" name="import_animations">1</parameter>
+		<parameter type="bool" name="import_bones_without_skin">1</parameter>
+		<parameter type="bool" name="import_cameras">1</parameter>
+		<parameter type="bool" name="import_lights">1</parameter>
+		<parameter type="bool" name="import_materials">1</parameter>
+		<parameter type="string" name="import_materials_mode">take_by_name_or_create</parameter>
+		<parameter type="bool" name="import_meshes">1</parameter>
+		<parameter type="bool" name="import_morph_targets">0</parameter>
+		<parameter type="bool" name="import_tangent_space">0</parameter>
+		<parameter type="bool" name="import_textures">1</parameter>
+		<parameter type="bool" name="invert_gchannel_for_normal_maps">0</parameter>
+		<parameter type="bool" name="joints_reorientation">0</parameter>
+		<parameter type="string" name="lightmaps">{&quot;guid://3b02ac2e91a0b822a6c6c0b684a5e630b72baf9c&quot;:{&quot;surface_0&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://13dfb34d6668df8b89109765f432148b17db064b&quot;:{&quot;surface_0&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://e87c1747808c4d1b718e791f05d95377da9244b5&quot;:{&quot;surface_0&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://4e942cc2b228a3280516d9ca58aa2c3a52e98e90&quot;:{&quot;surface_0&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://64363910c217e560a77e40d867c908a45463272e&quot;:{&quot;земля_дефолт&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;асфальт_дефолт&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}}}</parameter>
+		<parameter type="float" name="linear_deflection">0.200000003</parameter>
+		<parameter type="string" name="lods">_lod_0,-1e+09,3,0,0,100,0,0,60;_lod_1,3,9,0,0,60,0,1,60;_lod_2,9,1e+09,0,0,30,0,1,60</parameter>
+		<parameter type="string" name="lods_mode">off</parameter>
+		<parameter type="string" name="material_guids">асфальт_дефолт,69c1cfe14011b12b07f56b79222c2d56c43ebc3f,земля_дефолт,1e6f75557ab4b20d49391c6d57f5df176bcdd213</parameter>
+		<parameter type="bool" name="merge_similar_materials">0</parameter>
+		<parameter type="bool" name="merge_static_meshes">0</parameter>
+		<parameter type="bool" name="merge_surfaces_by_materials">0</parameter>
+		<parameter type="float" name="morph_targets_normals_angle">180</parameter>
+		<parameter type="string" name="morph_targets_normals_mode">import</parameter>
+		<parameter type="bool" name="need_repivot">0</parameter>
+		<parameter type="bool" name="need_split">0</parameter>
+		<parameter type="bool" name="need_triagulate">1</parameter>
+		<parameter type="int" name="num_lods">3</parameter>
+		<parameter type="string" name="prefix_materials"/>
+		<parameter type="string" name="resolution">256</parameter>
+		<parameter type="float" name="scale">1</parameter>
+		<parameter type="bool" name="skip_empty_nodes">0</parameter>
+		<parameter type="int" name="smooth_animation_size">0</parameter>
+		<parameter type="bool" name="unwrap_uv_ch_0">0</parameter>
+		<parameter type="bool" name="unwrap_uv_ch_1">0</parameter>
+		<parameter type="string" name="up_axis">default</parameter>
+		<parameter type="bool" name="use_instances">1</parameter>
+		<parameter type="int" name="uv_ch">1</parameter>
+		<parameter type="bool" name="vertex_cache">1</parameter>
+		<parameter type="string" name="workflow">metalness</parameter>
+	</parameters>
+</asset>
