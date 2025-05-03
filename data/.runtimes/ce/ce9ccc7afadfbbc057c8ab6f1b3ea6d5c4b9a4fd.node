@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="816221312" name="Дом 2">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1230968287" immovable="1" name="Cube">
+			<mesh_name>guid://ae54b4d27ad33ebf4d6a00c1151b8a2c4e4e2238</mesh_name>
+			<surface name="Material" intersection="1" material="c7c504a8374973d669664f1f348ab3e14e0cf55e"/>
+			<surface name="крыша_дом_1" intersection="1" material="0380396ee47d55db8ec2f1ad42eeda8d73b7e374"/>
+			<surface name="окна_низ_дом_1" intersection="1" material="df7a98dc8f6cb7ccaa233cc3c18ec0c9d9261f72"/>
+			<surface name="дыра...." intersection="1" material="ddb00850ec8b303a8a16bca7d0727057eed300c6"/>
+			<surface name="окна_вверх_дом_1" intersection="1" material="bd09321afab58fef939ad3691b057f2c949bec40"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

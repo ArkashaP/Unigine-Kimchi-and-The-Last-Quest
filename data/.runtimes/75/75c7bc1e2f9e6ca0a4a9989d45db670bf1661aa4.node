@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="217618123" name="Высотка_1">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="720797102" immovable="1" name="Cube">
+			<mesh_name>guid://7b4e3fe8795166b8274c7495d004b081c73fa5b3</mesh_name>
+			<surface name="высотка.1.база" intersection="1" material="aa5410e4156cb0926b7cdb2bf524fd8af1f3843a"/>
+			<surface name="высотка.1.окна" intersection="1" material="ae03e0b6d9b649f7fd7866550783c124a7474b7c"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

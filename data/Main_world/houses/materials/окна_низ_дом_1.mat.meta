@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>df7a98dc8f6cb7ccaa233cc3c18ec0c9d9261f72</guid>
+	<type>material</type>
+	<hash>c8df3b0a</hash>
+	<runtimes>
+		<runtime id="df7a98dc8f6cb7ccaa233cc3c18ec0c9d9261f72" name="окна_низ_дом_1" link="0" type="5"/>
+	</runtimes>
+</asset>

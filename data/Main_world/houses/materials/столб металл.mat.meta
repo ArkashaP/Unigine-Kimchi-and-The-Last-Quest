@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>4449489abbb5588d6d94d7e9d09f80fedc8b3ec0</guid>
+	<type>material</type>
+	<hash>30120522</hash>
+	<runtimes>
+		<runtime id="4449489abbb5588d6d94d7e9d09f80fedc8b3ec0" name="столб металл" link="0" type="5"/>
+	</runtimes>
+</asset>

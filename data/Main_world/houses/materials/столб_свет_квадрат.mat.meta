@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>b1485c7658bcc0cbdb6b7f1595e2f5a03349713c</guid>
+	<type>material</type>
+	<hash>4f70adb8</hash>
+	<runtimes>
+		<runtime id="b1485c7658bcc0cbdb6b7f1595e2f5a03349713c" name="столб_свет_квадрат" link="0" type="5"/>
+	</runtimes>
+</asset>

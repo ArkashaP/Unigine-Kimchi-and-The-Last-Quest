@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>fa72f5e86a0772e0a16c0295476f6341f44243b3</guid>
+	<type>fbx</type>
+	<hash>24191793</hash>
+	<runtimes>
+		<runtime id="fa72f5e86a0772e0a16c0295476f6341f44243b3" name="отель.fbx" link="0"/>
+		<runtime id="9f14584efacb045f57249693daa575bec810c601" name="отель.node" link="1" type="3">
+			<parameters>
+				<parameter type="string" name="id">2f5f6825</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="b717e626ffa1c405932fc105e92e8edd6a46676c" name="cube.027.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">c33875ca</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="5b76f23044b06e503de5cffde5f81c3fc8c33bdb" name="cube.041.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">f236fd8</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="053c93c88084c64c4365ebbf4f9dfb7010953f7e" name="cube.042.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">7b9f7071</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="4a70bae259ecb86c53c5b377b051afbebe9d60c5" name="cube.040.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">f236fd8</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="8d73163a3cab36c6d778810926b30c2712385b60" name="cube.046.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">7498a73</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="65d6aee440b3344b146b2f81089d4b598a13d73f" name="cube.002.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">12b79ba1</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="ace4d9fc0ce4ed72d99b6363662784182c5afb92" name="cube.003.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">23adea0c</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="8aa51eb6b9ef050a9371d69b45dc2fa24e8be5c9" name="cube.011.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">0167abc7</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="48181f8e2f5a946f2898394d6cb78e3867b8b494" name="cube.017.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">3fa957c</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="d467ced88350ff8620f27f453affcb31bb3716e3" name="cube.018.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">b4b8f75c</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="9e541b701aece08750fc0d47104c573ded848ee6" name="cube.019.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">80a0382</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="0c9f17cadde09473bdfce3ff725becaa118fd90d" name="cube.053.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">bc5bad43</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="3962162272d09176ecbdedd1dc685105a37d2708" name="cylinder.009.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">024f75fb</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="446a060c367838beb06a4349c1c98461371f1ec7" name="cylinder.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">3553dbf1</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="86f38c24d741d8d7ac068d6bea8e045e70b5cd7a" name="cylinder.002.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">260de64d</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="87fd7a1e6a1f80f5c3b0ffa3587351037672fe91" name="cylinder.005.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">06b6b793</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="5a354df61f1c54cd9a00e295c141cb0deddca6bc" name="cylinder.010.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">3e807a83</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="96b04880ba380a22aca13f8dd0e2c3c1836e52eb" name="cylinder.001.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">66df061a</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="2757a018567fe1af1adbc7cf385b94d5f705cb4e" name="cube.029.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">2d7c2878</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="77a459b2e08909c7a8328d876aabf98cf1595a55" name="plane.002.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">b5b72b7a</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="10135b0a155894d594649b99ad47615cea4367b0" name="plane.008.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">b5b72b7a</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="f254ca34e53550e759ca78112b8bfaf91d5b574f" name="plane.003.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">b5b72b7a</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="1f740b4cdf53fa59c0e2e073068e77e1a592dc62" name="plane.004.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">fc4bb82c</parameter>
+			</parameters>
+		</runtime>
+	</runtimes>
+	<parameters>
+		<parameter type="float" name="angular_deflection">0.699999988</parameter>
+		<parameter type="bool" name="asset_name_as_prefix">0</parameter>
+		<parameter type="string" name="base_material_mode">inherit_mesh_base</parameter>
+		<parameter type="float" name="bound_size">10000</parameter>
+		<parameter type="bool" name="create_transform_bones_for_joints">0</parameter>
+		<parameter type="float" name="fps">30</parameter>
+		<parameter type="string" name="front_axis">default</parameter>
+		<parameter type="bool" name="import_animations">1</parameter>
+		<parameter type="bool" name="import_bones_without_skin">1</parameter>
+		<parameter type="bool" name="import_cameras">1</parameter>
+		<parameter type="bool" name="import_lights">1</parameter>
+		<parameter type="bool" name="import_materials">1</parameter>
+		<parameter type="string" name="import_materials_mode">take_by_name_or_create</parameter>
+		<parameter type="bool" name="import_meshes">1</parameter>
+		<parameter type="bool" name="import_morph_targets">0</parameter>
+		<parameter type="bool" name="import_tangent_space">0</parameter>
+		<parameter type="bool" name="import_textures">1</parameter>
+		<parameter type="bool" name="invert_gchannel_for_normal_maps">0</parameter>
+		<parameter type="bool" name="joints_reorientation">0</parameter>
+		<parameter type="string" name="lightmaps">{&quot;guid://65d6aee440b3344b146b2f81089d4b598a13d73f&quot;:{&quot;дверь&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://ace4d9fc0ce4ed72d99b6363662784182c5afb92&quot;:{&quot;козырьки_отель&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://8aa51eb6b9ef050a9371d69b45dc2fa24e8be5c9&quot;:{&quot;свет фонарик&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://48181f8e2f5a946f2898394d6cb78e3867b8b494&quot;:{&quot;surface_0&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://d467ced88350ff8620f27f453affcb31bb3716e3&quot;:{&quot;козырьки_отель&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://9e541b701aece08750fc0d47104c573ded848ee6&quot;:{&quot;дверь&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://b717e626ffa1c405932fc105e92e8edd6a46676c&quot;:{&quot;дверь&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;вывеска&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://2757a018567fe1af1adbc7cf385b94d5f705cb4e&quot;:{&quot;столб металл&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://4a70bae259ecb86c53c5b377b051afbebe9d60c5&quot;:{&quot;светлый металл отель&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://5b76f23044b06e503de5cffde5f81c3fc8c33bdb&quot;:{&quot;светлый металл отель&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://053c93c88084c64c4365ebbf4f9dfb7010953f7e&quot;:{&quot;светлый металл отель&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://8d73163a3cab36c6d778810926b30c2712385b60&quot;:{&quot;светлый металл отель&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://0c9f17cadde09473bdfce3ff725becaa118fd90d&quot;:{&quot;свет фонарик&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://96b04880ba380a22aca13f8dd0e2c3c1836e52eb&quot;:{&quot;труба&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://86f38c24d741d8d7ac068d6bea8e045e70b5cd7a&quot;:{&quot;козырьки_отель&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://87fd7a1e6a1f80f5c3b0ffa3587351037672fe91&quot;:{&quot;козырьки_отель&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://3962162272d09176ecbdedd1dc685105a37d2708&quot;:{&quot;столб металл&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://5a354df61f1c54cd9a00e295c141cb0deddca6bc&quot;:{&quot;козырьки_отель&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://446a060c367838beb06a4349c1c98461371f1ec7&quot;:{&quot;столб металл&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;свет фонарик&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://77a459b2e08909c7a8328d876aabf98cf1595a55&quot;:{&quot;труба&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://f254ca34e53550e759ca78112b8bfaf91d5b574f&quot;:{&quot;труба&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://1f740b4cdf53fa59c0e2e073068e77e1a592dc62&quot;:{&quot;основа_отель&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://10135b0a155894d594649b99ad47615cea4367b0&quot;:{&quot;труба&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}}}</parameter>
+		<parameter type="float" name="linear_deflection">0.200000003</parameter>
+		<parameter type="string" name="lods">_lod_0,-1e+09,3,0,0,100,0,0,60;_lod_1,3,9,0,0,60,0,1,60;_lod_2,9,1e+09,0,0,30,0,1,60</parameter>
+		<parameter type="string" name="lods_mode">off</parameter>
+		<parameter type="string" name="material_guids">вывеска,c4c141b2e95373e5d8d4d021777268273e0e5c18,дверь,9a71d5e266e1546094b67a91083962c3d4b750c8,козырьки_отель,c3fc12860496bf8fab1d49e539797db9258d24cc,основа_отель,9474b7ee71144d9198b43e2de57d5eaba4371df4,свет фонарик,1c85d728b8012e09e536df9f48fb06e52b56c3de,светлый металл отель,9672823471c89c01be7a983b5ec8ad14b523950a,столб металл,4449489abbb5588d6d94d7e9d09f80fedc8b3ec0,труба,5983935cbdbccd76073bd543026acec4e3c995f2</parameter>
+		<parameter type="bool" name="merge_similar_materials">0</parameter>
+		<parameter type="bool" name="merge_static_meshes">0</parameter>
+		<parameter type="bool" name="merge_surfaces_by_materials">0</parameter>
+		<parameter type="float" name="morph_targets_normals_angle">180</parameter>
+		<parameter type="string" name="morph_targets_normals_mode">import</parameter>
+		<parameter type="bool" name="need_repivot">0</parameter>
+		<parameter type="bool" name="need_split">0</parameter>
+		<parameter type="bool" name="need_triagulate">1</parameter>
+		<parameter type="int" name="num_lods">3</parameter>
+		<parameter type="string" name="prefix_materials"/>
+		<parameter type="string" name="resolution">256</parameter>
+		<parameter type="float" name="scale">1</parameter>
+		<parameter type="bool" name="skip_empty_nodes">0</parameter>
+		<parameter type="int" name="smooth_animation_size">0</parameter>
+		<parameter type="bool" name="unwrap_uv_ch_0">0</parameter>
+		<parameter type="bool" name="unwrap_uv_ch_1">0</parameter>
+		<parameter type="string" name="up_axis">default</parameter>
+		<parameter type="bool" name="use_instances">1</parameter>
+		<parameter type="int" name="uv_ch">1</parameter>
+		<parameter type="bool" name="vertex_cache">1</parameter>
+		<parameter type="string" name="workflow">metalness</parameter>
+	</parameters>
+</asset>

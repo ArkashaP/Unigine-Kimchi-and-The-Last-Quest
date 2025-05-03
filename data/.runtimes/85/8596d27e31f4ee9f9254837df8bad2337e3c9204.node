@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1848420863" name="Дом 3">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="978726738" immovable="1" name="Plane.001">
+			<mesh_name>guid://413ea948f954e73a30ad0375c2f7303b0a13f593</mesh_name>
+			<surface name="дом3_основа" intersection="1" material="48df4c44d307bbf3c8a1670b5dc79246b296f09a"/>
+			<surface name="Material" intersection="1" material="c7c504a8374973d669664f1f348ab3e14e0cf55e"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -2.78310614809 3.40722561043 21.9660395087 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="682362505" immovable="1" name="Plane.002">
+			<mesh_name>guid://19a127e0650724576c4e02f766135c5caea5fdd6</mesh_name>
+			<surface name="забор_дом3" intersection="1" material="9c7ccb16f6179dcd786215357fe31b3de31c56dc"/>
+			<transform>1 8.74227927394e-08 -7.47782540519e-08 0.0 8.74227927394e-08 -1.45678656095e-07 0.855363488197 0.0 8.74227800037e-08 -1 -1.56598416577e-07 0.0 -2.45058113321 3.40722540717 16.6510275305 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2066144852" immovable="1" name="Plane.003">
+			<mesh_name>guid://c25997ba0ce2150c20e3a3af1cd1598807e61b3d</mesh_name>
+			<surface name="забор_дом3" intersection="1" material="9c7ccb16f6179dcd786215357fe31b3de31c56dc"/>
+			<transform>1 8.74227927394e-08 -7.47782540519e-08 0.0 8.74227927394e-08 -1.45678656095e-07 0.855363488197 0.0 8.74227800037e-08 -1 -1.56598416577e-07 0.0 -2.45058113321 3.4072256395 21.9660395087 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="808564131" immovable="1" name="Plane.004">
+			<mesh_name>guid://e67a181238a10b961aae7b01088b8deafaeda378</mesh_name>
+			<surface name="забор_дом3" intersection="1" material="9c7ccb16f6179dcd786215357fe31b3de31c56dc"/>
+			<transform>1 8.74227927394e-08 -7.47782540519e-08 0.0 8.74227927394e-08 -1.45678656095e-07 0.855363488197 0.0 8.74227800037e-08 -1 -1.56598416577e-07 0.0 -2.45058113321 3.4072258933 27.7724092902 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="977215142" immovable="1" name="Plane.005">
+			<mesh_name>guid://1aada77c285bd8016748aa79286e28bba05a1077</mesh_name>
+			<surface name="забор_дом3" intersection="1" material="9c7ccb16f6179dcd786215357fe31b3de31c56dc"/>
+			<transform>1 8.74227927394e-08 -7.47782540519e-08 0.0 8.74227927394e-08 -1.45678656095e-07 0.855363488197 0.0 8.74227800037e-08 -1 -1.56598416577e-07 0.0 -2.45058113321 3.40722522253 12.4268272818 1.0</transform>
+		</node>
+	</node>
+</nodes>
