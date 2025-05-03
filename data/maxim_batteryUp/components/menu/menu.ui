@@ -4,12 +4,6 @@
   <vbox align="overlap,center" name="mainMenu" width="452" height="600" >
       <sprite name="background" align="overlap" pos_x="0" pos_y="0" width="452" height="600"
         texture="data/maxim_batteryUp/ui/background.png"></sprite>
- 
-      <sprite name="handWorld" align="overlap" width="333" height="95"  pos_x="60" pos_y="44" scale_y="0.5"
-        texcoord_w="0.5" texture="data/maxim_batteryUp/ui/buWorkbench.png"></sprite>
- 
-      <sprite name="animationWorld" align="overlap" width="333" height="95"  pos_x="60" pos_y="183" scale_y="0.5"
-        texcoord_w="0.5" texture="data/maxim_batteryUp/ui/buAnimation.png"></sprite>
 
       <sprite name="information" align="overlap" width="333" height="95"  pos_x="60" pos_y="322" scale_y="0.5"
         texcoord_w="0.5" texture="data/maxim_batteryUp/ui/buInformation.png"></sprite>

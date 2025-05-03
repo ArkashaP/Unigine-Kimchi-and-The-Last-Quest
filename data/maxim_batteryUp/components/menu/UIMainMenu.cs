@@ -29,7 +29,7 @@ public class UIMainMenu : Component
     public bool menuBool;
 
     // Ссылки на кнопки в виде спрайтов
-    private WidgetSprite pWButtonExit, pWButtonHand, pWButtonAnimation, pWButtonInformation;
+    private WidgetSprite pWButtonExit, pWButtonInformation;
 
     // Скрывает меню, устанавливая флаг и скрывая виджет
     private void HideMenu()
@@ -51,19 +51,19 @@ public class UIMainMenu : Component
         Engine.Quit(); // Завершает работу движка Unigine
     }
 
-    // Загрузка мира для ручной работы
-    private void HandMade()
-    {
-        HideMenu(); // Скрываем меню
-        Console.Run("world_load unigine_project_egor"); // Загружаем указанный мир
-    }
+    // // Загрузка мира для ручной работы
+    // private void HandMade()
+    // {
+    //     HideMenu(); // Скрываем меню
+    //     Console.Run("world_load unigine_project_egor"); // Загружаем указанный мир
+    // }
 
-    // Загрузка мира с анимацией
-    private void Animation()
-    {
-        HideMenu(); // Скрываем меню
-        Console.Run("world_load animation"); // Загружаем мир с анимацией
-    }
+    // // Загрузка мира с анимацией
+    // private void Animation()
+    // {
+    //     HideMenu(); // Скрываем меню
+    //     Console.Run("world_load animation"); // Загружаем мир с анимацией
+    // }
 
     // Инициализация компонента
     private void Init()
@@ -83,17 +83,17 @@ public class UIMainMenu : Component
         pWButtonExit.EventLeave.Connect(ChangeCoverButtonLeave, pWButtonExit); // При уходе мыши
         pWButtonExit.EventClicked.Connect(Exit); // При клике вызывает выход
 
-        // Настройка кнопки "Ручной мир"
-        pWButtonHand = (WidgetSprite)ui.GetWidget(ui.FindWidget("handWorld"));
-        pWButtonHand.EventEnter.Connect(ChangeCoverButtonEnter, pWButtonHand);
-        pWButtonHand.EventLeave.Connect(ChangeCoverButtonLeave, pWButtonHand);
-        pWButtonHand.EventClicked.Connect(HandMade); // Загрузка мира ручной работы
+        // // Настройка кнопки "Ручной мир"
+        // pWButtonHand = (WidgetSprite)ui.GetWidget(ui.FindWidget("handWorld"));
+        // pWButtonHand.EventEnter.Connect(ChangeCoverButtonEnter, pWButtonHand);
+        // pWButtonHand.EventLeave.Connect(ChangeCoverButtonLeave, pWButtonHand);
+        // pWButtonHand.EventClicked.Connect(HandMade); // Загрузка мира ручной работы
 
-        // Настройка кнопки "Анимация"
-        pWButtonAnimation = (WidgetSprite)ui.GetWidget(ui.FindWidget("animationWorld"));
-        pWButtonAnimation.EventEnter.Connect(ChangeCoverButtonEnter, pWButtonAnimation);
-        pWButtonAnimation.EventLeave.Connect(ChangeCoverButtonLeave, pWButtonAnimation);
-        pWButtonAnimation.EventClicked.Connect(Animation); // Загрузка мира анимации
+        // // Настройка кнопки "Анимация"
+        // pWButtonAnimation = (WidgetSprite)ui.GetWidget(ui.FindWidget("animationWorld"));
+        // pWButtonAnimation.EventEnter.Connect(ChangeCoverButtonEnter, pWButtonAnimation);
+        // pWButtonAnimation.EventLeave.Connect(ChangeCoverButtonLeave, pWButtonAnimation);
+        // pWButtonAnimation.EventClicked.Connect(Animation); // Загрузка мира анимации
 
         // Настройка кнопки "Информация"
         pWButtonInformation = (WidgetSprite)ui.GetWidget(ui.FindWidget("information"));

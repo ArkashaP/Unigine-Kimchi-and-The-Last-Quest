@@ -23,6 +23,9 @@ public class Information : Component
     // Метки для отображения заголовка, контента и номера блока
     private WidgetLabel titleLabel, contentLabel, numberLabel;
 
+    // Изображение для текущего блока
+    private WidgetSprite blockImage;
+
     // Кнопки для перехода к следующему блоку и выхода
     private WidgetButton nextButton, exitButton, endButton;
 
@@ -37,6 +40,7 @@ public class Information : Component
     {
         public string title; // Заголовок блока
         public string content; // Контент блока (строка)
+        public string image; // Путь к изображению (или null)
     }
 
     // Список блоков
@@ -64,10 +68,6 @@ public class Information : Component
     }
 
     // Проверка, активен ли интерфейс (true, если скрыт)
-    // public bool GetActiveInfo()
-    // {
-    //     return VBox?.Hidden ?? true;
-    // }
     public bool GetActiveInfo()
     {
         return VBox.Hidden;
@@ -117,6 +117,20 @@ public class Information : Component
         titleLabel.Text = block.title ?? "No Title"; // Устанавливаем заголовок
         contentLabel.Text = block.content ?? "No Content"; // Устанавливаем контент
         numberLabel.Text = (currentBlockIndex + 1) + "/" + blocks.Count; // Номер блока
+
+        // Отображаем изображение, если оно указано
+        if (blockImage != null)
+        {
+            if (!string.IsNullOrEmpty(block.image) && block.image != "null")
+            {
+                blockImage.Texture = block.image;
+                blockImage.Hidden = false;
+            }
+            else
+            {
+                blockImage.Hidden = true; // Скрываем изображение, если оно не задано
+            }
+        }
     }
 
     // Загрузка блоков из JSON-файла
@@ -128,14 +142,14 @@ public class Information : Component
             Log.Error("JSON file path is not set or invalid: {0}\n", jsonFile);
             return;
         }
-        json.Load(jsonFile);
+
         // Проверяем, успешно ли загружен JSON
         if (json.Load(jsonFile) == 0)
         {
             Log.Error("Failed to load JSON file: {0}\n", jsonFile);
             return;
         }
-        
+
         jsonBlocks = json.GetChild("blocks"); // Получаем узел "blocks"
         if (jsonBlocks == null)
         {
@@ -154,13 +168,15 @@ public class Information : Component
             }
 
             string title = jsonBlock.Read("title") ?? "No Title"; // Читаем заголовок
-            string content = jsonBlock.Read("content") ?? "No Content"; // Читаем контент как строку
+            string content = jsonBlock.Read("content") ?? "No Content"; // Читаем контент
+            string image = jsonBlock.Read("image") ?? null; // Читаем путь к изображению
 
             // Добавляем блок в список
             blocks.Add(new Block
             {
                 title = title,
-                content = content
+                content = content,
+                image = image
             });
         }
     }
@@ -208,13 +224,24 @@ public class Information : Component
             Log.Error("Failed to create contentLabel.\n");
             return;
         }
-        contentLabel.Height = 300;
+        contentLabel.Height = 200; // Уменьшаем высоту, чтобы освободить место для изображения
         contentLabel.Width = 800;
         contentLabel.Text = "Контент";
         contentLabel.FontSize = 20;
         contentLabel.SetPosition(50, 150);
         contentLabel.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f);
         contentLabel.FontWrap = 1; // Перенос текста
+
+        blockImage = new WidgetSprite(); // Изображение для блока
+        if (blockImage == null)
+        {
+            Log.Error("Failed to create blockImage sprite.\n");
+            return;
+        }
+        blockImage.Width = 600;
+        blockImage.Height = 200;
+        blockImage.SetPosition(200,300); // Размещаем под текстом
+        blockImage.Hidden = true; // Изначально скрыто
 
         numberLabel = new WidgetLabel(); // Метка для номера блока
         if (numberLabel == null)
@@ -300,6 +327,7 @@ public class Information : Component
         VBox.AddChild(background, Gui.ALIGN_OVERLAP);
         VBox.AddChild(titleLabel, Gui.ALIGN_OVERLAP);
         VBox.AddChild(contentLabel, Gui.ALIGN_OVERLAP);
+        VBox.AddChild(blockImage, Gui.ALIGN_OVERLAP);
         VBox.AddChild(numberLabel, Gui.ALIGN_OVERLAP);
         VBox.AddChild(nextButton, Gui.ALIGN_OVERLAP);
         VBox.AddChild(exitButton, Gui.ALIGN_OVERLAP);
