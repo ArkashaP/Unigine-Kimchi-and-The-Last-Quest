@@ -14,11 +14,11 @@ public class Information : Component
     [ShowInEditor]
     private UIMainMenu mainMenu = null;
 
-    // Основной контейнер для интерфейса и финального экрана
-    private WidgetVBox VBox, VBoxFinal;
+    // Основной контейнер для интерфейса
+    private WidgetVBox VBox;
 
-    // Фоновые изображения для основного и финального экранов
-    private WidgetSprite background, backgroundFinal;
+    // Фоновое изображение
+    private WidgetSprite background;
 
     // Метки для отображения заголовка, контента и номера блока
     private WidgetLabel titleLabel, contentLabel, numberLabel;
@@ -27,7 +27,7 @@ public class Information : Component
     private WidgetSprite blockImage;
 
     // Кнопки для перехода к следующему блоку и выхода
-    private WidgetButton nextButton, exitButton, endButton;
+    private WidgetButton nextButton, exitButton;
 
     // Индекс текущего блока
     private int currentBlockIndex;
@@ -58,13 +58,17 @@ public class Information : Component
 
         json = new Json(); // Создаем объект для работы с JSON
         CreateUI(); // Создаем основной интерфейс
-        CreateUIFinal(); // Создаем финальный экран
         LoadBlocks(); // Загружаем блоки из JSON
     }
 
-    // Обновление каждый кадр (пустое)
+    // Обновление каждый кадр
     public void Update()
     {
+        // Проверяем нажатие пробела для перелистывания
+        if (Input.IsKeyDown(Input.KEY.SPACE) && VBox != null && !VBox.Hidden)
+        {
+            NextBlock(); // Вызываем логику перелистывания
+        }
     }
 
     // Проверка, активен ли интерфейс (true, если скрыт)
@@ -94,6 +98,7 @@ public class Information : Component
         {
             nextButton.Enabled = true; // Включаем кнопку "Далее"
             nextButton.Hidden = false; // Делаем кнопку "Далее" видимой
+            nextButton.Text = "Далее"; // Сбрасываем текст кнопки
         }
         ShowBlock(); // Показываем первый блок
     }
@@ -133,6 +138,38 @@ public class Information : Component
         }
     }
 
+    // Переход к следующему блоку
+    private void NextBlock()
+    {
+        if (currentBlockIndex == blocks.Count - 2)
+        {
+            if (nextButton != null)
+                nextButton.Text = "Завершить"; // Меняем текст перед последним блоком
+        }
+
+        if (currentBlockIndex == blocks.Count - 1)
+        {
+            // Закрываем интерфейс и показываем главное меню
+            if (mainMenu != null)
+            {
+                //mainMenu.ShowMenu(); // Показываем главное меню
+            }
+            else
+            {
+                Log.Error("UIMainMenu is not assigned.\n");
+            }
+            if (VBox != null)
+                VBox.Hidden = true; // Скрываем интерфейс
+        }
+        else
+        {
+            currentBlockIndex++; // Переходим к следующему блоку
+            ShowBlock(); // Показываем новый блок
+            if (nextButton != null)
+                nextButton.Enabled = true; // Включаем кнопку после отображения
+        }
+    }
+
     // Загрузка блоков из JSON-файла
     private void LoadBlocks()
     {
@@ -153,7 +190,7 @@ public class Information : Component
         jsonBlocks = json.GetChild("blocks"); // Получаем узел "blocks"
         if (jsonBlocks == null)
         {
-            Log.Error("No 'blocks' node found in JSON file: {0}\n", jsonFile);
+            Log.Error("No，皆 'blocks' node found in JSON file: {0}\n", jsonFile);
             return;
         }
 
@@ -238,9 +275,9 @@ public class Information : Component
             Log.Error("Failed to create blockImage sprite.\n");
             return;
         }
-        blockImage.Width = 600;
-        blockImage.Height = 200;
-        blockImage.SetPosition(200,300); // Размещаем под текстом
+        blockImage.Width = 300;
+        blockImage.Height = 150;
+        blockImage.SetPosition(300, 360); // Размещаем под текстом
         blockImage.Hidden = true; // Изначально скрыто
 
         numberLabel = new WidgetLabel(); // Метка для номера блока
@@ -270,30 +307,7 @@ public class Information : Component
         nextButton.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f);
         nextButton.SetPosition(630, 511);
         nextButton.ButtonColor = new vec4(0.39f, 0.39f, 0.50f, 1.0f);
-        nextButton.EventClicked.Connect(() =>
-        {
-            if (currentBlockIndex == blocks.Count - 2)
-            {
-                if (nextButton != null)
-                    nextButton.Text = "Завершить"; // Меняем текст перед последним блоком
-            }
-
-            if (currentBlockIndex == blocks.Count - 1)
-            {
-                if (VBoxFinal != null && VBox != null)
-                {
-                    VBoxFinal.Hidden = false; // Показываем финальный экран
-                    VBox.Hidden = true; // Скрываем основной экран
-                }
-            }
-            else
-            {
-                currentBlockIndex++; // Переходим к следующему блоку
-                ShowBlock(); // Показываем новый блок
-                if (nextButton != null)
-                    nextButton.Enabled = true; // Включаем кнопку после отображения
-            }
-        });
+        nextButton.EventClicked.Connect(NextBlock);
 
         // Кнопка "Закрыть" для выхода
         exitButton = new WidgetButton();
@@ -339,83 +353,5 @@ public class Information : Component
             nextButton.Enabled = true; // Кнопка "Далее" изначально включена
         if (VBox != null)
             VBox.Hidden = true; // Изначально интерфейс скрыт
-    }
-
-    // Создание финального экрана
-    private void CreateUIFinal()
-    {
-        VBoxFinal = new WidgetVBox(); // Контейнер для финального экрана
-        if (VBoxFinal == null)
-        {
-            Log.Error("Failed to create VBoxFinal.\n");
-            return;
-        }
-        VBoxFinal.Width = 450;
-        VBoxFinal.Height = 250;
-
-        backgroundFinal = new WidgetSprite(); // Фон финального экрана
-        if (backgroundFinal == null)
-        {
-            Log.Error("Failed to create backgroundFinal sprite.\n");
-            return;
-        }
-        backgroundFinal.Width = 450;
-        backgroundFinal.Height = 250;
-        backgroundFinal.Texture = "data/maxim_batteryUp/ui/backgroundFinal.png";
-        backgroundFinal.SetPosition(0, 0);
-
-        WidgetLabel completionLabel = new WidgetLabel(); // Метка для сообщения
-        if (completionLabel == null)
-        {
-            Log.Error("Failed to create completionLabel.\n");
-            return;
-        }
-        completionLabel.Height = 120;
-        completionLabel.Width = 350;
-        completionLabel.Text = "Инструкция завершена";
-        completionLabel.FontSize = 25;
-        completionLabel.SetPosition(50, 50);
-        completionLabel.TextAlign = Gui.ALIGN_CENTER; // Центрируем текст
-        completionLabel.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f);
-        completionLabel.FontWrap = 1;
-
-        // Кнопка "Закрыть" на финальном экране
-        endButton = new WidgetButton();
-        if (endButton == null)
-        {
-            Log.Error("Failed to create endButton.\n");
-            return;
-        }
-        endButton.Width = 220;
-        endButton.Height = 70;
-        endButton.Text = "Закрыть";
-        endButton.FontSize = 25;
-        endButton.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f);
-        endButton.SetPosition(115, 130);
-        endButton.ButtonColor = new vec4(0.39f, 0.39f, 0.50f, 1.0f);
-        endButton.EventClicked.Connect(() =>
-        {
-            if (mainMenu != null)
-            {
-                mainMenu.ShowMenu(); // Показываем главное меню
-            }
-            else
-            {
-                Log.Error("UIMainMenu is not assigned.\n");
-            }
-            if (VBoxFinal != null)
-                VBoxFinal.Hidden = true; // Скрываем финальный экран
-        });
-
-        // Добавляем элементы в контейнер финального экрана
-        VBoxFinal.AddChild(backgroundFinal, Gui.ALIGN_OVERLAP);
-        VBoxFinal.AddChild(completionLabel, Gui.ALIGN_OVERLAP);
-        VBoxFinal.AddChild(endButton, Gui.ALIGN_OVERLAP);
-
-        // Добавляем контейнер в главное окно, центрируем
-        WindowManager.MainWindow.AddChild(VBoxFinal, Gui.ALIGN_OVERLAP | Gui.ALIGN_CENTER);
-
-        if (VBoxFinal != null)
-            VBoxFinal.Hidden = true; // Изначально финальный экран скрыт
     }
 }
