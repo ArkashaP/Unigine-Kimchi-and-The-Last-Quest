@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unigine;
@@ -9,8 +10,6 @@ public class Shine : Component
 	Node ShineBox;
 	public Node Cat; // Добавил модификатор "public" для этой переменной, чтобы можно выбрать в ручную - кто игрок (в Unigine Editor)
 
-	public float randomTimeMax = 2.0f; // Время таймера Max
-	public float randomTimeMin = 0.5f; // Время таймера Min
 	public Node Battery;	
 	public ObjectMeshStatic boxMesh, batteryMesh;
 	// public float ifps = Game.IFps; // Убрал эту строку, тк IFps это динамическое значение, и оно меняется в зависимости от кол-ва кадров. 
@@ -18,9 +17,8 @@ public class Shine : Component
 	public float progress, targetEmission;
 	
 	// Добавлено
-	private float randomTime; // Время для работы таймера
-	private float timerCounter = 0f; // Время для работы таймера
-	private bool timerActivated = false; // Активен ли таймер
+	private dvec3 targetDeltaPos = 0; 
+	private bool isBatteryShown = false;
 
 	private float TRIGGER_DISTANCE = 5.0f; //Триггер дистанции
 	private float EMISSION_DURATION = 5.0f; //Длительность увлеичивания свечения
@@ -54,7 +52,7 @@ public class Shine : Component
 			targetEmission = MAX_EMISSION;
 			if(Input.IsKeyDown(Input.KEY.E))
 			{
-				enableTimer(); // Если мы нажали Е, то включаем таймер отчета времени
+				showItem(); // Если мы нажали Е, то включаем таймер отчета времени
 			}	
 		}
 		else
@@ -92,26 +90,34 @@ public class Shine : Component
 
 		if(MathLib.Length(Cat.WorldPosition - Battery.WorldPosition) <= 1)
 		{
-			Battery.WorldPosition += new dvec3(0f, 0f, 1000f);
+			isBatteryShown = false;
 		}
 
-		// Проверяем если дошли до нужного времени
-		if(timerActivated && timerCounter >= randomTime){ // Если таймер активен и время достигло времени randomTime, то...
-			timerActivated = false; // Выключаем таймер 
-			Battery.WorldPosition = ShineBox.WorldPosition + new dvec3(1f, 1f, 0f); // Перемещаем обьект 
+		if(isBatteryShown) {
+			Battery.WorldPosition = MathLib.Lerp(
+				Battery.WorldPosition,
+				Battery.WorldPosition = ShineBox.WorldPosition + targetDeltaPos,
+				4*Game.IFps
+			);
+		}else{
+			Battery.Scale = MathLib.Lerp(
+				Battery.Scale,
+				0,
+				5*Game.IFps
+			);
 		}
-
-		// Считаем время если включен таймер
-		if(timerActivated) timerCounter += Game.IFps; // При активации таймера, timerCounter начнет считать время
-		
 	}
 
-	private void enableTimer()
+	private void showItem()
     {
-		if(!timerActivated) {
-			timerCounter = 0f; // Сбрасываем счетчик времени (текущее значение таймера)
-			randomTime = MathLib.RandFloat(randomTimeMin, randomTimeMax); // Выбираем рандомное время чтобы потом в это время произошла остановка
-			timerActivated = true; // Включаем таймер
+		if(!isBatteryShown) {
+			isBatteryShown = true; 
+			// Рандомное направление, но нужно чтобы в одном было. Оставил как пример.
+			// float randX = MathLib.RandFloat(0.5f, 1f) * (MathLib.RandFloat(1,2) > 1.5 ? 1 : -1); 
+			// float randY = MathLib.RandFloat(0.5f, 1f) * (MathLib.RandFloat(1,2) > 1.5 ? 1 : -1);
+			targetDeltaPos = new vec3(1f, 0f, 0f);
+			Battery.Scale = 0.5f;
+			Battery.WorldPosition = ShineBox.WorldPosition;
 		};
     }
 

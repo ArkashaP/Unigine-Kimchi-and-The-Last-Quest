@@ -2554,6 +2554,10 @@
 			<surface name="cylinder" intersection="1" material="68d081431d7b46457187c3bc08cb0f96a02e6910"/>
 			<transform>0.499999940395 0 0 0.0 0 0.5 0 0.0 0 0 0.5 0.0 7.3854418138 10.1419767017 2.24147692426 1.0</transform>
 		</node>
+		<node type="FieldWeather" id="98223647" name="FieldWeather">
+			<size>1000 1000 1000</size>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -1.37818280534 11.0850041414 0.99999994 1.0</transform>
+		</node>
 	</editor>
 	<console>
 		<bake_lighting_bounces>4</bake_lighting_bounces>
