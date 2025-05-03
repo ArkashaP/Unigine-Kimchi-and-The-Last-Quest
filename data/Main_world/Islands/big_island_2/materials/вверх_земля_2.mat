@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <material version="2.19.0.3" guid="4376d7672e5002b0b951453fc604ab7b4b7f53d5" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
 	<parameter name="albedo_color" expression="0">0.154155642 0.13134338 0.170123696 1</parameter>
+	<parameter name="roughness" expression="0">0.751240015</parameter>
+	<parameter name="microfiber" expression="0">0.264860004</parameter>
 </material>
