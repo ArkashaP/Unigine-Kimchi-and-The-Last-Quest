@@ -860,6 +860,19 @@
 			<surface name="box" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 6 0 1.0</transform>
 		</node>
+		<node type="NodeDummy" id="227879910" name="HUD">
+			<properties>
+				<property parent="72b33fe4fb18591b454039f780fc47c49c58f12b" guid="47aaf4e6636256fa7c7017cca38239086e3b0b15">
+					<parameter name="file">guid://faabdb61510b549c7ac1fbdf72f51a87cbaf668b</parameter>
+					<parameter name="info">a546308870fb3bef9dc8f1ded217b4af93de060f</parameter>
+				</property>
+				<property parent="5456cc7115d472b899297af3d1d25a9ed94d7c7d" guid="a546308870fb3bef9dc8f1ded217b4af93de060f">
+					<parameter name="jsonFile">guid://71d5691aa2e4740a5ffcaca02fdd273cd844866c</parameter>
+					<parameter name="mainMenu">47aaf4e6636256fa7c7017cca38239086e3b0b15</parameter>
+				</property>
+			</properties>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 10.4191555479 14.1518843841 6.24039225992 1.0</transform>
+		</node>
 	</editor>
 	<console>
 		<bake_lighting_bounces>4</bake_lighting_bounces>

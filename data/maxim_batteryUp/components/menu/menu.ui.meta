@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>faabdb61510b549c7ac1fbdf72f51a87cbaf668b</guid>
+	<type>file</type>
+	<hash>322ded57</hash>
+	<runtimes>
+		<runtime id="faabdb61510b549c7ac1fbdf72f51a87cbaf668b" name="menu.ui" link="0"/>
+	</runtimes>
+</asset>

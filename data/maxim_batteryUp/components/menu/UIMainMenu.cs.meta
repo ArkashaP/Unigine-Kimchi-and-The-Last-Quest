@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>744fa56d244f4ec40ee4238bea92adaae8e7d277</guid>
+	<type>component</type>
+	<hash>94992c32</hash>
+	<runtimes>
+		<runtime id="744fa56d244f4ec40ee4238bea92adaae8e7d277" name="UIMainMenu.cs" link="0"/>
+		<runtime id="72b33fe4fb18591b454039f780fc47c49c58f12b" name="UIMainMenu.prop" link="1" type="4"/>
+	</runtimes>
+</asset>

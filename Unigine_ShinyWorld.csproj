@@ -54,6 +54,8 @@
 		<Compile Include="data/csharp_template/FP_controller/components/FirstPersonController.cs"/>
 		<Compile Include="data/maxim_batteryUp/components/Respawn.cs"/>
 		<Compile Include="data/maxim_batteryUp/components/Battery2_Enter.cs"/>
+		<Compile Include="data/maxim_batteryUp/components/menu/UIMainMenu.cs"/>
+		<Compile Include="data/maxim_batteryUp/components/menu/Information.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>
