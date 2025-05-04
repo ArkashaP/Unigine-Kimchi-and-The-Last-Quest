@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1867819592" name="House_MPU">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1083984135" immovable="1" name="Air_cool">
+			<mesh_name>guid://92a10ae093728a2b537f8b6d63c3c45dd34217cb</mesh_name>
+			<surface name="светло_серый_мпу" intersection="1" material="336f234e27467eadf9e23a0d4538c261f250e254"/>
+			<transform>4.37114005842e-08 -1 -5.56487681987e-08 0.0 -1.21047357173e-07 -3.77427061946e-08 1.13654768467 0.0 -1.63269293308 -7.13672828424e-08 -1.21047359771e-07 0.0 -1.69777595535 6.76511421029 12.0826031589 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1797681850" immovable="1" name="Aircool_fan">
+			<mesh_name>guid://6d6f16788ec1291c767b92afe024531b9f180aae</mesh_name>
+			<surface name="лестница" intersection="1" material="764f45303ffd170bfb187c0763d8bf925e6bc2a6"/>
+			<transform>0.0417319251416 -2.54871371219e-08 0.202799403224 0.0 1.17493274629e-08 0.207048654556 2.36034024695e-08 0.0 -0.202799403224 6.75078737191e-09 0.0417319251416 0.0 -1.69777601158 7.40832652871 12.0826031308 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="860021457" immovable="1" name="Cube">
+			<mesh_name>guid://6cc0231230b2513503ebfc67d750cf34efe6d235</mesh_name>
+			<surface name="дверь" intersection="1" material="9a71d5e266e1546094b67a91083962c3d4b750c8"/>
+			<transform>5.50215911865 4.81014074025e-07 -4.34215260164e-08 0.0 4.81014074025e-07 -3.18559051866e-07 0.496684342623 0.0 5.18699412605e-07 -5.93322944641 -7.29006830057e-07 0.0 1.14639318742 -0.0860571923807 15.6317758598 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="597474812" immovable="1" name="Cylinder">
+			<mesh_name>guid://360cf86af01996f9280da179bfee4b1eea15be10</mesh_name>
+			<surface name="рамка_окна" intersection="1" material="5f1dd1e4079a42cde39c682bd5883262391c5d3a"/>
+			<surface name="mpu_вывеска.001" intersection="1" material="601189b6cbc5f6066778bb55bc979684c73a8c7c"/>
+			<transform>0.256836980581 -2.67158038399e-08 3.31703920624e-15 0.0 -2.67158038399e-08 0.562430143356 -3.79425043004e-08 0.0 1.86315510518e-16 -2.13120093538e-09 0.256836980581 0.0 -3.53883257002 7.10091442483 5.85440461591 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="213057835" immovable="1" name="House">
+			<mesh_name>guid://ac54f2946a3417aef49dc1f1bc19a90b58d3fa2f</mesh_name>
+			<surface name="дом_основа_mpu" intersection="1" material="716ac1d80bcf194ceda9ce8fafe4741ab693770e"/>
+			<surface name="лестница" intersection="1" material="764f45303ffd170bfb187c0763d8bf925e6bc2a6"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1362109582" immovable="1" name="Ladder">
+			<mesh_name>guid://a79e27ac61cf21b586d199531bb8e60aa37861c2</mesh_name>
+			<surface name="лестница" intersection="1" material="764f45303ffd170bfb187c0763d8bf925e6bc2a6"/>
+			<transform>1 8.74228631934e-08 -6.90547718297e-07 0.0 8.74228631934e-08 -9.51579411147e-07 7.89894485474 0.0 1.99036289119e-08 -0.227670967579 -3.72414353445e-07 0.0 3.73633070054 5.99278619485 9.48068020375 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="474964629" immovable="1" name="Lower_door">
+			<mesh_name>guid://869ea9e6340a45340afece8b75adf2a50c713639</mesh_name>
+			<surface name="дверь" intersection="1" material="9a71d5e266e1546094b67a91083962c3d4b750c8"/>
+			<transform>0.277518153191 2.42614415106e-08 -2.20965487717e-07 0.0 2.42614415106e-08 -3.78129897854e-07 2.52755045891 0.0 1.5364481093e-07 -1.7574917078 -3.19992081737e-07 0.0 -4.16678692537 -2.54116891778 3.11633240363 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1850430192" immovable="1" name="Lower_glass">
+			<mesh_name>guid://c98fc4be35edd904827280bde54b9e9a455a6a44</mesh_name>
+			<surface name="свет_окна" intersection="1" material="038bd2ca13934d5e31b8805931329bfb1a82c970"/>
+			<transform>0.144980087876 1.26745878969e-08 -1.28965798242e-07 0.0 1.26745878969e-08 -2.92481202985e-07 1.47519671917 0.0 2.33248102506e-07 -2.66804718971 -3.82538909095e-07 0.0 -3.8442775645 2.08876790368 5.36216202189 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1925040527" immovable="1" name="Lower_window">
+			<mesh_name>guid://bd66ed88d7491354a2dd58b54f06add0290170d3</mesh_name>
+			<surface name="рамка_окна" intersection="1" material="5f1dd1e4079a42cde39c682bd5883262391c5d3a"/>
+			<transform>0.144980087876 1.26745878969e-08 -1.28965798242e-07 0.0 1.26745878969e-08 -2.92481202985e-07 1.47519671917 0.0 2.33248102506e-07 -2.66804718971 -3.82538909095e-07 0.0 -3.8442775645 2.08876790368 5.36216202189 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1566058914" immovable="1" name="Upper_glass">
+			<mesh_name>guid://c4aae42045ef26f2f27dc237e087778ee910c016</mesh_name>
+			<surface name="свет_окна" intersection="1" material="038bd2ca13934d5e31b8805931329bfb1a82c970"/>
+			<transform>0.144980087876 1.26745878969e-08 -1.28965798242e-07 0.0 1.26745878969e-08 -2.92481202985e-07 1.47519671917 0.0 2.33248102506e-07 -2.66804718971 -3.82538909095e-07 0.0 -3.84427707991 2.00000018846 11.9999999126 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="726768793" immovable="1" name="Upper_window">
+			<mesh_name>guid://58def5fa9cf4d251973d7aef62a9908c80f7787d</mesh_name>
+			<surface name="рамка_окна" intersection="1" material="5f1dd1e4079a42cde39c682bd5883262391c5d3a"/>
+			<transform>0.144980087876 1.26745878969e-08 -1.28965798242e-07 0.0 1.26745878969e-08 -2.92481202985e-07 1.47519671917 0.0 2.33248102506e-07 -2.66804718971 -3.82538909095e-07 0.0 -3.84427707991 2.00000018846 11.9999999126 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1055513892" immovable="1" name="Wood">
+			<mesh_name>guid://8e4dae52a5dd52879521cc4192dd9e7f2736dfb8</mesh_name>
+			<surface name="Material.001" intersection="1" material="c545c90c9883bbc92b13d333ada3f9d2e88b6422"/>
+			<transform>0.135231792927 1.54369957958e-08 -2.58771919083e-08 0.0 1.54369957958e-08 -0.0413468493351 0.296000560805 0.0 2.05037364016e-07 -2.34535396846 -0.327610041272 0.0 -4.12448901317 2.08876785371 4.77936973978 1.0</transform>
+		</node>
+	</node>
+</nodes>

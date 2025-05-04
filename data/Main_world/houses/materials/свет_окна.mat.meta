@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>038bd2ca13934d5e31b8805931329bfb1a82c970</guid>
+	<type>material</type>
+	<hash>da81152</hash>
+	<runtimes>
+		<runtime id="038bd2ca13934d5e31b8805931329bfb1a82c970" name="свет_окна" link="0" type="5"/>
+	</runtimes>
+</asset>

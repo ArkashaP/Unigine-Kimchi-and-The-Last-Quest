@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>ed2d9e31a94b9baafac44859af7ec17c7aec72be</guid>
+	<type>material</type>
+	<hash>4601e444</hash>
+	<runtimes>
+		<runtime id="ed2d9e31a94b9baafac44859af7ec17c7aec72be" name="Батарея кольцо" link="0" type="5"/>
+	</runtimes>
+</asset>

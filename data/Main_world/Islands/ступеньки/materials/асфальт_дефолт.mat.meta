@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>69c1cfe14011b12b07f56b79222c2d56c43ebc3f</guid>
+	<type>material</type>
+	<hash>fc44b20f</hash>
+	<runtimes>
+		<runtime id="69c1cfe14011b12b07f56b79222c2d56c43ebc3f" name="асфальт_дефолт" link="0" type="5"/>
+	</runtimes>
+</asset>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="2071643514" name="спавнпоинт-2">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="NodeDummy" id="893621905" name="Пустышка">
+			<transform>0.709390646028 0.704815431244 -8.60994581286e-08 0.0 1.62359476344e-07 -4.12545537692e-08 1 0.0 0.704815431244 -0.709390646028 -1.43699064097e-07 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="319053500" immovable="1" name="Спавн основа">
+			<mesh_name>guid://43d88596fb6e60a9a124034e0a9526dfaebf690f</mesh_name>
+			<surface name="Спавн основа" intersection="1" material="c48fa2af6fc3141990e35f971dca530dbe6c5954"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="834841323" immovable="1" name="Спавн сосиски">
+			<mesh_name>guid://3cc5c80574aea966970a6eada9e209d4a27a4322</mesh_name>
+			<surface name="Спавн сосиски " intersection="1" material="675649539b04ea6de11a64bb7cd2cb8477a6b7c8"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

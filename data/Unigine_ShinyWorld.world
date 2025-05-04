@@ -847,68 +847,24 @@
 				<surface name="grid_for_world_creation" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="001dc611e2ca7385e50593ebc1c181e2e370240c"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
 			</node>
-			<node type="ObjectMeshStatic" id="1792114304" immovable="1" name="template_buildings">
-				<mesh_name>guid://9802276da9e561e8d1bf5c2721ad2b5a2d4a02f1</mesh_name>
-				<surface name="wall_0_mat" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="b50d447466b5a543f70c09c68846566d9f15c4e8">
-					<lightmap_enabled>1</lightmap_enabled>
-					<lightmap_texture_path replace="9943a802dd3dfcea6ee7360bf7567420f6cc20bb">guid://aabd101dcf4952d811423857ffbd79ca9c4e9ea1</lightmap_texture_path>
-				</surface>
-				<surface name="floor_red_mat" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="03975a558b6967b07049574fafa8dc62f5633059">
-					<lightmap_enabled>1</lightmap_enabled>
-					<lightmap_texture_path replace="e242763e694328c3d9cf0fa9d6176d3f4c1a1ede">guid://89f1a2df6c6012b2d824d2696e6478b4a934cc83</lightmap_texture_path>
-				</surface>
-				<surface name="floor_orange_mat" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="fbc9263de6d73278a1305377d3c39a6a013e06c1">
-					<lightmap_enabled>1</lightmap_enabled>
-					<lightmap_texture_path replace="42ef21048ef5cf85efd50c359f3b1fdb85bcf8a5">guid://14c97f31ff20eedca3c2bc8b8e04e86e1a0894f5</lightmap_texture_path>
-				</surface>
-				<surface name="floor_green_mat" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="21104c81e1573bec49c9065bb30f87fecc360f45">
-					<lightmap_enabled>1</lightmap_enabled>
-					<lightmap_texture_path replace="a7c1f1a08948b113c4255303ff6202af9a3651c0">guid://d664880676523fad3be01d286b565e67517dc89a</lightmap_texture_path>
-				</surface>
-				<surface name="floor_gray_mat" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6">
-					<lightmap_enabled>1</lightmap_enabled>
-					<lightmap_texture_path replace="2ae49dd6adbf3878cd7d5a6ff6e78ce9b1839a1f">guid://fd5a278ce270bd7b28aa949ec7bd736521e50d80</lightmap_texture_path>
-				</surface>
-				<transform>1 -1.4210856e-14 0 0.0 1.4210856e-14 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+			<node type="NodeReference" id="108412743" name="template_buildings">
+				<reference>guid://939c0a9b4616ea275cd561b2414c3c6f51d05d6a</reference>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
 			</node>
 		</node>
 		<node type="NodeDummy" id="1201620405" name="dynamic_content">
 			<transform>0.99999994 0 0 0.0 0 0.99999994 0 0.0 0 0 0.99999994 0.0 0 0 0 1.0</transform>
-			<node type="NodeReference" id="1475233651" name="material_ball">
+			<node type="NodeReference" id="1475233651" name="Cat">
 				<reference>guid://09c9a80e7e0010153ae52270e2ba530f19742522</reference>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 8 6 1 1.0</transform>
 			</node>
-			<node type="NodeReference" id="758739849" name="cone">
-				<reference>guid://db1a8cc0af9c991f806c13f2c48062a900c44bf4</reference>
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 8 6.2500005 5.75 1.0</transform>
-			</node>
-			<node type="NodeReference" id="1475525633" name="cube">
+			<node type="NodeReference" id="1475525633" name="ShineBox">
 				<reference>guid://095e96b71e2884aaddf36c010aecd56cff0ad1db</reference>
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 8.25 5.5 3.5500014 1.0</transform>
-			</node>
-			<node type="NodeReference" id="143258464" name="cylinder">
-				<reference>guid://f19bda62edee16595d1e8be4cbfce5f3d0a072b6</reference>
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 8 6.5500021 4.6500006 1.0</transform>
-			</node>
-			<node type="NodeReference" id="995440728" name="sphere">
-				<reference>guid://ce58c1b1fe664f5cab3ba30b9d7f9cee67aebf75</reference>
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 8.75 5.4500012 5.3000007 1.0</transform>
-			</node>
-			<node type="NodeReference" id="358044838" name="cube_2">
-				<reference>guid://095e96b71e2884aaddf36c010aecd56cff0ad1db</reference>
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 7.5000005 5.25 6 1.0</transform>
+				<transform>0.999999940791 0 0 0.0 0 0.999999940791 0 0.0 0 0 1.0000000004 0.0 5.04514950742 11.2729609105 1.37191758826 1.0</transform>
 			</node>
 			<node type="NodeReference" id="227911811" name="cone_1">
 				<reference>guid://db1a8cc0af9c991f806c13f2c48062a900c44bf4</reference>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 7.2500014 4.75 4.5 1.0</transform>
-			</node>
-			<node type="NodeReference" id="2045784632" name="sphere_1">
-				<reference>guid://ce58c1b1fe664f5cab3ba30b9d7f9cee67aebf75</reference>
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 9 6.2500005 4.5 1.0</transform>
-			</node>
-			<node type="NodeReference" id="1565586756" name="cylinder_2">
-				<reference>guid://f19bda62edee16595d1e8be4cbfce5f3d0a072b6</reference>
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 8.75 5.75 6.5000005 1.0</transform>
 			</node>
 		</node>
 		<node type="NodeDummy" id="1368583642" name="lighting">
@@ -955,7 +911,14 @@
 				<shadow_screen_space_softness>0</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.200000003</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
 				<baked_depth_texture replace="f638bd1e2094e74428492df8f04936e9d02bd48d"/>
+
+				<baked_depth_texture replace="83365cb4377ac2440d20e371af213530d01b6307"/>
+				<baked_depth_texture replace="f28ad6e4790c557a2290b529e7960bb5060bc77a"/>
+				<baked_depth_texture replace="f638bd1e2094e74428492df8f04936e9d02bd48d"/>
+				<baked_depth_texture replace="34adda433dbedc2ef80f8d9c0ca4206fdc2d4f1b"/>
+
 				<lens_flare_enabled>1</lens_flare_enabled>
 				<lens_flare_texture>core/textures/lens_flares_default.texture</lens_flare_texture>
 				<lens_flare_intensity>1</lens_flare_intensity>
@@ -996,6 +959,7 @@
 					<billboard name="flare_29" offset="0.936999977" size="0.449999988" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.180000007"/>
 					<billboard name="flare_30" offset="1" size="1.03999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.150000006"/>
 				</lens_flare_billboards>
+				<transform>-0.433001514427 0.435586091189 -0.789130437038 0.0 -0.74997799128 -0.6597189107 0.0473651094842 0.0 -0.499993711907 0.612365282561 0.612365282561 0.0 5.5310855 -2.9544408 8.30351819816 1.0</transform>
 				<transform>-0.43301213 0.43559659 -0.78914928 0.0 -0.75000143 -0.65973973 0.047366548 0.0 -0.49999931 0.61237192 0.6123718 0.0 5.5310855 -2.9544408 4.204565 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="40729939" name="LightEnvironmentProbe">
@@ -1090,7 +1054,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="05ac16b620b6338dcbbc7483e4d09e6a1976b0bc"/>
+
 				<baked_depth_texture replace="63e74380654b0a4948eddbea9ccf997f9e7a2647"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -7.0023394 -1.0746461 2.2459061 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="954623620" name="LightEnvironmentProbe_2">
@@ -1185,7 +1153,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="5f5e16d87b6c6ca492236f6d371a1b374b4e654e"/>
+
 				<baked_depth_texture replace="9b4dccb24f3b1477648ab72c68076c018c3cf211"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -7.0023355 -1.074648 5.284534 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="953711150" name="LightEnvironmentProbe_3">
@@ -1280,7 +1252,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="81752fca7a963c74d023f06727780640558911b0"/>
+
 				<baked_depth_texture replace="c23eddb138e3a043628b3cc2225bd9c792404f09"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0131303 -13.748217 3.2312858 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1315374539" name="LightEnvironmentProbe_4">
@@ -1375,7 +1351,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="05846e0cb9b4a3119b6845f1addbe18dafa81662"/>
+
 				<baked_depth_texture replace="8b2bad86b33b89d9c9e16ba0860f95e01af4c5d5"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 8.5118113 -11.755322 3.2342248 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1217902211" name="LightEnvironmentProbe_6">
@@ -1470,7 +1450,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="8d54b21e2ec436491c7e628b48e040a558c227e4"/>
+
 				<baked_depth_texture replace="d3925a28d77974a1570081d2c8c901ad73974ecf"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 20.990999 -5.046349 5.5560813 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1394392038" name="LightEnvironmentProbe_1">
@@ -1565,7 +1549,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="fff0d080e26dd9821ef87cb587df6a30dbb26eb6"/>
+
 				<baked_depth_texture replace="2c2cf39a413dc46462397f54249d094fcccd93d9"/>
+				<baked_depth_texture replace="5b3de8af1e6bf5952d9321b8ce5d8d7f3e87ae07"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -4.9537063 10.621111 4.6295342 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1127940245" name="LightEnvironmentProbe_8">
@@ -1660,7 +1648,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="2b4eb1b2c0de4697ab3eaeefe33b854401b4a758"/>
+
 				<baked_depth_texture replace="7342a65c9cf795403a0714a6bb23977832a0bf73"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -19.42786 -0.16203524 3.6919963 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="754751731" name="LightEnvironmentProbe_9">
@@ -1755,7 +1747,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="11dd72344203f8370f7997b92327e7e0d6f6424a"/>
+
 				<baked_depth_texture replace="6c2d72ee366aa35c4cda664895841bcaae63e01d"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6.6283121 6.3219557 3.7450013 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1480929287" name="LightEnvironmentProbe_10">
@@ -1850,7 +1846,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="6c80828607750c50eb3df9939a9721aed5e4840c"/>
+
 				<baked_depth_texture replace="7dae4dd0c67e7c6178d82cba4a033116ed218857"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0.22644809 -7.7475748 4.0288157 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1305946951" name="LightEnvironmentProbe_11">
@@ -1945,7 +1945,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="8cbfc72804c8c1ae29e15afd1e916c81913fa51e"/>
+
 				<baked_depth_texture replace="a61e3f82307c69ab4d9ad47c1d83e1d1837a6ea1"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -14.2983 -14.019426 3.4088275 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="627743344" name="LightEnvironmentProbe_12">
@@ -2041,6 +2045,10 @@
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
 				<baked_depth_texture replace="cec4848427f0289bf5819e0e500bf1cbbd1d0d7b"/>
+				<baked_depth_texture replace="a034b89a16255144699fa677db2fcfe9da3af200"/>
+
+				<baked_depth_texture replace="cec4848427f0289bf5819e0e500bf1cbbd1d0d7b"/>
+				<baked_depth_texture replace="e496d2418a6f8e646b9e1392adf8722f2738e999"/>
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0500032 -20.104139 3.4603462 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="822136334" name="LightEnvironmentProbe_13">
@@ -2135,7 +2143,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
 				<baked_depth_texture replace="e41b1ce1c36a108b2fb722acd40826c6c958bc7c"/>
+
+				<baked_depth_texture replace="ad7c835ce3ff396aa9f9ca81658349aa7731eb32"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 8.334466 -18.069857 3.4603465 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="899680478" name="LightEnvironmentProbe_7">
@@ -2230,7 +2242,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
 				<baked_depth_texture replace="769ac2fbfe95eb2e6ae4a7be637d5a9d75c1270e"/>
+
+				<baked_depth_texture replace="4c3727ee6a536caf51f5599b271ebdddd8ba6534"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 16.249331 17.171385 5.2283964 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="139918342" name="LightEnvironmentProbe_5">
@@ -2325,7 +2341,16 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
 				<baked_depth_texture replace="e337506adf3b39e7359956a4568177d6f4caa269"/>
+
+
+				<baked_depth_texture replace="64db9ad0218faeb23f252a45dae38b05261ba886"/>
+
+				<baked_depth_texture replace="e337506adf3b39e7359956a4568177d6f4caa269"/>
+				<baked_depth_texture replace="d2cd20bfea50267df909ca08966a183f82300017"/>
+
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.2395735 3.4593794 3.995712 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="922116638" name="LightEnvironmentProbe_14">
@@ -2420,7 +2445,16 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
 				<baked_depth_texture replace="b499afacc636119af6731c76d80e8006a96b1c83"/>
+
+
+				<baked_depth_texture replace="0268e48230fc267ea8a2f6ff341de8bf477291a8"/>
+
+				<baked_depth_texture replace="b499afacc636119af6731c76d80e8006a96b1c83"/>
+				<baked_depth_texture replace="b638be0925de7143aea2b67a1fcffae88f107c61"/>
+
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.2395735 2.3168588 5.2702565 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1901841593" name="LightEnvironmentProbe_15">
@@ -2515,7 +2549,16 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
 				<baked_depth_texture replace="395ffcbec64a0af1f9a51298e42259089eed0fad"/>
+
+
+				<baked_depth_texture replace="bf3c41847e3caa22c561fe49ed4e9979930ab11a"/>
+
+				<baked_depth_texture replace="395ffcbec64a0af1f9a51298e42259089eed0fad"/>
+				<baked_depth_texture replace="92cbe8634b49279dd448f43c1221a2aa921d213b"/>
+
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.2395735 2.4172194 2.75 1.0</transform>
 			</node>
 			<node type="LightVoxelProbe" id="977121940" name="LightVoxelProbe">
@@ -2568,13 +2611,59 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
 				<baked_depth_texture replace="32ff4c20a2bdd8e04471118a5c5c24695c49ae67"/>
+
+				<baked_depth_texture replace="67944256e565275f6382a2a335cc92db44b46b5c"/>
+				<transform>1 2.5243552e-29 0 0.0 -2.5243552e-29 1 -1.4210854e-14 0.0 -3.5873241e-43 1.4210855e-14 1 0.0 4.0681005 -1.2260934 5.4835181 1.0</transform>
+			</node>
+		</node>
+		<node type="ObjectDummy" id="347416968" trigger_interaction_enabled="1" name="first_person_controller">
+			<body type="BodyDummy" id="1524147422" frozen="0">
+				<shape type="ShapeCapsule" id="682388558" transform="0.99999994 0 0 0 0 1 0 0 0 0 0.999999762 0 0 0 0.875 1">
+					<radius>0.300000012</radius>
+					<height>1.14999998</height>
+				</shape>
+			</body>
+			<properties>
+				<property parent="7abd3d1dd6399bd8498bed57e699aacada031ba1" guid="6cb5efcf7fcbb6ae78385dfca0cfb166a40a6277">
+					<parameter name="useObjectBody">1</parameter>
+					<parameter name="nearClipping">0.100000001</parameter>
+					<parameter name="farClipping">100000</parameter>
+				</property>
+			</properties>
+			<transform>-0.707106667574 0.707106727574 0 0.0 -0.707106727574 -0.707106667574 0 0.0 0 0 0.99999982 0.0 6.0763869 11.499999 3.2710779 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="260953448" immovable="1" name="box">
+			<mesh_name>guid://5038c65733c231789f1e1b206940ab8e08cdcc34</mesh_name>
+			<surface name="box" intersection="1" material="e8c0dffb417bf8053c05f154bed9d69310cc0b28"/>
+			<properties>
+				<property parent="42f51590e8ff3483dc12647fe6630cfba2fcbdcd" guid="671fa5e5d2365a36c2905de67de3572b8e1ca9da">
+					<parameter name="Cat">347416968</parameter>
+					<parameter name="Battery">2005119717</parameter>
+				</property>
+			</properties>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 9.48086134221 11.4233453429 1.51679865357 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2005119717" immovable="1" name="Battery">
+			<mesh_name>guid://b83b24bd481bb6ea558d459026bf2c2475da6f71</mesh_name>
+			<surface name="cylinder" intersection="1" material="68d081431d7b46457187c3bc08cb0f96a02e6910"/>
+			<transform>0.499999940395 0 0 0.0 0 0.5 0 0.0 0 0 0.5 0.0 7.3854418138 10.1419767017 2.24147692426 1.0</transform>
+		</node>
+		<node type="FieldWeather" id="98223647" name="FieldWeather">
+			<size>1000 1000 1000</size>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 -1.37818280534 11.0850041414 0.99999994 1.0</transform>
+
+				<baked_depth_texture replace="32ff4c20a2bdd8e04471118a5c5c24695c49ae67"/>
+				<baked_depth_texture replace="caa2464dea5edfc9b1b143ce874678aec6644d25"/>
+
 				<transform>1 2.5243552e-29 0 0.0 -2.5243552e-29 1 -1.4210854e-14 0.0 -3.5873241e-43 1.4210855e-14 1 0.0 4.0681005 -1.2260934 5.4835181 1.0</transform>
 			</node>
 		</node>
 		<node type="NodeReference" id="1777446179" enabled="0" name="first_person_controller">
 			<reference>guid://59e4bb833f8dab069c5b06ad189c382836a5bd67</reference>
 			<transform>-0.70710671 0.70710677 0 0.0 -0.70710677 -0.70710671 0 0.0 0 0 0.99999988 0.0 6.0763869 11.499999 3.2710779 1.0</transform>
+
 		</node>
 		<node type="ObjectDummy" id="2042636602" trigger_interaction_enabled="1" name="first_person_controller">
 			<body type="BodyDummy" id="1676143918" frozen="0">

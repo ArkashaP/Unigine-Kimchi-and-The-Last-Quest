@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>0e502dcbfee5df0d4cbef14b0d8d288b4f0f20b8</guid>
+	<type>component</type>
+	<hash>5d65977f</hash>
+	<runtimes>
+		<runtime id="0e502dcbfee5df0d4cbef14b0d8d288b4f0f20b8" name="light_cat.cs" link="0"/>
+		<runtime id="9bac5f31f947e210368166b1f65bbd152b169916" name="light_cat.prop" link="1" type="4"/>
+	</runtimes>
+</asset>

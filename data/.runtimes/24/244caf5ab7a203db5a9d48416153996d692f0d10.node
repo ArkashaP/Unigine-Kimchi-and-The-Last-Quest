@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1506319690" name="cyber_cat (3)">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshSkinned" id="377777185" name="Cat_Model">
+			<mesh_name>guid://45ba7bbc757629f72b41fa21ecd35f899996fd2f</mesh_name>
+			<fps_visible_camera>-1</fps_visible_camera>
+			<fps_visible_shadow>30</fps_visible_shadow>
+			<fps_invisible>0</fps_invisible>
+			<anim_name>guid://ae4bd81cdeb1828690fd8d5bf26ec9bfeb9188c2</anim_name>
+			<speed>30</speed>
+			<surface name="Материал" intersection="1" material="11e9e6e18caf38fd59262279d27783673d66db3f"/>
+			<surface name="Ноги.Задние" intersection="1" material="047dc34803452680673ff617f31a8fab0fd92e0e"/>
+			<surface name="Ноги.Передние" intersection="1" material="dda469a600e09d1048bf499d15fad82c41e5eb7c"/>
+			<surface name="Уши.ВнутренняяСторона" intersection="1" material="1f0a930efa0f8a00b23d0ce58d05625b7fd8baa4"/>
+			<surface name="Выпуклость.Верх.Задняя" intersection="1" material="33ee0c545fdfac5306ce2f33b744db6db121243a"/>
+			<surface name="Хвост.Шарик" intersection="1" material="287a017ce6dcdef7d9f3633b0960ada8e0290b22"/>
+			<surface name="Нос" intersection="1" material="1d8cbaf076d35d7fc4e65a9ff03a1daf20564f76"/>
+			<surface name="Живот" intersection="1" material="f560d1ba0bc4cf31f1116321e83599bb1f4c9870"/>
+			<surface name="Выпуклость.Верх.Передняя" intersection="1" material="a37786d20a95cd16b75a7c5918a9c89e69033fc8"/>
+			<surface name="Outline" intersection="1" material="684c0cfb5eb13417285292533c30f96265c989c9"/>
+			<transform>1 6.93771004924e-23 3.82137123179e-15 0.0 2.41430667903e-22 1 -8.74227800037e-08 0.0 -3.82137123179e-15 8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="863409932" name="IK">
+			<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 0.467628253457 1.3569024398 2.01468450303 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1506764539" name="IK">
+			<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 0.476170153056 1.00721010182 1.27982223755 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="2105683998" name="IK">
+			<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 0.348761173642 1.46390804933 0.853039531942 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="774199525" name="IK">
+			<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 -0.42903226991 2.11764433963 1.99461178641 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="605861120" name="IK">
+			<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 -0.406729928238 2.49365715182 1.23076785329 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="788669535" name="IK">
+			<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 -0.388458676221 2.6934549234 0.937268578674 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="122660402" name="IK">
+			<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 0.451977980588 -1.17971985783 1.67263815903 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="311709673" name="IK">
+			<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 0.447548771867 -1.21702796109 1.6614209223 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="328128564" name="IK">
+			<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 -0.451317417946 -1.93551182657 1.65525723089 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="1105765891" name="IK">
+			<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 -0.446857744364 -1.93347523986 1.65398457824 1.0</transform>
+		</node>
+	</node>
+</nodes>

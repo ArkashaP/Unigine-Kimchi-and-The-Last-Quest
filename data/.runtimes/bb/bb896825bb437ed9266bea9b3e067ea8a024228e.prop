@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.19.0.3" name="Move_battery" guid="bb896825bb437ed9266bea9b3e067ea8a024228e" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
+	<parameter name="speed" type="float">0.5</parameter>
+	<parameter name="position_up" type="double">0</parameter>
+	<parameter name="direction" type="int">1</parameter>
+</property>

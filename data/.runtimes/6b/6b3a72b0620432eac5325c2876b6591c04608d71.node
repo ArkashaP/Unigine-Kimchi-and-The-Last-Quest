@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="413733935" name="стрелочка">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1403433922" immovable="1" name="Стрелка">
+			<mesh_name>guid://20418c5762ea7815d003023ff490c5c6bdba281c</mesh_name>
+			<surface name="Стрелка основной" intersection="1" material="d58a84997d0464d0d2bb5fc19cfc60b20931eb46"/>
+			<transform>0.199999988079 1.74845578072e-08 -1.74845549586e-08 0.0 1.74845578072e-08 -3.25841324398e-08 0.199999988079 0.0 1.74845549586e-08 -0.199999988079 -3.25841339684e-08 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

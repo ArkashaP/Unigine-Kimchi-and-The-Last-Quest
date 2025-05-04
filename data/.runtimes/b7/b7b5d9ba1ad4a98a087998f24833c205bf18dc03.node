@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="6953248" name="Дом 4">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="2079652351" immovable="1" name="Retopo_Cube">
+			<mesh_name>guid://a48171d9d589a84d6aa415019820f11154a65186</mesh_name>
+			<surface name="дом-ромы.4.основа" intersection="1" material="90a1c345233098031224f1ed2364e69ba9c36f62"/>
+			<surface name="дом-ромы.4.окна" intersection="1" material="7785c749d0444a13575cf071cc7ed0c3437ed7b6"/>
+			<transform>100 8.74228046683e-06 -8.74227800037e-06 0.0 8.74228046683e-06 -2.82129961461e-05 100 0.0 8.74227800037e-06 -100 -2.82129969103e-05 0.0 -2.64840087939 0.00557781405136 12.0890710447 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="224542546" immovable="1" name="Retopo_Cube.001">
+			<mesh_name>guid://a23fb97cc2614c3fc8f02b74d2aa9a09c3727b2d</mesh_name>
+			<surface name="дом-ромы.4.металлоштуки" intersection="1" material="196d038dcfca3ddf1dc2cf358a6e99f2b57cbb4a"/>
+			<transform>92.4810791016 8.08495549926e-06 -8.74227800037e-06 0.0 8.08495549926e-06 -2.82129962035e-05 100 0.0 8.74227800037e-06 -100 -2.82129969103e-05 0.0 -1.2315188626e-14 1.4086933206e-07 3.22271453857 1.0</transform>
+		</node>
+	</node>
+</nodes>

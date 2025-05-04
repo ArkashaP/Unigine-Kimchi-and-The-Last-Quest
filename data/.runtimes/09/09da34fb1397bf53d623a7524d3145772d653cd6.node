@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1766931011" name="Icosphere">
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="592485062" immovable="1" name="Icosphere">
+			<mesh_name>guid://0667a0b9d8284e824d22566e91235ed5d1b64e3d</mesh_name>
+			<surface name="земля_дефолт_темнее_1" intersection="1" material="a6da73ea42726098667811f2a1364b5ea3bbbc78"/>
+			<surface name="земля_светлее" intersection="1" material="ab990f2ccc3c5a51904abc74c997d728d83ab46a"/>
+			<surface name="земля_темная" intersection="1" material="c7ddf83e847c80c3bedfc6c6f8b9f6071c175b2c"/>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

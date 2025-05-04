@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>4d5ff405ffdf5d0d57791d1d85ba94ea024dcf43</guid>
+	<type>material</type>
+	<hash>137e134e</hash>
+	<runtimes>
+		<runtime id="4d5ff405ffdf5d0d57791d1d85ba94ea024dcf43" name="земля_тень_3" link="0" type="5"/>
+	</runtimes>
+</asset>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>80ed33b91be4a25654d942e12d7a33a52a1860e6</guid>
+	<type>material</type>
+	<hash>0a2616e8</hash>
+	<runtimes>
+		<runtime id="80ed33b91be4a25654d942e12d7a33a52a1860e6" name="Антенна металл" link="0" type="5"/>
+	</runtimes>
+</asset>

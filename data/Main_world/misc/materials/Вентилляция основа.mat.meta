@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>efce7455ab292a1705a42cfdd94f21843ba3d9b2</guid>
+	<type>material</type>
+	<hash>9d333b83</hash>
+	<runtimes>
+		<runtime id="efce7455ab292a1705a42cfdd94f21843ba3d9b2" name="Вентилляция основа" link="0" type="5"/>
+	</runtimes>
+</asset>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>18d3e2ab0e1f4fbd8a8733310d90001612b4bb5d</guid>
+	<type>material</type>
+	<hash>e74d163</hash>
+	<runtimes>
+		<runtime id="18d3e2ab0e1f4fbd8a8733310d90001612b4bb5d" name="sky_base_1" link="0" type="5"/>
+	</runtimes>
+	<parameters>
+		<parameter type="bool" name="unchanged">1</parameter>
+	</parameters>
+</asset>

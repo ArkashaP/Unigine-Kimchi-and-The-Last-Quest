@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>3ddee5cc867fc7180e5bd8f3ea07b79d9d7232e2</guid>
+	<type>material</type>
+	<hash>6cb141e9</hash>
+	<runtimes>
+		<runtime id="3ddee5cc867fc7180e5bd8f3ea07b79d9d7232e2" name="светодиод" link="0" type="5"/>
+	</runtimes>
+</asset>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>48df4c44d307bbf3c8a1670b5dc79246b296f09a</guid>
+	<type>material</type>
+	<hash>b33809a2</hash>
+	<runtimes>
+		<runtime id="48df4c44d307bbf3c8a1670b5dc79246b296f09a" name="дом3_основа" link="0" type="5"/>
+	</runtimes>
+</asset>

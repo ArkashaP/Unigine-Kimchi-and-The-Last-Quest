@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.19.0.3" name="Light_signboard" guid="ef1102683c085c3b52acf9c4655eeb77a9fcd60e" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
+	<struct name="Vector4">
+		<parameter name="X" type="float">0</parameter>
+		<parameter name="Y" type="float">0</parameter>
+		<parameter name="Z" type="float">0</parameter>
+		<parameter name="W" type="float">0</parameter>
+	</struct>
+	<parameter name="color_1" type="Vector4"/>
+</property>

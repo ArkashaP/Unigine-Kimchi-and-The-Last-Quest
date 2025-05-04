@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>16c60ea7596840728c12568f98e918ac54cac8ac</guid>
+	<type>material</type>
+	<hash>80966995</hash>
+	<runtimes>
+		<runtime id="16c60ea7596840728c12568f98e918ac54cac8ac" name="Автомат кнопка" link="0" type="5"/>
+	</runtimes>
+</asset>

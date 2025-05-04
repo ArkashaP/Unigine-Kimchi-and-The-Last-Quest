@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1977476358" name="дерево-2">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="2139748525" immovable="1" name="Дерево малое">
+			<mesh_name>guid://5529ecb391f38a8b8371641b9266a479c3330ea8</mesh_name>
+			<surface name="Дерево малое ствол" intersection="1" material="2a16b054521320136d2deb4cc7ad36bd7ab85ae5"/>
+			<surface name="Дерево малое листва" intersection="1" material="d2a89ad210f39b74ba723b0a6788f85d32b998fb"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>
