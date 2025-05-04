@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.19.0.3" guid="4d62e4d28f7dc259760e4eb4f3d7dc3c15a6c91e" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
+	<state name="emission">1</state>
+	<parameter name="albedo_color" expression="0">0.733333349 0.745098054 0.870588303 1</parameter>
+	<parameter name="metalness" expression="0">0.166659996</parameter>
+	<parameter name="roughness" expression="0">0.464910001</parameter>
+	<parameter name="emission_color" expression="0">0.733333349 0.745098054 0.870588303 1</parameter>
+	<parameter name="emission_scale" expression="0">0.769200027</parameter>
+</material>

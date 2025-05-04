@@ -2,17 +2,17 @@
 <asset version="2.19.0.3">
 	<guid>674eee71377b151c27d42dcb454728ae143f5835</guid>
 	<type>fbx</type>
-	<hash>c84f72b7</hash>
+	<hash>2e8f9759</hash>
 	<runtimes>
 		<runtime id="674eee71377b151c27d42dcb454728ae143f5835" name="sphere.fbx" link="0"/>
 		<runtime id="d5d646d363239e16e660be7d15736db807fad5b7" name="sphere.node" link="1" type="3">
 			<parameters>
-				<parameter type="string" name="id">a8e2a5d8</parameter>
+				<parameter type="string" name="id">1cd637f4</parameter>
 			</parameters>
 		</runtime>
 		<runtime id="7431b7aae1bd03014d53806cf96380db2136c07e" name="sphere_mesh.mesh" link="2" type="1">
 			<parameters>
-				<parameter type="string" name="id">c2fa2896</parameter>
+				<parameter type="string" name="id">9c51bb69</parameter>
 			</parameters>
 		</runtime>
 	</runtimes>

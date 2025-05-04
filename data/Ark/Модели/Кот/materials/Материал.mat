@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.19.0.3" guid="20d7722c2fa06ac47f4a029ee1deb4744ef2eb58" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
+	<parameter name="albedo_color" expression="0">0.344555318 0.350491673 0.320333689 1</parameter>
+	<parameter name="specular" expression="0">0.780700028</parameter>
+	<parameter name="normal_scale" expression="0">1.24559999</parameter>
+	<parameter name="translucent" expression="0">0.614030004</parameter>
+	<parameter name="detail_albedo_color" expression="0">0.196078449 0.905882418 0.196078449 1</parameter>
+	<parameter name="detail_metalness" expression="0">0.973680019</parameter>
+	<parameter name="detail_roughness" expression="0">0</parameter>
+	<parameter name="detail_specular" expression="0">0.280699998</parameter>
+	<parameter name="detail_visible" expression="0">1.15787995</parameter>
+	<parameter name="detail_visible_threshold" expression="0">0.578939974</parameter>
+	<parameter name="detail_albedo_color_visible" expression="0">0.763149977</parameter>
+	<parameter name="detail_metalness_visible" expression="0">0.67543</parameter>
+	<parameter name="detail_roughness_visible" expression="0">0.710520029</parameter>
+	<parameter name="detail_specular_visible" expression="0">0.578939974</parameter>
+	<parameter name="detail_normal_visible" expression="0">0.228070006</parameter>
+	<parameter name="noise_3d_scale" expression="0">1</parameter>
+	<parameter name="noise_3d_transform" expression="0">-0.200000003 -0.400000006 -0.400000006</parameter>
+</material>
