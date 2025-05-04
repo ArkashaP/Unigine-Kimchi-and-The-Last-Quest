@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="ObjectMeshStatic" id="1792114304" immovable="1" name="template_buildings">
+		<mesh_name>guid://9802276da9e561e8d1bf5c2721ad2b5a2d4a02f1</mesh_name>
+		<surface name="wall_0_mat" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="b50d447466b5a543f70c09c68846566d9f15c4e8">
+			<lightmap_enabled>1</lightmap_enabled>
+			<lightmap_texture_path replace="9943a802dd3dfcea6ee7360bf7567420f6cc20bb">guid://aabd101dcf4952d811423857ffbd79ca9c4e9ea1</lightmap_texture_path>
+		</surface>
+		<surface name="floor_red_mat" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="03975a558b6967b07049574fafa8dc62f5633059">
+			<lightmap_enabled>1</lightmap_enabled>
+			<lightmap_texture_path replace="e242763e694328c3d9cf0fa9d6176d3f4c1a1ede">guid://89f1a2df6c6012b2d824d2696e6478b4a934cc83</lightmap_texture_path>
+		</surface>
+		<surface name="floor_orange_mat" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="fbc9263de6d73278a1305377d3c39a6a013e06c1">
+			<lightmap_enabled>1</lightmap_enabled>
+			<lightmap_texture_path replace="42ef21048ef5cf85efd50c359f3b1fdb85bcf8a5">guid://14c97f31ff20eedca3c2bc8b8e04e86e1a0894f5</lightmap_texture_path>
+		</surface>
+		<surface name="floor_green_mat" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="21104c81e1573bec49c9065bb30f87fecc360f45">
+			<lightmap_enabled>1</lightmap_enabled>
+			<lightmap_texture_path replace="a7c1f1a08948b113c4255303ff6202af9a3651c0">guid://d664880676523fad3be01d286b565e67517dc89a</lightmap_texture_path>
+		</surface>
+		<surface name="floor_gray_mat" intersection="1" collision="1" physics_friction="1" physics_restitution="1" material="9ce875824cc0b6f9c970740499c26f93691e2fd6">
+			<lightmap_enabled>1</lightmap_enabled>
+			<lightmap_texture_path replace="2ae49dd6adbf3878cd7d5a6ff6e78ce9b1839a1f">guid://fd5a278ce270bd7b28aa949ec7bd736521e50d80</lightmap_texture_path>
+		</surface>
+		<transform>1 -1.4210856e-14 0 0.0 1.4210856e-14 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

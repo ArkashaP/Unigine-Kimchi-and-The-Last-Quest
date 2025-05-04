@@ -14,6 +14,11 @@
 				<parameter name="farClipping">100000</parameter>
 			</property>
 		</properties>
-		<transform>0.99999994 0 0 0.0 0 0.99999994 0 0.0 0 0 0.99999994 0.0 0 0 0 1.0</transform>
+		<transform>0.99999994 -5.55111512313e-17 0 0.0 5.55111512313e-17 0.99999994 0 0.0 0 0 0.99999994 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="95908507" immovable="1" trigger_interaction_enabled="1" name="box">
+			<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
+			<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<transform>-0.7071068348 -0.7071068948 0 0.0 0.7071068948 -0.7071068348 0 0.0 0 0 1.00000018 0.0 53.6338177965 27.7354273164 12.209300894 1.0</transform>
+		</node>
 	</node>
 </nodes>

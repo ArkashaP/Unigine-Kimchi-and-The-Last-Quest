@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>98bcd6ec1d65b7de1f1450fd65113854f7447241</guid>
+	<type>fbx</type>
+	<hash>aaf8affc</hash>
+	<runtimes>
+		<runtime id="98bcd6ec1d65b7de1f1450fd65113854f7447241" name="cyber_cat-Stable1.fbx" link="0"/>
+		<runtime id="f81c8b3a7a51519b2e45c8f5872422d76ca300be" name="cyber_cat-Stable1.node" link="1" type="3">
+			<parameters>
+				<parameter type="string" name="id">ed1492eb</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="6af667605cf6387efe3fc081884ed723c58fb105" name="cat_model.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">5392afe9</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="a03156fcc38adae2ace0552f55e194a2cebfeea0" name="cat_model_Delete.anim" link="2" type="2">
+			<parameters>
+				<parameter type="string" name="id">15146982</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="2d73d39231e9acd90ae6cf9b58cabfa482e1d17f" name="cat_model_Delete.001.anim" link="2" type="2">
+			<parameters>
+				<parameter type="string" name="id">26dede42</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="3c2ee48e62efa4f5e6b327f95cf42afb50c630d2" name="cat_model_DeleteMe.anim" link="2" type="2">
+			<parameters>
+				<parameter type="string" name="id">26dede42</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="95a71714e4bf3202fdae204592989b9012751a09" name="cat_model_F-Idle.anim" link="2" type="2">
+			<parameters>
+				<parameter type="string" name="id">137129aa</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="352e6870a0eb89e388dd83d3bf11c1af5fa1dbd4" name="cat_model_F_Empty.anim" link="2" type="2">
+			<parameters>
+				<parameter type="string" name="id">94379518</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="488c6266bd5fb0475f8f6cff0bff46850cf19523" name="cat_model_F_JumpIdle.anim" link="2" type="2">
+			<parameters>
+				<parameter type="string" name="id">26dede42</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="0f1b2b221ca87302ea436f3d580e9fbdb68a7826" name="cat_model_F_JumpInitiate.anim" link="2" type="2">
+			<parameters>
+				<parameter type="string" name="id">400f3a38</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="73f25a08c71a36f74c5df4491e0390f2690c314d" name="cat_model_F_JumpWiggle.anim" link="2" type="2">
+			<parameters>
+				<parameter type="string" name="id">3cd7054d</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="da98a924c7b306025a5354b7234a29943e372248" name="cat_model_F_MoveForwardAction.anim" link="2" type="2">
+			<parameters>
+				<parameter type="string" name="id">dd2979ba</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="d197367a52246313421a18a329778cd6b5ec6107" name="cat_model_F_MoveRunAction.anim" link="2" type="2">
+			<parameters>
+				<parameter type="string" name="id">894c99cf</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="4315b2f692e0711bc004a2c1406ed77521c7aaba" name="cat_model_F_MoveRunAction.001.anim" link="2" type="2">
+			<parameters>
+				<parameter type="string" name="id">99cad21e</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="0b4ae43cc1f0d845b72e008dd3974d912dc2bad1" name="cat_model_Test.anim" link="2" type="2">
+			<parameters>
+				<parameter type="string" name="id">ae016455</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="2ad48d186d842ab5c1b76bdb38df3d00642ab5fc" name="cat_model_scene.anim" link="2" type="2">
+			<parameters>
+				<parameter type="string" name="id">96d27fc9</parameter>
+			</parameters>
+		</runtime>
+	</runtimes>
+	<parameters>
+		<parameter type="float" name="angular_deflection">0.699999988</parameter>
+		<parameter type="bool" name="asset_name_as_prefix">0</parameter>
+		<parameter type="string" name="base_material_mode">unique_material_graph</parameter>
+		<parameter type="float" name="bound_size">10000</parameter>
+		<parameter type="bool" name="create_transform_bones_for_joints">0</parameter>
+		<parameter type="float" name="fps">30</parameter>
+		<parameter type="string" name="front_axis">default</parameter>
+		<parameter type="bool" name="import_animations">1</parameter>
+		<parameter type="bool" name="import_bones_without_skin">1</parameter>
+		<parameter type="bool" name="import_cameras">1</parameter>
+		<parameter type="bool" name="import_lights">1</parameter>
+		<parameter type="bool" name="import_materials">1</parameter>
+		<parameter type="string" name="import_materials_mode">take_by_name_or_create</parameter>
+		<parameter type="bool" name="import_meshes">1</parameter>
+		<parameter type="bool" name="import_morph_targets">0</parameter>
+		<parameter type="bool" name="import_tangent_space">0</parameter>
+		<parameter type="bool" name="import_textures">1</parameter>
+		<parameter type="bool" name="invert_gchannel_for_normal_maps">0</parameter>
+		<parameter type="bool" name="joints_reorientation">0</parameter>
+		<parameter type="string" name="lightmaps">{&quot;guid://6af667605cf6387efe3fc081884ed723c58fb105&quot;:{&quot;Материал&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;Ноги.Задние&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;Ноги.Передние&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;Уши.ВнутренняяСторона&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;Выпуклость.Верх.Задняя&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;Хвост.Шарик&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;Нос&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;Живот&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;Выпуклость.Верх.Передняя&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;Outline&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}}}</parameter>
+		<parameter type="float" name="linear_deflection">0.200000003</parameter>
+		<parameter type="string" name="lods">_lod_0,-1e+09,3,0,0,100,0,0,60;_lod_1,3,9,0,0,60,0,1,60;_lod_2,9,1e+09,0,0,30,0,1,60</parameter>
+		<parameter type="string" name="lods_mode">off</parameter>
+		<parameter type="string" name="material_guids">outline,5338deea7269d9a282d27a8c84905e2ad9c512b6,Выпуклость.Верх.Задняя,83c3d6a06fd076617a086a324251802ee985080c,Выпуклость.Верх.Передняя,f38d133e3554346723170500c6e887191581264a,Живот,b209a7a67de7a106fb55cba8df15d7eb8b194f32,Материал,20d7722c2fa06ac47f4a029ee1deb4744ef2eb58,Ноги.Задние,6bac9a54836444abf975230664c8afb93341b600,Ноги.Передние,4d62e4d28f7dc259760e4eb4f3d7dc3c15a6c91e,Нос,cde04f7c187c1010fa25186e7c90ac6ca551d5a8,Уши.ВнутренняяСторона,d01defba7098d299b07a2fdcdf4306f37b674c86,Хвост.Шарик,618931483f5c27925742c11af1d30c5f046b6934</parameter>
+		<parameter type="bool" name="merge_similar_materials">0</parameter>
+		<parameter type="bool" name="merge_static_meshes">0</parameter>
+		<parameter type="bool" name="merge_surfaces_by_materials">0</parameter>
+		<parameter type="float" name="morph_targets_normals_angle">180</parameter>
+		<parameter type="string" name="morph_targets_normals_mode">import</parameter>
+		<parameter type="bool" name="need_repivot">0</parameter>
+		<parameter type="bool" name="need_split">0</parameter>
+		<parameter type="bool" name="need_triagulate">1</parameter>
+		<parameter type="int" name="num_lods">3</parameter>
+		<parameter type="string" name="prefix_materials"/>
+		<parameter type="string" name="resolution">256</parameter>
+		<parameter type="float" name="scale">1</parameter>
+		<parameter type="bool" name="skip_empty_nodes">0</parameter>
+		<parameter type="int" name="smooth_animation_size">0</parameter>
+		<parameter type="bool" name="unwrap_uv_ch_0">0</parameter>
+		<parameter type="bool" name="unwrap_uv_ch_1">0</parameter>
+		<parameter type="string" name="up_axis">default</parameter>
+		<parameter type="bool" name="use_instances">1</parameter>
+		<parameter type="int" name="uv_ch">1</parameter>
+		<parameter type="bool" name="vertex_cache">1</parameter>
+		<parameter type="string" name="workflow">metalness</parameter>
+	</parameters>
+</asset>

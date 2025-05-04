@@ -16,6 +16,7 @@ Color "albedo_color"=[1.000000 1.000000 1.000000 1.000000] <  shader_name="var_a
 Slider "metalness"=0.000000 <  min=0 max=1 shader_name="var_3faaa105866f6f4f9c67d41c181297eadd5ff3e1">
 Slider "roughness"=0.500000 <  min=0 max=1 shader_name="var_4b93d8479cb2d112283ef34d1b437d234adde333">
 }
+	State emission = true
 	State static_shadow = true
 	State use_bound_scale = false
 
@@ -114,6 +115,7 @@ Slider "roughness"=0.500000 <  min=0 max=1 shader_name="var_4b93d8479cb2d112283e
 		const float2 screen_iresolution = s_viewport.zw;
 		const float2 screen_uv = positionToScreenUV(DATA_POSITION);
 		const uint2 screen_coord = toUInt2(screen_uv * s_viewport.xy);
+		const uint2 screen_coord_before_upscale = screen_coord;
 		
 		const float3 view_direction = positionToViewDirection(DATA_POSITION);
 		
@@ -167,6 +169,7 @@ Slider "roughness"=0.500000 <  min=0 max=1 shader_name="var_4b93d8479cb2d112283e
 		const float2 screen_iresolution = s_viewport.zw;
 		const float2 screen_uv = positionToScreenUV(DATA_POSITION);
 		const uint2 screen_coord = toUInt2(screen_uv * s_viewport.xy);
+		const uint2 screen_coord_before_upscale = screen_coord;
 		
 		const float3 view_direction = positionToViewDirection(DATA_POSITION);
 		
@@ -246,6 +249,7 @@ Slider "roughness"=0.500000 <  min=0 max=1 shader_name="var_4b93d8479cb2d112283e
 		const uint2 screen_resolution = toUInt2(s_viewport.xy);
 		const float2 screen_iresolution = s_viewport.zw;
 		const uint2 screen_coord = toUInt2(IN_POSITION.xy);
+		const uint2 screen_coord_before_upscale = screen_coord;
 		const float2 screen_uv = IN_POSITION.xy * s_viewport.zw;
 		
 		const float3 view_direction = positionToViewDirection(DATA_POSITION);
@@ -267,6 +271,7 @@ Slider "roughness"=0.500000 <  min=0 max=1 shader_name="var_4b93d8479cb2d112283e
 			float auxiliary_clip_threshold = 0.5f;
 		#endif
 		
+		float3 var_7 = float3_zero;
 		float3 var_6 = float3_zero;
 		float var_5 = float_zero;
 		float var_4 = float_zero;
@@ -283,6 +288,8 @@ Slider "roughness"=0.500000 <  min=0 max=1 shader_name="var_4b93d8479cb2d112283e
 		
 		var_6 = var_2;
 		
+		var_7 = float3(0.254902f,1.000000f,0.776471f);
+		
 		OUT_FRAG_ALBEDO = var_3;
 		
 		OUT_FRAG_METALNESS = var_4;
@@ -290,6 +297,8 @@ Slider "roughness"=0.500000 <  min=0 max=1 shader_name="var_4b93d8479cb2d112283e
 		OUT_FRAG_ROUGHNESS = var_5;
 		
 		OUT_FRAG_NORMAL = mul3(var_6, rotate_view_to_tangent);
+		OUT_FRAG_EMISSION = var_7;
+		
 		
 		
 		#ifdef PASS_SHADOW && OPTION_TRANSPARENT
