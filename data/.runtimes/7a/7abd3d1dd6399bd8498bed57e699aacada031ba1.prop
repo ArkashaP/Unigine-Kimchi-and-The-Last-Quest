@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <property version="2.19.0.3" name="FirstPersonController" guid="7abd3d1dd6399bd8498bed57e699aacada031ba1" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
+	<struct name="DebugCamera">
+		<parameter name="enabled" type="toggle" tooltip="Debug camera enabled">0</parameter>
+		<parameter name="useFixedAngles" type="toggle" tooltip="Use debug camera with fixed angles" enabled="1">0</parameter>
+	</struct>
+	<struct name="DebugVisualizer">
+		<parameter name="enabled" type="toggle" tooltip="Use visualizer">0</parameter>
+		<parameter name="triangles" type="toggle" tooltip="Triangles" enabled="1">0</parameter>
+		<parameter name="shapes" type="toggle" tooltip="Shapes" enabled="1">0</parameter>
+		<parameter name="playerShape" type="toggle" tooltip="Player shape" enabled="1">0</parameter>
+		<parameter name="playerDirection" type="toggle" tooltip="Player direction" enabled="1">0</parameter>
+		<parameter name="camera" type="toggle" tooltip="Camera" enabled="1">0</parameter>
+		<parameter name="slopeBasis" type="toggle" tooltip="Slope basis" enabled="1">0</parameter>
+		<parameter name="appliedHorizontalVelocity" type="toggle" tooltip="Applied horizontal velocity" enabled="1">0</parameter>
+		<parameter name="appliedVerticalVelocity" type="toggle" tooltip="Applied vertical velocity" enabled="1">0</parameter>
+		<parameter name="upPassContacts" type="toggle" tooltip="Up pass contacts" enabled="1">0</parameter>
+		<parameter name="sidePassContacts" type="toggle" tooltip="Side pass contacts" enabled="1">0</parameter>
+		<parameter name="downPassContacts" type="toggle" tooltip="Down pass contacts" enabled="1">0</parameter>
+		<parameter name="checkMoveRay" type="toggle" tooltip="Check move ray" enabled="1">0</parameter>
+		<parameter name="stairDetectionRay" type="toggle" tooltip="Stair detection ray" enabled="1">0</parameter>
+	</struct>
+	<struct name="DebugProfiler">
+		<parameter name="enabled" type="toggle" tooltip="Use profiler">0</parameter>
+		<parameter name="appliedHorizontalSpeed" type="toggle" tooltip="Applied horizontal speed" enabled="1">0</parameter>
+		<parameter name="appliedVerticalSpeed" type="toggle" tooltip="Applied vertical speed" enabled="1">0</parameter>
+		<parameter name="upPassContact" type="toggle" tooltip="Up pass contact" enabled="1">0</parameter>
+		<parameter name="sidePassContact" type="toggle" tooltip="Side pass contact" enabled="1">0</parameter>
+		<parameter name="downPassContact" type="toggle" tooltip="Down pass contact" enabled="1">0</parameter>
+		<parameter name="isGround" type="toggle" tooltip="Is ground" enabled="1">0</parameter>
+		<parameter name="isCeiling" type="toggle" tooltip="Is ceiling" enabled="1">0</parameter>
+		<parameter name="isCrouch" type="toggle" tooltip="Is crouch" enabled="1">0</parameter>
+		<parameter name="averageSpeed" type="toggle" tooltip="Average speed" enabled="1">0</parameter>
+		<parameter name="autoStepping" type="toggle" tooltip="Auto stepping" enabled="1">0</parameter>
+	</struct>
+	<struct name="DebugColors">
+		<parameter name="playerShape" type="color">0 0 0 0</parameter>
+		<parameter name="playerDirection" type="color">0 0 0 0</parameter>
+		<parameter name="cameraColor" type="color">0 0 0 0</parameter>
+		<parameter name="appliedHorizontalVelocity" type="color">0 0 0 0</parameter>
+		<parameter name="appliedVerticalVelocity" type="color">0 0 0 0</parameter>
+		<parameter name="upPassContacts" type="color">0 0 0 0</parameter>
+		<parameter name="sidePassContacts" type="color">0 0 0 0</parameter>
+		<parameter name="downPassContacts" type="color">0 0 0 0</parameter>
+		<parameter name="isGround" type="color">0 0 0 0</parameter>
+		<parameter name="isCeiling" type="color">0 0 0 0</parameter>
+		<parameter name="isCrouch" type="color">0 0 0 0</parameter>
+		<parameter name="averageSpeed" type="color">0 0 0 0</parameter>
+		<parameter name="autoStepping" type="color">0 0 0 0</parameter>
+	</struct>
 	<parameter name="forwardKey" type="switch" tooltip="Move forward key" group="Input" items="UNKNOWN,ESC,F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12,PRINTSCREEN,SCROLL_LOCK,PAUSE,BACK_QUOTE,DIGIT_1,DIGIT_2,DIGIT_3,DIGIT_4,DIGIT_5,DIGIT_6,DIGIT_7,DIGIT_8,DIGIT_9,DIGIT_0,MINUS,EQUALS,BACKSPACE,TAB,Q,W,E,R,T,Y,U,I,O,P,LEFT_BRACKET,RIGHT_BRACKET,ENTER,CAPS_LOCK,A,S,D,F,G,H,J,K,L,SEMICOLON,QUOTE,BACK_SLASH,LEFT_SHIFT,LESS,Z,X,C,V,B,N,M,COMMA,DOT,SLASH,RIGHT_SHIFT,LEFT_CTRL,LEFT_CMD,LEFT_ALT,SPACE,RIGHT_ALT,RIGHT_CMD,MENU,RIGHT_CTRL,INSERT,DELETE,HOME,END,PGUP,PGDOWN,UP,LEFT,DOWN,RIGHT,NUM_LOCK,NUMPAD_DIVIDE,NUMPAD_MULTIPLY,NUMPAD_MINUS,NUMPAD_DIGIT_7,NUMPAD_DIGIT_8,NUMPAD_DIGIT_9,NUMPAD_PLUS,NUMPAD_DIGIT_4,NUMPAD_DIGIT_5,NUMPAD_DIGIT_6,NUMPAD_DIGIT_1,NUMPAD_DIGIT_2,NUMPAD_DIGIT_3,NUMPAD_ENTER,NUMPAD_DIGIT_0,NUMPAD_DOT,ANY_SHIFT,ANY_CTRL,ANY_ALT,ANY_CMD,ANY_UP,ANY_LEFT,ANY_DOWN,ANY_RIGHT,ANY_ENTER,ANY_DELETE,ANY_INSERT,ANY_HOME,ANY_END,ANY_PGUP,ANY_PGDOWN,ANY_DIGIT_1,ANY_DIGIT_2,ANY_DIGIT_3,ANY_DIGIT_4,ANY_DIGIT_5,ANY_DIGIT_6,ANY_DIGIT_7,ANY_DIGIT_8,ANY_DIGIT_9,ANY_DIGIT_0,ANY_MINUS,ANY_EQUALS,ANY_DOT,NUM_KEYS">33</parameter>
 	<parameter name="backwardKey" type="switch" tooltip="Move backward key" group="Input" items="UNKNOWN,ESC,F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12,PRINTSCREEN,SCROLL_LOCK,PAUSE,BACK_QUOTE,DIGIT_1,DIGIT_2,DIGIT_3,DIGIT_4,DIGIT_5,DIGIT_6,DIGIT_7,DIGIT_8,DIGIT_9,DIGIT_0,MINUS,EQUALS,BACKSPACE,TAB,Q,W,E,R,T,Y,U,I,O,P,LEFT_BRACKET,RIGHT_BRACKET,ENTER,CAPS_LOCK,A,S,D,F,G,H,J,K,L,SEMICOLON,QUOTE,BACK_SLASH,LEFT_SHIFT,LESS,Z,X,C,V,B,N,M,COMMA,DOT,SLASH,RIGHT_SHIFT,LEFT_CTRL,LEFT_CMD,LEFT_ALT,SPACE,RIGHT_ALT,RIGHT_CMD,MENU,RIGHT_CTRL,INSERT,DELETE,HOME,END,PGUP,PGDOWN,UP,LEFT,DOWN,RIGHT,NUM_LOCK,NUMPAD_DIVIDE,NUMPAD_MULTIPLY,NUMPAD_MINUS,NUMPAD_DIGIT_7,NUMPAD_DIGIT_8,NUMPAD_DIGIT_9,NUMPAD_PLUS,NUMPAD_DIGIT_4,NUMPAD_DIGIT_5,NUMPAD_DIGIT_6,NUMPAD_DIGIT_1,NUMPAD_DIGIT_2,NUMPAD_DIGIT_3,NUMPAD_ENTER,NUMPAD_DIGIT_0,NUMPAD_DOT,ANY_SHIFT,ANY_CTRL,ANY_ALT,ANY_CMD,ANY_UP,ANY_LEFT,ANY_DOWN,ANY_RIGHT,ANY_ENTER,ANY_DELETE,ANY_INSERT,ANY_HOME,ANY_END,ANY_PGUP,ANY_PGDOWN,ANY_DIGIT_1,ANY_DIGIT_2,ANY_DIGIT_3,ANY_DIGIT_4,ANY_DIGIT_5,ANY_DIGIT_6,ANY_DIGIT_7,ANY_DIGIT_8,ANY_DIGIT_9,ANY_DIGIT_0,ANY_MINUS,ANY_EQUALS,ANY_DOT,NUM_KEYS">47</parameter>
 	<parameter name="rightKey" type="switch" tooltip="Move right key" group="Input" items="UNKNOWN,ESC,F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12,PRINTSCREEN,SCROLL_LOCK,PAUSE,BACK_QUOTE,DIGIT_1,DIGIT_2,DIGIT_3,DIGIT_4,DIGIT_5,DIGIT_6,DIGIT_7,DIGIT_8,DIGIT_9,DIGIT_0,MINUS,EQUALS,BACKSPACE,TAB,Q,W,E,R,T,Y,U,I,O,P,LEFT_BRACKET,RIGHT_BRACKET,ENTER,CAPS_LOCK,A,S,D,F,G,H,J,K,L,SEMICOLON,QUOTE,BACK_SLASH,LEFT_SHIFT,LESS,Z,X,C,V,B,N,M,COMMA,DOT,SLASH,RIGHT_SHIFT,LEFT_CTRL,LEFT_CMD,LEFT_ALT,SPACE,RIGHT_ALT,RIGHT_CMD,MENU,RIGHT_CTRL,INSERT,DELETE,HOME,END,PGUP,PGDOWN,UP,LEFT,DOWN,RIGHT,NUM_LOCK,NUMPAD_DIVIDE,NUMPAD_MULTIPLY,NUMPAD_MINUS,NUMPAD_DIGIT_7,NUMPAD_DIGIT_8,NUMPAD_DIGIT_9,NUMPAD_PLUS,NUMPAD_DIGIT_4,NUMPAD_DIGIT_5,NUMPAD_DIGIT_6,NUMPAD_DIGIT_1,NUMPAD_DIGIT_2,NUMPAD_DIGIT_3,NUMPAD_ENTER,NUMPAD_DIGIT_0,NUMPAD_DOT,ANY_SHIFT,ANY_CTRL,ANY_ALT,ANY_CMD,ANY_UP,ANY_LEFT,ANY_DOWN,ANY_RIGHT,ANY_ENTER,ANY_DELETE,ANY_INSERT,ANY_HOME,ANY_END,ANY_PGUP,ANY_PGDOWN,ANY_DIGIT_1,ANY_DIGIT_2,ANY_DIGIT_3,ANY_DIGIT_4,ANY_DIGIT_5,ANY_DIGIT_6,ANY_DIGIT_7,ANY_DIGIT_8,ANY_DIGIT_9,ANY_DIGIT_0,ANY_MINUS,ANY_EQUALS,ANY_DOT,NUM_KEYS">48</parameter>
@@ -67,4 +115,22 @@ If this value exceeds the current framerate, the player will be updated several 
 	<parameter name="contactsBufferSize" type="int" tooltip="Maximum number of contacts to be processed for collisions" group="Advanced Settings" min="4" max="1000">16</parameter>
 	<parameter name="heavyContactsCount" type="int" tooltip="Maximum number of contacts up to which the number of iterations specified above shall be used.
 After exceeding this value a single iteration shall be used to avoid performance degradation." group="Advanced Settings" min="4" max="1000">100</parameter>
+	<parameter name="debugCamera" type="DebugCamera" group="Debug"/>
+	<parameter name="debugVisualizer" type="DebugVisualizer" group="Debug"/>
+	<parameter name="debugProfiler" type="DebugProfiler" group="Debug"/>
+	<parameter name="debugColors" type="DebugColors" group="Debug">
+		<parameter name="playerShape">0 0 1 0.0979999974</parameter>
+		<parameter name="playerDirection">1 1 0 1</parameter>
+		<parameter name="cameraColor">0 1 1 1</parameter>
+		<parameter name="appliedHorizontalVelocity">0 0 0 1</parameter>
+		<parameter name="appliedVerticalVelocity">0.5 0.5 0.5 1</parameter>
+		<parameter name="upPassContacts">0 1 1 1</parameter>
+		<parameter name="sidePassContacts">1 0 1 1</parameter>
+		<parameter name="downPassContacts">1 0 0 1</parameter>
+		<parameter name="isGround">1 0 0 1</parameter>
+		<parameter name="isCeiling">0 1 0 1</parameter>
+		<parameter name="isCrouch">0 0 1 1</parameter>
+		<parameter name="averageSpeed">1 1 0 1</parameter>
+		<parameter name="autoStepping">0.660000026 0.330000013 0 1</parameter>
+	</parameter>
 </property>

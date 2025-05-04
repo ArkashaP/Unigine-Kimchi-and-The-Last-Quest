@@ -826,7 +826,7 @@ public class PlayerController : Component
 		// Update animation frames
 		viewBodyMesh.SetLayerFrame(LayerIdle, Game.Time*24f);
 		viewBodyMesh.SetLayerFrame(LayerForward, Game.Time*30*horizontalMoveDirection.Length); // *horizontalMoveDirection.Length
-		viewBodyMesh.SetLayerFrame(LayerRun, Game.Time*24f);
+		viewBodyMesh.SetLayerFrame(LayerRun, Game.Time*30f);
 		viewBodyMesh.SetLayerFrame(LayerJump, Game.Time*24f);
 		viewBodyMesh.SetLayerFrame(LayerInAir, Game.Time*24f);
 

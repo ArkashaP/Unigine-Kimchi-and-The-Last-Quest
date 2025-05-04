@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1768102489" name="group">
+		<transform>1 0 0 0.0 -1.05879118407e-22 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+		<node type="PlayerDummy" id="1689266793" name="PlayerCamera">
+			<znear>0.300000012</znear>
+			<zfar>100000</zfar>
+			<ortho_height>7</ortho_height>
+			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
+			<is_oblique_frustum>0</is_oblique_frustum>
+			<is_main>1</is_main>
+			<is_listener>1</is_listener>
+			<controlled>1</controlled>
+			<transform>0.944377720356 0.328862726688 -6.35981559754e-05 0.0 -0.174268126488 0.500600457191 0.847956359386 0.0 0.278893023729 -0.800779998302 0.53006619215 0.0 1.22292244999 -3.34479106658 3.01766011942 1.0</transform>
+		</node>
+		<node type="NodeDummy" id="2085045353" name="PlayerViewBody">
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -0.581695723902 3.34479106658 -3.01766011942 1.0</transform>
+			<node type="ObjectMeshStatic" id="529547956" enabled="0" immovable="1" name="Capsule">
+				<mesh_name>guid://1f8dde80187e585bb08d7231adde67bba4718e67</mesh_name>
+				<surface name="capsule" intersection="1" material="4fdb946e72932663a3ad49379d23078d73ccefbd"/>
+				<transform>0.999999701977 0 0 0.0 0 0.999999701977 0 0.0 0 0 0.700000029802 0.0 1.7763568394e-15 0 0.818015245241 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1424625283" enabled="0" immovable="1" name="Box">
+				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
+				<surface name="box" intersection="1" material="4b197e9e541b7c66a16fe327dc8a59ada98c7c2d"/>
+				<transform>0.6 0 0 0.0 0 0.699999970198 0 0.0 0 0 0.399999791384 0.0 -2.22044604925e-16 0.184382549582 1.37470938679 1.0</transform>
+			</node>
+			<node type="ObjectMeshSkinned" id="954524166" name="Cat_Model">
+				<mesh_name>guid://94fa8e06e15f1a6aeffb17061d858178d23b72a8</mesh_name>
+				<fps_visible_camera>-1</fps_visible_camera>
+				<fps_visible_shadow>30</fps_visible_shadow>
+				<fps_invisible>0</fps_invisible>
+				<anim_name>guid://03d87c1af8367e74c93ff51affba3dd37c82dc5c</anim_name>
+				<loop>1</loop>
+				<speed>30</speed>
+				<bind_nodes>
+					<node>
+						<bone>40</bone>
+						<node_id>1689440685</node_id>
+						<offset>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</offset>
+						<node_space>1</node_space>
+						<bone_space>1</bone_space>
+						<mode>1</mode>
+						<bone_name>DEF-spine.007</bone_name>
+					</node>
+				</bind_nodes>
+				<surface name="Материал" material="2eda4665f3708363ce2c5925048d157c3ff1acdd"/>
+				<surface name="Ноги.Задние" material="2eda4665f3708363ce2c5925048d157c3ff1acdd"/>
+				<surface name="Ноги.Передние" material="2eda4665f3708363ce2c5925048d157c3ff1acdd"/>
+				<surface name="Уши.ВнутренняяСторона" material="558183cb15f48d1fa4efa88bad03a8971fe66b43"/>
+				<surface name="Выпуклость.Верх.Задняя" material="4d62e4d28f7dc259760e4eb4f3d7dc3c15a6c91e"/>
+				<surface name="Хвост.Шарик" material="4d62e4d28f7dc259760e4eb4f3d7dc3c15a6c91e"/>
+				<surface name="Нос" material="558183cb15f48d1fa4efa88bad03a8971fe66b43"/>
+				<surface name="Живот" material="4d62e4d28f7dc259760e4eb4f3d7dc3c15a6c91e"/>
+				<surface name="Выпуклость.Верх.Передняя" material="4d62e4d28f7dc259760e4eb4f3d7dc3c15a6c91e"/>
+				<surface name="Outline" material="684c0cfb5eb13417285292533c30f96265c989c9"/>
+				<transform>-0.342383574531 -2.23125565977e-07 0 0.0 2.23127384966e-07 -0.34238637595 0 0.0 0 0 0.342424949552 0.0 -2.01948391737e-28 0 1.1102230908e-16 1.0</transform>
+				<node type="NodeDummy" id="1689440685" name="DEF-spine.007">
+					<transform>0.999996344173 1.66215984686e-14 -1.68868895207e-27 0.0 -1.66231737382e-14 0.999996344202 1.71546449247e-20 0.0 1.68909090798e-27 -1.71585060929e-20 0.999999912967 0.0 0 0 0 1.0</transform>
+				</node>
+				<node type="LightOmni" id="1973751177" name="LightOmni">
+					<attenuation_distance>7.74100018</attenuation_distance>
+					<near_attenuation_distance>0</near_attenuation_distance>
+					<near_attenuation_gradient_length>0</near_attenuation_gradient_length>
+					<shadow_near_clipping_distance>0.0199999996</shadow_near_clipping_distance>
+					<shape>1.41929996 1 0</shape>
+					<shape_type>2</shape_type>
+					<texture replace="e0f80b510916c5ba2217f4e6ea484d9bd61b8255"/>
+					<shadow_mask>0x2</shadow_mask>
+					<color_mode>1</color_mode>
+					<color_filter>0.733333349 0.745098054 0.870588303 1</color_filter>
+					<intensity>0.0764200017</intensity>
+					<shadow_bias>1</shadow_bias>
+					<fade_distance>10</fade_distance>
+					<shadow_distance>30</shadow_distance>
+					<shadow_fade_distance>10</shadow_fade_distance>
+					<mode>0</mode>
+					<shadow_filter_mode>-1</shadow_filter_mode>
+					<shadow_filter>1</shadow_filter>
+					<shadow_penumbra_mode>-1</shadow_penumbra_mode>
+					<shadow_penumbra>0</shadow_penumbra>
+					<shadow_screen_space>0</shadow_screen_space>
+					<shadow_screen_space_num_rays>3</shadow_screen_space_num_rays>
+					<shadow_screen_space_num_steps>6</shadow_screen_space_num_steps>
+					<shadow_screen_space_noise_ray>0.150000006</shadow_screen_space_noise_ray>
+					<shadow_screen_space_noise_step>1</shadow_screen_space_noise_step>
+					<shadow_screen_space_step_size_near_distance>0</shadow_screen_space_step_size_near_distance>
+					<shadow_screen_space_step_size_far_distance>500</shadow_screen_space_step_size_far_distance>
+					<shadow_screen_space_step_size_near>2</shadow_screen_space_step_size_near>
+					<shadow_screen_space_step_size_far>30</shadow_screen_space_step_size_far>
+					<shadow_screen_space_threshold_near_distance>0</shadow_screen_space_threshold_near_distance>
+					<shadow_screen_space_threshold_far_distance>200</shadow_screen_space_threshold_far_distance>
+					<shadow_screen_space_threshold_near>3</shadow_screen_space_threshold_near>
+					<shadow_screen_space_threshold_far>0.5</shadow_screen_space_threshold_far>
+					<shadow_color_texture_mode>0</shadow_color_texture_mode>
+					<shadow_screen_space_softness>0</shadow_screen_space_softness>
+					<shadow_screen_space_translucent_depth_perspective_compensation>0.200000003</shadow_screen_space_translucent_depth_perspective_compensation>
+					<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+					<baked_depth_texture replace="eafc185364a68feebfb01b4abea0375ebe2e934e">guid://a9f9a7bdbb0c4ec132c3b58ceab117cbcc0f6fb0</baked_depth_texture>
+					<lens_flare_enabled>0</lens_flare_enabled>
+					<lens_flare_texture>core/textures/lens_flares_default.texture</lens_flare_texture>
+					<lens_flare_intensity>1</lens_flare_intensity>
+					<lens_flare_occlusion_fade>1</lens_flare_occlusion_fade>
+					<lens_flare_occlusion_fade_border>0.200000003</lens_flare_occlusion_fade_border>
+					<lens_flare_position_offset>0 0 0</lens_flare_position_offset>
+					<lens_flare_use_light_color>1</lens_flare_use_light_color>
+					<lens_flare_billboards num="31">
+						<billboard name="flare_0" offset="0" size="10" rotate="0" uv_lower_left="0 0" uv_upper_right="0.5 0.5" color="1 1 1 1" offset_scale="1" intensity="0.200000003"/>
+						<billboard name="flare_1" offset="0" size="0.289999992" rotate="1" uv_lower_left="0.5 0.75" uv_upper_right="0.75 1" color="1 1 1 1" offset_scale="1" intensity="0.00749999983"/>
+						<billboard name="flare_2" offset="0.0529999994" size="0.860000014" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.941176534 0.788235366 1 1" offset_scale="1" intensity="0.125"/>
+						<billboard name="flare_3" offset="0.0900000036" size="0.49000001" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.772549093 0.796078503 1 1" offset_scale="1" intensity="0.189999998"/>
+						<billboard name="flare_4" offset="0.122000001" size="0.409999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.792156935 1 0.82745105 1" offset_scale="1" intensity="0.0500000007"/>
+						<billboard name="flare_5" offset="0.203999996" size="0.330000013" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.80392164 0.894117713 1 1" offset_scale="1" intensity="0.075000003"/>
+						<billboard name="flare_6" offset="0.432999998" size="0.649999976" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.929411829 1 0.768627524 1" offset_scale="1" intensity="0.0500000007"/>
+						<billboard name="flare_7" offset="0.477999985" size="1.5" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.807843208 1 0.886274576 1" offset_scale="1" intensity="0.0874999985"/>
+						<billboard name="flare_8" offset="0.52700001" size="0.810000002" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="1 0.90196085 0.788235366 1" offset_scale="1" intensity="0.0500000007"/>
+						<billboard name="flare_9" offset="0.600000024" size="0.409999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.768627524 1 0.894117713 1" offset_scale="1" intensity="0.0500000007"/>
+						<billboard name="flare_10" offset="0.615999997" size="0.569999993" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.796078503 1 0.921568692 1" offset_scale="1" intensity="0.100000001"/>
+						<billboard name="flare_11" offset="0.652999997" size="0.779999971" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.831372619 0.933333397 1 1" offset_scale="1" intensity="0.0874999985"/>
+						<billboard name="flare_12" offset="0.717999995" size="1.71000004" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.878431439 1 0.796078503 1" offset_scale="1" intensity="0.0375000015"/>
+						<billboard name="flare_13" offset="0.754999995" size="1.13999999" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.760784388 1 0.843137324 1" offset_scale="1" intensity="0.0125000002"/>
+						<billboard name="flare_14" offset="0.967000008" size="0.540000021" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="1 0.878431439 0.772549093 1" offset_scale="1" intensity="0.0250000004"/>
+						<billboard name="flare_15" offset="0.338999987" size="0.289999992" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.674509823 1 0.698039234 1" offset_scale="1" intensity="0.075000003"/>
+						<billboard name="flare_16" offset="0.00499999989" size="2" rotate="1" uv_lower_left="0 0.75" uv_upper_right="0.25 1" color="1 1 1 1" offset_scale="0" intensity="0.0199999996"/>
+						<billboard name="flare_17" offset="-0.75" size="1" rotate="1" uv_lower_left="0.5 0.5" uv_upper_right="0.75 0.75" color="1 1 1 1" offset_scale="12.2399998" intensity="0.0724999979"/>
+						<billboard name="flare_18" offset="0.75" size="1" rotate="1" uv_lower_left="0.5 0.5" uv_upper_right="0.75 0.75" color="1 1 1 1" offset_scale="12.2399998" intensity="0.0724999979"/>
+						<billboard name="flare_19" offset="0" size="10" rotate="0" uv_lower_left="0.5 0" uv_upper_right="1 0.5" color="1 1 1 1" offset_scale="1" intensity="0.0350000001"/>
+						<billboard name="flare_20" offset="0.245199993" size="0.610000014" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0724999979"/>
+						<billboard name="flare_21" offset="-0.1184" size="0.800000012" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0675000027"/>
+						<billboard name="flare_22" offset="-0.170000002" size="0.435000002" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0599999987"/>
+						<billboard name="flare_23" offset="-0.223599985" size="0.660000026" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0500000007"/>
+						<billboard name="flare_24" offset="-0.340499997" size="1.39499998" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.654901981 1 0.847058892 1" offset_scale="1" intensity="0.0524999984"/>
+						<billboard name="flare_25" offset="-0.474399984" size="0.944999993" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="1 0.917647123 0.811764777 1" offset_scale="1" intensity="0.0874999985"/>
+						<billboard name="flare_26" offset="-0.899999976" size="2.2650001" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.94901967 1 0.80392164 1" offset_scale="1" intensity="0.075000003"/>
+						<billboard name="flare_27" offset="0.845000029" size="3.19000006" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0450000018"/>
+						<billboard name="flare_28" offset="1" size="7.78999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0500000007"/>
+						<billboard name="flare_29" offset="0.936999977" size="0.449999988" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0450000018"/>
+						<billboard name="flare_30" offset="1" size="1.03999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0375000015"/>
+					</lens_flare_billboards>
+					<transform>-5.73095468001e-06 -2.91787452564 -0.118640465509 0.0 2.9202202031 -5.73230337e-06 2.0123109799e-07 0.0 -3.98318812904e-07 -0.118672563856 2.91800693376 0.0 -6.34368208514e-14 -0.729884101912 2.38310387157 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="ObjectDummy" id="317949736" name="Player">
+			<body type="BodyDummy" id="277001591" frozen="0">
+				<shape type="ShapeCapsule" id="277001591" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.888418257 1">
+					<radius>1.10000002</radius>
+					<height>0.200000003</height>
+				</shape>
+			</body>
+			<properties>
+				<property parent="4c363e1c44d7021c7201e6dabb71eeeba6bcace7" guid="42970ce327e7341f76b53de03038501c45be86c7">
+					<parameter name="cameraTargetPos_L">1838071911</parameter>
+					<parameter name="cameraTargetPos_R">2003223194</parameter>
+					<parameter name="cameraLookPos">1060778289</parameter>
+					<parameter name="viewBody">2085045353</parameter>
+					<parameter name="viewBodyMeshNode">954524166</parameter>
+					<parameter name="AnimIdle">guid://03d87c1af8367e74c93ff51affba3dd37c82dc5c</parameter>
+					<parameter name="AnimForward">guid://ccf9caa57d7d0f195c774da555a3a0ad5f59d26f</parameter>
+					<parameter name="AnimRun">guid://6529ce5f4f888e7350f3995f3f928bb38283f879</parameter>
+					<parameter name="AnimJump">guid://f11edafb11cb62c133c755fb3c5eaf5a20ced075</parameter>
+					<parameter name="AnimInAir">guid://8430236e14efb7b4a08d8c6e83c9a82ba96b2750</parameter>
+					<parameter name="capsuleRadius">1.10000002</parameter>
+					<parameter name="capsuleHeight">0.200000003</parameter>
+					<parameter name="cameraMode">2</parameter>
+					<parameter name="camera">1689266793</parameter>
+					<parameter name="useCrouch">1</parameter>
+					<parameter name="debugCamera">
+						<parameter name="enabled">0</parameter>
+						<parameter name="useFixedAngles">0</parameter>
+					</parameter>
+					<parameter name="debugVisualizer">
+						<parameter name="enabled">1</parameter>
+						<parameter name="shapes">1</parameter>
+						<parameter name="playerShape">1</parameter>
+						<parameter name="playerDirection">1</parameter>
+						<parameter name="camera">1</parameter>
+					</parameter>
+				</property>
+			</properties>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -0.581695723902 3.34479106658 -3.01766011942 1.0</transform>
+			<node type="NodeDummy" id="1838071911" name="CameraPos_L">
+				<transform>0.999999880791 0 0 0.0 0 0.866023600101 -0.499999046326 0.0 0 0.499999046326 0.866023600101 0.0 -1.94214 -4.84768057427 4.20566310871 1.0</transform>
+			</node>
+			<node type="NodeDummy" id="2003223194" name="CameraPos_R">
+				<transform>0.99999988079 0 0 0.0 0 0.86602358413 -0.499999016523 0.0 0 0.499999076128 0.866023592116 0.0 1.9421399601 -4.84768057427 4.20566310871 1.0</transform>
+			</node>
+			<node type="NodeDummy" id="1060778289" name="CameraLook">
+				<transform>0.999700665438 -0.0244369219317 -4.60119581616e-05 0.0 0.00653587359618 0.265563817687 0.964070258383 0.0 -0.0235466966536 -0.963782127354 0.265644059518 0.0 0 0.751257367899 1.4631074554 1.0</transform>
+			</node>
+		</node>
+	</node>
+</nodes>

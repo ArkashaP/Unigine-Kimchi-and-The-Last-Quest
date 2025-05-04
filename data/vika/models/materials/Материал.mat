@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <material version="2.19.0.3" guid="2eda4665f3708363ce2c5925048d157c3ff1acdd" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
+	<options shadow_mask="-3" depth_test="1" two_sided="0"/>
 	<parameter name="albedo_color" expression="0">0.800000072 0.800000072 0.800000072 1</parameter>
+	<parameter name="metalness" expression="0">0.385960013</parameter>
+	<parameter name="roughness" expression="0">0</parameter>
+	<parameter name="specular" expression="0">0.412279993</parameter>
+	<parameter name="microfiber" expression="0">0.0438500009</parameter>
 </material>

@@ -826,26 +826,7 @@
 			</lens_flare_billboards>
 			<transform>-0.56590294838 0.822384476662 0.0462103784084 0.0 -0.806915640831 -0.542276859283 -0.231027960777 0.0 -0.16512273252 -0.168218553066 0.971575796604 0.0 53.8509726144 109.717907209 182.29285326 1.0</transform>
 		</node>
-		<node type="PlayerSpectator" id="620479819" name="main_player">
-			<collision>1</collision>
-			<collision_mask>0x1</collision_mask>
-			<collision_radius>0.5</collision_radius>
-			<min_velocity>2</min_velocity>
-			<max_velocity>4</max_velocity>
-			<min_theta_angle>-89.9000015</min_theta_angle>
-			<max_theta_angle>89.9000015</max_theta_angle>
-			<acceleration>4</acceleration>
-			<damping>8</damping>
-			<turning>90</turning>
-			<zfar>100000</zfar>
-			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
-			<is_oblique_frustum>0</is_oblique_frustum>
-			<is_main>1</is_main>
-			<is_listener>1</is_listener>
-			<controlled>1</controlled>
-			<transform>-0.969452798367 -0.24528002739 2.52425670624e-05 0.0 0.05604506284 -0.221414387226 0.973568320274 0.0 -0.238791197538 0.943829417229 0.228396892548 0.0 -63.3381371438 5.90488568527 105.4879563 1.0</transform>
-		</node>
-		<node type="ObjectMeshSkinned" id="125032981" name="cat">
+		<node type="ObjectMeshSkinned" id="125032981" enabled="0" name="cat">
 			<mesh_name>guid://bf6f784e36b494a366ab80d699811620d2807abc</mesh_name>
 			<fps_visible_camera>-1</fps_visible_camera>
 			<fps_visible_shadow>30</fps_visible_shadow>
@@ -945,11 +926,11 @@
 				<mesh_name>guid://5abac4bad855d4c233bf54c2f7e173fa2bd36ec8</mesh_name>
 				<surface name="земля_дефолт_темнее_1" intersection="1" material="a6da73ea42726098667811f2a1364b5ea3bbbc78"/>
 				<surface name="земля_светлее" intersection="1" material="ab990f2ccc3c5a51904abc74c997d728d83ab46a"/>
-				<surface name="земля_темная" intersection="1" material="c7ddf83e847c80c3bedfc6c6f8b9f6071c175b2c"/>
-				<transform>1.82051318574 1.56910881907e-07 -2.57785095653e-07 0.0 4.17538979369e-07 3.42141541626e-06 2.94871683422 0.0 1.6575120004e-07 -1.92307649515 2.23135776141e-06 0.0 5.86926353647 0.0174189185186 3.02904208043 1.0</transform>
+				<surface name="земля_темная" intersection="1" collision="1" material="c7ddf83e847c80c3bedfc6c6f8b9f6071c175b2c"/>
+				<transform>1.82051301003 1.56910786586e-07 -2.57784961377e-07 0.0 4.17538387865e-07 5.09695883011e-06 2.94871616364 0.0 1.65751188774e-07 -1.92307603359 3.32410422743e-06 0.0 5.86926353647 0.0174189185186 3.02904208043 1.0</transform>
 			</node>
 		</node>
-		<node type="ObjectMeshSkinned" id="1873981101" name="cat">
+		<node type="ObjectMeshSkinned" id="1873981101" enabled="0" name="cat">
 			<mesh_name>guid://bf6f784e36b494a366ab80d699811620d2807abc</mesh_name>
 			<fps_visible_camera>-1</fps_visible_camera>
 			<fps_visible_shadow>30</fps_visible_shadow>
@@ -1248,7 +1229,7 @@
 				<transform>0.999999524232 -5.85638551399e-07 1.10268067179e-06 0.0 -9.4034284427e-07 -2.29994583495e-07 0.999999642372 0.0 -4.38765430322e-07 -0.99999974668 -3.17865678071e-08 0.0 -76.9966314684 -41.7923696426 -9.76518529845 1.0</transform>
 			</node>
 		</node>
-		<node type="ObjectMeshSkinned" id="24482398" name="cat">
+		<node type="ObjectMeshSkinned" id="24482398" enabled="0" name="cat">
 			<mesh_name>guid://bf6f784e36b494a366ab80d699811620d2807abc</mesh_name>
 			<fps_visible_camera>-1</fps_visible_camera>
 			<fps_visible_shadow>30</fps_visible_shadow>
@@ -1294,7 +1275,7 @@
 				<transform>0.333333198467 4.0422561399e-08 -2.98023217767e-08 0.0 4.04109021425e-08 1.44657472273e-06 0.333332389593 0.0 5.24787235334e-08 -0.333332481779 1.44723142702e-06 0.0 -175.13763781 242.77790961 -109.948180223 1.0</transform>
 			</node>
 		</node>
-		<node type="ObjectMeshSkinned" id="269148333" name="cat">
+		<node type="ObjectMeshSkinned" id="269148333" enabled="0" name="cat">
 			<mesh_name>guid://bf6f784e36b494a366ab80d699811620d2807abc</mesh_name>
 			<fps_visible_camera>-1</fps_visible_camera>
 			<fps_visible_shadow>30</fps_visible_shadow>
@@ -1499,7 +1480,7 @@
 				<transform>1.45906046669 1.27584795637e-07 -1.2753507249e-07 0.0 1.27510947287e-07 0.000272245885709 1.45905569829 0.0 1.27608172892e-07 -1.45905632244 0.000272245897645 0.0 -324.915115504 270.129875704 0.679141407084 1.0</transform>
 			</node>
 		</node>
-		<node type="ObjectMeshSkinned" id="292812950" name="cat">
+		<node type="ObjectMeshSkinned" id="292812950" enabled="0" name="cat">
 			<mesh_name>guid://bf6f784e36b494a366ab80d699811620d2807abc</mesh_name>
 			<fps_visible_camera>-1</fps_visible_camera>
 			<fps_visible_shadow>30</fps_visible_shadow>
@@ -1643,7 +1624,7 @@
 				<transform>-0.649990405335 -1.0874617245 0.291437815638 0.0 3.69944006036e-05 0.336501414137 1.25569165861 0.0 -1.12583764031 0.627846431396 -0.168217317881 0.0 -6.86387808327 7.7527539212 2.29513364014 1.0</transform>
 			</node>
 		</node>
-		<node type="ObjectMeshSkinned" id="709670281" name="cat">
+		<node type="ObjectMeshSkinned" id="709670281" enabled="0" name="cat">
 			<mesh_name>guid://bf6f784e36b494a366ab80d699811620d2807abc</mesh_name>
 			<fps_visible_camera>-1</fps_visible_camera>
 			<fps_visible_shadow>30</fps_visible_shadow>
@@ -1659,58 +1640,6 @@
 			<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
 			<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
 			<transform>1.91642868519 0.0478170365095 9.81952794632e-08 0.0 -1.26760980379e-07 1.37194206218e-06 1.91702163219 0.0 0.047816965729 -1.91642534733 1.37475967676e-06 0.0 -1.89288465447 88.1925933109 98.0384847093 1.0</transform>
-		</node>
-		<node type="NodeDummy" id="1506319690" enabled="0" name="cyber_cat (3)">
-			<transform>0.70710682869 -0.707106411457 0.000237872780417 0.0 0.707096755505 0.707098841667 0.0049739186652 0.0 -0.00368529045954 -0.00334889371879 0.999987363815 0.0 -46.2516124632 21.7273395148 104.208479578 1.0</transform>
-			<node type="ObjectMeshSkinned" id="377777185" name="Cat_Model">
-				<mesh_name>guid://45ba7bbc757629f72b41fa21ecd35f899996fd2f</mesh_name>
-				<fps_visible_camera>-1</fps_visible_camera>
-				<fps_visible_shadow>30</fps_visible_shadow>
-				<fps_invisible>0</fps_invisible>
-				<anim_name>guid://ae4bd81cdeb1828690fd8d5bf26ec9bfeb9188c2</anim_name>
-				<speed>30</speed>
-				<surface name="Материал" intersection="1" material="11e9e6e18caf38fd59262279d27783673d66db3f"/>
-				<surface name="Ноги.Задние" intersection="1" material="11e9e6e18caf38fd59262279d27783673d66db3f"/>
-				<surface name="Ноги.Передние" intersection="1" material="11e9e6e18caf38fd59262279d27783673d66db3f"/>
-				<surface name="Уши.ВнутренняяСторона" intersection="1" material="1f0a930efa0f8a00b23d0ce58d05625b7fd8baa4"/>
-				<surface name="Выпуклость.Верх.Задняя" intersection="1" material="a37786d20a95cd16b75a7c5918a9c89e69033fc8"/>
-				<surface name="Хвост.Шарик" intersection="1" material="a37786d20a95cd16b75a7c5918a9c89e69033fc8"/>
-				<surface name="Нос" intersection="1" material="1f0a930efa0f8a00b23d0ce58d05625b7fd8baa4"/>
-				<surface name="Живот" intersection="1" material="a37786d20a95cd16b75a7c5918a9c89e69033fc8"/>
-				<surface name="Выпуклость.Верх.Передняя" intersection="1" material="a37786d20a95cd16b75a7c5918a9c89e69033fc8"/>
-				<surface name="Outline" intersection="1" material="684c0cfb5eb13417285292533c30f96265c989c9"/>
-				<transform>1 -3.10717790608e-14 -2.91040385693e-11 0.0 -2.31887213322e-13 0.99999999956 -8.84745631783e-08 0.0 2.90514099322e-11 8.84745737654e-08 0.99999999956 0.0 0 0 1.4155343564e-15 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="863409932" name="IK">
-				<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 0.467628253457 1.3569024398 2.01468450303 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="1506764539" name="IK">
-				<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 0.476170153056 1.00721010182 1.27982223755 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="2105683998" name="IK">
-				<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 0.348761173642 1.46390804933 0.853039531942 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="774199525" name="IK">
-				<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 -0.42903226991 2.11764433963 1.99461178641 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="605861120" name="IK">
-				<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 -0.406729928238 2.49365715182 1.23076785329 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="788669535" name="IK">
-				<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 -0.388458676221 2.6934549234 0.937268578674 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="122660402" name="IK">
-				<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 0.451977980588 -1.17971985783 1.67263815903 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="311709673" name="IK">
-				<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 0.447548771867 -1.21702796109 1.6614209223 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="328128564" name="IK">
-				<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 -0.451317417946 -1.93551182657 1.65525723089 1.0</transform>
-			</node>
-			<node type="NodeDummy" id="1105765891" name="IK">
-				<transform>100 8.74227800037e-06 -8.74227800037e-06 0.0 8.74227800037e-06 7.70397478721e-13 100 0.0 8.74227800037e-06 -100 6.12323166889e-15 0.0 -0.446857744364 -1.93347523986 1.65398457824 1.0</transform>
-			</node>
 		</node>
 		<node type="NodeDummy" id="1867819592" name="House_MPU">
 			<transform>-0.999882042408 -0.000192468287423 0.0152183035389 0.0 -0.000194828593521 -0.999673724174 -0.0254437848926 0.0 0.0152182877064 -0.0254438370466 0.999559998512 0.0 -8.90095427534 134.286317281 96.3911191666 1.0</transform>
@@ -2134,15 +2063,6 @@
 				<mesh_name>guid://3ebc917caf2b16cc5aab3c79b542a75b865b9277</mesh_name>
 				<surface name="близнецы оправы" intersection="1" material="23d44c3c81312bab411de0a31fa7e109d9bca3d2"/>
 				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -7.2165971938e-07 2.86682769478 15.640500897 1.0</transform>
-			</node>
-		</node>
-		<node type="NodeDummy" id="2046651824" name="Высотка_1">
-			<transform>3.79680943489 3.99323511124 0.0518612191081 0.0 -3.98806524277 3.79232048988 -0.032878767699 0.0 -0.0608832724392 -0.0152207855135 5.62929964066 0.0 -60.1828333796 42.0047342274 104.080404699 1.0</transform>
-			<node type="ObjectMeshStatic" id="506570063" immovable="1" name="Cube">
-				<mesh_name>guid://7b4e3fe8795166b8274c7495d004b081c73fa5b3</mesh_name>
-				<surface name="высотка.1.база" intersection="1" material="aa5410e4156cb0926b7cdb2bf524fd8af1f3843a"/>
-				<surface name="высотка.1.окна" intersection="1" material="ae03e0b6d9b649f7fd7866550783c124a7474b7c"/>
-				<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
 			</node>
 		</node>
 		<node type="NodeDummy" id="558164319" name="башня рома_1">
@@ -5138,7 +5058,7 @@
 					<billboard name="flare_29" offset="0.936999977" size="0.449999988" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0450000018"/>
 					<billboard name="flare_30" offset="1" size="1.03999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0375000015"/>
 				</lens_flare_billboards>
-				<transform>0.999947667122 0.000179423484951 0.0101501345634 0.0 6.61020676489e-05 0.999706923962 -0.0241838637739 0.0 -0.010151441209 0.024183133617 0.999648869038 0.0 117.899372045 187.550620991 -10.1942695838 1.0</transform>
+				<transform>0.99964594841 0.000179330992978 0.0265618339181 0.0 0.00046314674546 0.999706327915 -0.0241798423231 0.0 -0.0265582315624 0.0241834558547 0.999347031116 0.0 117.899372045 187.550620991 -10.1942695838 1.0</transform>
 			</node>
 			<node type="LightOmni" id="2139409723" name="LightOmni_1">
 				<attenuation_distance>10</attenuation_distance>
@@ -8446,6 +8366,10 @@
 				<surface name="Дерево большое ствол" intersection="1" material="8a7a5f6e666a0d130db0c626e8cda377358859c7"/>
 				<transform>0.996166334914 -0.08727465971 0.00598054823839 0.0 -0.0359377037432 -0.345951325259 0.937563950886 0.0 -0.0797565961811 -0.934184571872 -0.347761514606 0.0 -1.8026346548e-14 2.06197361228e-07 4.71724557877 1.0</transform>
 			</node>
+		</node>
+		<node type="NodeReference" id="631750628" name="Player">
+			<reference>guid://3c458df50e6edda4078c78e4b4e598d4b6d41188</reference>
+			<transform>0.999999165535 0 0 0.0 0 1 0 0.0 0 0 0.99999922514 0.0 -5.1544128748 194.162717656 97.9256001251 1.0</transform>
 		</node>
 	</editor>
 	<console>
