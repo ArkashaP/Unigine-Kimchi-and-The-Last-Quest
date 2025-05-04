@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.19.0.3" guid="d67b48248c5f17b7aaf822838462915134955f3b" base_material="9ff6ca7ff89202ecdbd93dc4a6271d42718d6d74">
+	<options transparent="2" shadow_mask="-1" viewport_mask="-1" blend_src="5" blend_dest="6" two_sided="0" cast_shadow="0" cast_world_shadow="0" overlap="1"/>
+	<parameter name="diffuse_color" expression="0">0.125490203 0.125490203 0.125490203 1</parameter>
+	<parameter name="volume_power" expression="0">15</parameter>
+	<parameter name="volume_density" expression="0">0.01822</parameter>
+</material>

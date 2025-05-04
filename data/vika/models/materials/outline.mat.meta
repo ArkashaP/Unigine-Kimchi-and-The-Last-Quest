@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>ad4360bbcd690d47ed73557b13958ce416f95e33</guid>
+	<type>material</type>
+	<hash>aec1ade3</hash>
+	<runtimes>
+		<runtime id="ad4360bbcd690d47ed73557b13958ce416f95e33" name="outline" link="0" type="5"/>
+	</runtimes>
+</asset>

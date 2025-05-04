@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>00493841e6b56998ed83f7d954cb102019b8999f</guid>
+	<type>material</type>
+	<hash>3f11a762</hash>
+	<runtimes>
+		<runtime id="00493841e6b56998ed83f7d954cb102019b8999f" name="почва_3" link="0" type="5"/>
+	</runtimes>
+</asset>

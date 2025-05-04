@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>7e70e576f37a6f8e6d1fb72eebf00287e3723e6f</guid>
+	<type>material</type>
+	<hash>70fd4e4d</hash>
+	<runtimes>
+		<runtime id="7e70e576f37a6f8e6d1fb72eebf00287e3723e6f" name="Дерево простое листва" link="0" type="5"/>
+	</runtimes>
+</asset>

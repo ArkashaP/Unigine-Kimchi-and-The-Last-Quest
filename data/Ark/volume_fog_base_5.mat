@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.19.0.3" guid="ea56e40c53a71c8addb63e4b30bc2c2bc3d96c03" base_material="9ff6ca7ff89202ecdbd93dc4a6271d42718d6d74">
+	<options blend_src="5" blend_dest="6" two_sided="1" overlap="1"/>
+	<parameter name="diffuse_color" expression="0">0 0 0 1</parameter>
+	<parameter name="volume_density" expression="0">0</parameter>
+</material>

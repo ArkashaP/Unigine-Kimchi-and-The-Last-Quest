@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>97d3c6d25bbd9e0a77e1738629f30be8e031423e</guid>
+	<type>component</type>
+	<hash>972c02df</hash>
+	<runtimes>
+		<runtime id="97d3c6d25bbd9e0a77e1738629f30be8e031423e" name="BatteriesCounter.cs" link="0"/>
+		<runtime id="ffb668a0dbafe7edefd34b3499d2692c78974c2c" name="BatteriesCounter.prop" link="1" type="4"/>
+	</runtimes>
+</asset>

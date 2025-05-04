@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>5f1dd1e4079a42cde39c682bd5883262391c5d3a</guid>
+	<type>material</type>
+	<hash>79413ed2</hash>
+	<runtimes>
+		<runtime id="5f1dd1e4079a42cde39c682bd5883262391c5d3a" name="рамка_окна" link="0" type="5"/>
+	</runtimes>
+</asset>

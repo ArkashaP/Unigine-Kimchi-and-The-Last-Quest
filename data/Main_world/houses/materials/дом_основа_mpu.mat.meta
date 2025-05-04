@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>716ac1d80bcf194ceda9ce8fafe4741ab693770e</guid>
+	<type>material</type>
+	<hash>c5cff5f6</hash>
+	<runtimes>
+		<runtime id="716ac1d80bcf194ceda9ce8fafe4741ab693770e" name="дом_основа_mpu" link="0" type="5"/>
+	</runtimes>
+</asset>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>51784782a54eec76d16997ebbc9b3b27b9865bde</guid>
+	<type>material</type>
+	<hash>1323c0b5</hash>
+	<runtimes>
+		<runtime id="51784782a54eec76d16997ebbc9b3b27b9865bde" name="металл_батарейка" link="0" type="5"/>
+	</runtimes>
+</asset>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1896489992" name="торговый-автомат-батарейка">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="152434631" immovable="1" name="Автомат">
+			<mesh_name>guid://489cd442027b37f47bcb2e7a0b930022ee83d32b</mesh_name>
+			<surface name="Автомат основа" intersection="1" material="44def8817d3f3bcbdb5774a9c259e35fbd50974e"/>
+			<surface name="Автомат место кнопки" intersection="1" material="8ce263ade6f2d09806a00355595fd8af4f75a5ea"/>
+			<surface name="Батарея основа" intersection="1" material="777dcec3542aa7874c94702b953971124e9091f8"/>
+			<surface name="Автомат кнопка" intersection="1" material="16c60ea7596840728c12568f98e918ac54cac8ac"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 2.62268340011e-07 -3 1.31134170006e-07 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="632607354" immovable="1" name="Батарея">
+			<mesh_name>guid://cb2f32c16a5d6f78aaaf96e9cfefeb3a7e76ce8e</mesh_name>
+			<surface name="Батарея основа" intersection="1" material="777dcec3542aa7874c94702b953971124e9091f8"/>
+			<surface name="Батарея кольцо" intersection="1" material="ed2d9e31a94b9baafac44859af7ec17c7aec72be"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

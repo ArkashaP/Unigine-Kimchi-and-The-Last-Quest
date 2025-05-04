@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>1c85d728b8012e09e536df9f48fb06e52b56c3de</guid>
+	<type>material</type>
+	<hash>1150099c</hash>
+	<runtimes>
+		<runtime id="1c85d728b8012e09e536df9f48fb06e52b56c3de" name="свет фонарик" link="0" type="5"/>
+	</runtimes>
+</asset>

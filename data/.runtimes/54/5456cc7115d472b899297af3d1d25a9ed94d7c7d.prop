@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.19.0.3" name="Information" guid="5456cc7115d472b899297af3d1d25a9ed94d7c7d" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
+	<struct name="UIMainMenu">
+		<parameter name="file" type="file" filter=".ui">null</parameter>
+		<parameter name="info" type="property" filter="5456cc7115d472b899297af3d1d25a9ed94d7c7d" flags="internal"/>
+		<parameter name="worldWork" type="toggle">0</parameter>
+		<parameter name="menuBool" type="toggle">0</parameter>
+	</struct>
+	<parameter name="jsonFile" type="file" filter=".json">null</parameter>
+	<parameter name="mainMenu" type="property" filter="72b33fe4fb18591b454039f780fc47c49c58f12b" flags="internal"/>
+</property>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1878525537" name="buttery">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="PlayerDummy" id="1577774156" name="Camera">
+			<fov>39.5977516</fov>
+			<zfar>99.9999924</zfar>
+			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
+			<is_oblique_frustum>0</is_oblique_frustum>
+			<is_main>0</is_main>
+			<is_listener>1</is_listener>
+			<controlled>1</controlled>
+			<transform>0.324013607143 -0.305420759032 0.895395634532 0.0 -0.685920731622 -0.727676267259 2.3742674842e-07 0.0 0.651558041705 -0.614170469051 -0.445271416134 0.0 -7.35889209259 6.92579036014 4.95830887085 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1888435003" immovable="1" name="Cylinder">
+			<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+			<surface name="зеленый_батарейка" intersection="1" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+			<surface name="металл_батарейка" intersection="1" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="LightOmni" id="1309767518" name="Light">
+			<attenuation_distance>10000</attenuation_distance>
+			<near_attenuation_distance>0</near_attenuation_distance>
+			<near_attenuation_gradient_length>0</near_attenuation_gradient_length>
+			<shadow_near_clipping_distance>0.00999999978</shadow_near_clipping_distance>
+			<shape>2 1 0.200000003</shape>
+			<shape_type>0</shape_type>
+			<texture replace="6be5bf50aa5418859cbc4593bf3fea876b4d132f"/>
+			<intensity>1000</intensity>
+			<shadow_bias>1</shadow_bias>
+			<mode>0</mode>
+			<shadow_filter_mode>-1</shadow_filter_mode>
+			<shadow_filter>1</shadow_filter>
+			<shadow_penumbra_mode>-1</shadow_penumbra_mode>
+			<shadow_penumbra>0</shadow_penumbra>
+			<shadow_screen_space>0</shadow_screen_space>
+			<shadow_screen_space_num_rays>2</shadow_screen_space_num_rays>
+			<shadow_screen_space_num_steps>6</shadow_screen_space_num_steps>
+			<shadow_screen_space_noise_ray>0.150000006</shadow_screen_space_noise_ray>
+			<shadow_screen_space_noise_step>0.150000006</shadow_screen_space_noise_step>
+			<shadow_screen_space_step_size_near_distance>0</shadow_screen_space_step_size_near_distance>
+			<shadow_screen_space_step_size_far_distance>500</shadow_screen_space_step_size_far_distance>
+			<shadow_screen_space_step_size_near>2</shadow_screen_space_step_size_near>
+			<shadow_screen_space_step_size_far>30</shadow_screen_space_step_size_far>
+			<shadow_screen_space_threshold_near_distance>0</shadow_screen_space_threshold_near_distance>
+			<shadow_screen_space_threshold_far_distance>200</shadow_screen_space_threshold_far_distance>
+			<shadow_screen_space_threshold_near>3</shadow_screen_space_threshold_near>
+			<shadow_screen_space_threshold_far>0.5</shadow_screen_space_threshold_far>
+			<shadow_color_texture_mode>1</shadow_color_texture_mode>
+			<shadow_screen_space_softness>0.200000003</shadow_screen_space_softness>
+			<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
+			<baked_depth_texture replace="38451fd4ccae7eea5466f6a5820861f5a1ddfb10"/>
+			<lens_flare_enabled>0</lens_flare_enabled>
+			<lens_flare_texture>core/textures/lens_flares_default.texture</lens_flare_texture>
+			<lens_flare_intensity>1</lens_flare_intensity>
+			<lens_flare_occlusion_fade>1</lens_flare_occlusion_fade>
+			<lens_flare_occlusion_fade_border>0.200000003</lens_flare_occlusion_fade_border>
+			<lens_flare_position_offset>0 0 0</lens_flare_position_offset>
+			<lens_flare_use_light_color>0</lens_flare_use_light_color>
+			<transform>-0.290864883526 0.95517107731 0.0551890623491 0.0 -0.771101026402 -0.199883644536 -0.604524388035 0.0 -0.566392786299 -0.218391245321 0.794672483723 0.0 -4.07624522002 -1.0054540425 5.90386204346 1.0</transform>
+		</node>
+	</node>
+</nodes>

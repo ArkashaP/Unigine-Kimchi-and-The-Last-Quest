@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>c9d0d84503e659eda07726ed78b292e9e0046862</guid>
+	<type>material</type>
+	<hash>c900d21</hash>
+	<runtimes>
+		<runtime id="c9d0d84503e659eda07726ed78b292e9e0046862" name="Автомат картридер" link="0" type="5"/>
+	</runtimes>
+</asset>

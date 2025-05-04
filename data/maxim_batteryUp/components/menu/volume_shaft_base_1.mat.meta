@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>0ec63e6b2d6b7661f82eff8cc8116a6e3dc146f6</guid>
+	<type>material</type>
+	<hash>cae13117</hash>
+	<runtimes>
+		<runtime id="0ec63e6b2d6b7661f82eff8cc8116a6e3dc146f6" name="volume_shaft_base_1" link="0" type="5"/>
+	</runtimes>
+	<parameters>
+		<parameter type="bool" name="unchanged">1</parameter>
+	</parameters>
+</asset>

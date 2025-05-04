@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="369849221" name="металлоконструкция-кубик">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="856149792" immovable="1" name="Металлоконструкция белый">
+			<mesh_name>guid://4ad5ca03fa124d0e7caaf36b21254a2922064e38</mesh_name>
+			<surface name="Металлоконструкция металл белый" intersection="1" material="81d904a53afa4ab9fe264f4dc0ad0628b96a0442"/>
+			<transform>1.19248714226e-08 1.03316024861e-07 1 0.0 -1 1.19209295283e-07 1.19248591064e-08 0.0 1.19209294051e-07 1 -1.03316026282e-07 0.0 -7.64274337467e-15 8.74227904253e-08 2.00000023842 1.0</transform>
+		</node>
+	</node>
+</nodes>

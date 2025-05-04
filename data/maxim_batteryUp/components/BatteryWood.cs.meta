@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>a550effff0d165c3c8e51f09fd728f5cc0d78677</guid>
+	<type>component</type>
+	<hash>f729227c</hash>
+	<runtimes>
+		<runtime id="a550effff0d165c3c8e51f09fd728f5cc0d78677" name="BatteryWood.cs" link="0"/>
+		<runtime id="23cabb45a8ed0ab1578cc9bf9e243e3d911ba13d" name="BatteryWood.prop" link="1" type="4"/>
+	</runtimes>
+</asset>

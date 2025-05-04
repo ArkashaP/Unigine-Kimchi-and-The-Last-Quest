@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>d16fa1109d37012362b259ffedd3589295f82c81</guid>
+	<type>world</type>
+	<hash>2e1d8026</hash>
+	<runtimes>
+		<runtime id="d16fa1109d37012362b259ffedd3589295f82c81" name="my_world_meshed.world" link="0"/>
+	</runtimes>
+	<parameters>
+		<parameter type="string" name="physics_settings_path"/>
+		<parameter type="string" name="render_settings_path"/>
+		<parameter type="string" name="script_name"/>
+		<parameter type="string" name="sound_settings_path"/>
+		<parameter type="string" name="viewports_settings"/>
+	</parameters>
+</asset>

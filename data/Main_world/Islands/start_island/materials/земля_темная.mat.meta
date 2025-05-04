@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>c7ddf83e847c80c3bedfc6c6f8b9f6071c175b2c</guid>
+	<type>material</type>
+	<hash>1753a5eb</hash>
+	<runtimes>
+		<runtime id="c7ddf83e847c80c3bedfc6c6f8b9f6071c175b2c" name="земля_темная" link="0" type="5"/>
+	</runtimes>
+</asset>

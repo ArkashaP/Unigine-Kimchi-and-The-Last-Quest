@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="558449032" name="Вентиляция горизонтальная">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="59471687" immovable="1" name="Вентилляция гор">
+			<mesh_name>guid://e0a0002ef69169d617d66ee600a1c3527462f987</mesh_name>
+			<surface name="Вентилляция подставка" intersection="1" material="9cbabf8f5884437a63dac877d099e6ab25a6d7b4"/>
+			<surface name="Вентилляция основа" intersection="1" material="efce7455ab292a1705a42cfdd94f21843ba3d9b2"/>
+			<transform>2.31569898469e-08 -0.0635922625661 2.77970830958e-09 0.0 -0.0596607290208 -2.23914930621e-08 -2.42436845918e-08 0.0 -1.1225793119e-07 -3.32522364672e-08 -0.760721743107 0.0 -3.38241863028 2.70170151971 -1.46623384841 1.0</transform>
+		</node>
+	</node>
+</nodes>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>131da25d79b8b9763e071005a113207a3689065a</guid>
+	<type>material</type>
+	<hash>4a9395be</hash>
+	<runtimes>
+		<runtime id="131da25d79b8b9763e071005a113207a3689065a" name="фонарь осн. оранжевый" link="0" type="5"/>
+	</runtimes>
+</asset>

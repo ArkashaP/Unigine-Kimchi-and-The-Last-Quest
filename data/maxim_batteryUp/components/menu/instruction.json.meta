@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>71d5691aa2e4740a5ffcaca02fdd273cd844866c</guid>
+	<type>file</type>
+	<hash>84508bc</hash>
+	<runtimes>
+		<runtime id="71d5691aa2e4740a5ffcaca02fdd273cd844866c" name="instruction.json" link="0"/>
+	</runtimes>
+</asset>

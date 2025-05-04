@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="2114270294" name="бочка">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1374871485" immovable="1" name="Бочка">
+			<mesh_name>guid://254608a2e1121c34cecde6da6ad80b43087c670b</mesh_name>
+			<surface name="Бочка кольца" intersection="1" material="1a60db54de9c86a41b1f364cf86f7eacb65f61e5"/>
+			<surface name="Бочка основной" intersection="1" material="ff6f8dd29f50335deb934e0a8d8d4b0f22bdc7fb"/>
+			<surface name="Бочка крышка" intersection="1" material="7eff40a6bf94ec03ec48345eb68d48c7f08e155f"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

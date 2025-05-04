@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>d67b48248c5f17b7aaf822838462915134955f3b</guid>
+	<type>material</type>
+	<hash>815e0a88</hash>
+	<runtimes>
+		<runtime id="d67b48248c5f17b7aaf822838462915134955f3b" name="volume_fog_base_4" link="0" type="5"/>
+	</runtimes>
+	<parameters>
+		<parameter type="bool" name="unchanged">1</parameter>
+	</parameters>
+</asset>

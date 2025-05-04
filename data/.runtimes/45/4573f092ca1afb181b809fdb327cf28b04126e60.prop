@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.19.0.3" name="Battery2_Enter" guid="4573f092ca1afb181b809fdb327cf28b04126e60" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
+	<parameter name="bat2" type="node" title="battery2" filter="WorldTrigger"/>
+	<parameter name="batcountnode" type="node" title="Batteries Counter"/>
+	<parameter name="player" type="node" title="player"/>
+	<parameter name="mymat" type="material" title="material"/>
+	<parameter name="test" type="node" title="kap" filter="ObjectMeshStatic"/>
+	<parameter name="countBat" type="int">0</parameter>
+</property>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>66d5c062be6f523ee83cf028909795d7cfa3842f</guid>
+	<type>component</type>
+	<hash>aaf0dc1</hash>
+	<runtimes>
+		<runtime id="66d5c062be6f523ee83cf028909795d7cfa3842f" name="Blink_light_signboard.cs" link="0"/>
+		<runtime id="8c74dbb0d2d8e3e36c0dc386a0cc6ac7eeb64c35" name="Blink_light_signboard.prop" link="1" type="4"/>
+	</runtimes>
+</asset>

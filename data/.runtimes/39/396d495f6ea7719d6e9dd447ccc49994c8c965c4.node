@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="833297441" name="фонарь">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="781027084" immovable="1" name="фонарь">
+			<mesh_name>guid://56c812ca7f89b6b32f4e88028793c3b69d593653</mesh_name>
+			<surface name="фонарь осн. оранжевый" intersection="1" material="131da25d79b8b9763e071005a113207a3689065a"/>
+			<surface name="фонарь свет белый" intersection="1" material="005f0cd78131477e62bfd2bf5c63a60fffbdb29c"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

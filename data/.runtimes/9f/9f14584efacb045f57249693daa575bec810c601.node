@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="792535609" name="отель">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1438475844" immovable="1" name="Cube">
+			<mesh_name>guid://b717e626ffa1c405932fc105e92e8edd6a46676c</mesh_name>
+			<surface name="дверь" intersection="1" material="9a71d5e266e1546094b67a91083962c3d4b750c8"/>
+			<surface name="вывеска" intersection="1" material="c4c141b2e95373e5d8d4d021777268273e0e5c18"/>
+			<transform>1 8.74228738675e-08 -4.02896511072e-07 0.0 8.74228738675e-08 -1.07367637437e-06 4.60859870911 0.0 1.04857720816e-06 -11.9943246841 -1.63128317977e-06 0.0 -9.40538885257 0.234183962086 45.9676742451 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="175127763" immovable="1" name="Cube.015">
+			<mesh_name>guid://5b76f23044b06e503de5cffde5f81c3fc8c33bdb</mesh_name>
+			<surface name="светлый металл отель" intersection="1" material="9672823471c89c01be7a983b5ec8ad14b523950a"/>
+			<transform>2.79101109505 2.87709347585e-07 -7.57103433683e-08 0.0 2.87709347585e-07 -0.500000098752 0.86602534677 0.0 1.72268068341e-07 -1.97051693316 -1.13767857056 0.0 10.9135127137 -16.4430302075 3.41827369085 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1828264982" immovable="1" name="Cube.016">
+			<mesh_name>guid://053c93c88084c64c4365ebbf4f9dfb7010953f7e</mesh_name>
+			<surface name="светлый металл отель" intersection="1" material="9672823471c89c01be7a983b5ec8ad14b523950a"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -4.83510541217 -16.4430315843 3.41827369085 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1147937917" immovable="1" name="Cube.017">
+			<mesh_name>guid://4a70bae259ecb86c53c5b377b051afbebe9d60c5</mesh_name>
+			<surface name="светлый металл отель" intersection="1" material="9672823471c89c01be7a983b5ec8ad14b523950a"/>
+			<transform>2.79101109505 2.87709347585e-07 -7.57103433683e-08 0.0 2.87709347585e-07 -0.500000098752 0.86602534677 0.0 1.72268068341e-07 -1.97051693316 -1.13767857056 0.0 3.04638457997 -16.4430308953 3.41827369085 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1554750392" immovable="1" name="Cube.021">
+			<mesh_name>guid://8d73163a3cab36c6d778810926b30c2712385b60</mesh_name>
+			<surface name="светлый металл отель" intersection="1" material="9672823471c89c01be7a983b5ec8ad14b523950a"/>
+			<transform>1.62508964539 1.42069871967e-07 -1.14005674478e-07 0.0 1.42069871967e-07 -1.99168976376e-07 1.3040728569 0.0 8.74227800037e-08 -1 -1.7621212679e-07 0.0 -9.11383100603 15.9374620133 21.8943741508 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="103361463" immovable="1" name="Cube.027">
+			<mesh_name>guid://65d6aee440b3344b146b2f81089d4b598a13d73f</mesh_name>
+			<surface name="дверь" intersection="1" material="9a71d5e266e1546094b67a91083962c3d4b750c8"/>
+			<transform>6.78350977946e-08 -0.416368722916 -3.01825437569e-07 0.0 -2.57515709452e-07 1.23612593382e-07 3.66066479683 0.0 -2.23060750961 -3.63412102538e-07 -2.57515694033e-07 0.0 5.56277527903 14.7161155722 23.8320878272 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="953161130" immovable="1" name="Cube.028">
+			<mesh_name>guid://ace4d9fc0ce4ed72d99b6363662784182c5afb92</mesh_name>
+			<surface name="козырьки_отель" intersection="1" material="c3fc12860496bf8fab1d49e539797db9258d24cc"/>
+			<transform>9.13969651739e-09 -0.209091842175 -9.1396950595e-09 0.0 -1.66762850434e-08 -9.13969578844e-09 0.209091842175 0.0 -0.172417074442 -7.53659071285e-09 -1.66762853728e-08 0.0 6.84485112529 15.1244703829 22.4451764171 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="624675073" immovable="1" name="Cube.035">
+			<mesh_name>guid://8aa51eb6b9ef050a9371d69b45dc2fa24e8be5c9</mesh_name>
+			<surface name="свет фонарик" intersection="1" material="1c85d728b8012e09e536df9f48fb06e52b56c3de"/>
+			<transform>6.78350977946e-08 -0.416368722916 -3.01825437569e-07 0.0 -2.57515709452e-07 1.23612593382e-07 3.66066479683 0.0 -2.23060750961 -3.63412102538e-07 -2.57515694033e-07 0.0 5.53375163675 14.6585956983 24.7770436555 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="329748076" immovable="1" name="Cube.039">
+			<mesh_name>guid://48181f8e2f5a946f2898394d6cb78e3867b8b494</mesh_name>
+			<surface name="surface_0" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<transform>0.416368722916 -1.32348660068e-08 -3.20025491031e-07 0.0 3.64000746286e-08 -5.524442113e-07 3.66066479683 0.0 -8.43970164952e-08 -2.6551194191 -4.76527646223e-07 0.0 -10.7244599057 -7.9622528548 5.09719931121 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1731999451" immovable="1" name="Cube.040">
+			<mesh_name>guid://d467ced88350ff8620f27f453affcb31bb3716e3</mesh_name>
+			<surface name="козырьки_отель" intersection="1" material="c3fc12860496bf8fab1d49e539797db9258d24cc"/>
+			<transform>0.209091842175 -6.64629984553e-09 -1.82793890295e-08 0.0 1.8279387952e-08 -3.38965868204e-08 0.209091842175 0.0 -6.52355387953e-09 -0.205230176449 -3.36050385883e-08 0.0 -12.3566946155 -6.40163517569 2.7653336939 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1404829310" immovable="1" name="Cube.041">
+			<mesh_name>guid://9e541b701aece08750fc0d47104c573ded848ee6</mesh_name>
+			<surface name="дверь" intersection="1" material="9a71d5e266e1546094b67a91083962c3d4b750c8"/>
+			<transform>0.416368722916 -1.32348660068e-08 -3.20025491031e-07 0.0 3.64000746286e-08 -5.524442113e-07 3.66066479683 0.0 -8.43970164952e-08 -2.6551194191 -4.76527646223e-07 0.0 -11.9483406766 -7.92770567415 4.15224253022 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1051661253" immovable="1" name="Cube.044">
+			<mesh_name>guid://0c9f17cadde09473bdfce3ff725becaa118fd90d</mesh_name>
+			<surface name="свет фонарик" intersection="1" material="1c85d728b8012e09e536df9f48fb06e52b56c3de"/>
+			<transform>0.44222459197 3.86605464158e-08 -2.77465753357e-07 0.0 3.86605464158e-08 -4.94147624417e-07 3.17383813858 0.0 2.31593276295e-07 -2.64911818504 -4.54532373453e-07 0.0 -10.7356167865 1.17262556875 22.090255686 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="460354144" immovable="1" name="Cylinder.003">
+			<mesh_name>guid://3962162272d09176ecbdedd1dc685105a37d2708</mesh_name>
+			<surface name="столб металл" intersection="1" material="4449489abbb5588d6d94d7e9d09f80fedc8b3ec0"/>
+			<transform>0.247255086899 1.38451086061e-23 9.44853362121e-16 0.0 1.50853745614e-23 0.247255086899 -1.08078622309e-08 0.0 -9.44853362121e-16 1.08078622309e-08 0.247255086899 0.0 -9.10027074228 16.2961293885 21.9034016162 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="437715519" immovable="1" name="Cylinder.004">
+			<mesh_name>guid://446a060c367838beb06a4349c1c98461371f1ec7</mesh_name>
+			<surface name="столб металл" intersection="1" material="4449489abbb5588d6d94d7e9d09f80fedc8b3ec0"/>
+			<surface name="свет фонарик" intersection="1" material="1c85d728b8012e09e536df9f48fb06e52b56c3de"/>
+			<transform>0.250506877899 2.19000837326e-08 -6.29978419385e-07 0.0 2.19000837326e-08 -8.69985596581e-07 7.20611286163 0.0 2.1900007676e-08 -0.250506877899 -3.44851956634e-07 0.0 -13.6103845626 -26.1468953298 7.2061120972 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1923492498" immovable="1" name="Cylinder.005">
+			<mesh_name>guid://86f38c24d741d8d7ac068d6bea8e045e70b5cd7a</mesh_name>
+			<surface name="козырьки_отель" intersection="1" material="c3fc12860496bf8fab1d49e539797db9258d24cc"/>
+			<transform>0.122734229853 1.49350101737e-08 0.122733820615 0.0 -2.28757118783 1.38233012106e-07 2.28757138199 0.0 1.04028977544e-07 -0.137685328722 -8.72745970133e-08 0.0 -13.3525722106 8.27182154937 16.951612111 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1813465289" immovable="1" name="Cylinder.008">
+			<mesh_name>guid://87fd7a1e6a1f80f5c3b0ffa3587351037672fe91</mesh_name>
+			<surface name="козырьки_отель" intersection="1" material="c3fc12860496bf8fab1d49e539797db9258d24cc"/>
+			<transform>0.122734229853 1.49350101737e-08 0.122733820615 0.0 -2.28757118783 1.38233012106e-07 2.28757138199 0.0 1.04028977544e-07 -0.137685328722 -8.72745970133e-08 0.0 -13.3525718216 -7.08638857462 27.0101168869 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="473873300" immovable="1" name="Cylinder.009">
+			<mesh_name>guid://5a354df61f1c54cd9a00e295c141cb0deddca6bc</mesh_name>
+			<surface name="козырьки_отель" intersection="1" material="c3fc12860496bf8fab1d49e539797db9258d24cc"/>
+			<transform>0.122734229853 1.49350101737e-08 0.122733820615 0.0 -2.28757118783 1.38233012106e-07 2.28757138199 0.0 1.04028977544e-07 -0.137685328722 -8.72745970133e-08 0.0 -13.3525734402 0.519326681547 37.4923705828 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2077192675" immovable="1" name="Cylinder.013">
+			<mesh_name>guid://96b04880ba380a22aca13f8dd0e2c3c1836e52eb</mesh_name>
+			<surface name="труба" intersection="1" material="5983935cbdbccd76073bd543026acec4e3c995f2"/>
+			<transform>0.607232809067 -3.15874285552e-08 5.08192265981e-15 0.0 -3.15874285552e-08 0.968550860882 -5.81304170331e-08 0.0 -9.39731487785e-16 1.074927482e-08 0.607232809067 0.0 -10.0585285145 -15.3203085721 22.7066733381 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1283665382" immovable="1" name="Ladder">
+			<mesh_name>guid://2757a018567fe1af1adbc7cf385b94d5f705cb4e</mesh_name>
+			<surface name="столб металл" intersection="1" material="4449489abbb5588d6d94d7e9d09f80fedc8b3ec0"/>
+			<transform>1 8.7423024051e-08 -2.0402812864e-06 0.0 8.7423024051e-08 -2.79157505868e-06 23.3380966187 0.0 1.89142978962e-08 -0.216354340315 -1.0459320904e-06 0.0 9.68853727019 14.6545919082 32.2153390201 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1591208973" immovable="1" name="Plane.001">
+			<mesh_name>guid://77a459b2e08909c7a8328d876aabf98cf1595a55</mesh_name>
+			<surface name="труба" intersection="1" material="5983935cbdbccd76073bd543026acec4e3c995f2"/>
+			<transform>15.3224058151 1.33952747782e-06 -8.03645087152e-07 0.0 1.33952747782e-06 -1.88873734672e-06 9.1926279068 0.0 1.58578164389e-06 -18.1392269135 -2.56418689693e-06 0.0 7.69960345229 17.5676404239 30.9647857616 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="582491656" immovable="1" name="Plane.002">
+			<mesh_name>guid://10135b0a155894d594649b99ad47615cea4367b0</mesh_name>
+			<surface name="труба" intersection="1" material="5983935cbdbccd76073bd543026acec4e3c995f2"/>
+			<transform>15.3224058151 1.33952747782e-06 -8.03645087152e-07 0.0 1.33952747782e-06 -1.88873734672e-06 9.1926279068 0.0 1.58578164389e-06 -18.1392269135 -2.56418689693e-06 0.0 7.69960345229 17.5676399378 19.8453533123 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1250404807" immovable="1" name="Plane.003">
+			<mesh_name>guid://f254ca34e53550e759ca78112b8bfaf91d5b574f</mesh_name>
+			<surface name="труба" intersection="1" material="5983935cbdbccd76073bd543026acec4e3c995f2"/>
+			<transform>15.3224058151 1.33952747782e-06 -8.03645087152e-07 0.0 1.33952747782e-06 -1.88873734672e-06 9.1926279068 0.0 1.58578164389e-06 -18.1392269135 -2.56418689693e-06 0.0 7.69960345229 17.5676394362 8.37090606193 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="661052538" immovable="1" name="Plane.004">
+			<mesh_name>guid://1f740b4cdf53fa59c0e2e073068e77e1a592dc62</mesh_name>
+			<surface name="основа_отель" intersection="1" material="9474b7ee71144d9198b43e2de57d5eaba4371df4"/>
+			<transform>15.3224058151 1.33952747782e-06 -8.03645087152e-07 0.0 1.33952747782e-06 -1.88873734672e-06 9.1926279068 0.0 1.58578164389e-06 -18.1392269135 -2.56418689693e-06 0.0 -7.18166672271 -1.46794073358 21.5050984071 1.0</transform>
+		</node>
+	</node>
+</nodes>

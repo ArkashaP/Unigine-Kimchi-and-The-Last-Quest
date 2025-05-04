@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>44def8817d3f3bcbdb5774a9c259e35fbd50974e</guid>
+	<type>material</type>
+	<hash>0e30c628</hash>
+	<runtimes>
+		<runtime id="44def8817d3f3bcbdb5774a9c259e35fbd50974e" name="Автомат основа" link="0" type="5"/>
+	</runtimes>
+</asset>
