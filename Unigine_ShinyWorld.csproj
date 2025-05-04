@@ -45,6 +45,9 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup>
+		<Compile Include="data/Gasan/Shine.cs"/>
+	</ItemGroup>
+	<ItemGroup>
 		<Compile Include="data/Ark/Скрипты/TestComp.cs"/>
 		<Compile Include="data/Ark/Скрипты/PlayerController.cs"/>
 		<Compile Include="data/Ark/Скрипты/Item_Test.cs"/>
@@ -52,8 +55,6 @@
 		<Compile Include="data/maxim_batteryUp/components/BatteriesCounter.cs"/>
 		<Compile Include="data/maxim_batteryUp/components/BatteryWood.cs"/>
 		<Compile Include="data/maxim_batteryUp/components/Battrey1_Enter.cs"/>
-	</ItemGroup>
-	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>
 		<Compile Include="source\AppSystemLogic.cs"/>
 		<Compile Include="source\AppWorldLogic.cs"/>

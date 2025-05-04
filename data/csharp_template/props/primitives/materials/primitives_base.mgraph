@@ -7,8 +7,10 @@
 		"vertex_mode": 1,
 		"advanced_mode": false,
 		"compiler_ieee_strictness": false,
+		"compiler_vulkan_vertex_shader_optimizations": true,
 		"compiler_optimization_level": 4,
 		"compiler_warning_mode": 2,
+		"cast_gi": false,
 		"depth_shadow": true,
 		"screen_projection": false,
 		"force_velocity": true,
@@ -17,15 +19,28 @@
 		"overlap": false,
 		"depth_test": true,
 		"scene_depth_write": true,
+		"opacity_depth_write": true,
+		"velocity_write": true,
+		"material_mask_write": true,
+		"depth_pre_pass": false,
 		"depth_mode": 0,
 		"decal_tbn_mode": 0,
 		"normal_blend_mode": 0,
+		"render_order_full": "After Post Materials",
+		"render_order_friendly": "Before Post Materials",
+		"user_mode": "Artist Friendly",
+		"textures_streaming_mode": "Force Streaming For All",
+		"use_taa": false,
+		"color_clamping_mode": "Disabled",
+		"fix_flicker": false,
+		"antialiasing_in_motion": false,
+		"diagonal_neighbors": false,
+		"catmull_resampling": false,
+		"frames_by_velocity": false,
+		"frames_by_color": false,
 		"blend_mode": 0,
 		"blend_src": 5,
-		"blend_dest": 6,
-		"opacity_depth_write": true,
-		"velocity_write": true,
-		"material_mask_write": true
+		"blend_dest": 6
 	},
 	"parameters": {
 		"parameter": {
@@ -87,8 +102,8 @@
 		"Material": {
 			"label": "Material",
 			"guid": "829f90678c21529ab2138131aaaf08dc82560e8b",
-			"x": 108,
-			"y": 93,
+			"x": 106,
+			"y": 96,
 			"collapsed": false,
 			"props": {
 			},
@@ -186,6 +201,7 @@
 			}
 		},
 		"Parameter": {
+			"type": "float",
 			"label": "Slider",
 			"guid": "28d48dc7d826707a831d459159cc41bc995b31eb",
 			"x": -184,
@@ -194,7 +210,7 @@
 			"props": {
 				"prop": {
 					"label": "",
-					"widget": "float",
+					"widget": "Float",
 					"x": 0.5
 				}
 			},
@@ -207,10 +223,10 @@
 					"id": 0
 				}
 			},
-			"parameter_guid": "09e6d7c5c95d6660ac57663fcbc33e927c894cc9",
-			"type": "float"
+			"parameter_guid": "09e6d7c5c95d6660ac57663fcbc33e927c894cc9"
 		},
 		"Parameter": {
+			"type": "float",
 			"label": "Slider",
 			"guid": "4f3857593cc9d8e4ed5dcef3e06247b6cac51b9d",
 			"x": -182,
@@ -219,7 +235,7 @@
 			"props": {
 				"prop": {
 					"label": "",
-					"widget": "float",
+					"widget": "Float",
 					"x": 0
 				}
 			},
@@ -232,8 +248,7 @@
 					"id": 0
 				}
 			},
-			"parameter_guid": "c3a0ef94b08415e3f70781e67508300d22439208",
-			"type": "float"
+			"parameter_guid": "c3a0ef94b08415e3f70781e67508300d22439208"
 		},
 		"SampleTexture": {
 			"label": "SampleTexture: Default",
@@ -254,6 +269,7 @@
 						"Point",
 						"Catmull",
 						"Cubic",
+						"Cubic Mip",
 						"Manual linear"
 					],
 					"x": 0
@@ -305,6 +321,7 @@
 			"normal_space": "Tangent Space for UV0"
 		},
 		"Parameter": {
+			"type": "Texture2D",
 			"label": "Texture2D",
 			"guid": "28d8e82967f41374a9e828434bceb0c6b3b2d16d",
 			"x": -735,
@@ -348,17 +365,17 @@
 				},
 				"prop": {
 					"label": "Anisotropy",
-					"widget": "Toggle",
+					"widget": "Bool",
 					"x": 1
 				},
 				"prop": {
-					"label": "Manual Filtering",
-					"widget": "Toggle",
+					"label": "Force Streaming",
+					"widget": "Bool",
 					"x": 0
 				},
 				"prop": {
-					"label": "Force Streaming",
-					"widget": "Toggle",
+					"label": "Manual Filtering",
+					"widget": "Bool",
 					"x": 0
 				}
 			},
@@ -371,10 +388,10 @@
 					"id": 0
 				}
 			},
-			"parameter_guid": "367ef26f42507d02e186187981cf67849319cd13",
-			"type": "Texture2D"
+			"parameter_guid": "367ef26f42507d02e186187981cf67849319cd13"
 		},
 		"Parameter": {
+			"type": "float4",
 			"label": "Color",
 			"guid": "29ff10b4a09e84837e12e006093cb7add5983528",
 			"x": -301,
@@ -383,11 +400,11 @@
 			"props": {
 				"prop": {
 					"label": "",
-					"widget": "float4",
-					"x": 1,
-					"y": 1,
+					"widget": "Float4",
+					"w": 1,
 					"z": 1,
-					"w": 1
+					"y": 1,
+					"x": 1
 				}
 			},
 			"inputs": {
@@ -399,8 +416,33 @@
 					"id": 0
 				}
 			},
-			"parameter_guid": "649aa9aa897d4d01a993426c01ec5adb6105d27e",
-			"type": "float4"
+			"parameter_guid": "649aa9aa897d4d01a993426c01ec5adb6105d27e"
+		},
+		"Color (Float3)": {
+			"type": "float3",
+			"label": "float3",
+			"guid": "e4b645c5504b3af45bc24d46d3a430ad097e533a",
+			"x": -103,
+			"y": 663,
+			"collapsed": false,
+			"props": {
+				"prop": {
+					"label": "",
+					"widget": "Float3",
+					"z": 0.7764706015586853,
+					"y": 1,
+					"x": 0.25490197539329529
+				}
+			},
+			"inputs": {
+			},
+			"outputs": {
+				"output": {
+					"label": "0.254902 1.0 0.776471",
+					"type": "float3",
+					"id": 0
+				}
+			}
 		}
 	},
 	"anchors": {
@@ -451,6 +493,18 @@
 			"output_label": "Tangent Normal",
 			"output_id": 1,
 			"output_node": "54a1904bff74292e833b5eb5cddbe0903a22baaf"
+		},
+		"anchor": {
+			"input_index": 8,
+			"input_type": "float3",
+			"input_label": "Emission",
+			"input_id": -2120341480,
+			"input_node": "829f90678c21529ab2138131aaaf08dc82560e8b",
+			"output_index": 0,
+			"output_type": "float3",
+			"output_label": "0.254902 1.0 0.776471",
+			"output_id": 0,
+			"output_node": "e4b645c5504b3af45bc24d46d3a430ad097e533a"
 		},
 		"anchor": {
 			"input_index": 0,
