@@ -2,7 +2,7 @@
 <asset version="2.19.0.3">
 	<guid>3ffb4d0bb6199844944e8b5d5c5863580a8c43b7</guid>
 	<type>component</type>
-	<hash>f5ef707d</hash>
+	<hash>68984a55</hash>
 	<runtimes>
 		<runtime id="3ffb4d0bb6199844944e8b5d5c5863580a8c43b7" name="Information.cs" link="0"/>
 		<runtime id="5456cc7115d472b899297af3d1d25a9ed94d7c7d" name="Information.prop" link="1" type="4"/>

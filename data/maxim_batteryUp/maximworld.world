@@ -870,8 +870,20 @@
 					<parameter name="jsonFile">guid://71d5691aa2e4740a5ffcaca02fdd273cd844866c</parameter>
 					<parameter name="mainMenu">47aaf4e6636256fa7c7017cca38239086e3b0b15</parameter>
 				</property>
+				<property parent="05a0c3b81c1a3f808fd557aa0b1df44af42e4afa" guid="8b0322f5990d21849517c6cbdff7b20eae4af1d5">
+					<parameter name="jsonFile">guid://f05b27fed787478f09e539600cc300e790651930</parameter>
+					<parameter name="trigger">1572067563</parameter>
+				</property>
 			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 10.4191555479 14.1518843841 6.24039225992 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1455231636" immovable="1" name="Plane">
+			<mesh_name>guid://21b0d3d4c0265c4fa38d0d267a1fa114fb437af6</mesh_name>
+			<surface name="plane" intersection="1" collision="1" material="c694a281afcaa8eee0573677b08d923548074061"/>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4.66189203404 3.64145601929 -1.40287114827 1.0</transform>
+		</node>
+		<node type="WorldTrigger" id="1572067563" name="EndTrigger">
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4.32379970692 3.05292929352 -0.808359408961 1.0</transform>
 		</node>
 	</editor>
 	<console>

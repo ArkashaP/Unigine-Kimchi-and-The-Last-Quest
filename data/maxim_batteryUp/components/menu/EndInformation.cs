@@ -2,17 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using Unigine;
 
-[Component(PropertyGuid = "5456cc7115d472b899297af3d1d25a9ed94d7c7d")]
-public class Information : Component
+[Component(PropertyGuid = "05a0c3b81c1a3f808fd557aa0b1df44af42e4afa")]
+public class EndInformation : Component
 {
     // Путь к JSON-файлу с информацией, задается в редакторе
     [ShowInEditor]
     [ParameterFile(Filter = ".json")]
     private string jsonFile = "null";
-
-    // Ссылка на компонент главного меню, задается в редакторе
-    [ShowInEditor]
-    private UIMainMenu mainMenu = null;
 
     // Основной контейнер для интерфейса
     private WidgetVBox VBox;
@@ -23,9 +19,6 @@ public class Information : Component
     // Метки для отображения заголовка, контента и номера блока
     private WidgetLabel titleLabel, contentLabel, numberLabel;
 
-    // Изображение для текущего блока
-    private WidgetSprite blockImage;
-
     // Кнопки для перехода к следующему блоку и выхода
     //private WidgetButton nextButton, exitButton;
 
@@ -34,6 +27,10 @@ public class Information : Component
 
     // Объекты для работы с JSON
     private Json json, jsonBlocks;
+
+    // Компонент триггера
+    [ShowInEditor]
+	private WorldTrigger trigger;
 
     // Структура для хранения данных блока
     struct Block
@@ -56,9 +53,20 @@ public class Information : Component
             return;
         }
 
+        // Подписываемся на событие входа в триггер
+        trigger.EventEnter.Connect(OnEnterTrigger);
+
         json = new Json(); // Создаем объект для работы с JSON
-        CreateUI(); // Создаем основной интерфейс
+        CreateUI(); // Создаем интерфейс
         LoadBlocks(); // Загружаем блоки из JSON
+    }
+
+    // Обработчик события входа в триггер
+    private void OnEnterTrigger(Node enteringNode)
+    {
+        // Запускаем интерфейс
+        StartInformation();
+		trigger.Enabled = false;
     }
 
     // Обновление каждый кадр
@@ -67,7 +75,7 @@ public class Information : Component
         // Проверяем нажатие пробела для перелистывания
         if (Input.IsKeyDown(Input.KEY.SPACE) && VBox != null && !VBox.Hidden)
         {
-            NextBlock(); // Вызываем логику перелистывания
+            NextBlock();
         }
     }
 
@@ -148,15 +156,6 @@ public class Information : Component
 
         if (currentBlockIndex == blocks.Count - 1)
         {
-            // Закрываем интерфейс и показываем главное меню
-            if (mainMenu != null)
-            {
-                //mainMenu.ShowMenu(); // Показываем главное меню
-            }
-            else
-            {
-                Log.Error("UIMainMenu is not assigned.\n");
-            }
             if (VBox != null)
                 VBox.Hidden = true; // Скрываем интерфейс
         }
@@ -249,10 +248,9 @@ public class Information : Component
         titleLabel.Height = 80;
         titleLabel.Width = 800;
         titleLabel.Text = "Заголовок";
-        titleLabel.SetFont("Arial");
         titleLabel.FontSize = 30;
-        titleLabel.SetPosition(50, 50);
-        titleLabel.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f);
+        titleLabel.SetPosition(50, 30); // Подняли на 20 пикселей
+        titleLabel.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f); // Черный цвет
         titleLabel.FontWrap = 1; // Перенос текста
 
         contentLabel = new WidgetLabel(); // Метка для контента
@@ -261,25 +259,13 @@ public class Information : Component
             Log.Error("Failed to create contentLabel.\n");
             return;
         }
-        contentLabel.Height = 200; // Уменьшаем высоту, чтобы освободить место для изображения
+        contentLabel.Height = 200;
         contentLabel.Width = 800;
         contentLabel.Text = "Контент";
-        contentLabel.SetFont("Times New Roman");
         contentLabel.FontSize = 20;
         contentLabel.SetPosition(55, 500);
-        contentLabel.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f);
+        contentLabel.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f); // Черный цвет
         contentLabel.FontWrap = 1; // Перенос текста
-
-        blockImage = new WidgetSprite(); // Изображение для блока
-        if (blockImage == null)
-        {
-            Log.Error("Failed to create blockImage sprite.\n");
-            return;
-        }
-        blockImage.Width = 300;
-        blockImage.Height = 150;
-        blockImage.SetPosition(300, 360); // Размещаем под текстом
-        blockImage.Hidden = true; // Изначально скрыто
 
         numberLabel = new WidgetLabel(); // Метка для номера блока
         if (numberLabel == null)
@@ -292,10 +278,11 @@ public class Information : Component
         numberLabel.Text = "1/4";
         numberLabel.FontSize = 30;
         numberLabel.SetPosition(415, 527);
-        numberLabel.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f);
+        numberLabel.FontColor = new vec4(0.0f, 0.0f, 0.0f, 1.0f); // Черный цвет
+        numberLabel.FontWrap = 1;
 
-        // // Кнопка "Далее" для перехода к следующему блоку
-        // nextButton = new WidgetButton();
+        // Кнопка "Далее" для перехода к следующему блоку
+        //nextButton = new WidgetButton();
         // if (nextButton == null)
         // {
         //     Log.Error("Failed to create nextButton.\n");
@@ -305,7 +292,7 @@ public class Information : Component
         // nextButton.Height = 70;
         // nextButton.Text = "Далее";
         // nextButton.FontSize = 25;
-        // nextButton.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f);
+        // nextButton.FontColor = new vec4(00f, 0.0f, 0.0f, 1.0f);
         // nextButton.SetPosition(630, 511);
         // nextButton.ButtonColor = new vec4(0.39f, 0.39f, 0.50f, 1.0f);
         // nextButton.EventClicked.Connect(NextBlock);
@@ -321,19 +308,11 @@ public class Information : Component
         // exitButton.Height = 70;
         // exitButton.Text = "Закрыть";
         // exitButton.FontSize = 25;
-        // exitButton.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f);
+        // exitButton.FontColor = new vec4(0.0f, 0.0f, 0.0f, 1.0f);
         // exitButton.SetPosition(50, 511);
         // exitButton.ButtonColor = new vec4(0.39f, 0.39f, 0.50f, 1.0f);
         // exitButton.EventClicked.Connect(() =>
         // {
-        //     if (mainMenu != null)
-        //     {
-        //         mainMenu.ShowMenu(); // Показываем главное меню
-        //     }
-        //     else
-        //     {
-        //         Log.Error("UIMainMenu is not assigned.\n");
-        //     }
         //     if (VBox != null)
         //         VBox.Hidden = true; // Скрываем интерфейс
         // });
@@ -342,10 +321,9 @@ public class Information : Component
         VBox.AddChild(background, Gui.ALIGN_OVERLAP);
         VBox.AddChild(titleLabel, Gui.ALIGN_OVERLAP);
         VBox.AddChild(contentLabel, Gui.ALIGN_OVERLAP);
-        VBox.AddChild(blockImage, Gui.ALIGN_OVERLAP);
         //VBox.AddChild(numberLabel, Gui.ALIGN_OVERLAP);
-        // VBox.AddChild(nextButton, Gui.ALIGN_OVERLAP);
-        // VBox.AddChild(exitButton, Gui.ALIGN_OVERLAP);
+        //VBox.AddChild(nextButton, Gui.ALIGN_OVERLAP);
+        //VBox.AddChild(exitButton, Gui.ALIGN_OVERLAP);
 
         // Добавляем контейнер в главное окно, центрируем
         WindowManager.MainWindow.AddChild(VBox, Gui.ALIGN_OVERLAP | Gui.ALIGN_CENTER);
@@ -354,5 +332,14 @@ public class Information : Component
         //     nextButton.Enabled = true; // Кнопка "Далее" изначально включена
         if (VBox != null)
             VBox.Hidden = true; // Изначально интерфейс скрыт
+    }
+
+    // Очистка при уничтожении компонента
+    public void Shutdown()
+    {
+        if (trigger != null)
+        {
+            trigger.EventEnter.Disconnect(OnEnterTrigger);
+        }
     }
 }

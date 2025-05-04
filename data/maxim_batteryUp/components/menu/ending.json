@@ -1,0 +1,24 @@
+{
+    "blocks": [
+      {
+        "title": " ",
+        "content": "Кимчи?..Кимчи!!!",
+        "image": "data/maxim_batteryUp/ui/new2/slide_1.png"
+      },
+      {
+        "title": " ",
+        "content": "Ты это сделал! Я так горжусь тобой. Посмотри Дерево жизни оживает!",
+        "image": "data/maxim_batteryUp/ui/new2/slide_2.png"
+      },
+      {
+        "title": " ",
+        "content": "Я знаю как ты устал, теперь ты можешь отдохнуть.",
+        "image": "data/maxim_batteryUp/ui/new2/slide_3.png"
+      },
+      {
+        "title": " ",
+        "content": "Спасибо.",
+        "image": "data/maxim_batteryUp/ui/new2/slide_4.png"
+      }
+    ]
+  }
