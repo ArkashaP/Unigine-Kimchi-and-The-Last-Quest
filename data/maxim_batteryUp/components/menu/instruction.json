@@ -3,36 +3,43 @@
     {
       "title": " ",
       "content": "Эй..ты спишь?",
-      "image": "data/maxim_batteryUp/ui/new1/slide_1.png"
+      "image": "data/maxim_batteryUp/ui/new1/slide_1.png",
+      "image2": "data/maxim_batteryUp/ui/TransparentBox.png"
     },
     {
       "title": " ",
       "content": "Я так и знал, что ты здесь.Слушай, Кимчи… Здесь становится слишком опасно.",
-      "image": "data/maxim_batteryUp/ui/new1/slide_2.png"
+      "image": "data/maxim_batteryUp/ui/new1/slide_2.png",
+      "image2": "data/maxim_batteryUp/ui/TransparentBox.png"
     },
     {
       "title": " ",
       "content": "Мне нужно уехать — может случиться непоправимое, и времени остаётся совсем мало. \nУ меня для тебя последнее задание. Оно, вероятно, будет сложным...",
-      "image": "data/maxim_batteryUp/ui/new1/slide_3.png"
+      "image": "data/maxim_batteryUp/ui/new1/slide_3.png",
+      "image2": "data/maxim_batteryUp/ui/TransparentBox.png"
     },
     {
       "title": " ",
       "content": "… хотя теперь уже неважно. Кроме тебя, никто не сможет помочь.\nДерево Жизни умирает. Чтобы спасти его, нужно вернуть недостающую энергию, \nкоторая хранится в особых батарейках. ",
-      "image": "data/maxim_batteryUp/ui/new1/slide_4.png"
+      "image": "data/maxim_batteryUp/ui/new1/slide_4.png",
+      "image2": "data/maxim_batteryUp/ui/TransparentBox.png"
     },
     {
       "title": " ",
       "content": "После того ужасного землетрясения все они оказались утеряны на далёких островках. \nНайди их всех и восстанови энергию Дерева.",
-      "image": "data/maxim_batteryUp/ui/new1/slide_5.png"
+      "image": "data/maxim_batteryUp/ui/new1/slide_5.png",
+      "image2": "data/maxim_batteryUp/ui/TransparentBox.png"
     },
     {
       "title": " ",
       "content": " Отправляйся в портал, который находится, за нашим домом. Он приведет тебя к древу.",
-      "image": "data/maxim_batteryUp/ui/new1/slide_6.png"
+      "image": "data/maxim_batteryUp/ui/new1/slide_6.png",
+      "image2": "data/maxim_batteryUp/ui/TransparentBox.png"
     },    {
       "title": " ",
       "content": "Я верю в тебя, друг мой. Прощай, я буду безумно скучать.",
-      "image": "data/maxim_batteryUp/ui/new1/slide_7.png"
+      "image": "data/maxim_batteryUp/ui/new1/slide_7.png",
+      "image2": "data/maxim_batteryUp/ui/TransparentBox.png"
     }
   ]
 }

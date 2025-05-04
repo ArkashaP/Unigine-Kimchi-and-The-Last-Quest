@@ -2,7 +2,7 @@
 <asset version="2.19.0.3">
 	<guid>5417e7aac8981d65e81488ec306004ddf981803c</guid>
 	<type>component</type>
-	<hash>6b17a9a9</hash>
+	<hash>d961db3a</hash>
 	<runtimes>
 		<runtime id="5417e7aac8981d65e81488ec306004ddf981803c" name="EndInformation.cs" link="0"/>
 		<runtime id="05a0c3b81c1a3f808fd557aa0b1df44af42e4afa" name="EndInformation.prop" link="1" type="4"/>

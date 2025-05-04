@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <asset version="2.19.0.3">
-	<guid>64f59a2d2b83395caa3d0c69a507fb89598e9ff7</guid>
+	<guid>7cce84302f920c14c34e279626cff95266959888</guid>
 	<type>texture</type>
-	<hash>0d563f1f</hash>
+	<hash>59507e71</hash>
 	<runtimes>
-		<runtime id="64f59a2d2b83395caa3d0c69a507fb89598e9ff7" name="buExit.png" link="0" type="6"/>
-		<runtime id="9267c6c473a875d2a640f638b8a771533b887cea" name="buExit.texture" link="1" type="6"/>
+		<runtime id="7cce84302f920c14c34e279626cff95266959888" name="TransparentBox.png" link="0" type="6"/>
+		<runtime id="a415e8ada9598b6a8b388dbf1b24b4e4f215e247" name="TransparentBox.texture" link="1" type="6"/>
 	</runtimes>
 	<parameters>
 		<parameter type="int" name="blur_radius">1</parameter>

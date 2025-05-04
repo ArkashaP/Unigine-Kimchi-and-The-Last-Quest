@@ -16,6 +16,9 @@ public class EndInformation : Component
     // Фоновое изображение
     private WidgetSprite background;
 
+    // Прозрачное PNG на позиции contentLabel
+    private WidgetSprite textImage;
+
     // Метки для отображения заголовка, контента и номера блока
     private WidgetLabel titleLabel, contentLabel, numberLabel;
 
@@ -34,7 +37,8 @@ public class EndInformation : Component
     {
         public string title; // Заголовок блока
         public string content; // Контент блока (строка)
-        public string image; // Путь к изображению (или null)
+        public string image; // Путь к фоновому изображению (или null)
+        public string image2; // Путь к PNG на позиции contentLabel (или null)
     }
 
     // Список блоков
@@ -111,9 +115,9 @@ public class EndInformation : Component
             return;
         }
 
-        if (titleLabel == null || contentLabel == null || numberLabel == null)
+        if (titleLabel == null || contentLabel == null || numberLabel == null || textImage == null)
         {
-            Log.Error("UI labels are not initialized.\n");
+            Log.Error("UI labels or textImage are not initialized.\n");
             return;
         }
 
@@ -132,6 +136,20 @@ public class EndInformation : Component
             else
             {
                 background.Texture = "data/maxim_batteryUp/ui/infoBackground.png"; // Возвращаем дефолтный фон
+            }
+        }
+
+        // Устанавливаем PNG на позиции contentLabel
+        if (textImage != null)
+        {
+            if (!string.IsNullOrEmpty(block.image2) && block.image2 != "null")
+            {
+                textImage.Texture = block.image2;
+                textImage.Hidden = false; // Показываем PNG
+            }
+            else
+            {
+                textImage.Hidden = true; // Скрываем PNG, если image2 не задано
             }
         }
     }
@@ -187,14 +205,16 @@ public class EndInformation : Component
 
             string title = jsonBlock.Read("title") ?? "No Title"; // Читаем заголовок
             string content = jsonBlock.Read("content") ?? "No Content"; // Читаем контент
-            string image = jsonBlock.Read("image") ?? null; // Читаем путь к изображению
+            string image = jsonBlock.Read("image") ?? null; // Читаем путь к фоновому изображению
+            string image2 = jsonBlock.Read("image2") ?? null; // Читаем путь к PNG на позиции contentLabel
 
             // Добавляем блок в список
             blocks.Add(new Block
             {
                 title = title,
                 content = content,
-                image = image
+                image = image,
+                image2 = image2
             });
         }
     }
@@ -222,6 +242,17 @@ public class EndInformation : Component
         background.Texture = "data/maxim_batteryUp/ui/infoBackground.png";
         background.SetPosition(0, 0);
 
+        textImage = new WidgetSprite(); // PNG на позиции contentLabel
+        if (textImage == null)
+        {
+            Log.Error("Failed to create textImage sprite.\n");
+            return;
+        }
+        textImage.Width = 1800; // Соответствует ширине contentLabel
+        textImage.Height = 600; // Соответствует высоте contentLabel
+        textImage.SetPosition(150, 750); // Совпадает с contentLabel
+        textImage.Hidden = true; // Изначально скрыто
+
         titleLabel = new WidgetLabel(); // Метка для заголовка
         if (titleLabel == null)
         {
@@ -246,7 +277,7 @@ public class EndInformation : Component
         contentLabel.Width = 1800; // Ширина почти на весь экран
         contentLabel.Text = "Контент";
         contentLabel.FontSize = 36; // Увеличен шрифт для читаемости
-        contentLabel.SetPosition(200, 800); // Перемещен выше для лучшего размещения
+        contentLabel.SetPosition(200, 800); // Исходная позиция
         contentLabel.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f); // Белый цвет
         contentLabel.FontWrap = 1; // Перенос текста
 
@@ -266,9 +297,10 @@ public class EndInformation : Component
 
         // Добавляем элементы в контейнер VBox
         VBox.AddChild(background, Gui.ALIGN_OVERLAP);
+        VBox.AddChild(textImage, Gui.ALIGN_OVERLAP); // PNG на позиции contentLabel
         VBox.AddChild(titleLabel, Gui.ALIGN_OVERLAP);
         VBox.AddChild(contentLabel, Gui.ALIGN_OVERLAP);
-        //VBox.AddChild(numberLabel, Gui.ALIGN_OVERLAP); // Включен, так как создается
+        //VBox.AddChild(numberLabel, Gui.ALIGN_OVERLAP); // Оставлено закомментированным
 
         // Добавляем контейнер в главное окно, центрируем
         WindowManager.MainWindow.AddChild(VBox, Gui.ALIGN_OVERLAP | Gui.ALIGN_CENTER);

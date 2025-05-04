@@ -5,10 +5,10 @@
       <sprite name="background" align="overlap" pos_x="0" pos_y="0" width="1920" height="1080"
         texture="data/maxim_batteryUp/ui/main_menu.png"></sprite>
 
-      <sprite name="information" align="overlap" width="333" height="95"  pos_x="800" pos_y="322" scale_y="0.5"
+      <sprite name="information" align="overlap" width="333" height="95"  pos_x="1400" pos_y="810" scale_y="0.5"
         texcoord_w="0.5" texture="data/maxim_batteryUp/ui/play.png"></sprite>
 
-      <sprite name="exit" align="overlap" width="333" height="95"  pos_x="800" pos_y="461" scale_y="0.5" 
+      <sprite name="exit" align="overlap" width="333" height="95"  pos_x="1400" pos_y="900" scale_y="0.5" 
         texcoord_w="0.5" texture="data/maxim_batteryUp/ui/exit.png"></sprite>        
   </vbox>
 </ui>
