@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>e1889c69c72208afe6b5fb291dd6b19d6f4ca761</guid>
+	<type>material</type>
+	<hash>f0c5b1ba</hash>
+	<runtimes>
+		<runtime id="e1889c69c72208afe6b5fb291dd6b19d6f4ca761" name="Выпуклость.Верх.Задняя" link="0" type="5"/>
+	</runtimes>
+</asset>

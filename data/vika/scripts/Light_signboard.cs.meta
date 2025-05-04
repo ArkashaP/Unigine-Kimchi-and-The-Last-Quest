@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>59ede5daac2c427f9d68a49687a7eed071368070</guid>
+	<type>component</type>
+	<hash>3e677afc</hash>
+	<runtimes>
+		<runtime id="59ede5daac2c427f9d68a49687a7eed071368070" name="Light_signboard.cs" link="0"/>
+		<runtime id="ef1102683c085c3b52acf9c4655eeb77a9fcd60e" name="Light_signboard.prop" link="1" type="4"/>
+	</runtimes>
+</asset>

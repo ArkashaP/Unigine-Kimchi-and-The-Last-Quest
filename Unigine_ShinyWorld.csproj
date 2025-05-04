@@ -45,9 +45,14 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup>
-		<Compile Include="data/Gasan/Shine.cs"/>
+		<Compile Include="data/vika/scripts/light_cat.cs"/>
+		<Compile Include="data/vika/scripts/Light_signboard.cs"/>
+		<Compile Include="data/vika/scripts/Move_battery.cs"/>
+		<Compile Include="data/vika/scripts/Blink_light_signboard.cs"/>
 	</ItemGroup>
 	<ItemGroup>
+		<Compile Include="data\csharp_template\FP_controller\components\FirstPersonController.cs"/>
+		<Compile Include="data/Gasan/Shine.cs"/>
 		<Compile Include="data/Ark/Скрипты/TestComp.cs"/>
 		<Compile Include="data/Ark/Скрипты/PlayerController.cs"/>
 		<Compile Include="data/Ark/Скрипты/Item_Test.cs"/>
