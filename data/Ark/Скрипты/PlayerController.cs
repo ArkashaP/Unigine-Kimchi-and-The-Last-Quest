@@ -80,6 +80,10 @@ public class PlayerController : Component
 	private Input.KEY jumpKey = Input.KEY.SPACE;
 
 	[ShowInEditor]
+	[Parameter(Group = "Input", Tooltip = "Ultra Jump key")]
+	private Input.KEY ultrajumpKey = Input.KEY.Q;
+
+	[ShowInEditor]
 	[Parameter(Group = "Input", Tooltip = "Crouch mode activation key")]
 	private Input.KEY crouchKey = Input.KEY.ANY_CTRL;
 
@@ -250,10 +254,21 @@ public class PlayerController : Component
 	private float jumpPower = 6.0f;
 
 	[ShowInEditor]
+	[ParameterSlider(Min = 0.0f, Group = "Movement", Tooltip = "Ultra Jumping power of the player")]
+	[ParameterCondition(nameof(useJump), 1)]
+	private float ultraJumpPower = 10.0f;
+
+	[ShowInEditor]
 	[ParameterSlider(Min = 0.0f, Group = "Movement", Tooltip = "Jumping crouch power of the player")]
 	[ParameterCondition(nameof(useJump), 1)]
 	[ParameterCondition(nameof(useCrouch), 1)]
 	private float crouchJumpPower = 3.0f;
+
+	[ShowInEditor]
+	[ParameterSlider(Min = 0.0f, Group = "Movement", Tooltip = "Ultra Jumping crouch power of the player")]
+	[ParameterCondition(nameof(useJump), 1)]
+	[ParameterCondition(nameof(useCrouch), 1)]
+	private float crouchUltraJumpPower = 6.0f;
 
 	[ShowInEditor]
 	[ParameterSlider(Min = 0.0f, Group = "Movement", Tooltip = "Crouching height of the player")]
@@ -949,6 +964,11 @@ public class PlayerController : Component
 		if (horizontalMoveDirection.Length2 > 0)
 			horizontalMoveDirection.Normalize();
 
+		// if (Input.IsKeyPressed(ultrajumpKey))
+		// 	horizontalMoveDirection += forward*1000;
+
+		Log.MessageLine(maxAirSpeed);
+
 		if (gamePad != null)
 		{
 			vec2 moveValue = (moveStick == GamepadStickSide.LEFT ? gamePad.AxesLeft : gamePad.AxesRight);
@@ -959,6 +979,19 @@ public class PlayerController : Component
 		// update vertical direction
 		if (useJump && IsGround && (Input.IsKeyDown(jumpKey) || gamePad && gamePad.IsButtonDown(jumpButton)))
 			verticalMoveDirection = (IsCrouch ? crouchJumpPower : jumpPower) / ifps;
+
+		if (useJump && IsGround && (Input.IsKeyDown(ultrajumpKey) || gamePad && gamePad.IsButtonDown(jumpButton)))
+		{
+			verticalMoveDirection = (IsCrouch ? crouchUltraJumpPower : ultraJumpPower) / ifps;
+			// if (Input.IsKeyPressed(forwardKey))
+			// {
+			// 	float ultraJumpForwardBoost = 20.0f; // Импульс для длинного прыжка
+			// 	Vec3 forwardDirection = new Vec3(worldTransform.AxisY); // Глобальное направление вперед
+			// 	HorizontalVelocity += forwardDirection * ultraJumpForwardBoost;
+			// 	Log.MessageLine($"Ultra Jump Forward Impulse Applied: {HorizontalVelocity.Length}");
+			// }
+		}
+				
 	}
 
 	private void CheckMoveAndStair()
@@ -1139,6 +1172,8 @@ public class PlayerController : Component
 				maxSpeed = crouchSpeed;
 
 			maxAirSpeed = maxSpeed;
+			if (Input.IsKeyDown(ultrajumpKey))
+				maxAirSpeed = maxSpeed*3; // здесь ускорение во время полета если че
 		}
 
 		// apply damping to horizontal velocity when it exceeds target speed

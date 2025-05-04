@@ -1,5 +1,8 @@
 {
+
+
 	"bb585ea7ee4185633615c2f48a25a36d827710cb": "Ark/Музыка/MainTheme.mp3",
+
 	"28439d17c2450f930e836b1662a7106e6625b02c": "editor2/resources/cs_components/template.prop_",
 	"77119d437de31c9517a527e839191c6483e5c1c1": "editor2/resources/cs_components/template.cs_",
 	"e0db9f51925cafcaf7142ef137811b09861b5ef6": "core/sounds/sound_source.oga",
@@ -7,9 +10,13 @@
 	"2d00349df13c4402fe5ae6ec36d9eaa4f6a4ab10": "Ark/Музыка/MainTheme.mp3.meta",
 	"0b3b355f000050edc8984f3edb2a5c4802dba414": "core/sounds/sound_source.oga.meta",
 	"2dba4ef146a1869a97484dee0224cf95b015193f": "core/textures/water_global/water_depth_lut.tga.meta",
+
+	"d9ee42b6248a1c800eba0d9787df7d95303b078b": "maxim_batteryUp/maximworld.world.meta",
+
 	"5589efeafbf76de7023b65076c62c448beea12f2": "Main_world/my_world_0.world.meta",
 	"e0d1d422366cee89a73dc91ff67a6d2a145d9bec": "Main_world/my_world_meshed.world.meta",
 	"643d4da0dccabd7b129059e0dd543af07e9aea68": "vika/new_world.world.meta",
+
 	"19fa80359cd13ec88a8d3702c9f31034aceacf63": "Unigine_ShinyWorld.world.meta",
 	"c5e18957f00c9331f7340ce1e64df02ae2d98f68": "Ark/World_Ark.world.meta",
 	"beb8355b3737be5b1fe5a8e05ba0d5a0a1f9a719": "csharp_template/props/primitives/cube.node.meta",
@@ -250,7 +257,20 @@
 	"cbe91a8781045462376858c62920d1d30631f65c": "core/gui/font.ttf.meta",
 	"9e8d61d93dfbfedc650b3610cb32384b2d6d2456": "configs/default.config.meta",
 	"317d1411af656d2ffe79eb6b791b5e4df16b4989": "maxim_batteryUp/pics/фонари.png.meta",
+	"b2662f25471488db562a7cde8275cde320129a53": "maxim_batteryUp/ui/new1/slide_1.png.meta",
+	"252eb06435f6d5e160a79c36a4a5cfcc57b8f406": "maxim_batteryUp/ui/new2/slide_1.png.meta",
+	"a36a21f0e09cf946969f2a4ed0ac160d0622fbbe": "maxim_batteryUp/pics/pic1.png.meta",
 	"205c88340a498b63ae2128f2afac1b3817dfe83a": "maxim_batteryUp/pics/скрин2.png.meta",
+	"ba91aabfd7081dae819100a08b39f4266be9fadd": "maxim_batteryUp/ui/new1/slide_2.png.meta",
+	"a84c1466f66718882ac56c08250980e69b919ed8": "maxim_batteryUp/ui/new2/slide_2.png.meta",
+	"abf6c269f2e203d3cc5ce635b54bc69aadb0a588": "maxim_batteryUp/pics/pic2.png.meta",
+	"fab946cf13a015bb3d7f92f030e113fda7e4da6d": "maxim_batteryUp/ui/new1/slide_3.png.meta",
+	"47bce085caef8d5be7e9cddb697c63ca69cf6f65": "maxim_batteryUp/ui/new2/slide_3.png.meta",
+	"8f5c5809c2e308b968801ed2d54b80ec56463117": "maxim_batteryUp/ui/new1/slide_4.png.meta",
+	"c236e21516c54671dc1b78eb943aaf71408990f5": "maxim_batteryUp/ui/new2/slide_4.png.meta",
+	"2d711a39ac36db87e38c79e449cf5a9260cd9b8a": "maxim_batteryUp/ui/new1/slide_5.png.meta",
+	"7c21750d254770e846d23a2815d184db852ab62e": "maxim_batteryUp/ui/new1/slide_6.png.meta",
+	"7696863312d5ea0646468d56c2c7b843ebfbf1ec": "maxim_batteryUp/ui/new1/slide_7.png.meta",
 	"9405cd95ff25113e7837cbe2f5d23397ceb121c3": "csharp_template/props/material_ball/textures/material_ball_a.png.meta",
 	"268528d14580b9236757b94e44cf035bdeae841f": "csharp_template/props/constructor/textures/floor_red_alb.png.meta",
 	"0bf5ef5b6a669c3dd5401ecaa757efccdcac63c0": "csharp_template/props/constructor/textures/floor_orange_alb.png.meta",
@@ -258,11 +278,18 @@
 	"da3a406b15c8ea88ac5dcb30caa9662eafc885a9": "csharp_template/props/constructor/textures/wall_alb.png.meta",
 	"1bdd9047be8d3735c466cdbce7f98b7300c8d2a5": "csharp_template/props/constructor/textures/floor_green_alb.png.meta",
 	"79c34a41af32fbc9ae393dd861e869b4cf28e0de": "csharp_template/props/constructor/textures/floor_gray_alb.png.meta",
+
+	"c295d5c5e7e3e13463a6a327e678d943bc036b52": "maxim_batteryUp/ui/background.png.meta",
 	"2ee2aa753f3ae0ca2e14032f9470c007f7e5863e": "Ark/Текстуры/Небо/sky_base_background.png.meta",
+	"613286917fa07e082975f0537e8559e6cd74cf0e": "maxim_batteryUp/ui/infoBackground.png.meta",
+
+	"2ee2aa753f3ae0ca2e14032f9470c007f7e5863e": "Ark/Текстуры/Небо/sky_base_background.png.meta",
+
 	"c7ecc44de6d007bea5ea53fa51909be7a3d76abb": "csharp_template/props/constructor/textures/floor_0_sh.png.meta",
 	"a926c6052eac869c99b4650cc8d42b04faf702f2": "csharp_template/props/constructor/textures/metal_texture_sh.png.meta",
 	"0f5df0638b9a4dd97a1140b2fe16f893f7d23b68": "csharp_template/props/material_ball/textures/material_ball_sh.png.meta",
 	"b766efb5f59d22bb19f8f5fc3e2d6501e26db662": "core/textures/sky_base_mask.png.meta",
+	"dfd90594f44a71130b68b38ae8ad713b782635ab": "maxim_batteryUp/ui/backgroundFinal.png.meta",
 	"56c6803786f53dcd3bdab5b67b41880834eb79cc": "csharp_template/props/constructor/textures/floor_0_n.png.meta",
 	"ce14ef7b629631ca6075e180f10f1ffaa6e94839": "csharp_template/props/primitives/textures/cube_n.png.meta",
 	"e589a795e6e36a741ce1ba5c3cccdf3a880e3bc2": "csharp_template/props/primitives/textures/cone_n.png.meta",
@@ -270,7 +297,14 @@
 	"a67ea4cf8f0f176a7a7aa6ee5532b628b69f5444": "csharp_template/props/primitives/textures/cylinder_n.png.meta",
 	"c03d938bc826b7d3882530d0bd515ec1491877c9": "core/textures/world_light/celestial_body_moon.png.meta",
 	"823845dfa74442c172536dbe43c5cf0965081e94": "core/textures/world_light/celestial_body_sun.png.meta",
+	"5c7e292ca7929f2f20b3bcc7d2aed1d4ca54a4a9": "maxim_batteryUp/ui/star.png.meta",
+	"d941557c766383ff88758e13e1d403b783dd94b3": "maxim_batteryUp/ui/exit.png.meta",
+	"d7264552edbb721d7e21f9ed9e78579858f93a10": "maxim_batteryUp/ui/start.png.meta",
 	"83feba7bd0e2a91e9036b16a78f4c5c47fe02560": "core/textures/water_global/shoreline_lut.png.meta",
+	"4faba46651cea233f61212cb512cdb11400e29e2": "maxim_batteryUp/ui/main_menu.png.meta",
+	"fc848ba733cf5b475fae83096cb91c2cd59c0e11": "maxim_batteryUp/ui/TransparentBox.png.meta",
+	"6997533ea5ebb17c54c2e4136c1663676c08510e": "maxim_batteryUp/ui/play.png.meta",
+	"8fd6fe0004122ac7012dd33986fc7af2c029fbda": "maxim_batteryUp/ui/battery.png.meta",
 	"baf5c833e49e24659a1f3398f56c21d27cd45931": "core/subgraphs/pi2.msubgraph.meta",
 	"df4f510d85ecbf059d3a28f4f124a039dcc78a9a": "core/subgraphs/pi05.msubgraph.meta",
 	"50933935bf152dc094950402a8dc58bdeaea4063": "core/subgraphs/alpha fade noise taa.msubgraph.meta",
@@ -330,11 +364,18 @@
 	"21f9a7036eed0708d45a40d26f28b220bbe34e88": "core/subgraphs/blackbody.msubgraph.meta",
 	"cd838a6db8f04c12556fe13497cf699f44cc317d": "Ark/box_0_mesh_base.mgraph.meta",
 	"7af19a6245ba63c4a8bc326d189c211a36817a20": "Ark/capsule_mesh_base.mgraph.meta",
+
+	"f99c250fefc4b8c39669471b1a4003a4e53f5198": "maxim_batteryUp/capsule_mesh_base.mgraph.meta",
+	"bf848cabf2a7d206c65a7311a3ddd97f8857744b": "maxim_batteryUp/plane_mesh_base.mgraph.meta",
+	"bacadabb88935850ec54c116aa1aa692b23dd6be": "maxim_batteryUp/cylinder_mesh_base.mgraph.meta",
+	"25dfc28a3c44ccfdd80bedf58ceb6d3016942f08": "Ark/box_mesh_base.mgraph.meta",
+
 	"ad09b9f32d1c208a13bd9f39f7f9038b875224e5": "Ark/Текстуры/Небо/material_graph_mesh_base.mgraph.meta",
 	"39d4f5bd9974b7a887f7f11e95effa7279843192": "cylinder_mesh_base.mgraph.meta",
 	"bacadabb88935850ec54c116aa1aa692b23dd6be": "maxim_batteryUp/cylinder_mesh_base.mgraph.meta",
 	"25dfc28a3c44ccfdd80bedf58ceb6d3016942f08": "Ark/box_mesh_base.mgraph.meta",
 	"b34cd18d4a087547789cf020dcfd9adf6e2a9541": "Gasan/box_mesh_base.mgraph.meta",
+
 	"e9abfe3999c6e7bebe3aa76a72f6dba0dc336e91": "maxim_batteryUp/box_mesh_base.mgraph.meta",
 	"885e3cd19ebe23795f6fc4fe36e48a3ea9fa0ce0": "material_graph_decal_base.mgraph.meta",
 	"284cf3254e31d8076fe82ab247a246dd38bd52d3": "csharp_template/props/constructor/fbx/materials/floor_base.mgraph.meta",
@@ -344,6 +385,11 @@
 	"c50881dd6edf8238a80a1884a79e78f97c8113aa": "csharp_template/props/constructor/fbx/materials/glass_mat.mgraph.meta",
 	"15ff2c051ba65ec947ba17b29b86a5a2fd4075f2": "Ark/box_0.mesh.meta",
 	"91afdfb2f2c8ad16c60178cb5095b5ab0cfc2f31": "Ark/capsule.mesh.meta",
+
+	"30e7adf86ff77966e61ad2fc68943ceb02883709": "maxim_batteryUp/capsule.mesh.meta",
+	"d53d7d26d401da9ddc3182c8f0a60be866dcbd98": "maxim_batteryUp/plane.mesh.meta",
+
+
 	"26a931fb855d549592b9faea883b9e44d73792e0": "core/meshes/plane.mesh.meta",
 	"87c4ba71f35f72154e07cf6e7c791854a6a6a8bf": "core/meshes/sphere.mesh.meta",
 	"8ab9818a2fa11495ef587c71b0fee02b57e972c3": "Ark/Модели/Остров/exported_mesh.mesh.meta",
@@ -351,9 +397,16 @@
 	"18ef06375bb768a045c10d42b0a185431c4856cb": "cylinder.mesh.meta",
 	"db83058f1b223523542c9218294469406cc1d6e7": "maxim_batteryUp/cylinder.mesh.meta",
 	"884a51da74ddbf7d042814133d785500d57f2739": "Ark/box.mesh.meta",
+
+
 	"0808bd61f7b57654a24f2d524fc9633863eea786": "Gasan/box.mesh.meta",
+
 	"6c629a730bde801e6028af6e230e077b1f9d6d16": "maxim_batteryUp/box.mesh.meta",
 	"618d70e7dc1d13115b19bedc8d7f206fa2171645": "core/meshes/box.mesh.meta",
+	"3e35eed4eb12d8297be87ee7e4e9f0acb8353dc2": "maxim_batteryUp/components/menu/pause.ui.meta",
+	"06d88065506328b3f49272c7c4e03ae6a2a70a72": "maxim_batteryUp/components/menu/menu.ui.meta",
+	"51093f2f8a8307371f1a8af58ef18c9d4f4a5acf": "maxim_batteryUp/components/menu/ending.json.meta",
+	"99e27ea1a874c092b0a3f0e3011c100aecc7b05e": "maxim_batteryUp/components/menu/instruction.json.meta",
 	"d9698eab123ae37365cdd2da6d24803cf00ee150": "core/landscapes/landscape_layer_map_base.lmap.meta",
 	"4adeeb0b6d51c42f1d758e50d3033d5042c23349": "core/properties/surface_base.prop.meta",
 	"f1b489a5d37e9f7c7d3f5e2c33457e3994c89f12": "core/properties/node_base.prop.meta",
@@ -366,14 +419,30 @@
 	"e85024bd5b98462a1708b32a8d88a4843cc41fab": "csharp_template/template_render_settings/template_virtual_reality.render.meta",
 	"e77b240fdbdf19c73608b12e9d6f6d78a9501484": "configs/default.user.meta",
 	"67fe9f496a4d79039243c163fb8e361424f2b1c1": "maxim_batteryUp/components/BatteryWood.cs.meta",
+
+	"3f09683c1d678ceb851126f25b858989096e7233": "maxim_batteryUp/components/menu/Information.cs.meta",
+	"480028ecba0ac3f5b3bff7fe091593ddf90360ce": "maxim_batteryUp/components/menu/EndInformation.cs.meta",
+	"91a5d8240e2208f156badb5d965bc5a9b32bbc71": "maxim_batteryUp/components/Respawn.cs.meta",
+
 	"e3f35b50b19c09181c6657905215e15a4403bc18": "vika/scripts/Light_signboard.cs.meta",
 	"c39d990281e598afac75df424082df8dd29ff50a": "vika/scripts/Blink_light_signboard.cs.meta",
 	"e4384844887649f4f17d8823b0de4516f649cf51": "Gasan/Shine.cs.meta",
+
 	"5621ca388c8a69756bc05662e99820721f375b9f": "Ark/Скрипты/TestComp.cs.meta",
 	"1442d5b12df571c70db8c1881b7214f08eb5b10e": "csharp_template/FP_controller/components/FirstPersonController.cs.meta",
 	"c3fbe1900fe27a449baaba2ec806a8f8340ab30b": "Ark/Скрипты/PlayerController.cs.meta",
 	"acd2b91de36351d566f6d1defe88edf60d94c5f5": "maxim_batteryUp/components/Battrey1_Enter.cs.meta",
+	"8d63ef66dd813d5c3186213f98775cb526627794": "maxim_batteryUp/components/Battery2_Enter.cs.meta",
 	"b3244c54f9ec1246b5d19028cf3d257d0b332c20": "maxim_batteryUp/components/BatteriesCounter.cs.meta",
+
+	"9d37d91de6eb0c8b704e2b240ea2d623d64eb42d": "Ark/Скрипты/Item_Test.cs.meta",
+	"eb537b6e0415226cbbb7ef67c713b10a510ec0ed": "maxim_batteryUp/components/menu/UIPauseMenu.cs.meta",
+	"0c83fbabbb45e9d029f9433dfec5b3d32de72ef0": "maxim_batteryUp/components/menu/UIMainMenu.cs.meta",
+	"8181fa1fe7380c2359195b740001036a93da0fbd": "configs/default.controls.meta",
+	"79ad2abc79a099de8417765f231ad6f9c956e1ea": "Ark/capsule_mesh_base_0.mat.meta",
+	"dca7fd6ce96f3967dbe0164f744c1889293fff1a": "Ark/box_mesh_base_0.mat.meta",
+	"1fdde4c0416f6d7ad531d5dee158fc048354ab7b": "Ark/Текстуры/Небо/sky_base_0.mat.meta",
+
 	"a69317e556c225790ed1aaa5323a85972a5e0e5d": "vika/scripts/light_cat.cs.meta",
 	"9d37d91de6eb0c8b704e2b240ea2d623d64eb42d": "Ark/Скрипты/Item_Test.cs.meta",
 	"71a55d9f028dba2ca90b3e5fcd3ea6c48be91097": "vika/scripts/Move_battery.cs.meta",
@@ -506,6 +575,7 @@
 	"b0b34b94d418de4df2c1f299c52e0b4222cfc95c": "Ark/volume_shaft_base_0.mat.meta",
 	"1fdde4c0416f6d7ad531d5dee158fc048354ab7b": "Ark/Текстуры/Небо/sky_base_0.mat.meta",
 	"0c0c7dd348f3cc7c80620a8c640a3a7878330ee0": "cube_mat_0.mat.meta",
+
 	"5a3785156554ca59ffde963c25862562a6023625": "Ark/Test_0.mat.meta",
 	"41c795ad227ea35686a13cdafa6cff0d4029811b": "core/materials/base/debug/debug_f0.mat.meta",
 	"13f20738d7a30e315d425c6f761e8e8dc2e56d6e": "Main_world/houses/materials/желтый_свет_дом1.mat.meta",
@@ -523,6 +593,17 @@
 	"c927583ee3e8d5e98dc5d6430436550f2abbb031": "Main_world/houses/materials/рамки_дом_1.mat.meta",
 	"99eb26fe9e1498de9ec4dec013284c44c4d4a60a": "Ark/Текстуры/Небо/sky_base_1.mat.meta",
 	"381837dbdffdc9deb24e954a11bc3bee319ab640": "core/materials/base/objects/clouds/presets/clouds_cumulonimbus1.mat.meta",
+
+	"c4afc38f8ae425df5118174404989bf611882704": "Ark/Модели/Кот/materials/material.002.mat.meta",
+	"27597d513b39b0da5dd5f7ceb78e998f3227b49f": "core/materials/base/objects/clouds/presets/clouds_cumulonimbus2.mat.meta",
+	"95e4d8555a80cf8bd7bbc4425cf80daf70f77082": "Ark/Модели/Кот/materials/material.003.mat.meta",
+	"fed94285ad8ca38f4372bf8c815adec43df17972": "core/materials/base/objects/clouds/presets/clouds_cumulonimbus3.mat.meta",
+	"6ec19b4e72ef9cc2f870cd3c521cd484ca0ed5d1": "Ark/Модели/Забор/materials/Материал.004.mat.meta",
+	"dcf858dbbb18283f07e188050eb173ff49ca14fc": "Ark/Модели/Забор/materials/Материал.006.mat.meta",
+	"382400a74c1e9c38db60219c48bdfc9d38041805": "core/materials/base/debug/debug_isrgb.mat.meta",
+	"ae3629f94680c7b8f470d296eb313c6194484007": "core/materials/base/debug/debug_min_distance.mat.meta",
+	"dc2fc6e94fc13574fd6cb34042ae6fc08c8575f9": "Ark/Модели/Кот/materials/outline.mat.meta",
+
 	"775e6e22ed9d6040646a172a33b2c7825b57f4f0": "Main_world/Islands/island_big_1/materials/земля_темная_1.2.mat.meta",
 	"29238000267262969822adc8f2d8f670fba36a9e": "Main_world/Islands/big_island_2/materials/бардюр_2.mat.meta",
 	"24a95e41a2f862e8ccffc50139f428d80c833a39": "vika/models/materials/бардюр_2.mat.meta",
@@ -551,6 +632,7 @@
 	"e2096e72e5e5475d43ac6154513e02941ee5e4be": "Ark/Модели/Кот/materials/outline.mat.meta",
 	"d2fb85cd009d7419f30c508dc1513dd243d6ef45": "vika/models/materials/outline.mat.meta",
 	"967886a98dcc47a90960ad412f4dd73f78d2a2c7": "Main_world/cat/materials/outline.mat.meta",
+
 	"5a01376970997d58816d82c6c4b83c118dcf31f7": "core/materials/base/debug/debug_curvature.mat.meta",
 	"17c5cdbb7509046da7417faa0c14db9b0eb329a0": "core/materials/base/debug/debug_lighting_denoise_mask_diffuse.mat.meta",
 	"f0c5b81dc85c4625d0385dc4cc94492adefbe6ea": "core/materials/base/debug/debug_diffuse_lighting.mat.meta",
@@ -640,6 +722,9 @@
 	"677357c9504e62d1e5820a405474d38fc29ce106": "editor2/materials/selection/editor_post_selection.basemat.meta",
 	"8e9a806514e1c10d2fab48f261dc1b7cbe909613": "configs/editor.boot.meta",
 	"b5bb8abbb36d74e7c095e5c0ae727fade3033979": "configs/default.boot.meta",
+
+	"b108d427d17d468a2b5e2f464d1d4972aaf73177": "Ark/Модели/Кот/cat (2).fbx.meta",
+
 	"0c6fc9c16d955b01e5c08de9777a18a2a5b1718e": "Main_world/misc/забор.fbx.meta",
 	"01b38aa8377adf9e0e24492079a6bdfa010578c9": "Main_world/misc/гидрант.fbx.meta",
 	"4624fb032e05d2b95376c46bb201feae1d83d338": "Main_world/misc/фонарь.fbx.meta",
@@ -662,6 +747,7 @@
 	"6edf7856597dbfd2e543be0e6a88485dec5b82cf": "Main_world/misc/металлоконструкция-мост (2).fbx.meta",
 	"660b73427e7de2ae6d2bf40981be0ceed07a0eb8": "Main_world/cat/cyber_cat (3).fbx.meta",
 	"d1836f20a66e0720257832988e653fb09a7b42a1": "Main_world/misc/мешок(с-мусором)_0.fbx.meta",
+
 	"a2bdb663d6390cddf33e8b881bceea2ccb68e9e1": "csharp_template/props/constructor/fbx/wall_0.fbx.meta",
 	"dc2c0ebf15cab136047710940ab7cf6d8af9875d": "csharp_template/props/constructor/fbx/ramp_0.fbx.meta",
 	"56755c095bedf5f7e1f887e62987b789aa07f197": "csharp_template/props/constructor/fbx/stairs_0.fbx.meta",
@@ -722,9 +808,13 @@
 	"469e23975076cf54283a854c89f36716aef90f75": "editor2/resources/template_materials/base/mesh/mesh_opaque_tessellated",
 	"d7f968bbf2a8c40a4dc9dbc04b2519b6ee4aa779": "editor2/resources/template_materials/base/mesh/mesh_unlit_tessellated",
 	"cd084ca19781982a6f861b5e5c25e7b92fe1696f": "editor2/resources/template_materials/base/mesh/mesh_transparent_tessellated",
+
+	"b568f4948b7123d03b4ebb3a2060d24174d7e96e": "maxim_batteryUp/maximworld.world",
+
 	"a0715d981f9a3d98972381e7927667913639d41f": "Main_world/my_world_0.world",
 	"d16fa1109d37012362b259ffedd3589295f82c81": "Main_world/my_world_meshed.world",
 	"04fd723ebef6a77dc47b447ef96ce5449da5f346": "vika/new_world.world",
+
 	"60586bbbe11bedde064e7ba5e6cbf8c084a7151f": "Unigine_ShinyWorld.world",
 	"2ee147f59836917fa72331c206bce39903fa3923": "editor2/resources/template.world",
 	"3e8feaddcdd97f5f715279d7c4ff7187e5999046": "Ark/World_Ark.world",
@@ -844,7 +934,11 @@
 	"d165e6b36b9d7582261544184a93c9543ee463b1": "shader_d3d12_dxc.cache",
 	"a866c7a765c332095c09d49c7cff22fce11a6705": "unigine.cache",
 	"f7e461876c64f0fdbdf2e3c6cabcb3822a09895c": "editor.cache",
+
+	"0b7c9366166b753c9cfde090f4c99981eb59ce6d": "d3d12_nvidia_geforce_rtx_4060_dxc.gpu_cache",
+
 	"e838e50eafcaf99db77970fcf0480d209a851091": "d3d12_nvidia_geforce_gtx_1660_dxc.gpu_cache",
+
 	"71d8622f751cc10ba2f9cace438bd209ae293524": "core/locale/unigine.locale",
 	"694c3df50de2811bf23df33c74b20735559bc1a2": "core/import/xatlas/README",
 	"d7c2274d6378a0480073c707d34bd8ba59cd10d1": "bake_lighting/env/ep_10.texture",
@@ -927,9 +1021,12 @@
 	"3e355709415efc9b3d0ed8310b6e19caae57f276": "bake_lighting/shadows/3e355709415efc9b3d0ed8310b6e19caae57f276.texture",
 	"7338f4804ad7d8f327b6df17560a8856f5e4a976": "bake_lighting/shadows/7338f4804ad7d8f327b6df17560a8856f5e4a976.texture",
 	"e7653bca291f78a1a4d1398c96a8a77b70bd769e": "bake_lighting/env/ep_6.texture",
+
+
 	"b9065a7a4748ef4db146a5696844d193c55bce58": "bake_lighting/env_probes/ee68e6bfb84e401ad31f08b3634046f72a465da6.texture",
 	"fd057a0fa2e78282385e35037f8a86b12b4ef5b6": "bake_lighting/env_probes/fd057a0fa2e78282385e35037f8a86b12b4ef5b6.texture",
 	"03eb1f860211e01943f7c2fbb1cb2f65c474f2d6": "bake_lighting/shadows/03eb1f860211e01943f7c2fbb1cb2f65c474f2d6.texture",
+
 	"1540a549bab0193853c291c085bb7e7fae983c86": "editor2/resources/template_bake_lighting/58ef9d829b0dbef93c89dc04b97cb7934643d7d6.texture",
 	"dfdd667e73fd0b1b5329c3369c6047621bf0d217": "bake_lighting/shadows/dfdd667e73fd0b1b5329c3369c6047621bf0d217.texture",
 	"4f91fa2e4aa969995f93a522a9b220a7518a7c37": "bake_lighting/shadows/4f91fa2e4aa969995f93a522a9b220a7518a7c37.texture",
@@ -1241,13 +1338,26 @@
 	"2fa3cf7633b12ffa6f4639102ad96ef46e449f05": "configs/default.config",
 	"155515cab35cbe1d6edb7418ba66dab5ea490020": "maxim_batteryUp/pics/фонари.png",
 	"26b87fed98b1e132cae61c1ac60e0e5c7ff4795b": "editor2/material_graph/.node_img/vertex_interpolation_0.png",
+	"1c0305915eac3ea942c0865c248eaccc5c4c0542": "maxim_batteryUp/ui/new1/slide_1.png",
+	"99389889721e0fd0fdf5cf3f237c1837fab88e69": "maxim_batteryUp/ui/new2/slide_1.png",
 	"dced57e197522b4e1e3d98f8b80b026bfe165efe": "editor2/material_graph/.node_img/vertex_interpolation_1.png",
+	"4e177f41401f77417425b31b671dd20f7690c141": "maxim_batteryUp/pics/pic1.png",
 	"9195ecd537f65680bd98a5cf39031964cad998cd": "maxim_batteryUp/pics/скрин2.png",
 	"ddf6f43140849e40570f642e0f5124e3efc9547f": "editor2/gui/preview_na_32.png",
+	"8f2ff95378125da54f7781048c1fa4655fcca8d1": "maxim_batteryUp/ui/new1/slide_2.png",
+	"01410dd313f09d11de1fa9f9ff87c4bedede8b73": "maxim_batteryUp/ui/new2/slide_2.png",
+	"c5ca372c462b0895f2a3aa108f5deba18b937b63": "maxim_batteryUp/pics/pic2.png",
+	"3282c01b2173c5612bb19d1ef43806d10ed4b874": "maxim_batteryUp/ui/new1/slide_3.png",
+	"64bda87ac15db0dadaab163c0182ad11dae1338c": "maxim_batteryUp/ui/new2/slide_3.png",
 	"e3a904a76cb5b2d6693ff59c58c4945ac881fc05": "editor2/gui/preview_na_24.png",
 	"b1dc3acb66de24a84c21b110777088ead25e9509": "editor2/gui/preview_na_64.png",
+	"237d2c41e7df68297844d8eafb1fa2a2e3a9df8f": "maxim_batteryUp/ui/new1/slide_4.png",
+	"bd0dfd4ad9bfd523ade6578ca6d44b9b329afadc": "maxim_batteryUp/ui/new2/slide_4.png",
+	"980ca90b172eed46b4f5bb4e17109080772eab24": "maxim_batteryUp/ui/new1/slide_5.png",
 	"0434fda1d5de1124d1ca3fb8cec06b1e9adeb7be": "editor2/gui/preview_na_16.png",
 	"764a11bb30bd852a1e9f33aa32539232d1efbda0": "editor2/gui/preview_na_256.png",
+	"90da4f736370016d92877ba4f7f031cb573665f1": "maxim_batteryUp/ui/new1/slide_6.png",
+	"9a119129d551189df77ba87216751ff17afea137": "maxim_batteryUp/ui/new1/slide_7.png",
 	"44edf9ada60de9b31a79f0dacc2363ba2ca2c51b": "editor2/gui/preview_na_128.png",
 	"de94ef65787e716e2b79c4ec1226fcbbe1b9d7d2": "editor2/gui/preview_na_48.png",
 	"8b97db87a945bc01d0a4b5c6f09c85a84aa70b5c": "core/gui/dialog_image_a.png",
@@ -1285,10 +1395,15 @@
 	"bbe67499c95c79e30b17b5d07e0dbed36df52e16": "editor2/gui/light_world.png",
 	"1ac2d923b53b0a5e44bffe72fac55ab479502328": "editor2/material_graph/connector_expand.png",
 	"7d9b1c1df86a76b7a156b1c4843c9611aa431aea": "editor2/gui/physical_wind.png",
+
+	"7f4950681aeef9a91abe6a1c735c3f4954ba51ee": "maxim_batteryUp/ui/background.png",
+
+
 	"28758d607afb7c57d243757e6947833cc9dbad9b": "Ark/Текстуры/Небо/sky_base_background.png",
 	"002524bb2fe17a89d3a1c7c0c4f89682f7898379": "core/gui/gui_background.png",
 	"c64e6da56878277019e0322c54ba218e996a5312": "editor2/material_graph/gui/gui_background.png",
 	"92f4436fc21ea81f35c0c10414f1d9c4801ea28d": "editor2/material_graph/gui/gui_combobox_background.png",
+	"aab19f126e4adf39a12df1d4a0288a7868d36034": "maxim_batteryUp/ui/infoBackground.png",
 	"6366b1955249f4ddedecffe2086c4f829a8ce5c3": "editor2/gui/editor_sound.png",
 	"029db5b955aa8657386ca670f6806b68882e05b6": "editor2/gui/object_billboard.png",
 	"a3b5337b5ee9309a87d9f580510f7d6a25366c39": "editor2/gui/light_environment_probe.png",
@@ -1376,6 +1491,7 @@
 	"78592c1ce78ec682e89f5558ff40fcf7a8deae68": "core/textures/sky_base_mask.png",
 	"2bc8c1dbcb2b1e5a068f7f60bdde1f955400af99": "editor2/gui/terrain_mask.png",
 	"c03563a1e801bd4a6e6a5e5e7a6abd6a1420c86f": "editor2/gui/panel_move_vertical.png",
+	"f7f4188129e545a580279637db63d99e6aba54b1": "maxim_batteryUp/ui/backgroundFinal.png",
 	"052c31034ad05c62ac165ea801d66cc6c92d0781": "editor2/material_graph/.node_img/interior_mapping_texture_2d_original.png",
 	"0bfe3da997224b823a0e2e06f8f6da074e0d0637": "editor2/material_graph/.node_img/interior_mapping_cubemap_original.png",
 	"a2c122971fe79e49cc03d04cedf73f9f4c71d675": "editor2/gui/panel_make_internal.png",
@@ -1441,6 +1557,7 @@
 	"33821f97da8215c4d997b14cfe67ed1eecb42b75": "core/gui/dialog_image_r.png",
 	"cae1d8e5004faa5b3d4f5b721af3c6fb135e6a93": "editor2/gui/action_clear.png",
 	"e177dbe30117b3b8972eae32efe44fe6e377ace8": "core/systems/widgets/images/widget_track_key_linear.png",
+	"72813836fd10367c227e2fe77a739218d9af46c0": "maxim_batteryUp/ui/star.png",
 	"47a7b7730c6f10992ea59bd8987730cda15c3e71": "editor2/gui/field_spacer.png",
 	"73ea999779c34f1e573445965415c13a7bd606ac": "core/gui/gui_hspacer.png",
 	"40ea4af7a161206efa613c2c301f234d074153d5": "editor2/material_graph/gui/gui_hspacer.png",
@@ -1507,14 +1624,17 @@
 	"05ab7569224a23e25e2635600643a1ea9b3d0f26": "editor2/gui/properties_inherit.png",
 	"cacfb36dd1c072f95017059a418f2bf53ea150db": "editor2/gui/materials_inherit.png",
 	"4b4c9447916ab8a488b8a1bcc90920f23a50b6a5": "editor2/gui/editor_quit.png",
+	"3f9124d2146769617e7e38f75e33c5e62a70de22": "maxim_batteryUp/ui/exit.png",
 	"33383e4f5ad92f333a098164c978e1bbcf5dde6d": "core/systems/widgets/images/widget_track_key_constant.png",
 	"8150c9f1fd01a301396444ee67c3bea59ed0bc3f": "editor2/gui/materials_reparent.png",
 	"ff8a7d9b817e1a20ab77fe20460a7b247fc39d59": "editor2/gui/node_pivot.png",
+	"af4b8904425ba1ade11133b55dc38fb68f74a3cb": "maxim_batteryUp/ui/start.png",
 	"b9925283c77db6943c336e52f8e9e7eaeb188008": "editor2/gui/nodes_export.png",
 	"8bcb6da3ca0b6937fbcb10f21263a4bedd2b31a8": "core/gui/dialog_file_list.png",
 	"a69f6434c9cb8bfe9fe0cd8af20df6dfd2d0b756": "core/textures/water_global/shoreline_lut.png",
 	"cc375cb395861357cbddadc2075dff459051f9f8": "core/systems/tracker/editor/images/tracker_time_next.png",
 	"50d692bf4e18599f2d5a6494d02793b0fd14eb5d": "editor2/gui/editor_next.png",
+	"bdb6abaa4b8e842f2e86f9f94269dca2a74991d5": "maxim_batteryUp/ui/main_menu.png",
 	"47bfc31d2a7a198b5d411cc4cef51747f9834dea": "core/systems/tracker/editor/images/tracker_time_prev.png",
 	"2b6d284d328bc6c27b6507fa58816612dd4aaebb": "editor2/gui/editor_prev.png",
 	"238a093bcd7a537576d1fd2a249feb20f39eab20": "editor2/gui/action_view.png",
@@ -1539,9 +1659,11 @@
 	"4943f735766c5419677e8f7c7b8becf01ad613e2": "editor2/material_graph/gui/gui_spinbox.png",
 	"66d1341fffe50bee129f5d74425753e25aaff9bd": "core/gui/gui_combobox.png",
 	"cd3057a9c34b11585e88f6a08f15948766a99e66": "editor2/material_graph/gui/gui_combobox.png",
+	"7cce84302f920c14c34e279626cff95266959888": "maxim_batteryUp/ui/TransparentBox.png",
 	"ab8f8bddc19b70d1c96e3ccae8c79424c35dfdcb": "editor2/gui/file_icon_browser_linux.png",
 	"fe26bc3f350baa555898069eabde7211ccecac74": "core/systems/widgets/images/widget_track_arrange_y.png",
 	"314ea88d36e1ea0f94cad274adabb3f3fdc9f81a": "editor2/gui/panel_axis_y.png",
+	"f1f88ad24d6edeff95a80671665ee9476553bd51": "maxim_batteryUp/ui/play.png",
 	"807c5269154b457c6c4e99c6b9a2a372a36974f7": "core/systems/tracker/editor/images/tracker_time_play.png",
 	"32fc843711a0e1a7253b29b680b3658989fecdcc": "editor2/gui/editor_play.png",
 	"fc51c845551d70b380f8c64ce0e4092714a45232": "editor2/gui/object_sky.png",
@@ -1549,6 +1671,7 @@
 	"fce904c38ff7af31f77ed568e9f41dc83f6a8d41": "editor2/gui/player_dummy.png",
 	"b569d79393fceae760a10922d0b6a6ea518f5658": "editor2/gui/object_dummy.png",
 	"846961538eebfd51714617388afcfe0271da4151": "editor2/gui/editor_copy.png",
+	"06585da0cd8961e49fc9d4eb2c2b066d6a6015ed": "maxim_batteryUp/ui/battery.png",
 	"84c0069f6f0d3747796eb1f4aac6edfe8419583d": "editor2/gui/action_empty.png",
 	"80020a37b556892350f3b46c1dfa7a41d0d16915": "editor2/gui/editor_empty.png",
 	"fc971beb88604a377a967cb002c371be30bea529": "core/systems/widgets/images/widget_track_arrange_xy.png",
@@ -1800,6 +1923,13 @@
 	"274020bbc113cedf2f832046e9635aa9caaa3700": "core/subgraphs/blackbody.msubgraph",
 	"8779019973394b1d8701b930103ff6384c555ca9": "Ark/box_0_mesh_base.mgraph",
 	"12bd71fe74d80852dde52999f2ff76acfbd3dedc": "Ark/capsule_mesh_base.mgraph",
+
+	"55759b9be37562a960c725e73ac117ae032854d4": "maxim_batteryUp/capsule_mesh_base.mgraph",
+	"ba64be77d5a7f156136a5afd1d15cba6ed072417": "maxim_batteryUp/plane_mesh_base.mgraph",
+	"07af1787615dad183d6c7472c402eb9efa75e71a": "maxim_batteryUp/cylinder_mesh_base.mgraph",
+	"e77775a6dec6632f26f512a1f89459ed9215a744": "Ark/box_mesh_base.mgraph",
+	"d09bf1a52cb81adbf84ab48694813611380a417d": "maxim_batteryUp/box_mesh_base.mgraph",
+
 	"969e4d3f76b57cf824ac22a5e101e97be2e89b91": "Ark/Текстуры/Небо/material_graph_mesh_base.mgraph",
 	"4f5493e9efd76dd3df83e9faae17a883f8833dae": "cylinder_mesh_base.mgraph",
 	"07af1787615dad183d6c7472c402eb9efa75e71a": "maxim_batteryUp/cylinder_mesh_base.mgraph",
@@ -1807,6 +1937,7 @@
 	"7f882eb916da7dccbc58ea5c77a4fb9cc262d92d": "Gasan/box_mesh_base.mgraph",
 	"d09bf1a52cb81adbf84ab48694813611380a417d": "maxim_batteryUp/box_mesh_base.mgraph",
 	"a1472797b081e5d9ed1889e6d7b61f32733770f1": "material_graph_decal_base.mgraph",
+
 	"f554202259d421198cd597a44cb6feb3eab03476": "csharp_template/props/constructor/fbx/materials/floor_base.mgraph",
 	"622ab0e881be5f27f7d2525aa9b6fdf19070de9c": "csharp_template/props/primitives/materials/primitives_base.mgraph",
 	"b875f6b0b1e69a4f3857436272486b596092dce4": "csharp_template/props/material_ball/material_ball.mgraph",
@@ -1815,6 +1946,11 @@
 	"90cd655bdfbfce522bcb5680f6c9fc4054b71ec0": "Ark/box_0.mesh",
 	"926f462dc8089910d89b875a5f61445ea4d66d9b": "editor2/resources/meshes/viewcube.mesh",
 	"1f8dde80187e585bb08d7231adde67bba4718e67": "Ark/capsule.mesh",
+
+	"57def0d6356d39b14d60a73a0819e2c9ec19267f": "maxim_batteryUp/capsule.mesh",
+	"21b0d3d4c0265c4fa38d0d267a1fa114fb437af6": "maxim_batteryUp/plane.mesh",
+
+
 	"88c672af6ab1177c29a264c6cec93ce326e9e612": "core/meshes/plane.mesh",
 	"d22434214be7bafb75001301cc320847fb3ee551": "core/meshes/sphere.mesh",
 	"188b2cea6b3e2eef7d08360730375261f08e67f4": "Ark/Модели/Остров/exported_mesh.mesh",
@@ -1826,7 +1962,10 @@
 	"1e32489d97cb22fdd454fc44dc9ae09ca71e816a": "editor2/meshes/material_preview.mesh",
 	"5ae6c6334b2b9bc6aa8961423c1c749a6c7c4178": "editor2/meshes/custom_material_preview.mesh",
 	"71929e68956e66137d55be39ed7667f4ebc0032f": "Ark/box.mesh",
+
+
 	"5038c65733c231789f1e1b206940ab8e08cdcc34": "Gasan/box.mesh",
+
 	"66883599ee5e6c08f22faedcc7f370eda028cf44": "maxim_batteryUp/box.mesh",
 	"49631a6048f399ed9843dc46f9fada157432821d": "core/meshes/box.mesh",
 	"74b62d31123352e02407242e2bd78a58765265db": ".editor2/brushes/circle_hard.brush",
@@ -1845,8 +1984,10 @@
 	"50589c91d8685747e0a1b8e8b18238a0a248616e": "editor2/brushes/brush.basebrush",
 	"03c89d5554a7d39b6b1a711c25e2fe03d0e0c482": "editor2/brushes/brush_smooth.basebrush",
 	"d9ef302b66b56f8af0fe0df0b622b1ac7eae8769": "core/unigine.ui",
+	"d14e0af8fc013a61763f5eb98d9145beb9c9462f": "maxim_batteryUp/components/menu/pause.ui",
 	"8b1b93491c8312ab9be687c0422ba90722cdc286": "core/scripts/system/wall.ui",
 	"c54947abec635d4ff8ae2b70dcb38cd4e46d02e9": "core/scripts/system/stereo.ui",
+	"faabdb61510b549c7ac1fbdf72f51a87cbaf668b": "maxim_batteryUp/components/menu/menu.ui",
 	"6b6c1b1d4c8d3becb637c50a084f1843ced5730b": "editor2/resources/template_materials/base/decal/decal",
 	"7896b5d903dfdc0b84b117f67a5cad5d3efb6ce7": "editor2/resources/template_graphs/material_graph_decal",
 	"aea7620f612e459b220ab72edf34168c6fc4aa84": "editor2/resources/template_materials/base/scriptable_post_material",
@@ -1867,6 +2008,8 @@
 	"df8445a7ffffc9630f79ea9ca2deaff12bbb7505": "editor2/resources/template_shaders/geometry.geom",
 	"41f8c3550183bc5f44704ca24355712caf294983": "core/version",
 	"e576bdeb23454ea884be06b0519a7f67ea8cb729": "editor2/meta.json",
+	"f05b27fed787478f09e539600cc300e790651930": "maxim_batteryUp/components/menu/ending.json",
+	"71d5691aa2e4740a5ffcaca02fdd273cd844866c": "maxim_batteryUp/components/menu/instruction.json",
 	"a9e20edb53ea36d71823f0602b131a638d505499": "core/import/xatlas/xatlas.json",
 	"7c88279f942100ad108306f44a0669ccb0f5b13d": "editor2/material_graph/uniforms.json",
 	"5fc3231742e3092cd868aaccb7eb2a4dd9e0f2f5": "editor2/material_graph/node_descriptions.json",
@@ -1931,27 +2074,49 @@
 	"c9626469b8d0dd5e143353c67f6e60f4b24ef6f7": "editor2/resources/template_render_settings/template_low.render",
 	"2e602efe80d88a458f4276e09a0c3cbfdde92312": "csharp_template/template_render_settings/template_virtual_reality.render",
 	"d0469d97bb3ba8c137e2b996845a126bf4d75aac": "editor2/resources/template_render_settings/template_virtual_reality.render",
+
+	"98e86d98b0ee089930242cc2c2252450f7daef7f": "configs/default.user",
+	"1f99c18d7df1d63131692774427cf30f3f26851a": "editor2/resources/template_graphs/material_graph_decal_water",
+	"a550effff0d165c3c8e51f09fd728f5cc0d78677": "maxim_batteryUp/components/BatteryWood.cs",
+	"3ffb4d0bb6199844944e8b5d5c5863580a8c43b7": "maxim_batteryUp/components/menu/Information.cs",
+	"5417e7aac8981d65e81488ec306004ddf981803c": "maxim_batteryUp/components/menu/EndInformation.cs",
+	"d3d5102d28fbbacb87d6095ffcc9679c1e066a61": "maxim_batteryUp/components/Respawn.cs",
+
 	"698d71025e1db7f4b0795a41afc6146df438bf25": "configs/default.user",
 	"1f99c18d7df1d63131692774427cf30f3f26851a": "editor2/resources/template_graphs/material_graph_decal_water",
 	"a550effff0d165c3c8e51f09fd728f5cc0d78677": "maxim_batteryUp/components/BatteryWood.cs",
 	"59ede5daac2c427f9d68a49687a7eed071368070": "vika/scripts/Light_signboard.cs",
 	"66d5c062be6f523ee83cf028909795d7cfa3842f": "vika/scripts/Blink_light_signboard.cs",
 	"5cc6cd428e59b38ae152b7c908f1f40da4372187": "Gasan/Shine.cs",
+
 	"f4694316964720aa7396f1b016997d784c761e25": "Ark/Скрипты/TestComp.cs",
 	"5fc06ee29974a0d934a294642d945473e5d80f36": "csharp_template/FP_controller/components/FirstPersonController.cs",
 	"03af50aee47c743b5f3cdb9c9552b552bb8951b1": "Ark/Скрипты/PlayerController.cs",
 	"4cf2f2b30bc7bdb35a22f7cce928dee90fe3058b": "maxim_batteryUp/components/Battrey1_Enter.cs",
+	"08610c14037e0a304b215a8545b082f75c258692": "maxim_batteryUp/components/Battery2_Enter.cs",
 	"97d3c6d25bbd9e0a77e1738629f30be8e031423e": "maxim_batteryUp/components/BatteriesCounter.cs",
+
+	"815b12b3ba7682b51a295d224ca2abd05245ed03": "Ark/Скрипты/Item_Test.cs",
+	"d3489adc02699b45d1b5066d1f0d8cc4f566cbc3": "maxim_batteryUp/components/menu/UIPauseMenu.cs",
+	"744fa56d244f4ec40ee4238bea92adaae8e7d277": "maxim_batteryUp/components/menu/UIMainMenu.cs",
+	"535e791fab62244a62cc8b0df798b3a8b4c404a0": "configs/default.controls",
+
 	"0e502dcbfee5df0d4cbef14b0d8d288b4f0f20b8": "vika/scripts/light_cat.cs",
 	"815b12b3ba7682b51a295d224ca2abd05245ed03": "Ark/Скрипты/Item_Test.cs",
 	"61d637dfcd10b08cbe0c2345755bfc004ca600f0": "vika/scripts/Move_battery.cs",
 	"3bc2a3fa3734e9c9751c4e5f9a42ad338d95df5e": "configs/default.controls",
+
 	"89cfaff57584b34c67fadd3ccd12ee19bed11ba2": "core/systems/tracker/parameters/sound.parameters",
 	"7c6bc9b7d0ef34bdbc7d99ec1e7fbf0ab07a0c95": "core/systems/tracker/parameters/node.parameters",
 	"d2061c3d0c94f52a030e30aaa0d6aa1414d89b2b": "core/systems/tracker/parameters/game.parameters",
 	"55fc6531ac59e21e75fdc3083b655ac0c074f68e": "core/systems/tracker/parameters/material.parameters",
 	"aa581fc1bd3efa0edae400fecb975f52c800038f": "core/systems/tracker/parameters/render.parameters",
 	"0f33a3cbddea612d0aeec77ac0916d310e31f4f0": "core/systems/tracker/parameters/property.parameters",
+
+	"4fdb946e72932663a3ad49379d23078d73ccefbd": "Ark/capsule_mesh_base_0.mat",
+	"4b197e9e541b7c66a16fe327dc8a59ada98c7c2d": "Ark/box_mesh_base_0.mat",
+	"95f95a919f844d6b7b7d10abbd9d0d268c242fca": "Ark/Текстуры/Небо/sky_base_0.mat",
+
 	"c9d0d84503e659eda07726ed78b292e9e0046862": "Main_world/misc/materials/Автомат картридер.mat",
 	"536e3f6ae976bfe4e0e37c794db79b06e7a66d10": "Main_world/houses/materials/высотка.2.вывес.mat",
 	"cde04f7c187c1010fa25186e7c90ac6ca551d5a8": "Ark/Модели/Кот/materials/Нос.mat",
@@ -2080,6 +2245,7 @@
 	"645de380db4ad060593fbfaf6fb117901c05aee7": "Ark/volume_shaft_base_0.mat",
 	"95f95a919f844d6b7b7d10abbd9d0d268c242fca": "Ark/Текстуры/Небо/sky_base_0.mat",
 	"f7432fc772c592ac64257d9203c7cda53461c15b": "cube_mat_0.mat",
+
 	"dec3d6b704c5058c08ca8e8c756e24939ed1ef4c": "Ark/Test_0.mat",
 	"0e7e317b9d33a9fda598b48190874861c85b12ef": "core/materials/base/debug/debug_f0.mat",
 	"1b62cb729d5b7e62c42c1ee17509f9e069183fd8": "Main_world/houses/materials/желтый_свет_дом1.mat",
@@ -2097,6 +2263,13 @@
 	"9ed86fded2db7e7176a5895d09ace649b16cf864": "Main_world/houses/materials/рамки_дом_1.mat",
 	"18d3e2ab0e1f4fbd8a8733310d90001612b4bb5d": "Ark/Текстуры/Небо/sky_base_1.mat",
 	"daef57d4eb8c9972a8ab978e86a00fda800ede55": "core/materials/base/objects/clouds/presets/clouds_cumulonimbus1.mat",
+
+	"23e882c9c9a718329a714e46a4031ab386dd4d06": "Ark/Модели/Кот/materials/material.002.mat",
+	"19f23c6efb45437ae727364cdaba360dfbfa1794": "core/materials/base/objects/clouds/presets/clouds_cumulonimbus2.mat",
+	"2b024b233bfee88e52d368e8469f2e713a662a28": "Ark/Модели/Кот/materials/material.003.mat",
+	"b91d1f5e18e240e6cbecfc42f967b361b8e7975c": "core/materials/base/objects/clouds/presets/clouds_cumulonimbus3.mat",
+	"744569e69e0ec05947fda014abc06bf04529d509": "Ark/Модели/Забор/materials/Материал.004.mat",
+
 	"10a46417f05058b930b393ef705d22c3bbaa8305": "Main_world/Islands/island_big_1/materials/земля_темная_1.2.mat",
 	"988bbe6d22ac31692f00ce85c178e09079f2f06b": "Main_world/Islands/big_island_2/materials/бардюр_2.mat",
 	"28c7de2706c2330426c9d6e7bc167a4aa8fda61f": "vika/models/materials/бардюр_2.mat",
@@ -2119,13 +2292,18 @@
 	"744569e69e0ec05947fda014abc06bf04529d509": "Ark/Модели/Забор/materials/Материал.004.mat",
 	"d67b48248c5f17b7aaf822838462915134955f3b": "Ark/volume_fog_base_4.mat",
 	"ea56e40c53a71c8addb63e4b30bc2c2bc3d96c03": "Ark/volume_fog_base_5.mat",
+
 	"f9ebad88f0a9036feeeaa3665d93ed5d61750823": "Ark/Модели/Забор/materials/Материал.006.mat",
 	"db82837ba662adfb0be360cdf241525adbec1e10": "core/materials/base/debug/debug_isrgb.mat",
 	"89ef8e65d71060983b342ef244c7d4adec403413": "editor2/resources/template_materials/ground_grid.mat",
 	"7f2b4ca9ffc9a62a10ae36d27f6a1defd84c4f10": "core/materials/base/debug/debug_min_distance.mat",
+
+	"5224770d1bd50740f29b205a24b9c7235ca85d9a": "Ark/Модели/Кот/materials/outline.mat",
+
 	"5338deea7269d9a282d27a8c84905e2ad9c512b6": "Ark/Модели/Кот/materials/outline.mat",
 	"ad4360bbcd690d47ed73557b13958ce416f95e33": "vika/models/materials/outline.mat",
 	"684c0cfb5eb13417285292533c30f96265c989c9": "Main_world/cat/materials/outline.mat",
+
 	"78d84dc3a3cba7c690d98d08b9b67563ac0ad06e": "core/materials/base/debug/debug_curvature.mat",
 	"6d213b7d0c54a98cf9c0e835c1a2a9a258777ac4": "core/materials/base/debug/debug_lighting_denoise_mask_diffuse.mat",
 	"337d91ecaff0afd99eaf135c6ce22768cca8d0c7": "core/materials/base/debug/debug_diffuse_lighting.mat",
@@ -2399,7 +2577,11 @@
 	"85aa50ef5742292b7de3cc84682473055960240d": "core/materials/base/objects/terrain_global/shaders/tessellation/heights.cont",
 	"307b159b95a0a12c1f0c940a945ed39a77ba3700": "core/materials/base/objects/water/global/shaders/default.cont",
 	"6bf03e8fb3e7f53d06e9e4fd6cde0442f6a3e7d0": "configs/editor.boot",
+
+	"00adf857ba724f002a3161560cb34fc36ec73c6c": "configs/default.boot",
+
 	"f9925b885c587300a9484aa52e187ccfb305144c": "configs/default.boot",
+
 	"34aed2c5c3023810883036cc86886bbcfcbf6eb2": "core/materials/base/render/panorama/360/panorama_360.vert",
 	"dbeb9a978eee51ac0ee1e2969f48cf7547f85bac": "core/materials/base/render/antialiasing/fxaa/fxaa.vert",
 	"d7bb192b525203109bf7c35ab10d85652b161dd0": "core/materials/base/render/stereo/hidden_area/stereo_hidden_area.vert",
@@ -2461,6 +2643,9 @@
 	"7481a671f0076637988ac74805a7570ac33410ce": "core/materials/base/render/lighting/lens_flares/visibility/visibility.vert",
 	"835ae78338ecf2516145e7288e98919e8e4bea01": "core/materials/shaders/default/empty.vert",
 	"d7054dc13a3fa8c1005b86fefaca7d30bb01c18f": "core/import/xatlas/description.txt",
+
+	"9b98785902dfe72849cfacf0a54fff5a497e4369": "Ark/Модели/Кот/cat (2).fbx",
+
 	"60fabff52383587426047c9d1551a1eee59855d2": "Main_world/misc/забор.fbx",
 	"0bf0698cee0988d0d9233184fe4588151c99547d": "Main_world/misc/гидрант.fbx",
 	"ea0cd7bcf603261a087fe1b4326997881c22d66d": "Main_world/misc/фонарь.fbx",
@@ -2483,6 +2668,7 @@
 	"3c3fdf71386f9a7264b4d199d7fa7d6f3b17fcfe": "Main_world/misc/металлоконструкция-мост (2).fbx",
 	"a1d52e40682b70a35aba7f3545089dd6c98b5ca3": "Main_world/cat/cyber_cat (3).fbx",
 	"e1ff947f1b63eab80ef4d3676ddf691cc4332f64": "Main_world/misc/мешок(с-мусором)_0.fbx",
+
 	"6fda30c49d158553cec0ca96559700fdd833ce38": "csharp_template/props/constructor/fbx/wall_0.fbx",
 	"4e16f088d4b75a47e8a5d2fab9544611114a483c": "csharp_template/props/constructor/fbx/ramp_0.fbx",
 	"6f545c057cde9da0ab2ab47f91ebb7d28426f509": "csharp_template/props/constructor/fbx/stairs_0.fbx",
@@ -2530,9 +2716,12 @@
 	"874169d680d2973d7457ef789107ec77d9ac5f6a": "csharp_template/props/material_ball/fbx/material_ball.fbx",
 	"38215ec8a36c738707279b3a89f4f15166ee7a7c": "csharp_template/props/primitives/fbx/cylinder.fbx",
 	"683667985250c617f1b52c8a0bdb3261181c284c": "csharp_template/props/constructor/fbx/template_buildings.fbx",
+
+
 	"56e644e0c7c23765fd7b1ea8ac4b22645870507e": "Main_world/Islands/ступеньки/Stairs.fbx",
 	"2732cd9af3ac2ad6f785cbda37710a24fd1ca1a2": "vika/models/cyber_cat.fbx",
 	"ad7dbfe09f1fbfc1aa1079a892e75cfa6e9f337e": "Main_world/cat/cyber_cat.fbx",
 	"c9eb34a4a3066b8b4f02cc41aa38f82471f19dff": "Main_world/houses/House_MPU.fbx",
+
 	"37fa04b3fdde97dc4f847a1840e1f48bc9f611b1": "editor2/resources/template_graphs/material_graph_empty"
 }

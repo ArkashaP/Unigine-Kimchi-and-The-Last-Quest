@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>d3489adc02699b45d1b5066d1f0d8cc4f566cbc3</guid>
+	<type>component</type>
+	<hash>186573f2</hash>
+	<runtimes>
+		<runtime id="d3489adc02699b45d1b5066d1f0d8cc4f566cbc3" name="UIPauseMenu.cs" link="0"/>
+		<runtime id="fa83f41ab081174b4ce7e3835641262b1a011fa9" name="UIPauseMenu.prop" link="1" type="4"/>
+	</runtimes>
+</asset>

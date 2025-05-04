@@ -834,7 +834,7 @@
 					<transform>-1.9999963 -2.8421663e-13 -1.6053549e-06 0.0 1.2040081e-06 5.3643754e-07 -1.4999878 0.0 2.0795011e-13 -0.99999076 1.788123e-07 0.0 -2.0000288 2.5680852 5.2499986 1.0</transform>
 				</node>
 			</node>
-			<node id="784603924" type="ObjectMeshDynamic" name="ground_plane">
+			<node id="784603924" type="ObjectMeshDynamic" enabled="0" name="ground_plane">
 				<fps_visible_camera>-1</fps_visible_camera>
 				<fps_visible_shadow>30</fps_visible_shadow>
 				<fps_invisible>0</fps_invisible>
@@ -869,7 +869,10 @@
 		</node>
 		<node type="NodeDummy" id="1368583642" name="lighting">
 			<properties>
-				<property parent="ffb668a0dbafe7edefd34b3499d2692c78974c2c" guid="3a9803480e58fabe6f893c5ca57534b72ae63154"/>
+				<property parent="ffb668a0dbafe7edefd34b3499d2692c78974c2c" guid="77f73e87caf3ec491e622fde56a7cc517758d422">
+					<parameter name="texturePath">guid://df49839e14c95406e9825e6ffcbb11f310317e68</parameter>
+					<parameter name="texturePath2">guid://16cc8dea0607a3fff26f2ccde6b4279009460b1f</parameter>
+				</property>
 			</properties>
 			<transform>0.99999994 0 0 0.0 0 0.99999994 0 0.0 0 0 0.99999994 0.0 0 0 0 1.0</transform>
 			<node type="LightWorld" id="824505625" name="sun">
@@ -908,10 +911,14 @@
 				<shadow_screen_space_softness>0</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.200000003</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="f638bd1e2094e74428492df8f04936e9d02bd48d"/>
+
 				<baked_depth_texture replace="83365cb4377ac2440d20e371af213530d01b6307"/>
 				<baked_depth_texture replace="f28ad6e4790c557a2290b529e7960bb5060bc77a"/>
 				<baked_depth_texture replace="f638bd1e2094e74428492df8f04936e9d02bd48d"/>
 				<baked_depth_texture replace="34adda433dbedc2ef80f8d9c0ca4206fdc2d4f1b"/>
+
 				<lens_flare_enabled>1</lens_flare_enabled>
 				<lens_flare_texture>core/textures/lens_flares_default.texture</lens_flare_texture>
 				<lens_flare_intensity>1</lens_flare_intensity>
@@ -1547,7 +1554,6 @@
 
 				<baked_depth_texture replace="2c2cf39a413dc46462397f54249d094fcccd93d9"/>
 				<baked_depth_texture replace="5b3de8af1e6bf5952d9321b8ce5d8d7f3e87ae07"/>
-
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -4.9537063 10.621111 4.6295342 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="1127940245" name="LightEnvironmentProbe_8">
@@ -2038,12 +2044,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
-
+				<baked_depth_texture replace="cec4848427f0289bf5819e0e500bf1cbbd1d0d7b"/>
 				<baked_depth_texture replace="a034b89a16255144699fa677db2fcfe9da3af200"/>
 
 				<baked_depth_texture replace="cec4848427f0289bf5819e0e500bf1cbbd1d0d7b"/>
 				<baked_depth_texture replace="e496d2418a6f8e646b9e1392adf8722f2738e999"/>
-
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.0500032 -20.104139 3.4603462 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="822136334" name="LightEnvironmentProbe_13">
@@ -2138,7 +2143,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="e41b1ce1c36a108b2fb722acd40826c6c958bc7c"/>
+
 				<baked_depth_texture replace="ad7c835ce3ff396aa9f9ca81658349aa7731eb32"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 8.334466 -18.069857 3.4603465 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="899680478" name="LightEnvironmentProbe_7">
@@ -2233,7 +2242,11 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="769ac2fbfe95eb2e6ae4a7be637d5a9d75c1270e"/>
+
 				<baked_depth_texture replace="4c3727ee6a536caf51f5599b271ebdddd8ba6534"/>
+
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 16.249331 17.171385 5.2283964 1.0</transform>
 			</node>
 			<node type="LightEnvironmentProbe" id="139918342" name="LightEnvironmentProbe_5">
@@ -2329,10 +2342,14 @@
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
 
+				<baked_depth_texture replace="e337506adf3b39e7359956a4568177d6f4caa269"/>
+
+
 				<baked_depth_texture replace="64db9ad0218faeb23f252a45dae38b05261ba886"/>
 
 				<baked_depth_texture replace="e337506adf3b39e7359956a4568177d6f4caa269"/>
 				<baked_depth_texture replace="d2cd20bfea50267df909ca08966a183f82300017"/>
+
 
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.2395735 3.4593794 3.995712 1.0</transform>
 			</node>
@@ -2429,10 +2446,14 @@
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
 
+				<baked_depth_texture replace="b499afacc636119af6731c76d80e8006a96b1c83"/>
+
+
 				<baked_depth_texture replace="0268e48230fc267ea8a2f6ff341de8bf477291a8"/>
 
 				<baked_depth_texture replace="b499afacc636119af6731c76d80e8006a96b1c83"/>
 				<baked_depth_texture replace="b638be0925de7143aea2b67a1fcffae88f107c61"/>
+
 
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.2395735 2.3168588 5.2702565 1.0</transform>
 			</node>
@@ -2529,10 +2550,14 @@
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
 
+				<baked_depth_texture replace="395ffcbec64a0af1f9a51298e42259089eed0fad"/>
+
+
 				<baked_depth_texture replace="bf3c41847e3caa22c561fe49ed4e9979930ab11a"/>
 
 				<baked_depth_texture replace="395ffcbec64a0af1f9a51298e42259089eed0fad"/>
 				<baked_depth_texture replace="92cbe8634b49279dd448f43c1221a2aa921d213b"/>
+
 
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.2395735 2.4172194 2.75 1.0</transform>
 			</node>
@@ -2586,6 +2611,9 @@
 				<shadow_screen_space_softness>0.400000006</shadow_screen_space_softness>
 				<shadow_screen_space_translucent_depth_perspective_compensation>0.25</shadow_screen_space_translucent_depth_perspective_compensation>
 				<shadow_screen_space_translucent_depth>0.0299999993</shadow_screen_space_translucent_depth>
+
+				<baked_depth_texture replace="32ff4c20a2bdd8e04471118a5c5c24695c49ae67"/>
+
 				<baked_depth_texture replace="67944256e565275f6382a2a335cc92db44b46b5c"/>
 				<transform>1 2.5243552e-29 0 0.0 -2.5243552e-29 1 -1.4210854e-14 0.0 -3.5873241e-43 1.4210855e-14 1 0.0 4.0681005 -1.2260934 5.4835181 1.0</transform>
 			</node>
@@ -2628,6 +2656,7 @@
 
 				<baked_depth_texture replace="32ff4c20a2bdd8e04471118a5c5c24695c49ae67"/>
 				<baked_depth_texture replace="caa2464dea5edfc9b1b143ce874678aec6644d25"/>
+
 				<transform>1 2.5243552e-29 0 0.0 -2.5243552e-29 1 -1.4210854e-14 0.0 -3.5873241e-43 1.4210855e-14 1 0.0 4.0681005 -1.2260934 5.4835181 1.0</transform>
 			</node>
 		</node>
@@ -2649,161 +2678,34 @@
 					<parameter name="nearClipping">0.100000001</parameter>
 					<parameter name="farClipping">100000</parameter>
 				</property>
+				<property parent="10b8d7435358b8dc22903da573f88e661cad3e17" guid="c6de5c4c25fd452f6e313dff4e527fc74418ab15">
+					<parameter name="resp">1315290828</parameter>
+				</property>
 			</properties>
-			<transform>-0.707106667574 0.707106727574 0 0.0 -0.707106727574 -0.707106667574 0 0.0 0 0 0.99999982 0.0 6.0763869 11.499999 3.2710779 1.0</transform>
+			<transform>-0.707106053829 0.707106471062 0 0.0 -0.707106590271 -0.707106173038 0 0.0 0 0 0.999999821186 0.0 0 6 1 1.0</transform>
 			<node type="ObjectMeshStatic" id="38283089" immovable="1" trigger_interaction_enabled="1" name="box">
 				<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
 				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
 				<transform>-0.7071068348 -0.7071068948 0 0.0 0.7071068948 -0.7071068348 0 0.0 0 0 1.00000018 0.0 53.6338177965 27.7354273164 12.209300894 1.0</transform>
 			</node>
 		</node>
-		<node type="ObjectMeshStatic" id="956834276" name="battery1">
-			<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
-			<surface name="box" intersection="1" material="c32fbb70a77e1053769b9bb0b8880bebf2852352"/>
-			<properties>
-				<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="52c955dbad1cfc91721af69b8721b65282a0b985">
-					<parameter name="bat1">482752400</parameter>
-					<parameter name="batcountnode">1368583642</parameter>
-				</property>
-			</properties>
-			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6.6173381877 13.0827825353 2.47829732865 1.0</transform>
-			<node type="WorldTrigger" id="482752400" name="bat1Trig">
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
-			</node>
-		</node>
-		<node type="ObjectMeshStatic" id="1346785429" name="battery1">
-			<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
-			<surface name="box" intersection="1" material="c32fbb70a77e1053769b9bb0b8880bebf2852352"/>
-			<properties>
-				<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="4c36e42c35d86558afb9b98099b24baa265e1d78">
-					<parameter name="bat1">849963248</parameter>
-					<parameter name="batcountnode">1368583642</parameter>
-				</property>
-			</properties>
-			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4.59694548682 12.3320266954 1.00000005921 1.0</transform>
-			<node type="WorldTrigger" id="849963248" name="bat1Trig">
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
-			</node>
-		</node>
-		<node type="ObjectMeshStatic" id="239658895" name="battery1">
-			<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
-			<surface name="box" intersection="1" material="c32fbb70a77e1053769b9bb0b8880bebf2852352"/>
-			<properties>
-				<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="5915c099f58efdb544fdbf352a47617442f2cdc1">
-					<parameter name="bat1">526167970</parameter>
-					<parameter name="batcountnode">1368583642</parameter>
-				</property>
-			</properties>
-			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.36068097534 12.6623775514 0.999999463163 1.0</transform>
-			<node type="WorldTrigger" id="526167970" name="bat1Trig">
-				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
-			</node>
-		</node>
 		<node type="NodeDummy" id="83635850" name="Wood">
-			<properties>
-				<property parent="23cabb45a8ed0ab1578cc9bf9e243e3d911ba13d" guid="ec046f1ddedc748f6e451957516d1490f19b1215">
-					<parameter name="wood1">667328416</parameter>
-					<parameter name="wood2">1219077050</parameter>
-					<parameter name="wood3">1387652494</parameter>
-					<parameter name="wood4">1353011223</parameter>
-					<parameter name="wood5">1186232908</parameter>
-					<parameter name="battrey1">145424643</parameter>
-					<parameter name="battrey2">1803006623</parameter>
-					<parameter name="battrey3">424556585</parameter>
-					<parameter name="battrey4">270137411</parameter>
-					<parameter name="battrey5">290791789</parameter>
-					<parameter name="texturePath">guid://048ad987a7ef43ac93bd8bd114895db03b50b4ff</parameter>
-					<parameter name="texturePath2">guid://faf957b2c37308b70338d5c045c4bc35286263c8</parameter>
-				</property>
-			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -3.35748938443 3.63111998706 1.00000005921 1.0</transform>
-			<node type="ObjectGui" id="667328416" immovable="1" name="gui1">
-				<gui_name>core/gui/</gui_name>
-				<billboard>0</billboard>
-				<background>1</background>
-				<depth_test>1</depth_test>
-				<mouse_show>1</mouse_show>
-				<control_distance>2</control_distance>
-				<polygon_offset>1</polygon_offset>
-				<physical_width>0.400000006</physical_width>
-				<physical_height>0.300000012</physical_height>
-				<screen_width>1024</screen_width>
-				<screen_height>768</screen_height>
-				<surface name="gui" intersection="1" material="1f14ce52ff2d0d126d21be317e860a4a76477183"/>
-				<transform>-0.999996602535 -5.96854109105e-13 6.51680693409e-07 0.0 6.5168137553e-07 5.96045310886e-08 0.999997913837 0.0 -4.83168192955e-13 0.999997973442 3.57627214953e-07 0.0 2.08468477704 -0.600075467837 0.544004109853 1.0</transform>
-			</node>
-			<node type="ObjectGui" id="1219077050" immovable="1" name="gui2">
-				<gui_name>core/gui/</gui_name>
-				<billboard>0</billboard>
-				<background>1</background>
-				<depth_test>1</depth_test>
-				<mouse_show>1</mouse_show>
-				<control_distance>2</control_distance>
-				<polygon_offset>1</polygon_offset>
-				<physical_width>0.400000006</physical_width>
-				<physical_height>0.300000012</physical_height>
-				<screen_width>1024</screen_width>
-				<screen_height>768</screen_height>
-				<surface name="gui" intersection="1" material="1f14ce52ff2d0d126d21be317e860a4a76477183"/>
-				<transform>-0.999995648861 -8.81069522896e-13 6.51680068131e-07 0.0 6.51681091313e-07 5.96045026668e-08 0.999997437 0.0 -7.67384474108e-13 0.999997615814 3.57627072844e-07 0.0 1.28639070422 -0.568911020603 0.567555032162 1.0</transform>
-			</node>
-			<node type="ObjectGui" id="1387652494" immovable="1" name="gui3">
-				<gui_name>core/gui/</gui_name>
-				<billboard>0</billboard>
-				<background>1</background>
-				<depth_test>1</depth_test>
-				<mouse_show>1</mouse_show>
-				<control_distance>2</control_distance>
-				<polygon_offset>1</polygon_offset>
-				<physical_width>0.400000006</physical_width>
-				<physical_height>0.300000012</physical_height>
-				<screen_width>1024</screen_width>
-				<screen_height>768</screen_height>
-				<surface name="gui" intersection="1" material="1f14ce52ff2d0d126d21be317e860a4a76477183"/>
-				<transform>-0.999994695187 -1.13686284779e-12 6.51679442853e-07 0.0 6.51680807096e-07 5.96044742451e-08 0.999996960163 0.0 -1.05160053842e-12 0.999997258186 3.57626959158e-07 0.0 0.525535398828 -0.430917812602 0.607621872853 1.0</transform>
-			</node>
-			<node type="ObjectGui" id="1353011223" immovable="1" name="gui4">
-				<gui_name>core/gui/</gui_name>
-				<billboard>0</billboard>
-				<background>1</background>
-				<depth_test>1</depth_test>
-				<mouse_show>1</mouse_show>
-				<control_distance>2</control_distance>
-				<polygon_offset>1</polygon_offset>
-				<physical_width>0.400000006</physical_width>
-				<physical_height>0.300000012</physical_height>
-				<screen_width>1024</screen_width>
-				<screen_height>768</screen_height>
-				<surface name="gui" intersection="1" material="1f14ce52ff2d0d126d21be317e860a4a76477183"/>
-				<transform>-0.999995172024 -1.02317698585e-12 6.51679783914e-07 0.0 6.51680977626e-07 5.9604488456e-08 0.999997198582 0.0 -9.09492533369e-13 0.999997437 3.57627016001e-07 0.0 -0.0899571837855 -0.517774058906 0.578333110314 1.0</transform>
-			</node>
-			<node type="ObjectGui" id="1186232908" immovable="1" name="gui5">
-				<gui_name>core/gui/</gui_name>
-				<billboard>0</billboard>
-				<background>1</background>
-				<depth_test>1</depth_test>
-				<mouse_show>1</mouse_show>
-				<control_distance>2</control_distance>
-				<polygon_offset>1</polygon_offset>
-				<physical_width>0.400000006</physical_width>
-				<physical_height>0.300000012</physical_height>
-				<screen_width>1024</screen_width>
-				<screen_height>768</screen_height>
-				<surface name="gui" intersection="1" material="1f14ce52ff2d0d126d21be317e860a4a76477183"/>
-				<transform>-0.999994218349 -1.27897009389e-12 6.51679101793e-07 0.0 6.51680579722e-07 5.96044600343e-08 0.999996721745 0.0 -1.16528694246e-12 0.999997079372 3.57626902314e-07 0.0 -0.682429272714 -0.596003295682 0.512170639593 1.0</transform>
-			</node>
 			<node type="NodeDummy" id="900045497" name="batteries2">
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2.94837790919 4.87707919422 -1.19209282334e-07 1.0</transform>
 				<node type="ObjectMeshStatic" id="145424643" name="battery2_1">
 					<mesh_name>guid://e0b2da55967a95dc32916ff656a736c3c3d8c42d</mesh_name>
 					<surface name="cylinder" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
 					<properties>
-						<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="a1843d28e231ab813e2c4dc63008822008c2320e">
+						<property parent="4573f092ca1afb181b809fdb327cf28b04126e60" guid="4424a2628f5b93cd041a303d3c0a72131887fde3">
 							<parameter name="bat2">1695036766</parameter>
 							<parameter name="batcountnode">1368583642</parameter>
+							<parameter name="player">2042636602</parameter>
+							<parameter name="mymat">c32fbb70a77e1053769b9bb0b8880bebf2852352</parameter>
+							<parameter name="test">57559045</parameter>
 						</property>
 					</properties>
-					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4.1601853588 -0.81393495118 0.26310449449 1.0</transform>
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4.1601853588 -0.81393495118 0.00524368457346 1.0</transform>
 					<node type="WorldTrigger" id="1695036766" name="bat2Trig">
 						<size>0.527465284 0.527292371 0.276999146</size>
 						<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.0165078181087 0.00527230890048 -0.014970369637 1.0</transform>
@@ -2813,9 +2715,12 @@
 					<mesh_name>guid://e0b2da55967a95dc32916ff656a736c3c3d8c42d</mesh_name>
 					<surface name="cylinder" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
 					<properties>
-						<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="2e06979748f26f76125748618860cecb58c6a50f">
+						<property parent="4573f092ca1afb181b809fdb327cf28b04126e60" guid="dd713f08c49dc028b970b289a05d280375aa49e6">
 							<parameter name="bat2">1412783986</parameter>
 							<parameter name="batcountnode">1368583642</parameter>
+							<parameter name="player">2042636602</parameter>
+							<parameter name="mymat">c32fbb70a77e1053769b9bb0b8880bebf2852352</parameter>
+							<parameter name="test">1110284331</parameter>
 						</property>
 					</properties>
 					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0.281585318836 -3.54564502423 0 1.0</transform>
@@ -2828,9 +2733,12 @@
 					<mesh_name>guid://e0b2da55967a95dc32916ff656a736c3c3d8c42d</mesh_name>
 					<surface name="cylinder" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
 					<properties>
-						<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="874eedeea80b6a1712ace49c7138c3d992249ea4">
+						<property parent="4573f092ca1afb181b809fdb327cf28b04126e60" guid="0e85e26476cb16b3223c8db76e1ebe9146fc580d">
 							<parameter name="bat2">734602100</parameter>
 							<parameter name="batcountnode">1368583642</parameter>
+							<parameter name="player">2042636602</parameter>
+							<parameter name="mymat">c32fbb70a77e1053769b9bb0b8880bebf2852352</parameter>
+							<parameter name="test">1737176560</parameter>
 						</property>
 					</properties>
 					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.909513895777 -1.45965424363 0 1.0</transform>
@@ -2843,9 +2751,12 @@
 					<mesh_name>guid://e0b2da55967a95dc32916ff656a736c3c3d8c42d</mesh_name>
 					<surface name="cylinder" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
 					<properties>
-						<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="64011cbb98b10ab60bd666251f7aa82bbd8459b3">
+						<property parent="4573f092ca1afb181b809fdb327cf28b04126e60" guid="d5dd337a2b3837796473f0e33d76fbc3fb999a08">
 							<parameter name="bat2">624312518</parameter>
 							<parameter name="batcountnode">1368583642</parameter>
+							<parameter name="player">2042636602</parameter>
+							<parameter name="mymat">c32fbb70a77e1053769b9bb0b8880bebf2852352</parameter>
+							<parameter name="test">980308111</parameter>
 						</property>
 					</properties>
 					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -3.76660276702 -2.54813274354 0 1.0</transform>
@@ -2858,9 +2769,12 @@
 					<mesh_name>guid://e0b2da55967a95dc32916ff656a736c3c3d8c42d</mesh_name>
 					<surface name="cylinder" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
 					<properties>
-						<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="d84cd0d09654288c55b15b2e220d0b175a5fd376">
+						<property parent="4573f092ca1afb181b809fdb327cf28b04126e60" guid="bc687e36db2ea27279d513c1ac60267b4162f5c7">
 							<parameter name="bat2">1287132136</parameter>
 							<parameter name="batcountnode">1368583642</parameter>
+							<parameter name="player">2042636602</parameter>
+							<parameter name="mymat">c32fbb70a77e1053769b9bb0b8880bebf2852352</parameter>
+							<parameter name="test">102302882</parameter>
 						</property>
 					</properties>
 					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -5.15415113042 -0.523606745775 0 1.0</transform>
@@ -2870,9 +2784,155 @@
 					</node>
 				</node>
 			</node>
+			<node type="ObjectMeshStatic" id="57559045" immovable="1" name="capsule1">
+				<mesh_name>guid://57def0d6356d39b14d60a73a0819e2c9ec19267f</mesh_name>
+				<surface name="capsule" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -3.83891797874 0.587605441121 1.02429488749 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1110284331" immovable="1" name="capsule2">
+				<mesh_name>guid://57def0d6356d39b14d60a73a0819e2c9ec19267f</mesh_name>
+				<surface name="capsule" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -5.41916433244 0.84499973949 0.856960462727 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1737176560" immovable="1" name="capsule3">
+				<mesh_name>guid://57def0d6356d39b14d60a73a0819e2c9ec19267f</mesh_name>
+				<surface name="capsule" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -6.93095070261 1.00900882389 1.16830616334 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="980308111" immovable="1" name="capsule4">
+				<mesh_name>guid://57def0d6356d39b14d60a73a0819e2c9ec19267f</mesh_name>
+				<surface name="capsule" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.42760989168 1.15724652022 1.1148917803 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="102302882" immovable="1" name="capsule5">
+				<mesh_name>guid://57def0d6356d39b14d60a73a0819e2c9ec19267f</mesh_name>
+				<surface name="capsule" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -9.6282409613 1.62602271814 1.2333346127 1.0</transform>
+			</node>
 		</node>
 		<node type="NodeDummy" id="227443908" name="batteries1">
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.880160278916 10.3671029546 0.99999994 1.0</transform>
+			<node type="ObjectMeshStatic" id="956834276" name="battery1">
+				<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
+				<surface name="box" intersection="1" material="c32fbb70a77e1053769b9bb0b8880bebf2852352"/>
+				<properties>
+					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="52c955dbad1cfc91721af69b8721b65282a0b985">
+						<parameter name="bat1">482752400</parameter>
+						<parameter name="island">1040420673</parameter>
+						<parameter name="batcountnode">1368583642</parameter>
+						<parameter name="resp">1315290828</parameter>
+						<parameter name="player">2042636602</parameter>
+					</property>
+				</properties>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 7.49749846662 2.7156795807 1.47829738865 1.0</transform>
+				<node type="WorldTrigger" id="482752400" name="bat1Trig">
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshStatic" id="1346785429" name="battery1">
+				<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
+				<surface name="box" intersection="1" material="c32fbb70a77e1053769b9bb0b8880bebf2852352"/>
+				<properties>
+					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="4c36e42c35d86558afb9b98099b24baa265e1d78">
+						<parameter name="bat1">849963248</parameter>
+						<parameter name="batcountnode">1368583642</parameter>
+						<parameter name="resp">1315290828</parameter>
+						<parameter name="player">2042636602</parameter>
+					</property>
+				</properties>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 5.47710576574 1.9649237408 1.19209999982e-07 1.0</transform>
+				<node type="WorldTrigger" id="849963248" name="bat1Trig">
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshStatic" id="239658895" name="battery1">
+				<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
+				<surface name="box" intersection="1" material="c32fbb70a77e1053769b9bb0b8880bebf2852352"/>
+				<properties>
+					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="5915c099f58efdb544fdbf352a47617442f2cdc1">
+						<parameter name="bat1">526167970</parameter>
+						<parameter name="batcountnode">1368583642</parameter>
+						<parameter name="resp">1315290828</parameter>
+						<parameter name="player">2042636602</parameter>
+					</property>
+				</properties>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2.24084125426 2.2952745968 -4.76836999885e-07 1.0</transform>
+				<node type="WorldTrigger" id="526167970" name="bat1Trig">
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshStatic" id="1442898366" name="battery1">
+				<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
+				<surface name="box" intersection="1" material="c32fbb70a77e1053769b9bb0b8880bebf2852352"/>
+				<properties>
+					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="92e9c82b7793adc4e97f7d2e38e55d1e6d79d27e">
+						<parameter name="bat1">2147098117</parameter>
+						<parameter name="batcountnode">1368583642</parameter>
+						<parameter name="resp">1315290828</parameter>
+						<parameter name="player">2042636602</parameter>
+					</property>
+				</properties>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 6.40597734163 7.801831731 1.01001858494 1.0</transform>
+				<node type="WorldTrigger" id="2147098117" name="bat1Trig">
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshStatic" id="1385527200" name="battery1">
+				<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
+				<surface name="box" intersection="1" material="c32fbb70a77e1053769b9bb0b8880bebf2852352"/>
+				<properties>
+					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="4e13361ff7b4b7bbe3acca40a3449e0b73db663f">
+						<parameter name="bat1">709871231</parameter>
+						<parameter name="batcountnode">1368583642</parameter>
+						<parameter name="resp">1315290828</parameter>
+						<parameter name="player">2042636602</parameter>
+					</property>
+				</properties>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4.85343570199 5.9211002612 0.87821310913 1.0</transform>
+				<node type="WorldTrigger" id="709871231" name="bat1Trig">
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshStatic" id="234463698" name="battery1">
+				<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
+				<surface name="box" intersection="1" material="c32fbb70a77e1053769b9bb0b8880bebf2852352"/>
+				<properties>
+					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="6c5cce8f0a648665ecac6dc29fe747b985773e92">
+						<parameter name="bat1">907532041</parameter>
+						<parameter name="batcountnode">1368583642</parameter>
+						<parameter name="resp">1315290828</parameter>
+						<parameter name="player">2042636602</parameter>
+					</property>
+				</properties>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 1.63850583736 4.8618409101 0 1.0</transform>
+				<node type="WorldTrigger" id="907532041" name="bat1Trig">
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshStatic" id="2066969812" name="battery1">
+				<mesh_name>guid://66883599ee5e6c08f22faedcc7f370eda028cf44</mesh_name>
+				<surface name="box" intersection="1" material="c32fbb70a77e1053769b9bb0b8880bebf2852352"/>
+				<properties>
+					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="96141269390ad782bb6bc1722000a68ea2ad4cc9">
+						<parameter name="bat1">1733057059</parameter>
+						<parameter name="batcountnode">1368583642</parameter>
+						<parameter name="resp">1315290828</parameter>
+						<parameter name="player">2042636602</parameter>
+					</property>
+				</properties>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -1.88007820293 4.6197135061 0 1.0</transform>
+				<node type="WorldTrigger" id="1733057059" name="bat1Trig">
+					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+				</node>
+			</node>
+		</node>
+		<node type="WorldTrigger" id="1040420673" name="IslandTrigger">
+			<size>1.92163038 2.20082903 3.44810486</size>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0.360135034195 1.80074344874 1.85175912932 1.0</transform>
+		</node>
+		<node type="WorldTrigger" id="1315290828" name="RespawnTrigger">
+			<size>62.6749344 33.526516 1</size>
+			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 7.06953924975 13.7711105852 -2.38371038944 1.0</transform>
 		</node>
 	</editor>
 	<console>

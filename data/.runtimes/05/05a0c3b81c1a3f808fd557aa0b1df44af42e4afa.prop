@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property version="2.19.0.3" name="EndInformation" guid="05a0c3b81c1a3f808fd557aa0b1df44af42e4afa" parent="657ecdbbfc83135a26777f86012da3587b67be0c" editable="0">
+	<parameter name="jsonFile" type="file" filter=".json">null</parameter>
+	<parameter name="trigger" type="node" filter="WorldTrigger"/>
+</property>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>08610c14037e0a304b215a8545b082f75c258692</guid>
+	<type>component</type>
+	<hash>bfdcbb47</hash>
+	<runtimes>
+		<runtime id="08610c14037e0a304b215a8545b082f75c258692" name="Battery2_Enter.cs" link="0"/>
+		<runtime id="4573f092ca1afb181b809fdb327cf28b04126e60" name="Battery2_Enter.prop" link="1" type="4"/>
+	</runtimes>
+</asset>
