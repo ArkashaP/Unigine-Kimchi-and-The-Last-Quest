@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="657127339" name="мешок(с-мусором)_0">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="134129934" immovable="1" name="Мешок с мусором">
+			<mesh_name>guid://bfddb823d43ec20966d7758b0e38ed4ee5fe66d8</mesh_name>
+			<surface name="Мешок с мусором осн. чёрный" intersection="1" material="4e4a4bca164631d467c32102858ed1808f53a353"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

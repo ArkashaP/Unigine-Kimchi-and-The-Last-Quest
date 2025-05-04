@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="194787546" name="скамейка">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="525251185" immovable="1" name="Основа">
+			<mesh_name>guid://d86996fe1cc86cddb3baa3b6cd9da60f014f6c97</mesh_name>
+			<surface name="Скамейка основа металллический" intersection="1" material="aca014372f4d5b7a8a9ab61fe1c188ba4e9c0d7c"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 3.74299483852e-10 -0.00428148686001 0.777451634594 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="462424348" immovable="1" name="Сиденья">
+			<mesh_name>guid://775b924d970ab9a4adb515f58d78fda88d7aa10a</mesh_name>
+			<surface name="Скамейка сиденье бежевый" intersection="1" material="2340c35bffe3c7c3a11013c3dd9a0aedbd23da70"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 1.89528496423e-07 -2.16795320871 1.00856623589 1.0</transform>
+		</node>
+	</node>
+</nodes>

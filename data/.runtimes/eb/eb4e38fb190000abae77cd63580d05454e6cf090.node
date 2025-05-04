@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1572430606" name="Дом 6">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="145657621" immovable="1" name="Cube">
+			<mesh_name>guid://fff9c0b6a26bed46d0830a6e21c051031de08aaf</mesh_name>
+			<surface name="дом-ромы.6.основа" intersection="1" material="e5e189890635066901e59ab1ceef0f4696b2f6f6"/>
+			<surface name="дом-ромы.6.окна" intersection="1" material="883069cd0c9c1de92fb19d7580bb13e5e3752e8a"/>
+			<surface name="дом-ромы.6.крыша" intersection="1" material="8027c6512980ef2ca7934479673120ad1691355e"/>
+			<transform>348.272399902 3.04469463585e-05 -3.0446941398e-05 0.0 3.04469463585e-05 -5.67407733998e-05 348.272399902 0.0 3.0446941398e-05 -348.272399902 -5.67407760615e-05 0.0 -1.32266453737e-14 1.51295181566e-07 3.46123016357 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="861640048" immovable="1" name="Cylinder">
+			<mesh_name>guid://5aa2e8a55deb8e4f0ed6b34dec304368c32eb842</mesh_name>
+			<surface name="дом-ромы.6.колонна" intersection="1" material="0906e3157440f89fbf4c53bded4ad73f01ce5f72"/>
+			<transform>100 8.74227942467e-06 -8.74227800037e-06 0.0 8.74227942467e-06 -1.6292067191e-05 100 0.0 8.74227800037e-06 -100 -1.62920679553e-05 0.0 -1.38851373688 2.83810255333 5.89611865036 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1838164495" immovable="1" name="Cylinder.001">
+			<mesh_name>guid://4de940d819ea9cc01b7d41505db4244cc1aa9ab9</mesh_name>
+			<surface name="дом-ромы.6.колонна" intersection="1" material="0906e3157440f89fbf4c53bded4ad73f01ce5f72"/>
+			<transform>100 8.74227942467e-06 -8.74227800037e-06 0.0 8.74227942467e-06 -1.6292067191e-05 100 0.0 8.74227800037e-06 -100 -1.62920679553e-05 0.0 -1.38851356885 0.91598715111 5.89611873437 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1492783138" immovable="1" name="Cylinder.002">
+			<mesh_name>guid://b362ac5f04bb88dd3e4b17471f3badce27cf84c4</mesh_name>
+			<surface name="дом-ромы.6.колонна" intersection="1" material="0906e3157440f89fbf4c53bded4ad73f01ce5f72"/>
+			<transform>100 8.74227942467e-06 -8.74227800037e-06 0.0 8.74227942467e-06 -1.6292067191e-05 100 0.0 8.74227800037e-06 -100 -1.62920679553e-05 0.0 -1.38851340081 -1.00612817482 5.89611881839 1.0</transform>
+		</node>
+	</node>
+</nodes>

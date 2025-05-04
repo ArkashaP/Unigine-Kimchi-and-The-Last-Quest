@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="633928131" name="мусорка-2">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="523392070" immovable="1" name="Мусорка коническая">
+			<mesh_name>guid://ef2dafc6fddc9fd63aabef7ee4a6fbfd874a3aff</mesh_name>
+			<surface name="Мусорка основа" intersection="1" material="e84e1ffc8263c8fdd0e581f48f480b4ca633a3ad"/>
+			<surface name="Мусорка койма" intersection="1" material="965280e961559b6806066e11e483ede6d87849d6"/>
+			<surface name="Мусорка внутри" intersection="1" material="021636435e3243e1916e87ab19c1cdebca11cf78"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

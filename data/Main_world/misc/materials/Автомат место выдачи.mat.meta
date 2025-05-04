@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>6980e4ff7b40d90b6dd773e75112be79632c49e4</guid>
+	<type>material</type>
+	<hash>d6585316</hash>
+	<runtimes>
+		<runtime id="6980e4ff7b40d90b6dd773e75112be79632c49e4" name="Автомат место выдачи" link="0" type="5"/>
+	</runtimes>
+</asset>

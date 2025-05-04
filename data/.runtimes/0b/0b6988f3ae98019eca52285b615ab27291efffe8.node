@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1169487978" name="металлоконструкция">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="603180225" immovable="1" name="Металлоконструкция">
+			<mesh_name>guid://cad4c64e0a1125b62d5421067ee2d3bc433d6227</mesh_name>
+			<surface name="Металлоконструкция чёрный металл" intersection="1" material="87bd7088ebed180975c1c3001c0b90bd2cf71429"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -7.64274337467e-15 8.74227904253e-08 2.00000023842 1.0</transform>
+		</node>
+	</node>
+</nodes>

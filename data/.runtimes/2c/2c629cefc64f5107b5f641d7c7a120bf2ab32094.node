@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1095447062" name="стул">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1734034045" immovable="1" name="Стул">
+			<mesh_name>guid://447dc51a82433b02fbb2a8522e0bc6c5f4f692e3</mesh_name>
+			<surface name="Стул кольца" intersection="1" material="a91c1e8cc6943c24723bc684059241a18056ad7d"/>
+			<surface name="Стул седушка" intersection="1" material="b824469e5d413dc74a054f565fcfcee755399cb7"/>
+			<surface name="Стул ножки" intersection="1" material="f1f69c4ae06edcd5e0202182a0def5868b5b1dd3"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -4.40566838519e-15 5.03949701096e-08 1.15290248394 1.0</transform>
+		</node>
+	</node>
+</nodes>
