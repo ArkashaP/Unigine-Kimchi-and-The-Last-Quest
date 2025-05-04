@@ -46,7 +46,7 @@
 		<main_window_fullscreen_display>0</main_window_fullscreen_display>
 		<main_window_fullscreen_display_mode>0</main_window_fullscreen_display_mode>
 		<main_window_resizable>1</main_window_resizable>
-		<main_window_size>960 540</main_window_size>
+		<main_window_size>1920 1080</main_window_size>
 		<materials_preload>1</materials_preload>
 		<memory_dynamic_pool>256</memory_dynamic_pool>
 		<memory_statistics_enabled>1</memory_statistics_enabled>
