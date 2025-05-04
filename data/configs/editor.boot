@@ -39,7 +39,7 @@
 		<fsr_max_contexts>8</fsr_max_contexts>
 		<log_file>1</log_file>
 		<log_stdout>1</log_stdout>
-		<main_window>0</main_window>
+		<main_window>1</main_window>
 		<main_window_auto_restart>1</main_window_auto_restart>
 		<main_window_borders>1</main_window_borders>
 		<main_window_fullscreen>0</main_window_fullscreen>

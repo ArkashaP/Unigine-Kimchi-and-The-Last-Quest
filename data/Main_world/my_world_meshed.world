@@ -11,7 +11,7 @@
 		</unigine_editor>
 	</data>
 	<sound>
-		<enabled>0</enabled>
+		<enabled>1</enabled>
 		<sound_manager_load_samples>0</sound_manager_load_samples>
 		<sound_manager_sample_static_memory>64</sound_manager_sample_static_memory>
 		<sound_manager_sample_stream_memory>16</sound_manager_sample_stream_memory>
@@ -8518,7 +8518,7 @@
 			<sample_stream>0</sample_stream>
 			<source_mask>0x1</source_mask>
 			<reverb_mask>0x1</reverb_mask>
-			<loop>0</loop>
+			<loop>1</loop>
 			<play_on_enable>1</play_on_enable>
 			<restart_on_enable>1</restart_on_enable>
 			<occlusion>1</occlusion>
@@ -8526,7 +8526,7 @@
 			<adaptation>0.25</adaptation>
 			<time>0</time>
 			<pitch>1</pitch>
-			<gain>0.402359992</gain>
+			<gain>0.165169999</gain>
 			<room_rolloff>0</room_rolloff>
 			<air_absorption>0</air_absorption>
 			<min_distance>0</min_distance>
@@ -8535,7 +8535,7 @@
 			<cone_outer_angle>180</cone_outer_angle>
 			<cone_outer_gain>0</cone_outer_gain>
 			<cone_outer_gain_hf>1</cone_outer_gain_hf>
-			<playing>1</playing>
+			<playing>0</playing>
 			<transform>72.2614135742 0.022013951093 2.36157560349 0.0 0.022108707577 72.2873840332 -1.35034286976 0.0 -2.36157464981 1.35034441948 72.2488021851 0.0 -0.852988668429 187.992910013 104.679371154 1.0</transform>
 		</node>
 		<node type="ObjectMeshStatic" id="1707301142" immovable="1" name="Остров">
@@ -9513,7 +9513,7 @@
 		</node>
 		<node type="WorldTrigger" id="312621543" name="End_Trigger">
 			<size>36.0646515 35.0576172 12.8677092</size>
-			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -274.599711347 -124.699651187 123.816970793 1.0</transform>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -274.599711347 -124.699651187 122.6153952 1.0</transform>
 		</node>
 		<node type="NodeDummy" id="219836743" name="Battery_Counter">
 			<properties>
@@ -9553,7 +9553,7 @@
 				</node>
 				<node type="ObjectVolumeBox" id="1386340253" enabled="0" immovable="1" name="ObjectVolumeBox_2">
 					<size>134.502258 106.730934 186.136993</size>
-					<surface name="volume" material="0985305ccd828c437617505bffa47cb59eaa3813"/>
+					<surface name="volume"/>
 					<transform>0.999999761581 3.68302692144e-10 3.68303254611e-10 0.0 -3.68302227583e-10 1.07685023255e-06 0.99999719858 0.0 3.68301010953e-10 -0.999997735018 1.07684838112e-06 0.0 1.92296782942e-08 1.51551864948e-05 -104.711582204 1.0</transform>
 				</node>
 				<node type="ObjectVolumeBox" id="1142217816" enabled="0" immovable="1" name="ObjectVolumeBox_3">
@@ -9790,8 +9790,9 @@
 		<node type="NodeDummy" id="985751841" name="Batteries BIG">
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.611416429284 191.423703344 95.1640521994 1.0</transform>
 			<node type="ObjectMeshStatic" id="1057432064" immovable="1" name="B_Bat_1">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="7785c749d0444a13575cf071cc7ed0c3437ed7b6"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="4573f092ca1afb181b809fdb327cf28b04126e60" guid="5e90fa61cedec5ab928b111aec8cbd85df6c7e74">
 						<parameter name="bat2">1648337800</parameter>
@@ -9800,15 +9801,19 @@
 						<parameter name="mymat">7dc164bd2945be57d0c58d08de825307cd696dff</parameter>
 						<parameter name="test">351648534</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="e57b52dee81e39eabc0a4677d3c9173682806bfa">
+						<parameter name="speed">0.271180004</parameter>
+					</property>
 				</properties>
-				<transform>2.0999994278 0 0 0.0 0 2.0999994278 0 0.0 0 0 2.09999966621 0.0 34.2291444655 -139.664790267 2.62516862065 1.0</transform>
+				<transform>2.59999990463 0 0 0.0 0 2.70000004768 0 0.0 0 0 2.20000004768 0.0 34.2291444655 -139.664790267 2.62516862065 1.0</transform>
 				<node type="WorldTrigger" id="1648337800" name="Battery_Trigger">
 					<transform>3.00000090826 0 0 0.0 0 3.00000090826 0 0.0 0 0 3.00000056766 0.0 0 0 0 1.0</transform>
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="1919337205" immovable="1" name="B_Bat_2">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="7785c749d0444a13575cf071cc7ed0c3437ed7b6"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="4573f092ca1afb181b809fdb327cf28b04126e60" guid="02c3c035d6a73e1fb47c7920ee74038c6dc50f37">
 						<parameter name="bat2">121731024</parameter>
@@ -9817,15 +9822,19 @@
 						<parameter name="mymat">7dc164bd2945be57d0c58d08de825307cd696dff</parameter>
 						<parameter name="test">2125727219</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="b9222ac8aac48645cfc6692b15416b553e871747">
+						<parameter name="speed">0.271180004</parameter>
+					</property>
 				</properties>
-				<transform>2.0999994278 0 0 0.0 0 2.0999994278 0 0.0 0 0 2.09999966621 0.0 71.7057801671 -55.1956913552 6.47643763612 1.0</transform>
+				<transform>2.59999990463 0 0 0.0 0 2.70000004768 0 0.0 0 0 2.20000004768 0.0 71.7057801671 -55.1956913552 6.47643763612 1.0</transform>
 				<node type="WorldTrigger" id="121731024" name="Battery_Trigger">
 					<transform>3.00000090826 0 0 0.0 0 3.00000090826 0 0.0 0 0 3.00000056766 0.0 0 0 0 1.0</transform>
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="1989544746" immovable="1" name="B_Bat_3">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="7785c749d0444a13575cf071cc7ed0c3437ed7b6"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="4573f092ca1afb181b809fdb327cf28b04126e60" guid="328b472ff7bfe9c999aab512b4e97c4fda16e741">
 						<parameter name="bat2">563757185</parameter>
@@ -9834,15 +9843,19 @@
 						<parameter name="mymat">7dc164bd2945be57d0c58d08de825307cd696dff</parameter>
 						<parameter name="test">2058162870</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="5b2dd0cc9d3de4285132fafd2e64578883eb6188">
+						<parameter name="speed">0.271180004</parameter>
+					</property>
 				</properties>
-				<transform>2.0999994278 0 0 0.0 0 2.0999994278 0 0.0 0 0 2.09999966621 0.0 -120.060042344 -114.768336622 7.5058533751 1.0</transform>
+				<transform>2.59999990463 0 0 0.0 0 2.70000004768 0 0.0 0 0 2.20000004768 0.0 -120.060042344 -114.768336622 7.5058533751 1.0</transform>
 				<node type="WorldTrigger" id="563757185" name="Battery_Trigger">
 					<transform>3.00000090826 0 0 0.0 0 3.00000090826 0 0.0 0 0 3.00000056766 0.0 0 0 0 1.0</transform>
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="1768301492" immovable="1" name="B_Bat_4">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="7785c749d0444a13575cf071cc7ed0c3437ed7b6"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="4573f092ca1afb181b809fdb327cf28b04126e60" guid="36cab463154b34b34f8ef8645364e46f9483358e">
 						<parameter name="bat2">1164737411</parameter>
@@ -9851,15 +9864,19 @@
 						<parameter name="mymat">7dc164bd2945be57d0c58d08de825307cd696dff</parameter>
 						<parameter name="test">1746594648</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="cf47752698680934c462c3915442da9ada7edd8d">
+						<parameter name="speed">0.271180004</parameter>
+					</property>
 				</properties>
-				<transform>2.0999994278 0 0 0.0 0 2.0999994278 0 0.0 0 0 2.09999966621 0.0 -129.815969331 -371.652906827 24.2649858352 1.0</transform>
+				<transform>2.59999990463 0 0 0.0 0 2.70000004768 0 0.0 0 0 2.20000004768 0.0 -129.815969331 -371.652906827 24.2649858352 1.0</transform>
 				<node type="WorldTrigger" id="1164737411" name="Battery_Trigger">
 					<transform>3.00000090826 0 0 0.0 0 3.00000090826 0 0.0 0 0 3.00000056766 0.0 0 0 0 1.0</transform>
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="200436486" immovable="1" name="B_Bat_5">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="7785c749d0444a13575cf071cc7ed0c3437ed7b6"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="4573f092ca1afb181b809fdb327cf28b04126e60" guid="22f6cee30101f4f08a2553b6f2d8ca1d494d3f95">
 						<parameter name="bat2">1643693741</parameter>
@@ -9868,8 +9885,11 @@
 						<parameter name="mymat">7dc164bd2945be57d0c58d08de825307cd696dff</parameter>
 						<parameter name="test">992605911</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="2908048a5fe5c9c4acde999342aa0433a6ff0566">
+						<parameter name="speed">0.271180004</parameter>
+					</property>
 				</properties>
-				<transform>2.0999994278 0 0 0.0 0 2.0999994278 0 0.0 0 0 2.09999966621 0.0 -230.980211738 -190.524522663 24.2649858352 1.0</transform>
+				<transform>2.59999990463 0 0 0.0 0 2.70000004768 0 0.0 0 0 2.20000004768 0.0 -230.980211738 -190.524522663 24.2649858352 1.0</transform>
 				<node type="WorldTrigger" id="1643693741" name="Battery_Trigger">
 					<transform>3.00000090826 0 0 0.0 0 3.00000090826 0 0.0 0 0 3.00000056766 0.0 0 0 0 1.0</transform>
 				</node>
@@ -9878,8 +9898,9 @@
 		<node type="NodeDummy" id="708149565" name="Batteries SMALL">
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -17.2764896343 138.934605637 94.4230974432 1.0</transform>
 			<node type="ObjectMeshStatic" id="623643188" immovable="1" name="S_Bat_1">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" viewport_mask="0xffffffff" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" viewport_mask="0xffffffff" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="d427fb576f380f63e5999ba85fd695bc8053c272">
 						<parameter name="bat1">718286851</parameter>
@@ -9888,6 +9909,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="312d9c62d3dd80ed7a6f8e4ba84a806a0f0c3ebe"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 6.448391006 55.6877843108 0.34969675532 1.0</transform>
 				<node type="WorldTrigger" id="718286851" name="Battery_Trigger">
@@ -9895,8 +9917,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="922373557" immovable="1" name="S_Bat_2">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="a5bdcc4b52e0e4de1c2930ec6ddee7e4fe99cf56">
 						<parameter name="bat1">1489503120</parameter>
@@ -9905,6 +9928,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="2d682156a78a022f9f1f9b01d1eb8930e3a8b5fd"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 18.3240340266 9.08803814982 4.84383929297 1.0</transform>
 				<node type="WorldTrigger" id="1489503120" name="Battery_Trigger">
@@ -9912,8 +9936,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="1225949615" immovable="1" name="S_Bat_3">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="e34636cb77e9f06b6dc49f7efab26028b240bebd">
 						<parameter name="bat1">2082620226</parameter>
@@ -9922,6 +9947,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="7d885fba77e2c9381875148397aab36398991396"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 -3.81495805803 8.61756355969 4.84383929297 1.0</transform>
 				<node type="WorldTrigger" id="2082620226" name="Battery_Trigger">
@@ -9929,8 +9955,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="1114286521" immovable="1" name="S_Bat_4">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="0a6d0c7515a4d4ffe814dffe287ae1e6b62cf0f8">
 						<parameter name="bat1">780814276</parameter>
@@ -9939,6 +9966,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="7d92d88434c6dfcbc1fa12f7029378af299db253"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 -4.55747344229 -22.4683376557 4.84383929297 1.0</transform>
 				<node type="WorldTrigger" id="780814276" name="Battery_Trigger">
@@ -9946,8 +9974,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="875606099" immovable="1" name="S_Bat_5">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="e507eaf50e83dc63e1d9bce04542983becf1fff7">
 						<parameter name="bat1">21232022</parameter>
@@ -9956,6 +9985,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="2cea214850201e9a7b0055292454530fc41cd1c4"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 11.0820537137 -17.1063076582 4.84383929297 1.0</transform>
 				<node type="WorldTrigger" id="21232022" name="Battery_Trigger">
@@ -9963,8 +9993,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="1106928637" immovable="1" name="S_Bat_6">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="1dc0d4afaa52be3ea3f4616055869ffaafd45cea">
 						<parameter name="bat1">498193720</parameter>
@@ -9973,6 +10004,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="15e173823165cf6943de037d2900be12fb9edbb9"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 39.6315181841 -17.9513800465 4.84383929297 1.0</transform>
 				<node type="WorldTrigger" id="498193720" name="Battery_Trigger">
@@ -9980,8 +10012,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="865116140" immovable="1" name="S_Bat_7">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="65b74379e3f7ecff548e5d92f10bd745051597ac">
 						<parameter name="bat1">411769435</parameter>
@@ -9990,6 +10023,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="211d17a6e35adbb632a5eadf17319c2a327cbd42"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 -19.0308825259 -122.751285566 11.678556925 1.0</transform>
 				<node type="WorldTrigger" id="411769435" name="Battery_Trigger">
@@ -9997,8 +10031,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="2061667326" immovable="1" name="S_Bat_8">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="42d369f98ac22ccff484649466d4a3d0e8c22f1b">
 						<parameter name="bat1">1770341189</parameter>
@@ -10007,6 +10042,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="455361d0e13ea6bd09397e1394af5863f6a263af"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 -37.3041015397 -125.949067708 11.4158044632 1.0</transform>
 				<node type="WorldTrigger" id="1770341189" name="Battery_Trigger">
@@ -10014,8 +10050,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="1119738848" immovable="1" name="S_Bat_9">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="1ab69b53e3d74d763210b114c6cf2b3c06b319be">
 						<parameter name="bat1">1049517503</parameter>
@@ -10024,6 +10061,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="94ce8a54e0904c1ce474b325196492d49e30ed90"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 -68.8107391916 -134.308248803 11.4158044632 1.0</transform>
 				<node type="WorldTrigger" id="1049517503" name="Battery_Trigger">
@@ -10031,8 +10069,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="1252708370" immovable="1" name="S_Bat_10">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="0cd395d370d39a974bddfbe6815edc7e7356f605">
 						<parameter name="bat1">1740943433</parameter>
@@ -10041,6 +10080,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="761966ee4905663117e7983954cac82c71265fb5"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 -72.8228564229 -97.5572459981 11.4158044632 1.0</transform>
 				<node type="WorldTrigger" id="1740943433" name="Battery_Trigger">
@@ -10048,8 +10088,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="301689702" immovable="1" name="S_Bat_11">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="5241e2bd62ff73bf07bb8c668e63b101c45c6fa0">
 						<parameter name="bat1">1341393805</parameter>
@@ -10058,6 +10099,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="ce8f54d2734f17974966af7b018a9c60bda3ee2e"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 -51.8927624268 -115.583694081 11.4158044632 1.0</transform>
 				<node type="WorldTrigger" id="1341393805" name="Battery_Trigger">
@@ -10065,8 +10107,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="691189640" immovable="1" name="S_Bat_12">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="5d63d13d7c4f8f2830791f88579d2cd1f03a5e7f">
 						<parameter name="bat1">1969911111</parameter>
@@ -10075,6 +10118,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="de927a5c75b140cb0691cb6fc2ece69a7b1c294b"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 -34.0725047668 -93.6648252809 11.4158044632 1.0</transform>
 				<node type="WorldTrigger" id="1969911111" name="Battery_Trigger">
@@ -10082,8 +10126,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="293614074" immovable="1" name="S_Bat_13">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="4d7e843755677a14cb4194086c85f4bbeb7359d2">
 						<parameter name="bat1">356849937</parameter>
@@ -10092,6 +10137,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="6196c6a07aeed843045d6561d109b3c01c539e9c"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 10.8164706809 -65.2554895091 5.46779902687 1.0</transform>
 				<node type="WorldTrigger" id="356849937" name="Battery_Trigger">
@@ -10099,8 +10145,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="718813134" immovable="1" name="S_Bat_14">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="9df2ee419954dde838e5007a46089243aeadecd4">
 						<parameter name="bat1">46390485</parameter>
@@ -10109,6 +10156,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="1bf5a79ae47180cb6d4a55352c496c9d4134bdf1"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 31.8926213248 3.93577640333 5.46779902687 1.0</transform>
 				<node type="WorldTrigger" id="46390485" name="Battery_Trigger">
@@ -10116,8 +10164,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="2066417712" immovable="1" name="S_Bat_15">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="11e724c1136a61493722a1bc62a9c64b88547223">
 						<parameter name="bat1">1871805903</parameter>
@@ -10126,6 +10175,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="2042833e7065b2b91c9f3e57bc93d498c597125a"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 -92.5274560811 -165.172473625 13.4607423845 1.0</transform>
 				<node type="WorldTrigger" id="1871805903" name="Battery_Trigger">
@@ -10133,8 +10183,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="1366050404" immovable="1" name="S_Bat_16">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="f8b9bddb98d660b42e8fad4e898024bbbcbc164d">
 						<parameter name="bat1">1656643187</parameter>
@@ -10143,6 +10194,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="fc20ee288117589a6cf7970b6ac9d2737c261f27"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 -139.420556857 -211.730435919 24.5387896857 1.0</transform>
 				<node type="WorldTrigger" id="1656643187" name="Battery_Trigger">
@@ -10150,8 +10202,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="1175809496" immovable="1" name="S_Bat_17">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="7408aa058aa75c4859b48dce68c0a68af063c348">
 						<parameter name="bat1">258053975</parameter>
@@ -10160,6 +10213,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="6b4b622c5922eb3ea32de7dd24b7fdf9be0170e8"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 -147.916129555 -231.121726923 24.5387896857 1.0</transform>
 				<node type="WorldTrigger" id="258053975" name="Battery_Trigger">
@@ -10167,8 +10221,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="774851786" immovable="1" name="S_Bat_18">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="ff63a88599bcd9961a2edf30ddfe683143568e07">
 						<parameter name="bat1">1831359905</parameter>
@@ -10177,6 +10232,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="cd45218680dfaa4f3f687671c0afe09cd6c1b26d"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 -151.962691472 -211.174419211 24.5387896857 1.0</transform>
 				<node type="WorldTrigger" id="1831359905" name="Battery_Trigger">
@@ -10184,8 +10240,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="911372940" immovable="1" name="S_Bat_19">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="f94d8cbfecef4b17ddef23b02c16a2050319f3ba">
 						<parameter name="bat1">133074043</parameter>
@@ -10194,6 +10251,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="7de74eeafe2c6285278db373ee88e7244399d5c6"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 -179.845381685 -227.543368196 24.5387896857 1.0</transform>
 				<node type="WorldTrigger" id="133074043" name="Battery_Trigger">
@@ -10201,8 +10259,9 @@
 				</node>
 			</node>
 			<node type="ObjectMeshStatic" id="1736972190" immovable="1" name="S_Bat_20">
-				<mesh_name>guid://71929e68956e66137d55be39ed7667f4ebc0032f</mesh_name>
-				<surface name="box" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<mesh_name>guid://8b484e523603dd04f70b26fba00e9414576f7fae</mesh_name>
+				<surface name="зеленый_батарейка" material="67245c84c2e3858becbdf1159d3880c1149696c0"/>
+				<surface name="металл_батарейка" material="51784782a54eec76d16997ebbc9b3b27b9865bde"/>
 				<properties>
 					<property parent="ad8d73d92a2e0ac5ed58938abff80ad15e142031" guid="a2951f3fd36b7038e206ffe230847ce189066fd1">
 						<parameter name="bat1">103750245</parameter>
@@ -10211,6 +10270,7 @@
 						<parameter name="resp">1094671568</parameter>
 						<parameter name="player">1168230144</parameter>
 					</property>
+					<property parent="bb896825bb437ed9266bea9b3e067ea8a024228e" guid="0966c934421c6663d429bce7a03e06fe8df3a143"/>
 				</properties>
 				<transform>0.799999833107 0 0 0.0 0 0.799999654293 0 0.0 0 0 0.799999892712 0.0 -171.012697264 -258.844497802 24.5387896857 1.0</transform>
 				<node type="WorldTrigger" id="103750245" name="Battery_Trigger">
@@ -10272,6 +10332,9 @@
 				<size>6.39932203 6.31067371 4.28438187</size>
 				<transform>0.0234177839011 0.999723672867 0 0.0 -0.999723374844 0.0234177783132 0 0.0 0 0 0.999999701977 0.0 230.045223056 185.489214899 -17.6295833329 1.0</transform>
 			</node>
+		</node>
+		<node type="NodeDummy" id="1878525537" name="buttery">
+			<transform>0.999999880791 2.64697493094e-22 -3.8213675422e-15 0.0 6.93769466004e-23 0.999999880791 8.74227197301e-08 0.0 3.8213675422e-15 -8.74227197301e-08 0.999999940395 0.0 -10.8367488437 195.89397643 94.509705838 1.0</transform>
 		</node>
 	</editor>
 	<console>

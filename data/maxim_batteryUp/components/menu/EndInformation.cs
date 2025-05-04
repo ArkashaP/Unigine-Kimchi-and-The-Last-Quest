@@ -69,7 +69,7 @@ public class EndInformation : Component
     private void OnEnterTrigger(Node enteringNode)
     {
         // Запускаем интерфейс
-        if (batCount.battery2_count == 5)
+        if (batCount.battery2_count >= 5)
         {
             StartInformation();
             trigger.Enabled = false;

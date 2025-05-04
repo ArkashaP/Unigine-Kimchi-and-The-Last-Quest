@@ -54,7 +54,7 @@ public class PlayerController : Component
 	private ObjectMeshSkinned viewBodyMesh;
 
 	[ShowInEditor][Parameter(Group = "Vew Body", Tooltip = "Anim Files")][ParameterAsset(Filter = ".anim")]
-	public AssetLink AnimIdle, AnimForward, AnimRun, AnimJump, AnimInAir;
+	public AssetLink AnimIdle, AnimForward, AnimRun, AnimJump, AnimInAir;	
 	
 	private int LayerIdle = 0, 	
 	LayerForward = 1, 
@@ -676,11 +676,11 @@ public class PlayerController : Component
 
 	void triggerUltraJump_enter(Node _node)
 	{
-		canUltraJump = true;
+		//canUltraJump = true;
 	}
 	void triggerUltraJump_leave(Node _node)
 	{
-		canUltraJump = false;
+		//canUltraJump = false;
 	}
 
     private void Init() 
@@ -1012,8 +1012,7 @@ public class PlayerController : Component
 			verticalMoveDirection = (IsCrouch ? crouchJumpPower : jumpPower) / ifps;
 
 		if (useJump && IsGround && 
-		(Input.IsKeyDown(ultrajumpKey) || gamePad && gamePad.IsButtonDown(jumpButton)
-		&& canUltraJump)
+		(Input.IsKeyDown(ultrajumpKey) || gamePad && gamePad.IsButtonDown(jumpButton))
 		)
 		{
 			verticalMoveDirection = (IsCrouch ? crouchUltraJumpPower : ultraJumpPower) / ifps;
@@ -1206,7 +1205,7 @@ public class PlayerController : Component
 				maxSpeed = crouchSpeed;
 
 			maxAirSpeed = maxSpeed;
-			if (Input.IsKeyDown(ultrajumpKey) && canUltraJump)
+			if (Input.IsKeyDown(ultrajumpKey))
 				maxAirSpeed = maxSpeed*3; // здесь ускорение во время полета если че
 		}
 
@@ -1649,7 +1648,7 @@ public class PlayerController : Component
 		camera.WorldPosition = MathLib.Lerp(
 			camera.WorldPosition,
 			targetWorldPos,
-			1.8f*Game.IFps
+			8.8f*Game.IFps
 		);
 		dvec3 target_dir = cameraLookPos.WorldPosition - camera.WorldPosition;
 		target_dir.Normalize();

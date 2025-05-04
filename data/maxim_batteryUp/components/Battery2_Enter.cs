@@ -27,6 +27,9 @@ public class Battery2_Enter : Component
 		test.SetMaterial(mymat,0);
 		batteriesCounter.battery2_count +=1;
 		oms_node.SetViewportMask(0, 0);
+		oms_node.SetViewportMask(0, 1);
+		oms_node.SetShadowMask(0, 0);
+		oms_node.SetShadowMask(0, 1);
 		bat2.Enabled = false;
 	}	
 

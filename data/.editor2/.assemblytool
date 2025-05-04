@@ -1,7 +1,7 @@
 {
-    "binary": "Development",
-    "config": "Development",
-    "delete_unused": true,
+    "binary": "Release",
+    "config": "Release",
+    "delete_unused": false,
     "exclude_dirs": [
         "configs/"
     ],
@@ -17,14 +17,15 @@
     ],
     "exclude_files": [
     ],
-    "full_screen": "Disabled",
+    "full_screen": "BorderlessWindow",
     "launcher": "BinaryFile",
     "main_debug": "Z:/Unigine-ShinyWorld/bin/Unigine_ShinyWorld_x64d.exe",
     "main_dev": "Z:/Unigine-ShinyWorld/bin/Unigine_ShinyWorld_x64.exe",
     "main_release": "Z:/Unigine-ShinyWorld/bin/Unigine_ShinyWorld_x64.exe",
-    "name": "Unigine_ShinyWorld",
+    "name": "Kimchi and The Last Quest V0.3",
     "os": "Windows",
     "pack_enabled": false,
+    "path": "F:/Builds unigine/",
     "precision": "Double",
     "precompile": true,
     "resolutions": [
@@ -58,7 +59,7 @@
             "to": ""
         }
     ],
-    "selected_res": 0,
+    "selected_res": 5,
     "vapi": "Auto",
     "vdebug": "Disabled",
     "vrmodes": [
@@ -115,5 +116,5 @@
             "source": true
         }
     ],
-    "world": "60586bbbe11bedde064e7ba5e6cbf8c084a7151f"
+    "world": "d16fa1109d37012362b259ffedd3589295f82c81"
 }

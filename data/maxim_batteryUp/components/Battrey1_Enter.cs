@@ -51,6 +51,9 @@ public class Battrey1_Enter : Component
 	{
 		batteriesCounter.battery1_count +=1;
 		oms_node.SetViewportMask(0, 0);
+		oms_node.SetViewportMask(0, 1);
+		oms_node.SetShadowMask(0, 0);
+		oms_node.SetShadowMask(0, 1);
 		bat1.Enabled = false;
 	}
 
@@ -80,6 +83,9 @@ public class Battrey1_Enter : Component
 			if (respawn.timer >595) // через сколько секунд респавн
 			{
 				oms_node.SetViewportMask(1, 0);
+				oms_node.SetViewportMask(1, 1);
+				oms_node.SetShadowMask(1, 0);
+				oms_node.SetShadowMask(1, 1);
 				bat1.Enabled = true;
 			}
 		}
