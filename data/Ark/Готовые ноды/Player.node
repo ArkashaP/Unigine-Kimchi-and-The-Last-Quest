@@ -166,7 +166,7 @@
 				</node>
 			</node>
 		</node>
-		<node type="ObjectDummy" id="317949736" name="Player">
+		<node type="ObjectDummy" id="317949736" trigger_interaction_enabled="1" name="Player">
 			<body type="BodyDummy" id="277001591" frozen="0">
 				<shape type="ShapeCapsule" id="277001591" transform="1 0 0 0 2.16290961e-36 1 0 0 0 0 1 0 0 0 0.888418257 1">
 					<radius>0.700133264</radius>

@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build debug",
             "program": "${workspaceFolder}/bin/Unigine_ShinyWorld_x64d.dll",
-            "args": [ "-data_path", "../", "-engine_config", "../data/Unigine_ShinyWorld/unigine.cfg", "-console_command", "world_load \"World_Ark\"" ],
+            "args": [ "-data_path", "../", "-engine_config", "../data/Unigine_ShinyWorld/unigine.cfg", "-console_command", "world_load \"my_world_meshed\"" ],
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopAtEntry": false,

@@ -10,6 +10,8 @@ public class BatteriesCounter : Component
     private Image batteryImage, starImage;
     [ShowInEditor][ParameterFile] private string texturePath;
     [ShowInEditor][ParameterFile] private string texturePath2;
+    [ShowInEditor]private UIMainMenu uIMainMenu;
+    [ShowInEditor]private UIPauseMenu uIPauseMenu;
     private WidgetSprite batterySprite;
     private WidgetSprite[] starSprites; // Массив для 10 звездочек
     public int battery1_count = 0;
@@ -26,7 +28,8 @@ public class BatteriesCounter : Component
         label.FontSize = 20;
         label.PositionX = 100;
         label.PositionY = 25;
-        gui.AddChild(label, Gui.ALIGN_OVERLAP);
+        if(!uIMainMenu.menuBool && !uIPauseMenu.menuBool)
+            gui.AddChild(label, Gui.ALIGN_OVERLAP);
         
         // Настройка изображения батареи
         batteryImage = new Image(texturePath);
@@ -38,7 +41,8 @@ public class BatteriesCounter : Component
             batterySprite.Height = 32;
             batterySprite.PositionX = 20;
             batterySprite.PositionY = 20;
-            gui.AddChild(batterySprite, Gui.ALIGN_OVERLAP);
+            if(!uIMainMenu.menuBool && !uIPauseMenu.menuBool)
+                gui.AddChild(batterySprite, Gui.ALIGN_OVERLAP);
         }
 
         // Инициализация звездочек
@@ -72,7 +76,8 @@ public class BatteriesCounter : Component
         {
             if (starSprites[currentStarCount] != null)
             {
-                gui.AddChild(starSprites[currentStarCount], Gui.ALIGN_OVERLAP);
+                if(!uIMainMenu.menuBool && !uIPauseMenu.menuBool)
+                    gui.AddChild(starSprites[currentStarCount], Gui.ALIGN_OVERLAP);
             }
             currentStarCount++;
         }

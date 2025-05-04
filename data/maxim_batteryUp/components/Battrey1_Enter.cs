@@ -77,7 +77,7 @@ public class Battrey1_Enter : Component
 	{
 		if (batteriesCounter.battery1_count==0)
 		{
-			if (respawn.timer >14) // через сколько секунд респавн
+			if (respawn.timer >595) // через сколько секунд респавн
 			{
 				oms_node.SetViewportMask(1, 0);
 				bat1.Enabled = true;

@@ -28,6 +28,13 @@ public class PlayerController : Component
 	#region Editor parameters
 
 	[ShowInEditor]
+	public WorldTrigger island1_1;  
+	public WorldTrigger island1_2;  
+	public WorldTrigger island2_1;  
+	public WorldTrigger island3_1;  
+	public WorldTrigger island3_2;
+
+	[ShowInEditor]
 	[Parameter(Group = "Custom Camera", Tooltip = "Сamera L position")]
 	public Node cameraTargetPos_L;
 	[ShowInEditor]
@@ -256,7 +263,7 @@ public class PlayerController : Component
 	[ShowInEditor]
 	[ParameterSlider(Min = 0.0f, Group = "Movement", Tooltip = "Ultra Jumping power of the player")]
 	[ParameterCondition(nameof(useJump), 1)]
-	private float ultraJumpPower = 10.0f;
+	private float ultraJumpPower = 12.0f;
 
 	[ShowInEditor]
 	[ParameterSlider(Min = 0.0f, Group = "Movement", Tooltip = "Jumping crouch power of the player")]
@@ -662,13 +669,35 @@ public class PlayerController : Component
 	private Vec3 lastPlayerPosition = Vec3.ZERO;
 
 	private bool autoSteppingApplied = false;
+    private bool canUltraJump = false;
 #endif
 
-	#endregion Debug
-	
-	private void Init() 
+    #endregion Debug
+
+	void triggerUltraJump_enter(Node _node)
 	{
-		Console.Onscreen = true;
+		canUltraJump = true;
+	}
+	void triggerUltraJump_leave(Node _node)
+	{
+		canUltraJump = false;
+	}
+
+    private void Init() 
+	{
+		// Console.Onscreen = true;
+		island1_1.EventEnter.Connect(triggerUltraJump_enter);
+		island1_1.EventLeave.Connect(triggerUltraJump_leave);
+		island1_2.EventEnter.Connect(triggerUltraJump_enter);
+		island1_2.EventLeave.Connect(triggerUltraJump_leave);
+		island2_1.EventEnter.Connect(triggerUltraJump_enter);
+		island2_1.EventLeave.Connect(triggerUltraJump_leave);
+		island3_1.EventEnter.Connect(triggerUltraJump_enter);
+		island3_1.EventLeave.Connect(triggerUltraJump_leave);
+		island3_2.EventEnter.Connect(triggerUltraJump_enter);
+		island3_2.EventLeave.Connect(triggerUltraJump_leave);
+
+
 
 		viewBodyMesh = viewBodyMeshNode as ObjectMeshSkinned;
 
@@ -685,6 +714,8 @@ public class PlayerController : Component
 		viewBodyMesh.SetLayer(LayerRun, true, 0f);
 		viewBodyMesh.SetLayer(LayerJump, true, 0f);
 		viewBodyMesh.SetLayer(LayerInAir, true, 0f);
+
+		
 
 
 		// viewBodyMesh.NumLayers = 4;
@@ -967,7 +998,7 @@ public class PlayerController : Component
 		// if (Input.IsKeyPressed(ultrajumpKey))
 		// 	horizontalMoveDirection += forward*1000;
 
-		Log.MessageLine(maxAirSpeed);
+		// Log.MessageLine(maxAirSpeed);
 
 		if (gamePad != null)
 		{
@@ -980,7 +1011,10 @@ public class PlayerController : Component
 		if (useJump && IsGround && (Input.IsKeyDown(jumpKey) || gamePad && gamePad.IsButtonDown(jumpButton)))
 			verticalMoveDirection = (IsCrouch ? crouchJumpPower : jumpPower) / ifps;
 
-		if (useJump && IsGround && (Input.IsKeyDown(ultrajumpKey) || gamePad && gamePad.IsButtonDown(jumpButton)))
+		if (useJump && IsGround && 
+		(Input.IsKeyDown(ultrajumpKey) || gamePad && gamePad.IsButtonDown(jumpButton)
+		&& canUltraJump)
+		)
 		{
 			verticalMoveDirection = (IsCrouch ? crouchUltraJumpPower : ultraJumpPower) / ifps;
 			// if (Input.IsKeyPressed(forwardKey))
@@ -1172,7 +1206,7 @@ public class PlayerController : Component
 				maxSpeed = crouchSpeed;
 
 			maxAirSpeed = maxSpeed;
-			if (Input.IsKeyDown(ultrajumpKey))
+			if (Input.IsKeyDown(ultrajumpKey) && canUltraJump)
 				maxAirSpeed = maxSpeed*3; // здесь ускорение во время полета если че
 		}
 

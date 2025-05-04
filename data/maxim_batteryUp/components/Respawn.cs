@@ -6,6 +6,7 @@ using Unigine;
 public class Respawn : Component
 {
 	[ShowInEditor][ParameterSlider(Title = "respawn")] public WorldTrigger resp; 
+	
 	public float timer; // Текущее время
 	public bool isTimerRunning = false;  
 	void Init()
@@ -14,7 +15,7 @@ public class Respawn : Component
 	}
 	void respawn_enter(Node _node)
 	{
-		node.WorldPosition = new vec3(0f,6f,1f);
+		node.WorldPosition = new vec3(-5f, 193f, 95f);
 		isTimerRunning = true;
 	}	
 	void StartTimer(){
@@ -28,7 +29,7 @@ public class Respawn : Component
 	void Update(){
 		if (isTimerRunning)
 			StartTimer();
-		if(timer >= 15.0f)
+		if(timer >= 600.0f)
 		{
 			StopTimer();
 			isTimerRunning = false;

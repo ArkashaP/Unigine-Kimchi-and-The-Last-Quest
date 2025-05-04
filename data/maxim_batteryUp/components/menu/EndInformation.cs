@@ -10,6 +10,9 @@ public class EndInformation : Component
     [ParameterFile(Filter = ".json")]
     private string jsonFile = "null";
 
+    [ShowInEditor]
+    private BatteriesCounter batCount;  
+
     // Основной контейнер для интерфейса
     private WidgetVBox VBox;
 
@@ -66,8 +69,12 @@ public class EndInformation : Component
     private void OnEnterTrigger(Node enteringNode)
     {
         // Запускаем интерфейс
-        StartInformation();
-        trigger.Enabled = false;
+        if (batCount.battery2_count == 5)
+        {
+            StartInformation();
+            trigger.Enabled = false;
+        }
+
     }
 
     // Обновление каждый кадр

@@ -14,7 +14,7 @@ public class Item_Test : Component
 	private void OutputSurfaces(ObjectMeshSkinned obj){
 		for (int i = 0; i > obj.NumSurfaces; i++)
 		{
-			Console.MessageLine("index: {0} = '{1}'", i, obj.GetSurfaceName(i));
+			// Console.MessageLine("index: {0} = '{1}'", i, obj.GetSurfaceName(i));
 		}
 	}
 

@@ -35,7 +35,7 @@ public class light_cat : Component
 		//Console.MessageLine("{0}", obj.NumSurfaces);
         for (int i = 0; i < obj.NumSurfaces; i++)
         {
-            Console.MessageLine("index: {0} = '{1}'", i, obj.GetSurfaceName(i));
+            // Console.MessageLine("index: {0} = '{1}'", i, obj.GetSurfaceName(i));
         }
     }
 	void Update()
