@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <material version="2.19.0.3" guid="b209a7a67de7a106fb55cba8df15d7eb8b194f32" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
+	<state name="emission">1</state>
 	<parameter name="albedo_color" expression="0">0.148127124 0.155159414 0.12645258 1</parameter>
+	<parameter name="emission_color" expression="0">0.666666687 0.741176486 1 1</parameter>
+	<parameter name="emission_scale" expression="0">0.421039999</parameter>
 </material>

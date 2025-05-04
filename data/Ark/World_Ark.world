@@ -755,7 +755,7 @@
 			<is_shadow_partial_update>0</is_shadow_partial_update>
 			<shadow_cascade_borders>0.0075000003 0.0500000007 0.200000003</shadow_cascade_borders>
 			<color_mode>1</color_mode>
-			<color_temperature>9017.2002</color_temperature>
+			<color_temperature>7643.2002</color_temperature>
 			<intensity>0.312119991</intensity>
 			<shadow_resolution>5</shadow_resolution>
 			<shadow_bias>1</shadow_bias>
@@ -822,7 +822,7 @@
 				<billboard name="flare_29" offset="0.936999977" size="0.449999988" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.180000007"/>
 				<billboard name="flare_30" offset="1" size="1.03999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.150000006"/>
 			</lens_flare_billboards>
-			<transform>-0.226400837302 -0.448297739029 -0.864675581455 0.0 0.626252949238 -0.746877610683 0.22325052321 0.0 -0.745928585529 -0.490986943245 0.449865460396 0.0 0 0 0 1.0</transform>
+			<transform>-0.448298096657 0.226401567459 -0.864675045013 0.0 -0.74687743187 -0.626252770424 0.223250433803 0.0 -0.490986794233 0.745928406715 0.449865788221 0.0 0 0 0 1.0</transform>
 		</node>
 		<node type="NodeDummy" id="1351903" name="Набор заборов">
 			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -6.79470059019 0 0 1.0</transform>
@@ -989,24 +989,38 @@
 				<transform>0.6 0 0 0.0 0 0.699999970198 0 0.0 0 0 0.399999791384 0.0 -2.22044604925e-16 0.184382549582 1.37470938679 1.0</transform>
 			</node>
 			<node type="ObjectMeshSkinned" id="1987206418" name="Cat_Model">
-				<mesh_name>guid://0aeb3dc589cc371b734f183b1979685ea6999507</mesh_name>
+				<mesh_name>guid://6af667605cf6387efe3fc081884ed723c58fb105</mesh_name>
 				<fps_visible_camera>-1</fps_visible_camera>
 				<fps_visible_shadow>30</fps_visible_shadow>
 				<fps_invisible>0</fps_invisible>
-				<anim_name>guid://17ab08ae2d02c5e7060f1ff019cbc66d714b4eba</anim_name>
+				<anim_name>guid://95a71714e4bf3202fdae204592989b9012751a09</anim_name>
 				<loop>1</loop>
 				<speed>30</speed>
-				<surface name="Материал" intersection="1" material="20d7722c2fa06ac47f4a029ee1deb4744ef2eb58"/>
-				<surface name="Ноги.Задние" intersection="1" material="6bac9a54836444abf975230664c8afb93341b600"/>
-				<surface name="Ноги.Передние" intersection="1" material="4d62e4d28f7dc259760e4eb4f3d7dc3c15a6c91e"/>
-				<surface name="Уши.ВнутренняяСторона" intersection="1" material="d01defba7098d299b07a2fdcdf4306f37b674c86"/>
-				<surface name="Выпуклость.Верх.Задняя" intersection="1" material="83c3d6a06fd076617a086a324251802ee985080c"/>
-				<surface name="Хвост.Шарик" intersection="1" material="618931483f5c27925742c11af1d30c5f046b6934"/>
-				<surface name="Нос" intersection="1" material="cde04f7c187c1010fa25186e7c90ac6ca551d5a8"/>
-				<surface name="Живот" intersection="1" material="b209a7a67de7a106fb55cba8df15d7eb8b194f32"/>
-				<surface name="Выпуклость.Верх.Передняя" intersection="1" material="f38d133e3554346723170500c6e887191581264a"/>
-				<surface name="Outline" intersection="1" material="5338deea7269d9a282d27a8c84905e2ad9c512b6"/>
-				<transform>-0.3424243927 1.03409320218e-07 -4.46997457421e-21 0.0 -1.03409391272e-07 -0.342424631119 9.12260413424e-15 0.0 -1.71503560966e-21 9.12264479182e-15 0.342426329851 0.0 0 0 0 1.0</transform>
+				<bind_nodes>
+					<node>
+						<bone>40</bone>
+						<node_id>1383265523</node_id>
+						<offset>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</offset>
+						<node_space>1</node_space>
+						<bone_space>1</bone_space>
+						<mode>1</mode>
+						<bone_name>DEF-spine.007</bone_name>
+					</node>
+				</bind_nodes>
+				<surface name="Материал" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<surface name="Ноги.Задние" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<surface name="Ноги.Передние" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<surface name="Уши.ВнутренняяСторона" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<surface name="Выпуклость.Верх.Задняя" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<surface name="Хвост.Шарик" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<surface name="Нос" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<surface name="Живот" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<surface name="Выпуклость.Верх.Передняя" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<surface name="Outline" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>-0.342384725809 -5.9864476043e-08 0 0.0 5.98649450012e-08 -0.342387408018 0 0.0 0 0 0.342425078154 0.0 0 0 0 1.0</transform>
+				<node type="NodeDummy" id="1383265523" name="DEF-spine.007">
+					<transform>0.999998433394 4.15820385208e-15 -1.68867506486e-27 0.0 1.1059218072e-14 0.99999852043 1.7154671617e-20 0.0 1.10080100227e-27 -1.73154974344e-20 1 0.0 0 0 0 1.0</transform>
+				</node>
 			</node>
 		</node>
 		<node type="ObjectDummy" id="876128899" name="Player">
@@ -1022,6 +1036,12 @@
 					<parameter name="cameraTargetPos_R">1154606211</parameter>
 					<parameter name="cameraLookPos">477650664</parameter>
 					<parameter name="viewBody">780660916</parameter>
+					<parameter name="viewBodyMeshNode">1987206418</parameter>
+					<parameter name="AnimIdle">guid://95a71714e4bf3202fdae204592989b9012751a09</parameter>
+					<parameter name="AnimForward">guid://da98a924c7b306025a5354b7234a29943e372248</parameter>
+					<parameter name="AnimRun">guid://4315b2f692e0711bc004a2c1406ed77521c7aaba</parameter>
+					<parameter name="AnimJump">guid://0f1b2b221ca87302ea436f3d580e9fbdb68a7826</parameter>
+					<parameter name="AnimInAir">guid://73f25a08c71a36f74c5df4491e0390f2690c314d</parameter>
 					<parameter name="capsuleRadius">1.10000002</parameter>
 					<parameter name="capsuleHeight">0.200000003</parameter>
 					<parameter name="cameraMode">2</parameter>
@@ -1048,7 +1068,7 @@
 				<transform>0.99999988079 0 0 0.0 0 0.86602358413 -0.499999016523 0.0 0 0.499999076128 0.866023592116 0.0 1.9421399601 -4.84768057427 4.20566310871 1.0</transform>
 			</node>
 			<node type="NodeDummy" id="477650664" name="CameraLook">
-				<transform>0.999700665438 -0.0244369219317 -4.60119581616e-05 0.0 0.00653587359618 0.265563817687 0.964070258383 0.0 -0.0235466966536 -0.963782127354 0.265644059518 0.0 0.134137581608 0.751257367899 1.4631074554 1.0</transform>
+				<transform>0.999700665438 -0.0244369219317 -4.60119581616e-05 0.0 0.00653587359618 0.265563817687 0.964070258383 0.0 -0.0235466966536 -0.963782127354 0.265644059518 0.0 0 0.751257367899 1.4631074554 1.0</transform>
 			</node>
 		</node>
 		<node type="LightProj" id="141588572" name="LightProj">

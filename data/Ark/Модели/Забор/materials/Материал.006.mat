@@ -2,4 +2,6 @@
 <material version="2.19.0.3" guid="f9ebad88f0a9036feeeaa3665d93ed5d61750823" base_material="4dfec30f491f753f6e89094db6d3d695e89f9d6f">
 	<options depth_test="0" two_sided="1"/>
 	<parameter name="albedo_color" expression="0">0.196568906 0.196568906 0.196568906 1</parameter>
+	<parameter name="specular" expression="0">0.330760002</parameter>
+	<parameter name="microfiber" expression="0">0.769230008</parameter>
 </material>

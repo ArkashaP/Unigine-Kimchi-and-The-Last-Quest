@@ -43,8 +43,17 @@ public class PlayerController : Component
 
 	[ShowInEditor]
 	[Parameter(Group = "Vew Body", Tooltip = "Mesh Skinned that shows player's body")]
-	public Node viewBodyMesh;
+	public Node viewBodyMeshNode;
+	private ObjectMeshSkinned viewBodyMesh;
 
+	[ShowInEditor][Parameter(Group = "Vew Body", Tooltip = "Anim Files")][ParameterAsset(Filter = ".anim")]
+	public AssetLink AnimIdle, AnimForward, AnimRun, AnimJump, AnimInAir;
+	
+	private int LayerIdle = 0, 	
+	LayerForward = 1, 
+	LayerRun = 2, 
+	LayerJump = 3,
+	LayerInAir = 3;
 
 	[ShowInEditor]
 	[Parameter(Group = "Input", Tooltip = "Move forward key")]
@@ -641,10 +650,42 @@ public class PlayerController : Component
 #endif
 
 	#endregion Debug
-
+	
 	private void Init() 
 	{
 		Console.Onscreen = true;
+
+		viewBodyMesh = viewBodyMeshNode as ObjectMeshSkinned;
+
+		viewBodyMesh.NumLayers = 5;
+
+		viewBodyMesh.SetLayerAnimationFilePath(LayerIdle, AnimIdle.Path);
+		viewBodyMesh.SetLayerAnimationFilePath(LayerForward, AnimForward.Path);
+		viewBodyMesh.SetLayerAnimationFilePath(LayerRun, AnimRun.Path);
+		viewBodyMesh.SetLayerAnimationFilePath(LayerJump, AnimJump.Path);
+		viewBodyMesh.SetLayerAnimationFilePath(LayerInAir, AnimInAir.Path);
+
+		viewBodyMesh.SetLayer(LayerIdle, true, 1f);
+		viewBodyMesh.SetLayer(LayerForward, true, 0f);
+		viewBodyMesh.SetLayer(LayerRun, true, 0f);
+		viewBodyMesh.SetLayer(LayerJump, true, 0f);
+		viewBodyMesh.SetLayer(LayerInAir, true, 0f);
+
+
+		// viewBodyMesh.NumLayers = 4;
+		// viewBodyMesh.SetLayerAnimationFilePath(0, AnimIdleFile.Path);
+		// viewBodyMesh.SetLayer(0, true, 0f);
+		// viewBodyMesh.SetLayerAnimationFilePath(1, AnimJumpFile.Path);
+		// viewBodyMesh.SetLayer(1, true, 0f);
+		// viewBodyMesh.SetLayerAnimationFilePath(2, AnimForwardFile.Path);
+		// viewBodyMesh.SetLayer(2, true, 1f);
+		// viewBodyMesh.SetLayerWeight(1, 1f);
+		// viewBodyMesh.Loop = true;
+		// viewBodyMesh.Play();
+		// viewBodyMesh.SetLayer(LayerIdle, true, 1f);
+		// viewBodyMesh.SetLayerAnimationFilePath(LayerIdle, AnimIdleFile.Path);
+
+
 		// check object type
 		Object obj = node as Object;
 		if (!obj)
@@ -734,7 +775,6 @@ public class PlayerController : Component
 	{
 		if (!IsInitialized)
 			return;
-
 		// View Body pos set
 		viewBody.WorldPosition = node.WorldPosition;
 
@@ -742,6 +782,7 @@ public class PlayerController : Component
 
 		float ifps = Game.IFps * Physics.Scale;
 
+		UpdateAnimations();
 		UpdateMoveDirections(ifps);
 		CheckMoveAndStair();
 
@@ -775,7 +816,78 @@ public class PlayerController : Component
 		UpdateCamera();
 	}
 
-	private void UpdatePhysics()
+	
+	
+	
+	
+	
+	private void UpdateAnimations()
+	{
+		// Update animation frames
+		viewBodyMesh.SetLayerFrame(LayerIdle, Game.Time*24f);
+		viewBodyMesh.SetLayerFrame(LayerForward, Game.Time*30*horizontalMoveDirection.Length); // *horizontalMoveDirection.Length
+		viewBodyMesh.SetLayerFrame(LayerRun, Game.Time*24f);
+		viewBodyMesh.SetLayerFrame(LayerJump, Game.Time*24f);
+		viewBodyMesh.SetLayerFrame(LayerInAir, Game.Time*24f);
+
+		// Default target weights (all zero)
+		float targetIdleWeight = 0.0f;
+		float targetForwardWeight = 0.0f;
+		float targetRunWeight = 0.0f;
+		float targetJumpWeight = 0.0f;
+		float targetInAirWeight = 0.0f;
+
+		// Define transition speed - higher values = faster transitions
+		float transitionSpeed = 5.0f * Game.IFps;
+
+		// Determine target weights based on player state
+		if (IsCrouch)
+		{
+			// All animations at zero weight when crouching
+			// (target weights already set to 0.0f by default)
+		}
+		else if (IsGround)
+		{
+			if (horizontalMoveDirection.Length2 > 0.0f)
+			{	
+				if (useRun && (Input.IsKeyPressed(runKey) || gamePad && gamePad.IsButtonPressed(runButton)))
+					targetRunWeight = 1.0f;
+				else
+					targetForwardWeight = 1.0f;
+			}
+			else
+			{
+				targetIdleWeight = 1.0f;
+			}
+		}
+		else
+		{
+			if (VerticalVelocity > 0.0f) {
+				targetJumpWeight = 1.0f;
+				viewBodyMesh.SetLayerWeight(LayerJump, 1.0f);
+			}
+			else
+				targetInAirWeight = 1.0f;
+		}
+
+		// Smoothly interpolate current weights toward target weights
+		float currentWeight = viewBodyMesh.GetLayerWeight(LayerIdle);
+		viewBodyMesh.SetLayerWeight(LayerIdle, MathLib.Lerp(currentWeight, targetIdleWeight, transitionSpeed));
+		
+		currentWeight = viewBodyMesh.GetLayerWeight(LayerForward);
+		viewBodyMesh.SetLayerWeight(LayerForward, MathLib.Lerp(currentWeight, targetForwardWeight, transitionSpeed));
+		
+		currentWeight = viewBodyMesh.GetLayerWeight(LayerRun);
+		viewBodyMesh.SetLayerWeight(LayerRun, MathLib.Lerp(currentWeight, targetRunWeight, transitionSpeed));
+		
+		currentWeight = viewBodyMesh.GetLayerWeight(LayerJump);
+		viewBodyMesh.SetLayerWeight(LayerJump, MathLib.Lerp(currentWeight, targetJumpWeight, transitionSpeed));
+		
+		currentWeight = viewBodyMesh.GetLayerWeight(LayerInAir);
+		viewBodyMesh.SetLayerWeight(LayerInAir, MathLib.Lerp(currentWeight, targetInAirWeight, transitionSpeed));
+	}
+
+    private void UpdatePhysics()
 	{
 		if (!IsInitialized)
 			return;
@@ -1045,7 +1157,7 @@ public class PlayerController : Component
 			float angleHoriz = MathLib.Angle(new vec2(1f,0f),HorizontalVelocity!=0?new vec2(HorizontalVelocity.x,HorizontalVelocity.y):new vec2(1f,0f))
 			* MathLib.Sign(HorizontalVelocity.y)-90f;
 
-			Console.OnscreenMessageLine("{0}", MathLib.RotateZ(angleHoriz));
+			// Console.OnscreenMessageLine("{0}", MathLib.RotateZ(angleHoriz));
 			viewBody.SetWorldRotation(
 				MathLib.Slerp(
 					viewBody.GetWorldRotation(),
@@ -1056,11 +1168,6 @@ public class PlayerController : Component
 		}
 		
 		
-		
-
-
-
-
 		// check frozen state for horizontal velocity
 		// IsGround needed in case of slipping from the edges
 		// contacts will be pushed player in all directions, and not just up

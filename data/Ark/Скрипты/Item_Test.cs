@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unigine;
@@ -11,6 +10,13 @@ public class Item_Test : Component
 	double timeWaitAmount = 1.0f;
 	double timeEnabledWaitAmount = 1.0f;
 	int enabled = 1;
+
+	private void OutputSurfaces(ObjectMeshSkinned obj){
+		for (int i = 0; i > obj.NumSurfaces; i++)
+		{
+			Console.MessageLine("index: {0} = '{1}'", i, obj.GetSurfaceName(i));
+		}
+	}
 
 	void Init()
 	{
