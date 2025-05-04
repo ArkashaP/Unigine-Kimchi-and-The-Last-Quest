@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1056495107" name="кристалл 4">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="2057438086" immovable="1" name="Icosphere">
+			<mesh_name>guid://a1dc6678284858e6d37aa2f04908068ac1d7b0d9</mesh_name>
+			<surface name="кристалл.4.основа" intersection="1" material="4e3627821d1f924453c3f9bab7c44e22cd4a976b"/>
+			<transform>100 8.74228078125e-06 -2.01220997794e-05 0.0 8.74228078125e-06 -3.18095383745e-05 230.16998291 0.0 8.74227800037e-06 -100 -2.19819788448e-05 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

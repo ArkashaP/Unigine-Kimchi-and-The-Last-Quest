@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="46721784" name="island_big_3">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1618588151" immovable="1" name="Icosphere">
+			<mesh_name>guid://f8f5f2cf379cf818306aa7a793344a278d4893fd</mesh_name>
+			<surface name="земля_3" intersection="1" material="9baafd5be1e829802b8ba6b36e45bc8d7d2ab729"/>
+			<surface name="земля_тень_3" intersection="1" material="4d5ff405ffdf5d0d57791d1d85ba94ea024dcf43"/>
+			<surface name="почва_3" intersection="1" material="00493841e6b56998ed83f7d954cb102019b8999f"/>
+			<surface name="асфальт_3" intersection="1" material="baa72cbd52d5505b14459ad50034ad0fde54683b"/>
+			<surface name="бардюр_3" intersection="1" material="c6aa4e375795457e53b14a0fc273acc47c662c25"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

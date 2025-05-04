@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>ff6f8dd29f50335deb934e0a8d8d4b0f22bdc7fb</guid>
+	<type>material</type>
+	<hash>09e136cc</hash>
+	<runtimes>
+		<runtime id="ff6f8dd29f50335deb934e0a8d8d4b0f22bdc7fb" name="Бочка основной" link="0" type="5"/>
+	</runtimes>
+</asset>

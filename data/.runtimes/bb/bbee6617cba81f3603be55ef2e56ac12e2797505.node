@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1448171675" name="Medium_Island_3">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="788608318" immovable="1" name="Icosphere">
+			<mesh_name>guid://04992d52233340d38457e45a283285548eb6e2a0</mesh_name>
+			<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+			<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 2.62602519989 2.24445003222e-07 -0.117347449064 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1304648581" immovable="1" name="Icosphere.003">
+			<mesh_name>guid://758553211e1a43a67c8a26b96670d5e47ba4357f</mesh_name>
+			<surface name="земля_дефолт" intersection="1" material="1e6f75557ab4b20d49391c6d57f5df176bcdd213"/>
+			<surface name="асфальт_дефолт" intersection="1" material="69c1cfe14011b12b07f56b79222c2d56c43ebc3f"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -8.69896602631 -7.58658323622e-07 0.0418533831835 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1976473376" immovable="1" name="Icosphere.004">
+			<mesh_name>guid://da9316d4cca710ddf249851c901560022a7d44d2</mesh_name>
+			<surface name="камень_1" intersection="1" material="677e024f8a8968fb36f887272ba930654f88677d"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 5.89308321546 4.0827723273 0.7779218558 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1245929471" immovable="1" name="Icosphere.005">
+			<mesh_name>guid://d0a8d33b29b5205094f9b0935376779406b91e09</mesh_name>
+			<surface name="камень_1" intersection="1" material="677e024f8a8968fb36f887272ba930654f88677d"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 4.52919672709 5.59289161004 -0.0502584041105 1.0</transform>
+		</node>
+	</node>
+</nodes>

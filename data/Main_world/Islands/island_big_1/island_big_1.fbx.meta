@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>5bed6984b5ed9d551efd95cc7784c1cfd3682e02</guid>
+	<type>fbx</type>
+	<hash>63e70d6c</hash>
+	<runtimes>
+		<runtime id="5bed6984b5ed9d551efd95cc7784c1cfd3682e02" name="island_big_1.fbx" link="0"/>
+		<runtime id="1213f44b9eb8f3c53bf137a36300e2e953ffe699" name="island_big_1.node" link="1" type="3">
+			<parameters>
+				<parameter type="string" name="id">aa47ae6c</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="f14725f6504bb6cb7ec1af7e629d584dfb3f9f24" name="icosphere.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">830e07d8</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="e1d8e47597670adaccec378d7dde7bf6e2966033" name="icosphere.003.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">25d8d95d</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="5d8d38183531434df7f6bce007dbdd830d6127f6" name="icosphere.004.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">341ab82e</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="63d9dcaf274189a33e0645870cc0cd92874ffedd" name="icosphere.005.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">9d741ac3</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="8692b30a518305feff09251248927db4de9ff298" name="icosphere.006.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">c7acc29e</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="40e0fb79dcd4923392d4f01105b7af4af60ed517" name="icosphere.007.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">7d66863a</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="2fd3234cf0e35ea44521c494a78711707355ef8a" name="icosphere.008.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">fabc6e13</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="390083536a697f6e394369abfc80bacfb9b71961" name="icosphere.009.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">e8448d84</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="be33e95e1b9b05fe50f3cbe6986175e61950e34c" name="icosphere.010.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">68d056fe</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="19477abd60b264e0e30328d50446a4a6f286c63b" name="icosphere.011.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">a11f67ff</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="703059c04e8479da6adcdf882fb669919c05865e" name="icosphere.012.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">c8c03276</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="cd474c3758bb3dc4e92d880f92feb2157b6e3a25" name="icosphere.013.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">a45928df</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="2fa2dcf2048c1a8e1bc237fafea4cf9819cfa540" name="icosphere.014.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">5647cde7</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="fed266413858be7b937e65d9bf82420b6b11d79f" name="icosphere.015.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">843a5fe7</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="4c730f747528efa6f2f2c1bcb4f38ed2d6c74072" name="icosphere.016.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">8e188f95</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="ac9bdb5b776753d4eacfc4b3b4400a99d35ca529" name="icosphere.001.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">bb42c59d</parameter>
+			</parameters>
+		</runtime>
+	</runtimes>
+	<parameters>
+		<parameter type="float" name="angular_deflection">0.699999988</parameter>
+		<parameter type="bool" name="asset_name_as_prefix">0</parameter>
+		<parameter type="string" name="base_material_mode">inherit_mesh_base</parameter>
+		<parameter type="float" name="bound_size">10000</parameter>
+		<parameter type="bool" name="create_transform_bones_for_joints">0</parameter>
+		<parameter type="float" name="fps">30</parameter>
+		<parameter type="string" name="front_axis">default</parameter>
+		<parameter type="bool" name="import_animations">1</parameter>
+		<parameter type="bool" name="import_bones_without_skin">1</parameter>
+		<parameter type="bool" name="import_cameras">1</parameter>
+		<parameter type="bool" name="import_lights">1</parameter>
+		<parameter type="bool" name="import_materials">1</parameter>
+		<parameter type="string" name="import_materials_mode">take_by_name_or_create</parameter>
+		<parameter type="bool" name="import_meshes">1</parameter>
+		<parameter type="bool" name="import_morph_targets">0</parameter>
+		<parameter type="bool" name="import_tangent_space">0</parameter>
+		<parameter type="bool" name="import_textures">1</parameter>
+		<parameter type="bool" name="invert_gchannel_for_normal_maps">0</parameter>
+		<parameter type="bool" name="joints_reorientation">0</parameter>
+		<parameter type="string" name="lightmaps">{&quot;guid://ac9bdb5b776753d4eacfc4b3b4400a99d35ca529&quot;:{&quot;surface_0&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://e1d8e47597670adaccec378d7dde7bf6e2966033&quot;:{&quot;асфальт_1&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://5d8d38183531434df7f6bce007dbdd830d6127f6&quot;:{&quot;почва_1&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://63d9dcaf274189a33e0645870cc0cd92874ffedd&quot;:{&quot;бардюр_1&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://8692b30a518305feff09251248927db4de9ff298&quot;:{&quot;земля_темная_1.2&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://40e0fb79dcd4923392d4f01105b7af4af60ed517&quot;:{&quot;земля_дефолт&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://2fd3234cf0e35ea44521c494a78711707355ef8a&quot;:{&quot;бардюр_1&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://390083536a697f6e394369abfc80bacfb9b71961&quot;:{&quot;асфальт_1&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://be33e95e1b9b05fe50f3cbe6986175e61950e34c&quot;:{&quot;почва_1&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://19477abd60b264e0e30328d50446a4a6f286c63b&quot;:{&quot;земля_темная_1.2&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://703059c04e8479da6adcdf882fb669919c05865e&quot;:{&quot;земля_дефолт&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://cd474c3758bb3dc4e92d880f92feb2157b6e3a25&quot;:{&quot;земля_темная_1.2&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://2fa2dcf2048c1a8e1bc237fafea4cf9819cfa540&quot;:{&quot;земля_дефолт&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://fed266413858be7b937e65d9bf82420b6b11d79f&quot;:{&quot;асфальт_1&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://4c730f747528efa6f2f2c1bcb4f38ed2d6c74072&quot;:{&quot;бардюр_1&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://f14725f6504bb6cb7ec1af7e629d584dfb3f9f24&quot;:{&quot;земля_дефолт&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;почва_1&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;земля_темная_1.2&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;земля_темная_1&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;асфальт_1&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;бардюр_1&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}}}</parameter>
+		<parameter type="float" name="linear_deflection">0.200000003</parameter>
+		<parameter type="string" name="lods">_lod_0,-1e+09,3,0,0,100,0,0,60;_lod_1,3,9,0,0,60,0,1,60;_lod_2,9,1e+09,0,0,30,0,1,60</parameter>
+		<parameter type="string" name="lods_mode">off</parameter>
+		<parameter type="string" name="material_guids">асфальт_1,15eb188f9aa4c5ba0fcdf56719568bbc12d6abbd,бардюр_1,4a26da59bbb605cd918e62f1a39c4819691774f7,земля_дефолт,1e6f75557ab4b20d49391c6d57f5df176bcdd213,земля_темная_1,9215879d8c2cbfd5585609b553293a2c538c741b,земля_темная_1.2,10a46417f05058b930b393ef705d22c3bbaa8305,почва_1,4055bd33dd7b4c8b6dce578b46226622dcdd2441</parameter>
+		<parameter type="bool" name="merge_similar_materials">0</parameter>
+		<parameter type="bool" name="merge_static_meshes">0</parameter>
+		<parameter type="bool" name="merge_surfaces_by_materials">0</parameter>
+		<parameter type="float" name="morph_targets_normals_angle">180</parameter>
+		<parameter type="string" name="morph_targets_normals_mode">import</parameter>
+		<parameter type="bool" name="need_repivot">0</parameter>
+		<parameter type="bool" name="need_split">0</parameter>
+		<parameter type="bool" name="need_triagulate">1</parameter>
+		<parameter type="int" name="num_lods">3</parameter>
+		<parameter type="string" name="prefix_materials"/>
+		<parameter type="string" name="resolution">256</parameter>
+		<parameter type="float" name="scale">1</parameter>
+		<parameter type="bool" name="skip_empty_nodes">0</parameter>
+		<parameter type="int" name="smooth_animation_size">0</parameter>
+		<parameter type="bool" name="unwrap_uv_ch_0">0</parameter>
+		<parameter type="bool" name="unwrap_uv_ch_1">0</parameter>
+		<parameter type="string" name="up_axis">default</parameter>
+		<parameter type="bool" name="use_instances">1</parameter>
+		<parameter type="int" name="uv_ch">1</parameter>
+		<parameter type="bool" name="vertex_cache">1</parameter>
+		<parameter type="string" name="workflow">metalness</parameter>
+	</parameters>
+</asset>

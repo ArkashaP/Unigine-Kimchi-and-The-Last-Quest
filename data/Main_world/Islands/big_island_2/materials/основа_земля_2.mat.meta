@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>7425eb836200bdec888fe3db99e5f7879803a011</guid>
+	<type>material</type>
+	<hash>c5adeee2</hash>
+	<runtimes>
+		<runtime id="7425eb836200bdec888fe3db99e5f7879803a011" name="основа_земля_2" link="0" type="5"/>
+	</runtimes>
+</asset>

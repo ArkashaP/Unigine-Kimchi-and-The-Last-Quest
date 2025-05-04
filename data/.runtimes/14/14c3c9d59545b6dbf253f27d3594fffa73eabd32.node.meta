@@ -1,0 +1,9 @@
+{
+	"asset": "be3853505d965098d4e798c8de5d6d970ceb9a91",
+	"alias": "торговый-автомат-2.node",
+	"primary": 1,
+	"version": "2.19.0.3",
+	"parameters": {
+		"UnigineEditor.AssetHash": "12a68805"
+	}
+}

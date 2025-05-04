@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>005f0cd78131477e62bfd2bf5c63a60fffbdb29c</guid>
+	<type>material</type>
+	<hash>c2a12334</hash>
+	<runtimes>
+		<runtime id="005f0cd78131477e62bfd2bf5c63a60fffbdb29c" name="фонарь свет белый" link="0" type="5"/>
+	</runtimes>
+</asset>

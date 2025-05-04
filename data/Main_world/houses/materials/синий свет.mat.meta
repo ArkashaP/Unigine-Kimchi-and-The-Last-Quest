@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>e1fc52985011f0b79c26b84fca36d63ab09d79ce</guid>
+	<type>material</type>
+	<hash>a68bbb4e</hash>
+	<runtimes>
+		<runtime id="e1fc52985011f0b79c26b84fca36d63ab09d79ce" name="синий свет" link="0" type="5"/>
+	</runtimes>
+</asset>

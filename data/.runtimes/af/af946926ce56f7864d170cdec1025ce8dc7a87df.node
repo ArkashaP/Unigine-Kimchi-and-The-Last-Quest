@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="843136026" name="кристаллы 3">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="641424561" immovable="1" name="Circle">
+			<mesh_name>guid://590ce6551f2d9fd5efc5defd2ff4236c8591b3b2</mesh_name>
+			<surface name="кристалл.3.основа" intersection="1" material="15668f07ee4a3a5b766652efb2b05e2e50b4508c"/>
+			<transform>100 8.74227942467e-06 -8.74227800037e-06 0.0 8.74227942467e-06 -1.6292067191e-05 100 0.0 8.74227800037e-06 -100 -1.62920679553e-05 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

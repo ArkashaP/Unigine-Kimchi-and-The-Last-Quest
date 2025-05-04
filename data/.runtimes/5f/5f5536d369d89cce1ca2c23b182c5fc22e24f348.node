@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="972125645" name="Дом 5">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1671863496" immovable="1" name="Circle">
+			<mesh_name>guid://4eb5f2ae983659768c63d166884cf5070f45fe07</mesh_name>
+			<surface name="дом-ромы.5.основа" intersection="1" material="f3057e8a66b0b9088e6f1bc2f44cb95f4a7c9d13"/>
+			<transform>26.3288440704 2.30174111792e-06 -2.30174074292e-06 0.0 2.30174111792e-06 -4.28951296657e-06 26.3288440704 0.0 2.30174074292e-06 -26.3288440704 -4.28951316779e-06 0.0 1.42327374503 -1.42327347797 0.416474824176 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2112133511" immovable="1" name="Retopo_Cylinder">
+			<mesh_name>guid://5232ea3d3494aba9f80d83e5d5869abeb4e2a3ba</mesh_name>
+			<surface name="дом-ромы.5.основа" intersection="1" material="f3057e8a66b0b9088e6f1bc2f44cb95f4a7c9d13"/>
+			<surface name="дом-ромы.5.крыша" intersection="1" material="a8135872a7cb00ba8eb834aac2751b16ab149f1b"/>
+			<surface name="дом-ромы.5.окна" intersection="1" material="168cccde6b14cc5d6b7f6d96a555b24d36456ff7"/>
+			<transform>100 8.74227942467e-06 -8.74227800037e-06 0.0 8.74227942467e-06 -1.6292067191e-05 100 0.0 8.74227800037e-06 -100 -1.62920679553e-05 0.0 1.58392764647e-15 -1.81180196558e-08 -0.414491958618 1.0</transform>
+		</node>
+	</node>
+</nodes>

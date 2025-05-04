@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>1b62cb729d5b7e62c42c1ee17509f9e069183fd8</guid>
+	<type>material</type>
+	<hash>ad91db89</hash>
+	<runtimes>
+		<runtime id="1b62cb729d5b7e62c42c1ee17509f9e069183fd8" name="желтый_свет_дом1" link="0" type="5"/>
+	</runtimes>
+</asset>

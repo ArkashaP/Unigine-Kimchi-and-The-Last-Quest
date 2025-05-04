@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>88d506eacfa71d80b8ea0f9f85fece55b764c7ad</guid>
+	<type>fbx</type>
+	<hash>1cec19f6</hash>
+	<runtimes>
+		<runtime id="88d506eacfa71d80b8ea0f9f85fece55b764c7ad" name="Дом 3.fbx" link="0"/>
+		<runtime id="8596d27e31f4ee9f9254837df8bad2337e3c9204" name="Дом 3.node" link="1" type="3">
+			<parameters>
+				<parameter type="string" name="id">5610adee</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="413ea948f954e73a30ad0375c2f7303b0a13f593" name="plane.001.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">a481d241</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="19a127e0650724576c4e02f766135c5caea5fdd6" name="plane.004.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">0de38fee</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="c25997ba0ce2150c20e3a3af1cd1598807e61b3d" name="plane.003.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">0de38fee</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="e67a181238a10b961aae7b01088b8deafaeda378" name="plane.005.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">0de38fee</parameter>
+			</parameters>
+		</runtime>
+		<runtime id="1aada77c285bd8016748aa79286e28bba05a1077" name="plane.006.mesh" link="2" type="1">
+			<parameters>
+				<parameter type="string" name="id">0de38fee</parameter>
+			</parameters>
+		</runtime>
+	</runtimes>
+	<parameters>
+		<parameter type="float" name="angular_deflection">0.699999988</parameter>
+		<parameter type="bool" name="asset_name_as_prefix">0</parameter>
+		<parameter type="string" name="base_material_mode">inherit_mesh_base</parameter>
+		<parameter type="float" name="bound_size">10000</parameter>
+		<parameter type="bool" name="create_transform_bones_for_joints">0</parameter>
+		<parameter type="float" name="fps">30</parameter>
+		<parameter type="string" name="front_axis">default</parameter>
+		<parameter type="bool" name="import_animations">1</parameter>
+		<parameter type="bool" name="import_bones_without_skin">1</parameter>
+		<parameter type="bool" name="import_cameras">1</parameter>
+		<parameter type="bool" name="import_lights">1</parameter>
+		<parameter type="bool" name="import_materials">1</parameter>
+		<parameter type="string" name="import_materials_mode">take_by_name_or_create</parameter>
+		<parameter type="bool" name="import_meshes">1</parameter>
+		<parameter type="bool" name="import_morph_targets">0</parameter>
+		<parameter type="bool" name="import_tangent_space">0</parameter>
+		<parameter type="bool" name="import_textures">1</parameter>
+		<parameter type="bool" name="invert_gchannel_for_normal_maps">0</parameter>
+		<parameter type="bool" name="joints_reorientation">0</parameter>
+		<parameter type="string" name="lightmaps">{&quot;guid://413ea948f954e73a30ad0375c2f7303b0a13f593&quot;:{&quot;дом3_основа&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3},&quot;Material&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://c25997ba0ce2150c20e3a3af1cd1598807e61b3d&quot;:{&quot;забор_дом3&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://19a127e0650724576c4e02f766135c5caea5fdd6&quot;:{&quot;забор_дом3&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://e67a181238a10b961aae7b01088b8deafaeda378&quot;:{&quot;забор_дом3&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}},&quot;guid://1aada77c285bd8016748aa79286e28bba05a1077&quot;:{&quot;забор_дом3&quot;:{&quot;use_custom_settings&quot;:0,&quot;uv_ch&quot;:1,&quot;unwrap_uv_ch_0&quot;:0,&quot;unwrap_uv_ch_1&quot;:0,&quot;resolution&quot;:3}}}</parameter>
+		<parameter type="float" name="linear_deflection">0.200000003</parameter>
+		<parameter type="string" name="lods">_lod_0,-1e+09,3,0,0,100,0,0,60;_lod_1,3,9,0,0,60,0,1,60;_lod_2,9,1e+09,0,0,30,0,1,60</parameter>
+		<parameter type="string" name="lods_mode">off</parameter>
+		<parameter type="string" name="material_guids">material,c7c504a8374973d669664f1f348ab3e14e0cf55e,дом3_основа,48df4c44d307bbf3c8a1670b5dc79246b296f09a,забор_дом3,9c7ccb16f6179dcd786215357fe31b3de31c56dc</parameter>
+		<parameter type="bool" name="merge_similar_materials">0</parameter>
+		<parameter type="bool" name="merge_static_meshes">0</parameter>
+		<parameter type="bool" name="merge_surfaces_by_materials">0</parameter>
+		<parameter type="float" name="morph_targets_normals_angle">180</parameter>
+		<parameter type="string" name="morph_targets_normals_mode">import</parameter>
+		<parameter type="bool" name="need_repivot">0</parameter>
+		<parameter type="bool" name="need_split">0</parameter>
+		<parameter type="bool" name="need_triagulate">1</parameter>
+		<parameter type="int" name="num_lods">3</parameter>
+		<parameter type="string" name="prefix_materials"/>
+		<parameter type="string" name="resolution">256</parameter>
+		<parameter type="float" name="scale">1</parameter>
+		<parameter type="bool" name="skip_empty_nodes">0</parameter>
+		<parameter type="int" name="smooth_animation_size">0</parameter>
+		<parameter type="bool" name="unwrap_uv_ch_0">0</parameter>
+		<parameter type="bool" name="unwrap_uv_ch_1">0</parameter>
+		<parameter type="string" name="up_axis">default</parameter>
+		<parameter type="bool" name="use_instances">1</parameter>
+		<parameter type="int" name="uv_ch">1</parameter>
+		<parameter type="bool" name="vertex_cache">1</parameter>
+		<parameter type="string" name="workflow">metalness</parameter>
+	</parameters>
+</asset>

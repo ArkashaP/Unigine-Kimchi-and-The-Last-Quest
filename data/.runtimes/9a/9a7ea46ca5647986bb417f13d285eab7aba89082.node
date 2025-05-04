@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="891126851" name="дом_1">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="472669382" immovable="1" name="Circle">
+			<mesh_name>guid://fa044ca6c02d24bfb617fc4bb353fa4e3a4415f9</mesh_name>
+			<surface name="столб_квадратный_основа" intersection="1" material="2a3c96a4698202027a6bf5ebf09b8ad6fc4453fa"/>
+			<surface name="столб_свет_квадрат" intersection="1" material="b1485c7658bcc0cbdb6b7f1595e2f5a03349713c"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1727827309" immovable="1" name="Cube">
+			<mesh_name>guid://fb6f0f7ecb3e77b5f0cd5c7dfd7c0a9577f64704</mesh_name>
+			<surface name="синий свет" intersection="1" material="e1fc52985011f0b79c26b84fca36d63ab09d79ce"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1732284392" immovable="1" name="Plane">
+			<mesh_name>guid://1d23ce4822a39f25aef2bc75c31bef9b63a02693</mesh_name>
+			<surface name="surface_0" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1102361127" immovable="1" name="Plane.001">
+			<mesh_name>guid://8fa9ace0dea95d7249f083f73eacb816df4a7ad6</mesh_name>
+			<surface name="дом_1_вставка" intersection="1" material="721a518a81c1059abda0001915f433eb9e1b9a30"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2003208538" immovable="1" name="Plane.002">
+			<mesh_name>guid://6ae944ba6ed7548d835e04af4ff39e5b3f0e743d</mesh_name>
+			<surface name="светодиод" intersection="1" material="3ddee5cc867fc7180e5bd8f3ea07b79d9d7232e2"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="287820017" immovable="1" name="Plane.004">
+			<mesh_name>guid://611c2512ab07b5a0b3c2e401623ab7228c702878</mesh_name>
+			<surface name="рамки_дом_1" intersection="1" material="9ed86fded2db7e7176a5895d09ace649b16cf864"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="353185180" immovable="1" name="Plane.005">
+			<mesh_name>guid://405b1c7c32a6c7f2eb37f3791aa1856901f8d177</mesh_name>
+			<surface name="рамки_дом_1" intersection="1" material="9ed86fded2db7e7176a5895d09ace649b16cf864"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="42101835" immovable="1" name="Plane.006">
+			<mesh_name>guid://b37354944a421eebdeb90f1bcc08e229ee26006a</mesh_name>
+			<surface name="рамки_дом_1" intersection="1" material="9ed86fded2db7e7176a5895d09ace649b16cf864"/>
+			<transform>1 8.74227948794e-08 -9.27303900631e-08 0.0 8.74227948794e-08 -1.70158103897e-07 1.06071197987 0.0 8.74227800037e-08 -1 -1.65574484582e-07 0.0 -0.0865307080555 0.258865008392 0.392103660712 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1736922414" immovable="1" name="Plane.007">
+			<mesh_name>guid://bb24960e00be5829e3c6cb530228763382e134c1</mesh_name>
+			<surface name="дом_1_вставка" intersection="1" material="721a518a81c1059abda0001915f433eb9e1b9a30"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1002216117" immovable="1" name="Plane.008">
+			<mesh_name>guid://9b866be61c987145816cdbc563f28fd9c3bc872c</mesh_name>
+			<surface name="дом_1_вставка" intersection="1" material="721a518a81c1059abda0001915f433eb9e1b9a30"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="106163344" immovable="1" name="Plane.009">
+			<mesh_name>guid://1e39e5f007fa170b126d92bdfbf089967e29589b</mesh_name>
+			<surface name="дом_1_вставка" intersection="1" material="721a518a81c1059abda0001915f433eb9e1b9a30"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="419649199" immovable="1" name="Куб">
+			<mesh_name>guid://14770f88664c4e941557047f01225f78c4f9353e</mesh_name>
+			<surface name="дом_1_основа" intersection="1" material="b6534440261cf9a52324bbd77cfc019ce3641336"/>
+			<surface name="желтый_свет_дом1" intersection="1" material="1b62cb729d5b7e62c42c1ee17509f9e069183fd8"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>

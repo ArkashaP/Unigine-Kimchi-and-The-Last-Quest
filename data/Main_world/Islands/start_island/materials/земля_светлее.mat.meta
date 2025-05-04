@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>ab990f2ccc3c5a51904abc74c997d728d83ab46a</guid>
+	<type>material</type>
+	<hash>28bb5755</hash>
+	<runtimes>
+		<runtime id="ab990f2ccc3c5a51904abc74c997d728d83ab46a" name="земля_светлее" link="0" type="5"/>
+	</runtimes>
+</asset>

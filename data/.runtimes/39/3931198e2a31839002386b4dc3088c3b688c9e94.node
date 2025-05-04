@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1080657220" name="Высотка2">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="277336019" immovable="1" name="Cube.004">
+			<mesh_name>guid://a85e98d850a61312685c714532d4db580f35f8e3</mesh_name>
+			<surface name="высотка.2.основа" intersection="1" material="322434d083282e26a7265f27e12686f96c271946"/>
+			<surface name="высотка.2.окна" intersection="1" material="ef8f0e82e1c7d0c58eb6d2b1d54f25608b850068"/>
+			<surface name="высотка.2.мост" intersection="1" material="2e490c5634ef751bc126557555daef468dd4661c"/>
+			<surface name="высотка.2.крыша" intersection="1" material="3c96c578ccf1e45c15b2b5af0d53e16c1759a1ae"/>
+			<surface name="высотка.2.H" intersection="1" material="d75a7b84c0de7357035a3d4ba1eed2fe9d02cdda"/>
+			<surface name="высотка.2.вывес" intersection="1" material="536e3f6ae976bfe4e0e37c794db79b06e7a66d10"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0.745791691207 0.481082050305 0.515200236273 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2076021526" immovable="1" name="Cube.005">
+			<mesh_name>guid://9501a57088bbc25e93938f47a52c4994d18208e6</mesh_name>
+			<surface name="surface_0" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<transform>0.383546233177 3.35306822789e-08 -4.13718570137e-09 0.0 3.35306822789e-08 -4.93528339357e-08 0.0473238863051 0.0 8.74227800037e-08 -1 -1.21277882401e-07 0.0 -0.73581119191 -1.15776706235 1.35883276755 1.0</transform>
+		</node>
+	</node>
+</nodes>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="891374847" name="башня рома_2">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="951350866" immovable="1" name="Cube">
+			<mesh_name>guid://227cf348fdae9feaac7c7575a445139ab9b05793</mesh_name>
+			<surface name="Material" intersection="1" material="c7c504a8374973d669664f1f348ab3e14e0cf55e"/>
+			<surface name="близнецы_основа" intersection="1" material="12044e7a3c8086a2ece68c4944c5d9d57f2fa9a0"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 6.38332584711e-07 -3.93938380344 9.57612913185 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="314548617" immovable="1" name="Cube.001">
+			<mesh_name>guid://20a631e0e0f82a21fcf704f7c22fad3d7aa2f7d6</mesh_name>
+			<surface name="близнецы оправы" intersection="1" material="23d44c3c81312bab411de0a31fa7e109d9bca3d2"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 6.83093756038e-07 -7.81368146848 3.06552921118 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1357364564" immovable="1" name="Cube.002">
+			<mesh_name>guid://320cf1ba79d4ec6daebc65af0424ee6d995acd3d</mesh_name>
+			<surface name="Material" intersection="1" material="c7c504a8374973d669664f1f348ab3e14e0cf55e"/>
+			<surface name="близнецы_основа" intersection="1" material="12044e7a3c8086a2ece68c4944c5d9d57f2fa9a0"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -2.08165202639e-06 9.67303890125 9.57612853683 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="718735523" immovable="1" name="Cube.003">
+			<mesh_name>guid://47d2321212ea1c1018db4d01b2ad55633ec6ad78</mesh_name>
+			<surface name="близнецы оправы" intersection="1" material="23d44c3c81312bab411de0a31fa7e109d9bca3d2"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -1.52589250733e-06 13.547334805 3.06552827746 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1857443238" immovable="1" name="Cube.004">
+			<mesh_name>guid://3ebc917caf2b16cc5aab3c79b542a75b865b9277</mesh_name>
+			<surface name="близнецы оправы" intersection="1" material="23d44c3c81312bab411de0a31fa7e109d9bca3d2"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -7.2165971938e-07 2.86682769478 15.640500897 1.0</transform>
+		</node>
+	</node>
+</nodes>

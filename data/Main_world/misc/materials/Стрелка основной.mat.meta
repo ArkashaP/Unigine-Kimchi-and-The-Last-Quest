@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>d58a84997d0464d0d2bb5fc19cfc60b20931eb46</guid>
+	<type>material</type>
+	<hash>a6e15d02</hash>
+	<runtimes>
+		<runtime id="d58a84997d0464d0d2bb5fc19cfc60b20931eb46" name="Стрелка основной" link="0" type="5"/>
+	</runtimes>
+</asset>

@@ -1,0 +1,9 @@
+{
+	"asset": "633dd432f057dc8116fbd86a231108e1640895db",
+	"alias": "антена.node",
+	"primary": 1,
+	"version": "2.19.0.3",
+	"parameters": {
+		"UnigineEditor.AssetHash": "d7a3ea3d"
+	}
+}

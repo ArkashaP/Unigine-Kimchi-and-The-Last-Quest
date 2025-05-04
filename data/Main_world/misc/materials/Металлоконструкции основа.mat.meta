@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>e6c4b886d8f43cd5efd2003eae388e69ed1322bf</guid>
+	<type>material</type>
+	<hash>395ccdf9</hash>
+	<runtimes>
+		<runtime id="e6c4b886d8f43cd5efd2003eae388e69ed1322bf" name="Металлоконструкции основа" link="0" type="5"/>
+	</runtimes>
+</asset>

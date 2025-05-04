@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>dda469a600e09d1048bf499d15fad82c41e5eb7c</guid>
+	<type>material</type>
+	<hash>699a594e</hash>
+	<runtimes>
+		<runtime id="dda469a600e09d1048bf499d15fad82c41e5eb7c" name="Ноги.Передние" link="0" type="5"/>
+	</runtimes>
+</asset>

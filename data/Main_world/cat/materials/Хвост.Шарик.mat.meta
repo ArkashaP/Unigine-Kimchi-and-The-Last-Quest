@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>287a017ce6dcdef7d9f3633b0960ada8e0290b22</guid>
+	<type>material</type>
+	<hash>465d7a68</hash>
+	<runtimes>
+		<runtime id="287a017ce6dcdef7d9f3633b0960ada8e0290b22" name="Хвост.Шарик" link="0" type="5"/>
+	</runtimes>
+</asset>

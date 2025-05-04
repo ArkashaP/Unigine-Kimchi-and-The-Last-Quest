@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1840291143" name="Medium_Island_1">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="151009786" immovable="1" name="Icosphere">
+			<mesh_name>guid://5abac4bad855d4c233bf54c2f7e173fa2bd36ec8</mesh_name>
+			<surface name="земля_дефолт_темнее_1" intersection="1" material="a6da73ea42726098667811f2a1364b5ea3bbbc78"/>
+			<surface name="земля_светлее" intersection="1" material="ab990f2ccc3c5a51904abc74c997d728d83ab46a"/>
+			<surface name="земля_темная" intersection="1" material="c7ddf83e847c80c3bedfc6c6f8b9f6071c175b2c"/>
+			<transform>1.28951096535 1.12732663926e-07 -2.11478010589e-07 0.0 1.12732663926e-07 -3.48763537751e-07 2.41902637482 0.0 1.20786264119e-07 -1.38163375854 -2.7044258407e-07 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>
