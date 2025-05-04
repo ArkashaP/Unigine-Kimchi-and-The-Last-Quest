@@ -3,15 +3,40 @@
 	<node type="NodeDummy" id="1768102489" name="group">
 		<transform>1 0 0 0.0 -1.05879118407e-22 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
 		<node type="PlayerDummy" id="1689266793" name="PlayerCamera">
-			<znear>0.300000012</znear>
-			<zfar>100000</zfar>
+			<znear>0.00100000005</znear>
+			<zfar>213.238266</zfar>
 			<ortho_height>7</ortho_height>
 			<oblique_frustum_plane>0 0 -1 0</oblique_frustum_plane>
 			<is_oblique_frustum>0</is_oblique_frustum>
 			<is_main>1</is_main>
 			<is_listener>1</is_listener>
 			<controlled>1</controlled>
-			<transform>0.944377720356 0.328862726688 -6.35981559754e-05 0.0 -0.174268126488 0.500600457191 0.847956359386 0.0 0.278893023729 -0.800779998302 0.53006619215 0.0 1.22292244999 -3.34479106658 3.01766011942 1.0</transform>
+			<transform>0.999999880791 3.68303026965e-10 1.94288994568e-16 0.0 -2.77555458371e-16 5.36440779797e-07 0.999998509882 0.0 3.68303362057e-10 -0.999998748302 5.36441763898e-07 0.0 0 0 0 1.0</transform>
+			<node type="ObjectVolumeBox" id="1553815735" enabled="0" name="ObjectVolumeBox">
+				<size>146.899994 68.2141571 128.966614</size>
+				<surface name="volume" material="645de380db4ad060593fbfaf6fb117901c05aee7"/>
+				<transform>0.999999821186 3.68302943698e-10 3.68303526566e-10 0.0 -3.68303193499e-10 3.57627470748e-07 0.999998569489 0.0 3.68302777165e-10 -0.999999165535 3.576276697e-07 0.0 7.56430917903e-09 -2.52985546446e-06 -73.0382615834 1.0</transform>
+			</node>
+			<node type="ObjectVolumeBox" id="845185788" enabled="0" name="ObjectVolumeBox_1">
+				<size>146.899994 68.2141571 128.966614</size>
+				<surface name="volume" material="645de380db4ad060593fbfaf6fb117901c05aee7"/>
+				<transform>0.99999988079 3.68303080722e-10 3.68303668808e-10 0.0 -3.68302817402e-10 1.2317777067e-07 0.999998748302 0.0 3.68302250372e-10 -0.999999284741 1.23177311901e-07 0.0 -6.84136476359e-08 -3.94177503779e-05 133.253712595 1.0</transform>
+			</node>
+			<node type="ObjectVolumeBox" id="2020776519" enabled="0" immovable="1" name="ObjectVolumeBox_2">
+				<size>134.502258 106.730934 186.136993</size>
+				<surface name="volume" material="0985305ccd828c437617505bffa47cb59eaa3813"/>
+				<transform>0.999999761581 3.68302692144e-10 3.68303254611e-10 0.0 -3.68302227583e-10 1.07685023255e-06 0.99999719858 0.0 3.68301010953e-10 -0.999997735018 1.07684838112e-06 0.0 1.92296782942e-08 1.51551864948e-05 -104.711582204 1.0</transform>
+			</node>
+			<node type="ObjectVolumeBox" id="950342752" enabled="0" immovable="1" name="ObjectVolumeBox_3">
+				<size>10 10 10</size>
+				<surface name="volume" material="d67b48248c5f17b7aaf822838462915134955f3b"/>
+				<transform>9.00000011921 -2.3413234569e-15 3.31473149919e-09 0.0 3.31472975059e-09 1.60932734872e-06 -9.00000709296 0.0 1.15588174818e-15 9.0000101924 1.60932713556e-06 0.0 0 -7.3518726524e-15 1.06581410364e-14 1.0</transform>
+			</node>
+			<node type="ObjectVolumeSphere" id="222524127" name="ObjectVolumeSphere">
+				<radius>70 70 70</radius>
+				<surface name="volume" material="d67b48248c5f17b7aaf822838462915134955f3b"/>
+				<transform>1.00000023842 -1.36440948713e-22 2.82099348522e-16 0.0 2.0255232804e-18 0.999999761583 -8.34465289756e-07 0.0 -9.39911804922e-16 8.34465026857e-07 1.00000005961 0.0 0 0 0 1.0</transform>
+			</node>
 		</node>
 		<node type="NodeDummy" id="2085045353" name="PlayerViewBody">
 			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -0.581695723902 3.34479106658 -3.01766011942 1.0</transform>
@@ -54,9 +79,9 @@
 				<surface name="Живот" material="4d62e4d28f7dc259760e4eb4f3d7dc3c15a6c91e"/>
 				<surface name="Выпуклость.Верх.Передняя" material="4d62e4d28f7dc259760e4eb4f3d7dc3c15a6c91e"/>
 				<surface name="Outline" material="684c0cfb5eb13417285292533c30f96265c989c9"/>
-				<transform>-0.342383574531 -2.23125565977e-07 0 0.0 2.23127384966e-07 -0.34238637595 0 0.0 0 0 0.342424949552 0.0 -2.01948391737e-28 0 1.1102230908e-16 1.0</transform>
+				<transform>-0.356524390244 -2.32340709502e-07 0 0.0 2.32342949747e-07 -0.356527221981 0 0.0 0 0 0.356567024704 0.0 0 0 0 1.0</transform>
 				<node type="NodeDummy" id="1689440685" name="DEF-spine.007">
-					<transform>0.999996344173 1.66215984686e-14 -1.68868895207e-27 0.0 -1.66231737382e-14 0.999996344202 1.71546449247e-20 0.0 1.68909090798e-27 -1.71585060929e-20 0.999999912967 0.0 0 0 0 1.0</transform>
+					<transform>0.999995560774 -1.24285668452e-14 -1.68869374552e-27 0.0 -2.90794061617e-14 0.999995560809 1.7154632577e-20 0.0 1.68910544409e-27 -1.715856105e-20 0.999999825934 0.0 0 0 0 1.0</transform>
 				</node>
 				<node type="LightOmni" id="1973751177" name="LightOmni">
 					<attenuation_distance>7.74100018</attenuation_distance>
@@ -143,8 +168,8 @@
 		</node>
 		<node type="ObjectDummy" id="317949736" name="Player">
 			<body type="BodyDummy" id="277001591" frozen="0">
-				<shape type="ShapeCapsule" id="277001591" transform="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.888418257 1">
-					<radius>1.10000002</radius>
+				<shape type="ShapeCapsule" id="277001591" transform="1 0 0 0 2.16290961e-36 1 0 0 0 0 1 0 0 0 0.888418257 1">
+					<radius>0.700133264</radius>
 					<height>0.200000003</height>
 				</shape>
 			</body>
@@ -165,12 +190,13 @@
 					<parameter name="cameraMode">2</parameter>
 					<parameter name="camera">1689266793</parameter>
 					<parameter name="useCrouch">1</parameter>
+					<parameter name="runSpeed">9</parameter>
 					<parameter name="debugCamera">
 						<parameter name="enabled">0</parameter>
 						<parameter name="useFixedAngles">0</parameter>
 					</parameter>
 					<parameter name="debugVisualizer">
-						<parameter name="enabled">1</parameter>
+						<parameter name="enabled">0</parameter>
 						<parameter name="shapes">1</parameter>
 						<parameter name="playerShape">1</parameter>
 						<parameter name="playerDirection">1</parameter>

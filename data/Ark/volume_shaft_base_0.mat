@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.19.0.3" guid="645de380db4ad060593fbfaf6fb117901c05aee7" base_material="110f600819e39b5dd4ad058a58d7c46d16c13ad5">
+	<options transparent="2" blend_src="5" blend_dest="6" cast_shadow="0" cast_world_shadow="0" overlap="0"/>
+	<texture name="noise">guid://a8106e01d8743fe2b0601f5d30c9eaf6cee2a4ca</texture>
+	<parameter name="diffuse_color" expression="0">0 0 0 1</parameter>
+	<parameter name="volume_power" expression="0">1.03507996</parameter>
+	<parameter name="volume_density" expression="0">0.192980006</parameter>
+	<parameter name="rays_jitter" expression="0">0.807009995</parameter>
+	<parameter name="step_jitter" expression="0">0.517539978</parameter>
+	<parameter name="bias" expression="0">0.552630007</parameter>
+	<parameter name="samples" expression="0">85.3324814</parameter>
+	<parameter name="view_intensity" expression="0">1</parameter>
+	<parameter name="view_exponent" expression="0">0.885959983</parameter>
+</material>

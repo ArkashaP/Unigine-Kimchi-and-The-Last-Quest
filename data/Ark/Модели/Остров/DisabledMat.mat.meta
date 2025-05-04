@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>6e8ee50266df29352147f489d46ee5d771f92b9b</guid>
+	<type>material</type>
+	<hash>1e528a78</hash>
+	<runtimes>
+		<runtime id="6e8ee50266df29352147f489d46ee5d771f92b9b" name="DisabledMat" link="0" type="5"/>
+	</runtimes>
+	<parameters>
+		<parameter type="bool" name="unchanged">1</parameter>
+	</parameters>
+</asset>

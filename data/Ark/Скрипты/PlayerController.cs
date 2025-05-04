@@ -1580,7 +1580,7 @@ public class PlayerController : Component
 		camera.WorldPosition = MathLib.Lerp(
 			camera.WorldPosition,
 			targetWorldPos,
-			1.5f*Game.IFps
+			1.8f*Game.IFps
 		);
 		dvec3 target_dir = cameraLookPos.WorldPosition - camera.WorldPosition;
 		target_dir.Normalize();

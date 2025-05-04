@@ -965,11 +965,7 @@
 				<transform>0.00114500517797 -0.999999165535 8.64267343914e-07 0.0 -5.06639510789e-07 1.01327902158e-06 0.999999880791 0.0 -0.99999922514 -0.00114482648044 -2.68220917476e-07 0.0 13.316506349 -6.61561974599 0.0463758102541 1.0</transform>
 			</node>
 		</node>
-		<node type="NodeReference" id="631750628" name="Player">
-			<reference>guid://3c458df50e6edda4078c78e4b4e598d4b6d41188</reference>
-			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0.581695723903 -3.34479106658 3.01766011943 1.0</transform>
-		</node>
-		<node type="LightProj" id="141588572" name="LightProj">
+		<node type="LightProj" id="141588572" name="а">
 			<penumbra>1</penumbra>
 			<attenuation_distance>29.8780003</attenuation_distance>
 			<near_attenuation_distance>0</near_attenuation_distance>
@@ -1050,7 +1046,11 @@
 				<billboard name="flare_29" offset="0.936999977" size="0.449999988" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0450000018"/>
 				<billboard name="flare_30" offset="1" size="1.03999996" rotate="1" uv_lower_left="0.75 0.75" uv_upper_right="1 1" color="0.972549081 1 0.898039281 1" offset_scale="1" intensity="0.0375000015"/>
 			</lens_flare_billboards>
-			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -0.333366394043 14.8685493469 16.4831467328 1.0</transform>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -0.333366394043 14.8685493469 6.68864130624 1.0</transform>
+		</node>
+		<node type="NodeReference" id="631750628" name="Player">
+			<reference>guid://3c458df50e6edda4078c78e4b4e598d4b6d41188</reference>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 0.581695723903 62.8223796319 93.3271527016 1.0</transform>
 		</node>
 		<node type="NodeDummy" id="1547575613" name="Trash">
 			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 -3.98423314095 0.0868196487427 1.46565846216 1.0</transform>
@@ -1132,6 +1132,969 @@
 				</shape>
 			</body>
 			<transform>0.999996781349 2.63935021394e-06 0.00254660914652 0.0 2.63762353825e-06 0.999997675419 -0.00207215058617 0.0 -0.00254660914652 0.00207215105183 0.999994635582 0.0 -1.17840197666 16.1151749749 12.1516855131 1.0</transform>
+		</node>
+		<node type="ObjectVolumeSphere" id="1686772205" enabled="0" immovable="1" name="ObjectVolumeSphere">
+			<radius>150 150 150</radius>
+			<surface name="volume" material="e563cd30c3f024554b372b9f1ab11b0c8be368d7"/>
+			<transform>0.999999940395 0 0 0.0 0 0.999999940395 0 0.0 0 0 0.999999940395 0.0 2.21894487521 9.15674027305 1.04114417893 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="859607154" immovable="1" name="exported_mesh">
+			<mesh_name>guid://e3f4ff88385a919ff21671170eff43bc5cbc694f</mesh_name>
+			<surface name="Материал" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Ноги.Задние" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Ноги.Передние" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Уши.ВнутренняяСторона" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Выпуклость.Верх.Задняя" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Хвост.Шарик" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Нос" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Живот" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Выпуклость.Верх.Передняя" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Outline" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево большое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево большое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево большое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево большое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="кристалл.4.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="кристалл.4.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="кристалл.3.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="кристалл.3.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="кристалл.3.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="кристалл.3.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="кристалл.1.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="кристалл.1.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="кристалл.1.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="кристалл.1.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="феолетовое дерево" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="феолетовое дерево" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="феолетовое дерево" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="феолетовое дерево" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="феолетовое дерево" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="феолетовое дерево" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="синие дерево" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="синие дерево" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="феолетовое дерево" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="феолетовое дерево" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="феолетовое дерево" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="феолетовое дерево" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="феолетовое дерево" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="феолетовое дерево" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="фонарь осн. оранжевый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="фонарь свет белый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="фонарь осн. оранжевый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="фонарь свет белый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Антенна металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Антенна металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="фонарь осн. оранжевый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="фонарь свет белый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="фонарь осн. оранжевый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="фонарь свет белый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Антенна металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Антенна металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.4.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.4.окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.4.металлоштуки" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.4.металлоштуки" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.4.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.4.окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="фонарь осн. оранжевый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="фонарь свет белый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="фонарь осн. оранжевый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="фонарь свет белый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вентилляция подставка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вентилляция основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вентилляция подставка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вентилляция основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="крыша_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="окна_низ_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дыра...." intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="окна_вверх_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="крыша_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="окна_низ_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дыра...." intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="окна_вверх_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.крыша" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.крыша" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Бочка кольца" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Бочка основной" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Бочка крышка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Бочка кольца" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Бочка основной" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Бочка крышка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Мусорка основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Мусорка койма" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Мусорка внутри" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Мусорка основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Мусорка койма" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Мусорка внутри" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево простое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево простое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево простое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево простое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вывеска корпус фиолетовый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вывеска табло белый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вывеска антенки чёрный" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вывеска корпус фиолетовый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вывеска табло белый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вывеска антенки чёрный" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Антенна металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Антенна металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Металлоконструкции основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Провода основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Провода основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Металлоконструкции основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Металлоконструкции основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Провода основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Провода основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Металлоконструкции основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Черепица волнистая основной" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Черепица волнистая основной" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Бочка кольца" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Бочка основной" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Бочка крышка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Бочка кольца" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Бочка основной" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Бочка крышка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Антенна металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Антенна металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Мешок с мусором осн. чёрный" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Мешок с мусором осн. чёрный" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вентилляция подставка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вентилляция основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вентилляция подставка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вентилляция основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вентилляция подставка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вентилляция основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вентилляция подставка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Вентилляция основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево большое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево большое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Автомат основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Автомат картридер" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Автомат место выдачи" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Автомат табло" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Автомат основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Автомат картридер" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Автомат место выдачи" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Автомат табло" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Металлоконструкция чёрный металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Металлоконструкция чёрный металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Металлоконструкция чёрный металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Металлоконструкция чёрный металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево простое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево простое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево простое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево простое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево малое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево малое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево малое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево малое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево большое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево большое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево большое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево большое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Скамейка основа металллический" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Скамейка сиденье бежевый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Скамейка сиденье бежевый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Скамейка основа металллический" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Антенна металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Антенна металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.крыша" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.крыша" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Гидрант осн. красный" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Гидрант осн. красный" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Черепица волнистая основной" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Черепица волнистая основной" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Антенна металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Антенна металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.6.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.6.окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.6.крыша" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.6.колонна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.6.колонна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.6.колонна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.6.колонна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.6.колонна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.6.колонна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.6.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.6.окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.6.крыша" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.крыша" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.крыша" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом-ромы.5.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Скамейка основа металллический" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Скамейка сиденье бежевый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Скамейка сиденье бежевый" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Скамейка основа металллический" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Спавн основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Спавн сосиски " intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Спавн сосиски " intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Спавн основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево простое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево простое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево простое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево простое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево большое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево большое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево большое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево большое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево малое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево малое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево малое ствол" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Дерево малое листва" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Мусорка основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Мусорка основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="крыша_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="окна_низ_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дыра...." intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="окна_вверх_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="крыша_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="окна_низ_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дыра...." intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="окна_вверх_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом3_основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом3_основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="вывеска" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет фонарик" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет фонарик" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="столб металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="столб металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="основа_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="основа_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="столб металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="столб металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет фонарик" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет фонарик" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="вывеска" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светло_серый_мпу" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="mpu_вывеска.001" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_основа_mpu" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material.001" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material.001" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_основа_mpu" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="mpu_вывеска.001" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светло_серый_мпу" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="высотка.2.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="высотка.2.окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="высотка.2.мост" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="высотка.2.крыша" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="высотка.2.H" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="высотка.2.вывес" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="высотка.2.основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="высотка.2.окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="высотка.2.мост" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="высотка.2.крыша" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="высотка.2.H" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="высотка.2.вывес" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="близнецы_основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="близнецы оправы" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="близнецы оправы" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="близнецы_основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="близнецы_основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="близнецы оправы" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="близнецы_основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="близнецы оправы" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="близнецы оправы" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="близнецы оправы" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="близнецы оправы" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="близнецы_основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="близнецы оправы" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="близнецы_основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом3_основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом3_основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="синий свет" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_1_вставка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светодиод" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамки_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамки_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамки_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_1_вставка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_1_вставка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_1_вставка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_1_основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="желтый_свет_дом1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_1_основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="желтый_свет_дом1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_1_вставка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_1_вставка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_1_вставка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамки_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамки_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамки_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светодиод" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_1_вставка" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="синий свет" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="вывеска" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет фонарик" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет фонарик" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="столб металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="столб металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет фонарик" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="столб металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="основа_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="основа_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="столб металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="труба" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="столб металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет фонарик" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="столб металл" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет фонарик" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет фонарик" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="козырьки_отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светлый металл отель" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="вывеска" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светло_серый_мпу" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="mpu_вывеска.001" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_основа_mpu" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material.001" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material.001" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_основа_mpu" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="mpu_вывеска.001" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светло_серый_мпу" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом3_основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="забор_дом3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом3_основа" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="крыша_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="окна_низ_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дыра...." intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="окна_вверх_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="крыша_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="окна_низ_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дыра...." intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="окна_вверх_дом_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светло_серый_мпу" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="mpu_вывеска.001" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_основа_mpu" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material.001" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="Material.001" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="свет_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дом_основа_mpu" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="рамка_окна" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="mpu_вывеска.001" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="дверь" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="лестница" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="светло_серый_мпу" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт_темнее" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт_темнее" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт_темнее" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт_темнее" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_тень_3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="почва_3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="бардюр_3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_тень_3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="почва_3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="бардюр_3" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="камень_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="камень_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="камень_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="камень_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт_темнее" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт_темнее" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="камень_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="камень_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="камень_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="камень_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="основа_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="темный_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="вверх_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="бардюр_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="вверх_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="вверх_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="основа_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="вверх_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="темный_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="темный_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="основа_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="основа_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="темный_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="темный_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="вверх_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="основа_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="вверх_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="вверх_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="основа_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="темный_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="вверх_земля_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="бардюр_2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="surface_0" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт_темнее_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_светлее" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_темная" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт_темнее_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_светлее" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_темная" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="почва_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_темная_1.2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_темная_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="бардюр_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="почва_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="бардюр_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_темная_1.2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="бардюр_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="почва_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_темная_1.2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_темная_1.2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="бардюр_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="бардюр_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_темная_1.2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_темная_1.2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="почва_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="бардюр_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_темная_1.2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="бардюр_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="почва_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_дефолт" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="почва_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_темная_1.2" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="земля_темная_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="асфальт_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="бардюр_1" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<surface name="grid_for_world_creation" intersection="1" collision="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+			<transform>0.999999880791 0 0 0.0 0 0.999999880791 0 0.0 0 0 0.999999940395 0.0 45.7383155823 35.2341690063 -17.1938338554 1.0</transform>
 		</node>
 	</editor>
 	<console>
