@@ -45,31 +45,24 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup>
-		<Compile Include="data/maxim_batteryUp/components/BatteryWood.cs"/>
-		<Compile Include="data/Ark/Скрипты/TestComp.cs"/>
-		<Compile Include="data/maxim_batteryUp/components/BatteriesCounter.cs"/>
-		<Compile Include="data/maxim_batteryUp/components/Battrey1_Enter.cs"/>
-		<Compile Include="data/Ark/Скрипты/Item_Test.cs"/>
-		<Compile Include="data/Ark/Скрипты/PlayerController.cs"/>
-		<Compile Include="data/csharp_template/FP_controller/components/FirstPersonController.cs"/>
-		<Compile Include="data/maxim_batteryUp/components/Respawn.cs"/>
-		<Compile Include="data/maxim_batteryUp/components/Battery2_Enter.cs"/>
-		<Compile Include="data/maxim_batteryUp/components/menu/UIMainMenu.cs"/>
-		<Compile Include="data/maxim_batteryUp/components/menu/Information.cs"/>
-		<Compile Include="data/maxim_batteryUp/components/menu/EndInformation.cs"/>
-		<Compile Include="data/maxim_batteryUp/components/menu/UIPauseMenu.cs"/>
 		<Compile Include="data/vika/scripts/Move_battery.cs"/>
 		<Compile Include="data/Ark/Скрипты/PlayerController.cs"/>
 		<Compile Include="data/Ark/Скрипты/Item_Test.cs"/>
+		<Compile Include="data/maxim_batteryUp/components/menu/Information.cs"/>
 		<Compile Include="data/vika/scripts/Light_signboard.cs"/>
 		<Compile Include="data/vika/scripts/Blink_light_signboard.cs"/>
 		<Compile Include="data/maxim_batteryUp/components/Battrey1_Enter.cs"/>
 		<Compile Include="data/csharp_template/FP_controller/components/FirstPersonController.cs"/>
 		<Compile Include="data/vika/scripts/light_cat.cs"/>
+		<Compile Include="data/maxim_batteryUp/components/Battery2_Enter.cs"/>
 		<Compile Include="data/Ark/Скрипты/TestComp.cs"/>
+		<Compile Include="data/maxim_batteryUp/components/menu/EndInformation.cs"/>
 		<Compile Include="data/Gasan/Shine.cs"/>
+		<Compile Include="data/maxim_batteryUp/components/menu/UIPauseMenu.cs"/>
 		<Compile Include="data/maxim_batteryUp/components/BatteriesCounter.cs"/>
+		<Compile Include="data/maxim_batteryUp/components/menu/UIMainMenu.cs"/>
 		<Compile Include="data/maxim_batteryUp/components/BatteryWood.cs"/>
+		<Compile Include="data/maxim_batteryUp/components/Respawn.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>

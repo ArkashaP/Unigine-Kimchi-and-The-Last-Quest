@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>6b9c71ffc7132b35077365f0941f46ef3013affa</guid>
+	<type>material</type>
+	<hash>35762b68</hash>
+	<runtimes>
+		<runtime id="6b9c71ffc7132b35077365f0941f46ef3013affa" name="Battery_TextureSet_1" link="0" type="5"/>
+	</runtimes>
+	<parameters>
+		<parameter type="bool" name="unchanged">1</parameter>
+	</parameters>
+</asset>

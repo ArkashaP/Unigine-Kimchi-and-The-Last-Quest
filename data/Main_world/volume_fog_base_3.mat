@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.19.0.3" guid="bdb4abeff82b42ffee152ad21c97d017e88d7201" base_material="9ff6ca7ff89202ecdbd93dc4a6271d42718d6d74">
+	<options overlap="1"/>
+	<parameter name="diffuse_color" expression="0">0.156862751 0.156862751 0.156862751 1</parameter>
+	<parameter name="volume_power" expression="0">1.09604001</parameter>
+	<parameter name="volume_density" expression="0">0.0169399995</parameter>
+</material>
