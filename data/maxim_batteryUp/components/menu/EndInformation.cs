@@ -19,18 +19,15 @@ public class EndInformation : Component
     // Метки для отображения заголовка, контента и номера блока
     private WidgetLabel titleLabel, contentLabel, numberLabel;
 
-    // Кнопки для перехода к следующему блоку и выхода
-    //private WidgetButton nextButton, exitButton;
+    // Компонент триггера
+    [ShowInEditor]
+    private WorldTrigger trigger;
 
     // Индекс текущего блока
     private int currentBlockIndex;
 
     // Объекты для работы с JSON
     private Json json, jsonBlocks;
-
-    // Компонент триггера
-    [ShowInEditor]
-	private WorldTrigger trigger;
 
     // Структура для хранения данных блока
     struct Block
@@ -66,7 +63,7 @@ public class EndInformation : Component
     {
         // Запускаем интерфейс
         StartInformation();
-		trigger.Enabled = false;
+        trigger.Enabled = false;
     }
 
     // Обновление каждый кадр
@@ -102,12 +99,6 @@ public class EndInformation : Component
 
         VBox.Hidden = false; // Показываем интерфейс
         currentBlockIndex = 0; // Начинаем с первого блока
-        // if (nextButton != null)
-        // {
-        //     nextButton.Enabled = true; // Включаем кнопку "Далее"
-        //     nextButton.Hidden = false; // Делаем кнопку "Далее" видимой
-        //     nextButton.Text = "Далее"; // Сбрасываем текст кнопки
-        // }
         ShowBlock(); // Показываем первый блок
     }
 
@@ -148,12 +139,6 @@ public class EndInformation : Component
     // Переход к следующему блоку
     private void NextBlock()
     {
-        // if (currentBlockIndex == blocks.Count - 2)
-        // {
-        //     if (nextButton != null)
-        //         nextButton.Text = "Завершить"; // Меняем текст перед последним блоком
-        // }
-
         if (currentBlockIndex == blocks.Count - 1)
         {
             if (VBox != null)
@@ -163,8 +148,6 @@ public class EndInformation : Component
         {
             currentBlockIndex++; // Переходим к следующему блоку
             ShowBlock(); // Показываем новый блок
-            // if (nextButton != null)
-            //     nextButton.Enabled = true; // Включаем кнопку после отображения
         }
     }
 
@@ -225,8 +208,8 @@ public class EndInformation : Component
             Log.Error("Failed to create VBox.\n");
             return;
         }
-        VBox.Width = 900;
-        VBox.Height = 600;
+        VBox.Width = 1920; // Полноэкранная ширина
+        VBox.Height = 1080; // Полноэкранная высота
 
         background = new WidgetSprite(); // Фон
         if (background == null)
@@ -234,8 +217,8 @@ public class EndInformation : Component
             Log.Error("Failed to create background sprite.\n");
             return;
         }
-        background.Width = 900;
-        background.Height = 600;
+        background.Width = 1920; // Полноэкранная ширина
+        background.Height = 1080; // Полноэкранная высота
         background.Texture = "data/maxim_batteryUp/ui/infoBackground.png";
         background.SetPosition(0, 0);
 
@@ -245,12 +228,12 @@ public class EndInformation : Component
             Log.Error("Failed to create titleLabel.\n");
             return;
         }
-        titleLabel.Height = 80;
-        titleLabel.Width = 800;
+        titleLabel.Height = 120; // Увеличена высота для полноэкранного режима
+        titleLabel.Width = 1800; // Ширина почти на весь экран
         titleLabel.Text = "Заголовок";
-        titleLabel.FontSize = 30;
-        titleLabel.SetPosition(50, 30); // Подняли на 20 пикселей
-        titleLabel.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f); // Черный цвет
+        titleLabel.FontSize = 48; // Увеличен шрифт для читаемости
+        titleLabel.SetPosition(60, 50); // Сдвинут ближе к верхнему краю
+        titleLabel.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f); // Белый цвет
         titleLabel.FontWrap = 1; // Перенос текста
 
         contentLabel = new WidgetLabel(); // Метка для контента
@@ -259,12 +242,12 @@ public class EndInformation : Component
             Log.Error("Failed to create contentLabel.\n");
             return;
         }
-        contentLabel.Height = 200;
-        contentLabel.Width = 800;
+        contentLabel.Height = 600; // Увеличена высота для большего текста
+        contentLabel.Width = 1800; // Ширина почти на весь экран
         contentLabel.Text = "Контент";
-        contentLabel.FontSize = 20;
-        contentLabel.SetPosition(55, 500);
-        contentLabel.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f); // Черный цвет
+        contentLabel.FontSize = 36; // Увеличен шрифт для читаемости
+        contentLabel.SetPosition(200, 800); // Перемещен выше для лучшего размещения
+        contentLabel.FontColor = new vec4(1.0f, 1.0f, 1.0f, 1.0f); // Белый цвет
         contentLabel.FontWrap = 1; // Перенос текста
 
         numberLabel = new WidgetLabel(); // Метка для номера блока
@@ -273,63 +256,23 @@ public class EndInformation : Component
             Log.Error("Failed to create numberLabel.\n");
             return;
         }
-        numberLabel.Width = 70;
-        numberLabel.Height = 40;
+        numberLabel.Width = 150; // Увеличено для полноэкранного режима
+        numberLabel.Height = 80; // Увеличено для читаемости
         numberLabel.Text = "1/4";
-        numberLabel.FontSize = 30;
-        numberLabel.SetPosition(415, 527);
+        numberLabel.FontSize = 48; // Увеличен шрифт
+        numberLabel.SetPosition(885, 950); // Перемещен в нижнюю центральную часть
         numberLabel.FontColor = new vec4(0.0f, 0.0f, 0.0f, 1.0f); // Черный цвет
         numberLabel.FontWrap = 1;
-
-        // Кнопка "Далее" для перехода к следующему блоку
-        //nextButton = new WidgetButton();
-        // if (nextButton == null)
-        // {
-        //     Log.Error("Failed to create nextButton.\n");
-        //     return;
-        // }
-        // nextButton.Width = 220;
-        // nextButton.Height = 70;
-        // nextButton.Text = "Далее";
-        // nextButton.FontSize = 25;
-        // nextButton.FontColor = new vec4(00f, 0.0f, 0.0f, 1.0f);
-        // nextButton.SetPosition(630, 511);
-        // nextButton.ButtonColor = new vec4(0.39f, 0.39f, 0.50f, 1.0f);
-        // nextButton.EventClicked.Connect(NextBlock);
-
-        // Кнопка "Закрыть" для выхода
-        // exitButton = new WidgetButton();
-        // if (exitButton == null)
-        // {
-        //     Log.Error("Failed to create exitButton.\n");
-        //     return;
-        // }
-        // exitButton.Width = 220;
-        // exitButton.Height = 70;
-        // exitButton.Text = "Закрыть";
-        // exitButton.FontSize = 25;
-        // exitButton.FontColor = new vec4(0.0f, 0.0f, 0.0f, 1.0f);
-        // exitButton.SetPosition(50, 511);
-        // exitButton.ButtonColor = new vec4(0.39f, 0.39f, 0.50f, 1.0f);
-        // exitButton.EventClicked.Connect(() =>
-        // {
-        //     if (VBox != null)
-        //         VBox.Hidden = true; // Скрываем интерфейс
-        // });
 
         // Добавляем элементы в контейнер VBox
         VBox.AddChild(background, Gui.ALIGN_OVERLAP);
         VBox.AddChild(titleLabel, Gui.ALIGN_OVERLAP);
         VBox.AddChild(contentLabel, Gui.ALIGN_OVERLAP);
-        //VBox.AddChild(numberLabel, Gui.ALIGN_OVERLAP);
-        //VBox.AddChild(nextButton, Gui.ALIGN_OVERLAP);
-        //VBox.AddChild(exitButton, Gui.ALIGN_OVERLAP);
+        //VBox.AddChild(numberLabel, Gui.ALIGN_OVERLAP); // Включен, так как создается
 
         // Добавляем контейнер в главное окно, центрируем
         WindowManager.MainWindow.AddChild(VBox, Gui.ALIGN_OVERLAP | Gui.ALIGN_CENTER);
 
-        // if (nextButton != null)
-        //     nextButton.Enabled = true; // Кнопка "Далее" изначально включена
         if (VBox != null)
             VBox.Hidden = true; // Изначально интерфейс скрыт
     }
