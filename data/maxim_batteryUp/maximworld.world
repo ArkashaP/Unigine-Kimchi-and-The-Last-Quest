@@ -874,6 +874,11 @@
 					<parameter name="jsonFile">guid://f05b27fed787478f09e539600cc300e790651930</parameter>
 					<parameter name="trigger">1572067563</parameter>
 				</property>
+				<property parent="fa83f41ab081174b4ce7e3835641262b1a011fa9" guid="86ad70ea96a159c299c1a893963c342ad5b06239">
+					<parameter name="file">guid://d14e0af8fc013a61763f5eb98d9145beb9c9462f</parameter>
+					<parameter name="info">a546308870fb3bef9dc8f1ded217b4af93de060f</parameter>
+					<parameter name="uimain">47aaf4e6636256fa7c7017cca38239086e3b0b15</parameter>
+				</property>
 			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 10.4191555479 14.1518843841 6.24039225992 1.0</transform>
 		</node>

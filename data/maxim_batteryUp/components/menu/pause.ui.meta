@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asset version="2.19.0.3">
+	<guid>d14e0af8fc013a61763f5eb98d9145beb9c9462f</guid>
+	<type>file</type>
+	<hash>6ef2d864</hash>
+	<runtimes>
+		<runtime id="d14e0af8fc013a61763f5eb98d9145beb9c9462f" name="pause.ui" link="0"/>
+	</runtimes>
+</asset>

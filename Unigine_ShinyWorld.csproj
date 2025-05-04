@@ -57,6 +57,7 @@
 		<Compile Include="data/maxim_batteryUp/components/menu/UIMainMenu.cs"/>
 		<Compile Include="data/maxim_batteryUp/components/menu/Information.cs"/>
 		<Compile Include="data/maxim_batteryUp/components/menu/EndInformation.cs"/>
+		<Compile Include="data/maxim_batteryUp/components/menu/UIPauseMenu.cs"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="source\AppEditorLogic.cs"/>

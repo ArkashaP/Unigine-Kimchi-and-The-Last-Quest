@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unigine;
 
-// Указываем, что это компонент Unigine с уникальным идентификатором
-[Component(PropertyGuid = "72b33fe4fb18591b454039f780fc47c49c58f12b")]
-public class UIMainMenu : Component
+[Component(PropertyGuid = "fa83f41ab081174b4ce7e3835641262b1a011fa9")]
+public class UIPauseMenu : Component
 {
     // Путь к файлу интерфейса .ui, отображается в редакторе
     [ShowInEditor]
@@ -14,6 +13,9 @@ public class UIMainMenu : Component
     // Ссылка на компонент информации (не используется в коде, возможно, задел на будущее)
     [ShowInEditor]
     private Information info;
+
+    [ShowInEditor]
+    private UIMainMenu uimain;
 
     // Флаг, указывающий, работает ли мир (задается в редакторе)
     [ShowInEditor]
@@ -49,12 +51,12 @@ public class UIMainMenu : Component
     private void Exit()
     {
         Engine.Quit(); // Завершает работу движка Unigine
-    } 
+    }
 
     // Инициализация компонента
     private void Init()
     {
-        menuBool = true; // Меню изначально видимо
+        menuBool = false; // Меню изначально видимо
         ui = new UserInterface(Gui.GetCurrent(), file); // Загружаем интерфейс из .ui файла
         System.Console.WriteLine(ui.FindWidget("mainMenu")); // Выводим ID виджета в консоль для отладки
         pMainMenu = ui.GetWidget(ui.FindWidget("mainMenu")); // Получаем виджет главного меню
@@ -99,7 +101,6 @@ public class UIMainMenu : Component
     private void StartInformation()
     {
         menuBool = false;
-        info.StartInformation();
     }
 
     // Изменение текстуры кнопки при наведении мыши (анимация hover)
@@ -125,6 +126,12 @@ public class UIMainMenu : Component
         else
         {
             pMainMenu.Hidden = true; // Скрываем меню
+        }
+
+        // Переключение видимости меню по клавише ESC, если активно тестирование или мир
+        if (Input.IsKeyDown(Input.KEY.ESC) && (info.GetActiveInfo() || worldWork)&& uimain.menuBool == false)
+        {
+            menuBool = !menuBool; // Инвертируем состояние меню
         }
     }
 }
