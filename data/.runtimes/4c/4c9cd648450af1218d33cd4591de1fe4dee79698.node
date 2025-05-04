@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.19.0.3">
+	<node type="NodeDummy" id="1601533304" name="дерево-пятиветочное">
+		<transform>1 2.64697796017e-22 -3.82137123179e-15 0.0 9.26442286059e-23 1 8.74227800037e-08 0.0 3.82137123179e-15 -8.74227800037e-08 1 0.0 0 0 0 1.0</transform>
+		<node type="ObjectMeshStatic" id="1525398135" immovable="1" name="Cube">
+			<mesh_name>guid://7180d9702e6b41d0552ee3f76047d4e9890a2917</mesh_name>
+			<surface name="феолетовое дерево" intersection="1" material="c5c2d03eca49ebb9b21a4493451bbf10eae77a8e"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2085737834" immovable="1" name="Икосфера">
+			<mesh_name>guid://36801cba880aa828a51c51ffafe01e8d4191338a</mesh_name>
+			<surface name="феолетовое дерево" intersection="1" material="c5c2d03eca49ebb9b21a4493451bbf10eae77a8e"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -3.58448196983 2.90173167056 5.82051359844 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2130249153" immovable="1" name="Икосфера.001">
+			<mesh_name>guid://777a74229ed976d40a6ed401cda7136473d18d61</mesh_name>
+			<surface name="феолетовое дерево" intersection="1" material="c5c2d03eca49ebb9b21a4493451bbf10eae77a8e"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 -0.999068472794 1.75007671036 8.79739276866 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="2000167980" immovable="1" name="Икосфера.002">
+			<mesh_name>guid://78a4447cfd32b6e06754d149434ddcb76ae0c74c</mesh_name>
+			<surface name="феолетовое дерево" intersection="1" material="c5c2d03eca49ebb9b21a4493451bbf10eae77a8e"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0.386650860566 -1.02563268627 8.61612229062 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="821973403" immovable="1" name="Икосфера.003">
+			<mesh_name>guid://b0a08a24c21c5433566d0f1be482328aafad5a3b</mesh_name>
+			<surface name="феолетовое дерево" intersection="1" material="c5c2d03eca49ebb9b21a4493451bbf10eae77a8e"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 1.76882347438 1.70747822681 8.77083103346 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="100653630" immovable="1" name="Икосфера.004">
+			<mesh_name>guid://11c88e0e85441065bf1bada3be925bdb09f30a5e</mesh_name>
+			<surface name="феолетовое дерево" intersection="1" material="c5c2d03eca49ebb9b21a4493451bbf10eae77a8e"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 4.35696790783 0.208077373052 5.98890160605 1.0</transform>
+		</node>
+		<node type="ObjectMeshStatic" id="1265613957" immovable="1" name="Плоскость">
+			<mesh_name>guid://be47ebf6d2e4591d6c476bc5db4db5729715ee25</mesh_name>
+			<surface name="синие дерево" intersection="1" material="ba65dba0da16d6a9ec109dfdb3f4253a1b3b18f0"/>
+			<transform>1 8.74227942467e-08 -8.74227800037e-08 0.0 8.74227942467e-08 -1.6292067191e-07 1 0.0 8.74227800037e-08 -1 -1.62920679553e-07 0.0 0 0 0 1.0</transform>
+		</node>
+	</node>
+</nodes>
