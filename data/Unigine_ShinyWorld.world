@@ -2598,98 +2598,7 @@
 			</node>
 		</node>
 		<node type="NodeDummy" id="83635850" name="Wood">
-			<properties>
-				<property parent="23cabb45a8ed0ab1578cc9bf9e243e3d911ba13d" guid="ec046f1ddedc748f6e451957516d1490f19b1215">
-					<parameter name="wood1">667328416</parameter>
-					<parameter name="wood2">1219077050</parameter>
-					<parameter name="wood3">1387652494</parameter>
-					<parameter name="wood4">1353011223</parameter>
-					<parameter name="wood5">1186232908</parameter>
-					<parameter name="battrey1">145424643</parameter>
-					<parameter name="battrey2">1803006623</parameter>
-					<parameter name="battrey3">424556585</parameter>
-					<parameter name="battrey4">270137411</parameter>
-					<parameter name="battrey5">290791789</parameter>
-					<parameter name="texturePath">guid://048ad987a7ef43ac93bd8bd114895db03b50b4ff</parameter>
-					<parameter name="texturePath2">guid://faf957b2c37308b70338d5c045c4bc35286263c8</parameter>
-				</property>
-			</properties>
 			<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -3.35748938443 3.63111998706 1.00000005921 1.0</transform>
-			<node type="ObjectGui" id="667328416" immovable="1" name="gui1">
-				<gui_name>core/gui/</gui_name>
-				<billboard>0</billboard>
-				<background>1</background>
-				<depth_test>1</depth_test>
-				<mouse_show>1</mouse_show>
-				<control_distance>2</control_distance>
-				<polygon_offset>1</polygon_offset>
-				<physical_width>0.400000006</physical_width>
-				<physical_height>0.300000012</physical_height>
-				<screen_width>1024</screen_width>
-				<screen_height>768</screen_height>
-				<surface name="gui" intersection="1" material="1f14ce52ff2d0d126d21be317e860a4a76477183"/>
-				<transform>-0.999996602535 -5.96854109105e-13 6.51680693409e-07 0.0 6.5168137553e-07 5.96045310886e-08 0.999997913837 0.0 -4.83168192955e-13 0.999997973442 3.57627214953e-07 0.0 2.08468477704 -0.600075467837 0.544004109853 1.0</transform>
-			</node>
-			<node type="ObjectGui" id="1219077050" immovable="1" name="gui2">
-				<gui_name>core/gui/</gui_name>
-				<billboard>0</billboard>
-				<background>1</background>
-				<depth_test>1</depth_test>
-				<mouse_show>1</mouse_show>
-				<control_distance>2</control_distance>
-				<polygon_offset>1</polygon_offset>
-				<physical_width>0.400000006</physical_width>
-				<physical_height>0.300000012</physical_height>
-				<screen_width>1024</screen_width>
-				<screen_height>768</screen_height>
-				<surface name="gui" intersection="1" material="1f14ce52ff2d0d126d21be317e860a4a76477183"/>
-				<transform>-0.999995648861 -8.81069522896e-13 6.51680068131e-07 0.0 6.51681091313e-07 5.96045026668e-08 0.999997437 0.0 -7.67384474108e-13 0.999997615814 3.57627072844e-07 0.0 1.28639070422 -0.568911020603 0.567555032162 1.0</transform>
-			</node>
-			<node type="ObjectGui" id="1387652494" immovable="1" name="gui3">
-				<gui_name>core/gui/</gui_name>
-				<billboard>0</billboard>
-				<background>1</background>
-				<depth_test>1</depth_test>
-				<mouse_show>1</mouse_show>
-				<control_distance>2</control_distance>
-				<polygon_offset>1</polygon_offset>
-				<physical_width>0.400000006</physical_width>
-				<physical_height>0.300000012</physical_height>
-				<screen_width>1024</screen_width>
-				<screen_height>768</screen_height>
-				<surface name="gui" intersection="1" material="1f14ce52ff2d0d126d21be317e860a4a76477183"/>
-				<transform>-0.999994695187 -1.13686284779e-12 6.51679442853e-07 0.0 6.51680807096e-07 5.96044742451e-08 0.999996960163 0.0 -1.05160053842e-12 0.999997258186 3.57626959158e-07 0.0 0.525535398828 -0.430917812602 0.607621872853 1.0</transform>
-			</node>
-			<node type="ObjectGui" id="1353011223" immovable="1" name="gui4">
-				<gui_name>core/gui/</gui_name>
-				<billboard>0</billboard>
-				<background>1</background>
-				<depth_test>1</depth_test>
-				<mouse_show>1</mouse_show>
-				<control_distance>2</control_distance>
-				<polygon_offset>1</polygon_offset>
-				<physical_width>0.400000006</physical_width>
-				<physical_height>0.300000012</physical_height>
-				<screen_width>1024</screen_width>
-				<screen_height>768</screen_height>
-				<surface name="gui" intersection="1" material="1f14ce52ff2d0d126d21be317e860a4a76477183"/>
-				<transform>-0.999995172024 -1.02317698585e-12 6.51679783914e-07 0.0 6.51680977626e-07 5.9604488456e-08 0.999997198582 0.0 -9.09492533369e-13 0.999997437 3.57627016001e-07 0.0 -0.0899571837855 -0.517774058906 0.578333110314 1.0</transform>
-			</node>
-			<node type="ObjectGui" id="1186232908" immovable="1" name="gui5">
-				<gui_name>core/gui/</gui_name>
-				<billboard>0</billboard>
-				<background>1</background>
-				<depth_test>1</depth_test>
-				<mouse_show>1</mouse_show>
-				<control_distance>2</control_distance>
-				<polygon_offset>1</polygon_offset>
-				<physical_width>0.400000006</physical_width>
-				<physical_height>0.300000012</physical_height>
-				<screen_width>1024</screen_width>
-				<screen_height>768</screen_height>
-				<surface name="gui" intersection="1" material="1f14ce52ff2d0d126d21be317e860a4a76477183"/>
-				<transform>-0.999994218349 -1.27897009389e-12 6.51679101793e-07 0.0 6.51680579722e-07 5.96044600343e-08 0.999996721745 0.0 -1.16528694246e-12 0.999997079372 3.57626902314e-07 0.0 -0.682429272714 -0.596003295682 0.512170639593 1.0</transform>
-			</node>
 			<node type="NodeDummy" id="900045497" name="batteries2">
 				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 2.94837790919 4.87707919422 -1.19209282334e-07 1.0</transform>
 				<node type="ObjectMeshStatic" id="145424643" name="battery2_1">
@@ -2700,6 +2609,8 @@
 							<parameter name="bat2">1695036766</parameter>
 							<parameter name="batcountnode">1368583642</parameter>
 							<parameter name="player">2042636602</parameter>
+							<parameter name="mymat">c32fbb70a77e1053769b9bb0b8880bebf2852352</parameter>
+							<parameter name="test">57559045</parameter>
 						</property>
 					</properties>
 					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 4.1601853588 -0.81393495118 0.00524368457346 1.0</transform>
@@ -2716,6 +2627,8 @@
 							<parameter name="bat2">1412783986</parameter>
 							<parameter name="batcountnode">1368583642</parameter>
 							<parameter name="player">2042636602</parameter>
+							<parameter name="mymat">c32fbb70a77e1053769b9bb0b8880bebf2852352</parameter>
+							<parameter name="test">1110284331</parameter>
 						</property>
 					</properties>
 					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0.281585318836 -3.54564502423 0 1.0</transform>
@@ -2732,6 +2645,8 @@
 							<parameter name="bat2">734602100</parameter>
 							<parameter name="batcountnode">1368583642</parameter>
 							<parameter name="player">2042636602</parameter>
+							<parameter name="mymat">c32fbb70a77e1053769b9bb0b8880bebf2852352</parameter>
+							<parameter name="test">1737176560</parameter>
 						</property>
 					</properties>
 					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.909513895777 -1.45965424363 0 1.0</transform>
@@ -2748,6 +2663,8 @@
 							<parameter name="bat2">624312518</parameter>
 							<parameter name="batcountnode">1368583642</parameter>
 							<parameter name="player">2042636602</parameter>
+							<parameter name="mymat">c32fbb70a77e1053769b9bb0b8880bebf2852352</parameter>
+							<parameter name="test">980308111</parameter>
 						</property>
 					</properties>
 					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -3.76660276702 -2.54813274354 0 1.0</transform>
@@ -2764,6 +2681,8 @@
 							<parameter name="bat2">1287132136</parameter>
 							<parameter name="batcountnode">1368583642</parameter>
 							<parameter name="player">2042636602</parameter>
+							<parameter name="mymat">c32fbb70a77e1053769b9bb0b8880bebf2852352</parameter>
+							<parameter name="test">102302882</parameter>
 						</property>
 					</properties>
 					<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -5.15415113042 -0.523606745775 0 1.0</transform>
@@ -2772,6 +2691,31 @@
 						<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -0.0165078181087 0.00527230890048 -0.014970369637 1.0</transform>
 					</node>
 				</node>
+			</node>
+			<node type="ObjectMeshStatic" id="57559045" immovable="1" name="capsule1">
+				<mesh_name>guid://57def0d6356d39b14d60a73a0819e2c9ec19267f</mesh_name>
+				<surface name="capsule" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -3.83891797874 0.587605441121 1.02429488749 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1110284331" immovable="1" name="capsule2">
+				<mesh_name>guid://57def0d6356d39b14d60a73a0819e2c9ec19267f</mesh_name>
+				<surface name="capsule" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -5.41916433244 0.84499973949 0.856960462727 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1737176560" immovable="1" name="capsule3">
+				<mesh_name>guid://57def0d6356d39b14d60a73a0819e2c9ec19267f</mesh_name>
+				<surface name="capsule" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -6.93095070261 1.00900882389 1.16830616334 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="980308111" immovable="1" name="capsule4">
+				<mesh_name>guid://57def0d6356d39b14d60a73a0819e2c9ec19267f</mesh_name>
+				<surface name="capsule" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -8.42760989168 1.15724652022 1.1148917803 1.0</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="102302882" immovable="1" name="capsule5">
+				<mesh_name>guid://57def0d6356d39b14d60a73a0819e2c9ec19267f</mesh_name>
+				<surface name="capsule" intersection="1" material="4dfec30f491f753f6e89094db6d3d695e89f9d6f"/>
+				<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 -9.6282409613 1.62602271814 1.2333346127 1.0</transform>
 			</node>
 		</node>
 		<node type="NodeDummy" id="227443908" name="batteries1">

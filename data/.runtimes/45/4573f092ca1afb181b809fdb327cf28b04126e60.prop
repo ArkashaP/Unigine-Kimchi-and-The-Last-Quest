@@ -3,5 +3,7 @@
 	<parameter name="bat2" type="node" title="battery2" filter="WorldTrigger"/>
 	<parameter name="batcountnode" type="node" title="Batteries Counter"/>
 	<parameter name="player" type="node" title="player"/>
+	<parameter name="mymat" type="material" title="material"/>
+	<parameter name="test" type="node" title="kap" filter="ObjectMeshStatic"/>
 	<parameter name="countBat" type="int">0</parameter>
 </property>
