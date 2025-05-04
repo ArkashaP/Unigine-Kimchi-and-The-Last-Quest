@@ -913,7 +913,10 @@
 		</node>
 		<node type="NodeDummy" id="1368583642" name="lighting">
 			<properties>
-				<property parent="ffb668a0dbafe7edefd34b3499d2692c78974c2c" guid="3a9803480e58fabe6f893c5ca57534b72ae63154"/>
+				<property parent="ffb668a0dbafe7edefd34b3499d2692c78974c2c" guid="77f73e87caf3ec491e622fde56a7cc517758d422">
+					<parameter name="texturePath">guid://df49839e14c95406e9825e6ffcbb11f310317e68</parameter>
+					<parameter name="texturePath2">guid://16cc8dea0607a3fff26f2ccde6b4279009460b1f</parameter>
+				</property>
 			</properties>
 			<transform>0.99999994 0 0 0.0 0 0.99999994 0 0.0 0 0 0.99999994 0.0 0 0 0 1.0</transform>
 			<node type="LightWorld" id="824505625" name="sun">
